@@ -33,6 +33,9 @@ const CUES={
  chime:[2.2,t=>[1,2.76,5.4,8.9].reduce((v,p,i)=>v+Math.sin(t*1174.66*p*6.283)*Math.exp(-t*(1.6+i*2.2))/(1+i*1.4),0)*(1-Math.exp(-t*300))*.32],
  // Rising shimmer under white blooms (waking, emergence).
  bloom:[2.4,t=>{const e=Math.min(1,t/1.6)*Math.exp(-Math.max(0,t-1.6)*4);return[0,4,7,12,16].reduce((v,n,i)=>v+Math.sin(t*587.33*2**(n/12)*(1+t*.02)*6.283+i)*.2,0)*e*.4;}],
+ // Dandelion flight: a long gust with a faint whistle, and a puff of dust on landing.
+ wind:[4.2,(t,r,st)=>{const env=Math.min(1,t*1.5,(4.2-t)*1.2),k=.03+.02*Math.sin(t*2.1);st.l+=((r()-.5)-st.l)*k;st.b+=(st.l-st.b)*k;return st.b*9*env+Math.sin(t*(760+120*Math.sin(t*1.7))*6.283)*.012*env;}],
+ dust:[.9,(t,r,st)=>{st.l+=((r()-.5)-st.l)*.3;st.b+=(st.l-st.b)*.3;return st.b*Math.exp(-t*5)*1.6;}],
  // Weight under the catastrophe title.
  low:[3,t=>(Math.sin(t*49*6.283)+.4*Math.sin(t*73.4*6.283))*Math.exp(-t*1.1)*(1-Math.exp(-t*25))*.55],
 };

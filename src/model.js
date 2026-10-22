@@ -4,6 +4,7 @@ import { emptyTraversal, byPlatform, byTrail, TRAILS } from "./traversal.js";
 import { emptyCrossing, validateCrossing } from './crossing-data.js';
 import {emptyObjects,validateObjects} from './environment-model.js';
 import {emptyHorizon,validateHorizon} from './expedition-data.js';
+import { emptyTravel, validateTravel } from './travel.js';
 import {
   emptyColony,
   CHAMBERS,
@@ -61,6 +62,7 @@ export function initialState() {
     crossing: emptyCrossing(),
     objects: emptyObjects(),
     horizon: emptyHorizon(),
+    travel: emptyTravel(),
     underwater: {
       active: false,
       x: 240,
@@ -95,6 +97,7 @@ export function migrateSave(input) {
     crossing: validateCrossing(input.crossing),
     objects: validateObjects(input.objects),
     horizon: validateHorizon(input.horizon),
+    travel: validateTravel(input.travel),
     version: SAVE_VERSION,
   };
   for (const k of [

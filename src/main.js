@@ -13,6 +13,8 @@ import { BIOMES, SPECIES, UI, GROUPS, L, T, speciesById } from "./content.js";
 import { QUESTS, SECRETS } from "./quests.js";
 import { VIEWS, VIEW_UI } from "./perspectives.js";
 import { TRAILS, TRAIL_UI } from "./traversal.js";
+import { STATIONS, TRAVEL_UI } from "./travel.js";
+import { WindLayer } from "./wind.js";
 import { CINEMATICS } from "./cinematics.js";
 import { shotPlan, shotSeconds, EXIT_SECONDS } from "./direction.js";
 import { CROSS_UI, routeTitle, routeEnding, delivered, ROOT_PATH, BRIDGE_PATH } from './crossing-data.js';
@@ -68,6 +70,7 @@ class App {
     this.mode = "menu";
     this.audio = new Soundscape();
     this.voice = new SpeechPlayer(this,voiceCatalog);
+    this.wind = new WindLayer(this);
     this.joy = { x: 0, y: 0 };
     this.modalOpen = false;
     this.assetErrors = new Set();
@@ -287,6 +290,7 @@ class App {
     else if (this.mode === "journal")
       this.openJournal(this.journalTab || "species", true);
     else if (this.mode === "map") this.openMap(true);
+    else if (this.mode === "travel-menu") this.openTravel(this.travelFrom, true);
     else if (this.mode === "pause") this.pause(true);
     else if (this.mode === "dialog") {
       if (this.dialogData?.choice) this.renderChoice();
@@ -596,7 +600,7 @@ class App {
   // Hints and discoveries wait while a cinematic, the two-views sequence or a
   // scene transition owns the screen, and at most three cards stay stacked.
   holdToast(show) {
-    if (["cinematic", "perspective", "transition"].includes(this.mode)) {
+    if (["cinematic", "perspective", "transition", "travel"].includes(this.mode)) {
       (this.toastQueue ||= []).push(show);
       return true;
     }
@@ -646,6 +650,43 @@ class App {
     gsap.fromTo(e, { opacity: 0 }, { opacity: 1, duration: 1 });
     setTimeout(() => gsap.to(e, { opacity: 0, duration: 1 }), 3200);
   }
+  openTravel(from, refresh = false) {
+    if (this.mode !== "play" && !(refresh && this.mode === "travel-menu")) return;
+    this.travelFrom = from;
+    if (activeStage(this.state)?.action === "escort")
+      return this.toast(this.l(TRAVEL_UI.escort));
+    const awake = this.state.travel.stations;
+    const cells = BIOMES.map((b) => {
+      const seen = this.state.visited.includes(b.id),
+        open = awake.includes(b.id),
+        here = b.id === from;
+      const label = !seen ? "?" : esc(this.l(b.name));
+      const sub = here
+        ? this.l(TRAVEL_UI.here)
+        : open
+          ? this.l(b.sub)
+          : seen
+            ? this.l(TRAVEL_UI.asleep)
+            : this.l(TRAVEL_UI.unknown);
+      return `<button class="travel-cell ${here ? "here" : open ? "open" : "closed"}" data-fly="${b.id}" ${!open || here ? "disabled" : ""} style="--ground:${b.color};--light:${b.light}"><span class="travel-seed" aria-hidden="true"></span><strong>${label}</strong><small>${esc(sub)}</small></button>`;
+    }).join("");
+    this.panel(
+      this.l(TRAVEL_UI.fly),
+      `<p class="travel-lead">${esc(this.l(TRAVEL_UI.choose))}</p><div class="travel-grid">${cells}</div><p class="note">${esc(this.l(TRAVEL_UI.hint))} · ${awake.length} / ${STATIONS.length}</p>`,
+    );
+    this.mode = "travel-menu";
+    document.querySelectorAll("[data-fly]").forEach(
+      (e) =>
+        (e.onclick = () => {
+          const id = +e.dataset.fly;
+          $("#overlay").hidden = true;
+          this.modalOpen = false;
+          this.mode = "play";
+          this.scene.flyTo(id);
+        }),
+    );
+    $("#overlay .travel-cell.open")?.focus();
+  }
   panel(title, body, small = false) {
     this.resetInput(false);
     if (!this.modalOpen) this.backMode = this.mode;
@@ -690,6 +731,7 @@ class App {
     };
   }
   escape() {
+    if (this.mode === "travel") return this.scene.skipFlight?.();
     if (this.mode === "perspective") return this.scene.restorePerspective?.();
     if (this.mode === "cinematic") return;
     if (this.mode === "dialog") return;
@@ -930,7 +972,7 @@ class App {
   }
   openJournal(tab = "species", refresh = false) {
     if (
-      ["cinematic", "perspective", "dialog", "end"].includes(this.mode) &&
+      ["cinematic", "perspective", "dialog", "end", "travel"].includes(this.mode) &&
       !refresh
     )
       return;
@@ -1084,6 +1126,22 @@ class App {
         c.arc(x, y, 6, 0, Math.PI * 2);
         c.stroke();
       }
+    // Awakened dandelion wind stations: a small radiating seed head.
+    for (const s of STATIONS) {
+      if (!this.state.travel.stations.includes(s.biome)) continue;
+      const x = (s.x / WW) * w,
+        y = (s.y / WH) * h,
+        r = big ? 6 : 3;
+      c.strokeStyle = "#fffbe9";
+      c.lineWidth = 1;
+      for (let i = 0; i < 8; i++) {
+        const a = (i / 8) * Math.PI * 2;
+        c.beginPath();
+        c.moveTo(x, y);
+        c.lineTo(x + Math.cos(a) * r, y + Math.sin(a) * r);
+        c.stroke();
+      }
+    }
     const st =
       this.state.quest === 1
         ? { points: [[COLONY_ENTRANCE.x, COLONY_ENTRANCE.y]] }
@@ -1119,11 +1177,11 @@ class App {
     c.stroke();
   }
   openMap(refresh = false) {
-    if (["cinematic", "perspective", "dialog", "end"].includes(this.mode))
+    if (["cinematic", "perspective", "dialog", "end", "travel"].includes(this.mode))
       return;
     this.panel(
       this.scene.isExpedition?this.l(this.scene.site.title):this.scene.isCitadel ? this.l(COLONY_UI.map) : this.t("map"),
-      `<canvas class="world-map" id="world-map" width="960" height="660"></canvas><div class="map-legend"><span>● ${this.l(T("Вы здесь", "Сіз осындасыз", "You are here"))}</span><span>■ ${this.t("quest")}</span><span>${this.state.visited.length} / 9</span></div><div class="map-cells">${BIOMES.map((b) => `<button data-region="${b.id}" class="${b.id === this.scene.lastBiome ? "active" : ""}">${this.state.visited.includes(b.id) ? esc(this.l(b.name)) : "?"}</button>`).join("")}</div><p class="note">${this.t("help")}</p>`,
+      `<canvas class="world-map" id="world-map" width="960" height="660"></canvas><div class="map-legend"><span>● ${this.l(T("Вы здесь", "Сіз осындасыз", "You are here"))}</span><span>■ ${this.t("quest")}</span><span>✳ ${esc(this.l(TRAVEL_UI.legend))} ${this.state.travel.stations.length}/${STATIONS.length}</span><span>${this.state.visited.length} / 9</span></div><div class="map-cells">${BIOMES.map((b) => `<button data-region="${b.id}" class="${b.id === this.scene.lastBiome ? "active" : ""}">${this.state.visited.includes(b.id) ? esc(this.l(b.name)) : "?"}</button>`).join("")}</div><p class="note">${this.t("help")}</p>`,
     );
     this.mode = "map";
     this.drawMap($("#world-map"), true);

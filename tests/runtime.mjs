@@ -7,6 +7,7 @@ import {checkCrossings} from './runtime-crossing.mjs';
 import {checkEnvironment} from './runtime-environment.mjs';
 import {checkExpeditions} from './runtime-expedition.mjs';
 import assert from "node:assert/strict";
+import { migrateSave } from "../src/model.js";
 const require = createRequire(import.meta.url);
 const { createCanvas, Image: NativeImage, loadImage } = require("@napi-rs/canvas");
 const errors = [];
@@ -714,6 +715,47 @@ console.log(
   app.state.completed.length,
   app.state.changes.length,
 );
+// Dandelion wind: both illustrated station stages, the real travel menu in
+// three languages, the density-compensated seed in flight, and a clean landing.
+{
+const beforeWind={x:app.scene.player.x,y:app.scene.player.y};
+for(const id of [0,1]){
+  const marker=app.scene.markers.find(m=>m.station===id);
+  assert(marker,'station '+id+' exists');
+  assert(marker.sprite.texture.key.startsWith('visual-'),'wind stations use illustrated atlas frames');
+  app.state.x=marker.x;app.state.y=marker.y;
+  app.scene.reset(app.state);app.scene.updateNear();
+  assert.equal(app.scene.near.station,id);
+  app.scene.interact();dismiss();
+  assert(app.state.travel.stations.includes(id));
+  const opened=app.scene.markers.find(m=>m.station===id).sprite;
+  assert.equal(opened.visualKey,'dandelion');
+  assert(Math.abs(opened.displayWidth-64*1.7)<.1,'awakened plant retains station size');
+}
+app.scene.updateNear();app.scene.interact();
+assert.equal(app.mode,'travel-menu');
+app.changeLanguage('kk');
+const travelKazakh=w.document.querySelector('.travel-lead').textContent;
+app.changeLanguage('en');
+assert.notEqual(w.document.querySelector('.travel-lead').textContent,travelKazakh,'travel menu updates its language');
+app.changeLanguage('ru');
+w.document.querySelector('[data-fly="0"]').click();
+assert.equal(app.mode,'travel');
+app.scene.flightTimeline.progress(.5);
+const windSeed=app.scene.children.list.find(o=>o.visualKey==='travel-seed');
+assert(windSeed&&windSeed.texture.key.startsWith('visual-'));
+assert(windSeed.displayWidth<160,'flying seed stays in world units at flight zoom');
+app.scene.skipFlight();
+assert.equal(app.mode,'play');
+assert(!windSeed.active,'landing releases the seed');
+assert(app.scene.player.body.enable,'landing restores collisions');
+const station0=app.scene.markers.find(m=>m.station===0);
+assert(Math.hypot(app.state.x-station0.x,app.state.y-station0.y)<80,'landed beside the target station');
+const saved=migrateSave(JSON.parse(JSON.stringify(app.state)));
+assert.deepEqual(saved.travel.stations.slice().sort(),[0,1],'awakened stations survive a save round trip');
+app.state.x=beforeWind.x;app.state.y=beforeWind.y;app.scene.reset(app.state);
+console.log('DANDELION WIND: STATIONS, AWAKENING, WIND MAP, FLIGHT AND LANDING OK');
+}
 await checkCrossings({app,w,step,tapE,dismiss,getCanvas});
 await checkEnvironment({app,w,step,tapE,dismiss,getCanvas});
 await checkExpeditions({app,w,step,tapE,dismiss,getCanvas});

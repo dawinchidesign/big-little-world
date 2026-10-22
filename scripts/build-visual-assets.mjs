@@ -162,6 +162,13 @@ const upgradeSpecs=[
   ['shell',70,60],['mycelium',130,80],['canopy-stem',48,180],
 ];
 upgradeSpecs.forEach(([key,w,h],i)=>add(key,upgradeProps[Math.floor(i/3)][i%3],w*3,h*3,3,{fit:.92,foot:true,stretch:key==='canopy-stem'}));
+const dandelions=await sheet('upgrade-dandelions',3,1);
+// Dandelion wind stations and the flight seed. Shared full-height registration
+// keeps the rosette planted while the bud opens into a seed head.
+for(const [i,key] of ['dandelion-bud','dandelion','travel-seed'].entries()){
+  const [w,h]=i===2?[32,44]:[64,112];
+  add(key,dandelions[0][i],w*4,h*4,4,{fit:.92,foot:i!==2});
+}
 const fish=await sheet('upgrade-fish-swim',4,1);
 // One shared frame box and fixed body length avoid pumping between tail poses.
 const fishScale=232/Math.max(...fish[0].map(f=>f.width));

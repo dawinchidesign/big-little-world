@@ -1,7 +1,7 @@
 import Phaser from "phaser";
 import { gsap } from "gsap";
 import { createTextures, rng } from "./art.js";
-import { preloadVisuals, installVisuals } from "./visuals.js";
+import { preloadVisuals, installVisuals, visualEntry } from "./visuals.js";
 import { windAt } from "./atmosphere.js";
 import { ParallaxStage } from "./parallax.js";
 import { ShotDirector } from "./direction.js";
@@ -16,6 +16,7 @@ import { QUESTS, SECRETS } from "./quests.js";
 import { BW, BH, WW, WH, biomeAt, activeStage, npcBehavior } from "./model.js";
 import { VIEWS } from "./perspectives.js";
 import { UW } from "./underwater.js";
+import { STATIONS, TRAVEL_UI, makeTravelTextures } from "./travel.js";
 import { COLONY_UI, COLONY_ENTRANCE } from "./colony-data.js";
 import {
   Traversal,
@@ -95,6 +96,7 @@ export class WorldScene extends Phaser.Scene {
       return;
     }
     createTextures(this);
+    makeTravelTextures(this, visualEntry);
     installVisuals(this);
     this.physics.world.setBounds(24, 24, WW - 48, WH - 48);
     this.obstacles = this.physics.add.staticGroup();
@@ -202,6 +204,16 @@ export class WorldScene extends Phaser.Scene {
     this.app.readyResolve();
   }
   reset(s) {
+    this.flightTimeline?.kill();
+    this.flightTimeline = null;
+    if (this.travelling) {
+      this.app.wind?.stop();
+      this.player.body.enable = true;
+      this.cameras.main.setRotation(0);
+      this.cameras.main.useBounds = true;
+    }
+    this.travelling = false;
+    this.cineBiome = null;
     this.clearCinematic();
     this.observing = false;
     this.scanning = false;
@@ -247,6 +259,7 @@ export class WorldScene extends Phaser.Scene {
     ).concat(
       SECRETS.map((s) => s.pos),
       PLATFORMS.map((p) => [p.x, p.y]),
+      STATIONS.map((p) => [p.x, p.y]),
       [[COLONY_ENTRANCE.x, COLONY_ENTRANCE.y]],
     );
     return important.every(([a, b]) => Math.hypot(x - a, y - b) > 125);
@@ -709,6 +722,25 @@ export class WorldScene extends Phaser.Scene {
       dive: true,
       stage: { title: UW.dive },
     });
+    // Dandelion wind: one station per region, asleep (bud) until woken.
+    const awake = this.app.state.travel.stations;
+    for (const st of STATIONS) {
+      const open = awake.includes(st.biome);
+      const sprite = this.add
+        .image(st.x, st.y, open ? "dandelion" : "dandelion-bud")
+        .setOrigin(0.5, 0.96)
+        .setScale(1.7)
+        .setDepth(st.y);
+      sprite.stationSeed = st.biome * 1.7;
+      this.markers.push({
+        sprite,
+        x: st.x,
+        y: st.y,
+        kind: "quest",
+        station: st.biome,
+        stage: { title: open ? TRAVEL_UI.fly : TRAVEL_UI.wake },
+      });
+    }
     for (const route of TRAILS) {
       const first = route.platforms[0],
         last = route.platforms.at(-1);
@@ -817,6 +849,7 @@ export class WorldScene extends Phaser.Scene {
       });
       return;
     }
+    if (near.station !== undefined) return this.stationAction(near);
     if (near.dive) return this.app.enterUnderwater();
     if (near.colony) return this.app.enterColony();
     const st = near.stage;
@@ -885,6 +918,277 @@ export class WorldScene extends Phaser.Scene {
     if (st.text)
       this.app.dialog(QUESTS[this.app.state.quest].intro, st.text, act);
     else act();
+  }
+  // Squash-and-stretch through setScale, which compensates high-density atlas art.
+  // (Tweening scaleX/scaleY directly would bypass that and blow sprites up ×4.)
+  squash(obj, fromX, fromY, to, duration) {
+    const s = { x: fromX, y: fromY };
+    this.tweens.killTweensOf(s);
+    obj.setScale(fromX, fromY);
+    this.tweens.add({
+      targets: s,
+      x: to,
+      y: to,
+      duration,
+      ease: "Back.easeOut",
+      onUpdate: () => obj.active && obj.setScale(s.x, s.y),
+      onComplete: () => obj.active && obj.setScale(to),
+    });
+  }
+  stationAction(near) {
+    const s = this.app.state,
+      id = near.station;
+    if (this.traverse.z > 12 || this.traverse.climb) return;
+    if (!s.travel.stations.includes(id)) {
+      s.travel.stations.push(id);
+      this.app.audio.cue?.("bloom");
+      const sprite = near.sprite;
+      sprite.setTexture("dandelion");
+      this.squash(sprite, 1.3, 2.1, 1.7, 650);
+      this.seedPuff(near.x, near.y - 70, 22, 0.8);
+      const first = s.travel.stations.length === 1;
+      const after = () => {
+        this.refreshMarkers();
+        this.app.save(false);
+      };
+      if (first) this.app.dialog(TRAVEL_UI.introTitle, TRAVEL_UI.intro, after);
+      else {
+        this.app.toast(this.app.l(TRAVEL_UI.awakened));
+        after();
+      }
+      return;
+    }
+    this.app.openTravel(id);
+  }
+  seedPuff(x, y, count = 14, spread = 1) {
+    for (let i = 0; i < count; i++) {
+      const o = this.add
+        .image(x + (Math.random() - 0.5) * 30, y + (Math.random() - 0.5) * 24, "fluff")
+        .setScale(0.6 + Math.random() * 0.8)
+        .setDepth(6004);
+      const a = -Math.PI / 2 + (Math.random() - 0.5) * 2.4 * spread;
+      gsap.to(o, {
+        x: o.x + Math.cos(a) * (60 + Math.random() * 120) + 40,
+        y: o.y + Math.sin(a) * (50 + Math.random() * 90),
+        angle: (Math.random() - 0.5) * 240,
+        alpha: 0,
+        duration: 1.4 + Math.random() * 1.6,
+        ease: "sine.out",
+        onComplete: () => o.destroy(),
+      });
+    }
+  }
+  dust(x, y, count = 3, color = 0xc9bc92) {
+    if (this.app.state.settings.low) return;
+    for (let i = 0; i < count; i++) {
+      const o = this.add
+        .rectangle(x + (Math.random() - 0.5) * 10, y - 1, 2, 2, color)
+        .setAlpha(0.7)
+        .setDepth(y - 1);
+      gsap.to(o, {
+        x: o.x + (Math.random() - 0.5) * 22,
+        y: o.y - 4 - Math.random() * 7,
+        alpha: 0,
+        scale: 2,
+        duration: 0.45 + Math.random() * 0.3,
+        ease: "power1.out",
+        onComplete: () => o.destroy(),
+      });
+    }
+  }
+  // Dandelion flight: take-off, a banked flight above the real world, landing at the target station.
+  flyTo(biome) {
+    const target = STATIONS.find((s) => s.biome === biome);
+    if (!target || this.travelling) return;
+    const app = this.app,
+      cam = this.cameras.main,
+      low = !!app.state.settings.low;
+    this.travelling = true;
+    this.cinematic = true;
+    this.observing = false;
+    this.scanning = false;
+    app.mode = "travel";
+    app.resetInput(false);
+    app.refreshHud();
+    this.player.setVelocity(0);
+    // The flight path leaves the world bounds near the top edge; the body rejoins physics on landing.
+    this.player.body.enable = false;
+    for (const b of BIOMES) this.spawnBiome(b);
+    const from ={ x: this.player.x, y: this.player.y },
+      to = { x: target.x + 44, y: target.y + 26 },
+      span = Math.hypot(to.x - from.x, to.y - from.y),
+      peak = 170 + span * 0.07,
+      dirX = Math.sign(to.x - from.x) || 1;
+    const seed = this.add.image(from.x, from.y - 40, "travel-seed").setScale(1.8).setOrigin(0.5, 0.85).setDepth(9001).setAlpha(0);
+    const origin = this.markers.find((m) => m.station !== undefined && Math.hypot(m.x - from.x, m.y - from.y) < 160);
+    if (origin) this.seedPuff(origin.x, origin.y - 70, 26, 1);
+    app.audio.cue?.("bloom");
+    app.audio.cue?.("whoosh");
+    cam.stopFollow();
+    cam.useBounds = false;
+    const look = { x: cam.midPoint.x, y: cam.midPoint.y, rot: 0 };
+    const zoomAt = (u) => {
+      const s = (a, b, v) => Math.max(0, Math.min(1, (v - a) / (b - a)));
+      const up = s(0, 0.4, u),
+        down = s(0.62, 1, u);
+      const out = up * up * (3 - 2 * up) * (1 - down * down * (3 - 2 * down));
+      return 1.2 - (1.2 - (span > 1800 ? 0.4 : 0.5)) * out;
+    };
+    // Keep the framed view inside the painted world, even with bounds off for rotation.
+    const frame = (x, y, zoom) => {
+      // A banked camera shows a rotated rectangle: clamp its bounding box so
+      // the corners never reveal the space beyond the painted world.
+      const r = Math.abs(cam.rotation),
+        w0 = 480 / zoom,
+        h0 = 270 / zoom,
+        hw = w0 * Math.cos(r) + h0 * Math.sin(r),
+        hh = h0 * Math.cos(r) + w0 * Math.sin(r);
+      cam.centerOn(
+        hw * 2 >= WW ? WW / 2 : Math.max(hw, Math.min(WW - hw, x)),
+        hh * 2 >= WH ? WH / 2 : Math.max(hh, Math.min(WH - hh, y)),
+      );
+    };
+    const place = (u, t, zoom = 1.2) => {
+      // The hero stays readable as the camera pulls back: sprites counter-scale part of the zoom.
+      const grow = Math.pow(1.2 / zoom, 0.8);
+      this.player.setScale(1.6 * grow);
+      seed.setScale(1.8 * grow);
+      const e = u * u * (3 - 2 * u),
+        gx = from.x + (to.x - from.x) * e,
+        gy = from.y + (to.y - from.y) * e,
+        sway = Math.sin(u * Math.PI * 5) * 22 * Math.sin(u * Math.PI),
+        z = peak * Math.sin(u * Math.PI) + 34 * Math.min(1, u * 8);
+      const hx = gx + sway,
+        hy = gy - z;
+      this.player.setPosition(hx, hy + 36 * grow).setOrigin(0.5, 1).setDepth(9000);
+      this.player.setTexture("hero-glide" + (Math.floor(t / 150) % 4));
+      seed.setPosition(hx, hy - 2).setAngle(Math.sin(t / 260) * 7 + (to.x - from.x > 0 ? 6 : -6));
+      this.playerShadow
+        .setPosition(gx, gy + 3)
+        .setScale(Math.max(0.12, 0.45 - z * 0.0012))
+        .setAlpha(Math.max(0.06, 0.25 - z * 0.0006));
+      return { hx, hy, gx, gy };
+    };
+    const tl = gsap.timeline();
+    this.flightTimeline = tl;
+    // Take-off: the hero grasps a seed and rises.
+    const lift = { u: 0 };
+    tl.to(seed, { alpha: 1, duration: 0.3 })
+      .to(lift, {
+        u: 1,
+        duration: 1.0,
+        ease: "power2.in",
+        onUpdate: () => {
+          const z = 34 * lift.u;
+          this.player.setPosition(from.x, from.y - z + 36 * lift.u).setTexture("hero-glide" + (Math.floor(performance.now() / 150) % 4)).setDepth(9000);
+          seed.setPosition(from.x, from.y - z - 2 + 36 * lift.u - 36);
+          cam.setZoom(1.2 - 0.12 * lift.u);
+          frame(look.x, look.y - 20 * lift.u, cam.zoom);
+        },
+      }, "<");
+    // Flight over the world.
+    const flight = { u: 0 };
+    const duration = Math.min(7, 3.4 + span / 1300);
+    let last = null,
+      titled = false;
+    tl.add(() => {
+      app.wind.start();
+      app.audio.cue?.("wind");
+    }).to(flight, {
+      u: 1,
+      duration,
+      ease: "none",
+      onUpdate: () => {
+        const t = performance.now(),
+          u = flight.u,
+          zoom = zoomAt(u),
+          p = place(u, t, zoom);
+        // Lead the hero along the path and bank into turns.
+        const vx = last ? p.hx - last.hx : 0,
+          vy = last ? p.hy - last.hy : 0;
+        last = p;
+        const lead = 7 / zoom;
+        look.x += (p.hx + vx * lead - look.x) * 0.12;
+        look.y += (p.hy + vy * lead - look.y) * 0.12;
+        look.rot += (Math.max(-0.05, Math.min(0.05, vx * 0.004)) - look.rot) * 0.06;
+        cam.setZoom(zoom).setRotation(low ? 0 : look.rot);
+        frame(look.x, look.y, zoom);
+        const power = Math.sin(Math.PI * Math.min(1, u * 1.15));
+        app.wind.power = low ? power * 0.4 : power;
+        app.wind.vx = vx || dirX;
+        app.wind.vy = vy;
+        const under = biomeAt(p.gx, p.gy);
+        if (under) this.cineBiome = under.id;
+        if (!titled && u > 0.4) {
+          titled = true;
+          app.regionToast(BIOMES[biome]);
+        }
+      },
+    });
+    // Landing: let go of the seed, which sails on with the wind.
+    const land = { u: 0 };
+    tl.add(() => {
+      app.wind.stop();
+      app.audio.cue?.("chime");
+      app.audio.cue?.("dust");
+      this.dust(to.x, to.y, 9);
+      this.seedPuff(to.x, to.y - 30, 6, 0.6);
+      gsap.to(seed, { x: seed.x + dirX * 260, y: seed.y - 220, angle: dirX * 30, alpha: 0, duration: 2.4, ease: "sine.in", onComplete: () => seed.destroy() });
+    }).to(land, {
+      u: 1,
+      duration: 0.55,
+      ease: "power2.out",
+      onUpdate: () => {
+        cam.setZoom(1.05 + 0.15 * land.u).setRotation(low ? 0 : look.rot * (1 - land.u));
+        look.x += (to.x - look.x) * 0.2;
+        look.y += (to.y - 20 - look.y) * 0.2;
+        frame(look.x, look.y, cam.zoom);
+      },
+    });
+    tl.eventCallback("onComplete", () => this.finishFlight(to, seed));
+  }
+  skipFlight() {
+    if (!this.flightTimeline) return;
+    this.app.wind.stop();
+    this.flightTimeline.progress(1);
+  }
+  finishFlight(to, seed) {
+    if (!this.travelling) return;
+    const app = this.app,
+      cam = this.cameras.main;
+    this.flightTimeline = null;
+    if (seed?.active) gsap.killTweensOf(seed), seed.destroy();
+    app.wind.stop();
+    this.travelling = false;
+    this.cinematic = false;
+    this.cineBiome = null;
+    this.player.setPosition(to.x, to.y).setTexture("hero-idle0-0").setVisible(true);
+    this.player.body.enable = true;
+    this.player.body.reset(to.x, to.y);
+    this.squash(this.player, 1.75, 1.45, 1.6, 260);
+    this.traverse = new Traversal({ ...app.state.traversal, z: 0, platform: null, climb: null }, to.x, to.y);
+    this.safeFoot = { x: to.x, y: to.y };
+    app.state.x = to.x;
+    app.state.y = to.y;
+    cam.setRotation(0);
+    cam.useBounds = true;
+    // Move the anchor to the landing spot before following: startFollow snaps
+    // to the anchor, which still sits at the take-off station.
+    if (this.walkVel) this.walkVel.x = this.walkVel.y = 0;
+    this.lastWalk = { x: to.x, y: to.y };
+    // startFollow snaps to the anchor; resume from the landing framing and let
+    // the follow lerp settle the last few pixels instead of cutting.
+    const mx = cam.midPoint.x,
+      my = cam.midPoint.y;
+    this.renderHeight();
+    cam.setZoom(1.2).startFollow(this.cameraAnchor, true, 0.08, 0.08);
+    cam.centerOn(mx, my);
+    this.syncBiome(true);
+    this.makeEscort();
+    app.mode = "play";
+    app.resetInput(true);
+    app.refreshHud();
+    app.save(false);
   }
   burst(x, y, color) {
     for (let i = 0; i < 12; i++) {
@@ -1296,6 +1600,15 @@ export class WorldScene extends Phaser.Scene {
       this.questRing.lineStyle(1, 0xa5d6bc, 0.65);
       this.questRing.strokeEllipse(m.x, m.y - m.z + 5, 34, 12);
     }
+    for (const m of this.markers) {
+      if (m.station === undefined) continue;
+      if (!s.settings.low) m.sprite.angle = Math.sin(time / 1300 + m.sprite.stationSeed) * 2.2 + windAt(m.x, m.y, time) * 1.6;
+      if (!this.travelling) {
+        const awake = s.travel.stations.includes(m.station);
+        this.questRing.lineStyle(1, awake ? 0xf4f1dc : 0xe9c75a, 0.35 + 0.2 * Math.sin(time / 500 + m.station));
+        this.questRing.strokeEllipse(m.x, m.y + 4, 46 + Math.sin(time / 600) * 3, 15);
+      }
+    }
     const status = document.getElementById("status");
     if (this.traverse.climb) {
       this.app.setStatus(this.app.l(TRAIL_UI.controls));
@@ -1324,7 +1637,7 @@ export class WorldScene extends Phaser.Scene {
         Math.hypot(a[0] - this.player.x, a[1] - this.player.y) -
         Math.hypot(b[0] - this.player.x, b[1] - this.player.y),
     )[0];
-    if (target) {
+    if (target && !this.travelling) {
       const d = Math.hypot(
           target[0] - this.player.x,
           target[1] - this.player.y,
@@ -1379,6 +1692,10 @@ export class WorldScene extends Phaser.Scene {
       }
     }
     this.overlay.clear();
+    // Screen-space layers ignore camera zoom so they always cover the view (flight zooms far out).
+    const iz = 1 / cam.zoom;
+    for (const layer of [this.overlay, this.weather])
+      layer.setScale(iz).setPosition(480 - 480 * iz, 270 - 270 * iz);
     const night = this.isNight();
     const timeNight=s.time>=19||s.time<6;
     let darkness=timeNight?.38:(this.passages?.mix||[{biome:b,weight:1}]).reduce((v,m)=>v+m.weight*(m.biome.id===7?.38:m.biome.id===1?.19:m.biome.id===4?.20:Math.max(0,Math.cos(((s.time-1)*Math.PI)/12))*.28),0);
