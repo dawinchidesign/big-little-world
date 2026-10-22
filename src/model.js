@@ -5,6 +5,7 @@ import { emptyCrossing, validateCrossing } from './crossing-data.js';
 import {emptyObjects,validateObjects} from './environment-model.js';
 import {emptyHorizon,validateHorizon} from './expedition-data.js';
 import { emptyTravel, validateTravel } from './travel.js';
+import { emptyWorld, validateWorld } from './interactions.js';
 import {
   emptyColony,
   CHAMBERS,
@@ -63,6 +64,7 @@ export function initialState() {
     objects: emptyObjects(),
     horizon: emptyHorizon(),
     travel: emptyTravel(),
+    world: emptyWorld(),
     underwater: {
       active: false,
       x: 240,
@@ -98,6 +100,7 @@ export function migrateSave(input) {
     objects: validateObjects(input.objects),
     horizon: validateHorizon(input.horizon),
     travel: validateTravel(input.travel),
+    world: validateWorld(input.world),
     version: SAVE_VERSION,
   };
   for (const k of [

@@ -15,6 +15,7 @@ import { VIEWS, VIEW_UI } from "./perspectives.js";
 import { TRAILS, TRAIL_UI } from "./traversal.js";
 import { STATIONS, TRAVEL_UI } from "./travel.js";
 import { WindLayer } from "./wind.js";
+import { WORLD_UI } from "./interactions.js";
 import { CINEMATICS } from "./cinematics.js";
 import { shotPlan, shotSeconds, EXIT_SECONDS } from "./direction.js";
 import { CROSS_UI, routeTitle, routeEnding, delivered, ROOT_PATH, BRIDGE_PATH } from './crossing-data.js';
@@ -955,6 +956,7 @@ class App {
       cinema: this.t("cinema"),
       views: this.l(VIEW_UI.memory),
       trails: this.l(TRAIL_UI.title),
+      finds: this.l(WORLD_UI.tab),
       colony: this.l(COLONY_UI.notes),
       expeditions:this.l(HORIZON_UI.notes),
       source: this.t("source"),
@@ -1016,6 +1018,14 @@ class App {
           ([id, c]) =>
             `<article class="record"><strong>${esc(this.l(c.title))}</strong><button data-cine="${id}">▶ ${this.t("cinema")}</button></article>`,
         )
+        .join("");
+    } else if (tab === "finds") {
+      const w = this.state.world;
+      body += `<p class="note">${esc(this.l(WORLD_UI.hint))}</p><div class="finds-grid">${Object.entries(WORLD_UI.counts)
+        .map(([k, label]) => `<div class="find"><b>${w.counts[k] || 0}</b><span>${esc(this.l(label))}</span></div>`)
+        .join("")}</div>`;
+      body += w.facts
+        .map((k) => `<article class="record"><strong>${esc(this.l(WORLD_UI.counts[k]))}</strong><p>${esc(this.l(WORLD_UI.facts[k]))}</p></article>`)
         .join("");
     } else if (tab === "trails") {
       body += `<p class="note">${esc(this.l(TRAIL_UI.hint))}</p>`;

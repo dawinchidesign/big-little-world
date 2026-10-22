@@ -68,7 +68,9 @@ export class Tactility{
   }
   if(m.objectAction==='dew'){
    if(item)item.spring.v+=75;else{const r=this.reaction(o);r.v+=75;}
-   this.emit(o.x,o.y-25,'dew');app.audio.play('water');return;
+   this.emit(o.x,o.y-25,'dew');app.audio.play('water');
+   // A fresh drop can be drunk: a short burst of speed (living world).
+   scene.drinkDew?.(o,PHYSICAL_UI.dew);return;
   }
   if(m.objectAction==='flower'){
    const r=this.reaction(o);r.v+=95;this.emit(o.x,o.y-o.displayHeight*.6,'pollen',14);app.audio.play('rustle');
@@ -77,7 +79,8 @@ export class Tactility{
     const visitors=scene.isNight()?['moth']:['bee','bumblebee','butterfly'];
     const pollinator=app.state.eco.safety>30&&scene.npcs.filter(n=>visitors.includes(n.species)&&distance(n,o)<450).sort((a,b)=>distance(a,o)-distance(b,o))[0];
     if(pollinator){pollinator.state='feed';pollinator.target={x:o.x,y:o.y-o.displayHeight*.6};pollinator.timer=5500;}
-    app.toast(app.l(PHYSICAL_UI.nectar));
+    if(app.state.world?.facts.includes('shake'))app.toast(app.l(PHYSICAL_UI.nectar));
+    scene.worldVerb?.('shake',PHYSICAL_UI.flower);
    }return;
   }
   if(m.objectAction==='log'){scene.observing=true;app.refreshHud();this.sheltered=true;this.emit(scene.player.x,scene.player.y,'dust',3);app.audio.play('wood');}

@@ -19,7 +19,7 @@ export const PHYSICAL_UI={
  blocked:T('Здесь нет места. Отойди от воды или прохода.','Мұнда орын жоқ. Судан не өткелден шегін.','No room here. Step away from the water or passage.'),
  cap:T('Перевернуть крышку','Қақпақты аудару','Turn the cap over'),
  pebble:T('Упереться и толкнуть камешек','Тасқа тіреліп итеру','Brace and push the pebble'),
- dew:T('Коснуться капли','Тамшыға тию','Touch the dewdrop'),
+ dew:T('Выпить росинку','Шық тамшысын ішу','Drink the dewdrop'),
  flower:T('Осторожно склонить цветок','Гүлді абайлап ию','Gently bend the flower'),
  log:T('Укрыться и наблюдать','Паналанып бақылау','Take shelter and observe'),
  lifted:T('Неси лист к влажному месту. E — положить; Q рядом — наблюдать под укрытием.','Жапырақты ылғалды жерге апар. E — қою; жанында Q — панада бақылау.','Carry the leaf to a damp spot. E places it; Q nearby observes beneath the shelter.'),

@@ -1894,3 +1894,26 @@ body {
     font-size: 8px;
   }
 }
+
+/* Finds tab */
+.finds-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  margin: 6px 0 18px;
+}
+.find {
+  padding: 12px 14px;
+  border: 1px solid #6d8b7055;
+  background: #1b3833;
+}
+.find b {
+  display: block;
+  font: 26px Story;
+  color: #f0d592;
+  font-weight: normal;
+}
+.find span {
+  font-size: 10px;
+  color: #b8c8b0;
+}

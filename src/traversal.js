@@ -43,9 +43,9 @@ export const TRAIL_UI = {
     "Observation already in your journal",
   ),
   hint: T(
-    "Ищите стебли с бирюзовыми насечками. На сенсорном экране двигайте джойстик вверх или вниз.",
-    "Көгілдір белгісі бар сабақтарды іздеңіз. Сенсорлық экранда джойстикті жоғары не төмен жылжытыңыз.",
-    "Look for stems with turquoise marks. On touchscreens, move the joystick up or down.",
+    "Ищите высокие стебли со светящейся меткой у основания. На сенсорном экране двигайте джойстик вверх или вниз.",
+    "Түбінде жарқыраған белгісі бар биік сабақтарды іздеңіз. Сенсорлық экранда джойстикті жоғары не төмен жылжытыңыз.",
+    "Look for tall stems with a glowing marker at the base. On touchscreens, move the joystick up or down.",
   ),
 };
 
@@ -180,12 +180,12 @@ export class Traversal {
     this.lastY = p.y;
     return true;
   }
-  jump() {
+  jump(power = 245) {
     if (this.airborne) return false;
     this.climb = null;
     this.platform = null;
     this.airborne = true;
-    this.vz = 245;
+    this.vz = power;
     this.gliding = false;
     return true;
   }

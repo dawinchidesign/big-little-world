@@ -17,6 +17,7 @@ import { BW, BH, WW, WH, biomeAt, activeStage, npcBehavior } from "./model.js";
 import { VIEWS } from "./perspectives.js";
 import { UW } from "./underwater.js";
 import { STATIONS, TRAVEL_UI, makeTravelTextures } from "./travel.js";
+import { PROP_ACTIONS, WORLD_UI } from "./interactions.js";
 import { COLONY_UI, COLONY_ENTRANCE } from "./colony-data.js";
 import {
   Traversal,
@@ -214,6 +215,7 @@ export class WorldScene extends Phaser.Scene {
     }
     this.travelling = false;
     this.cineBiome = null;
+    this.boostUntil = 0;
     this.clearCinematic();
     this.observing = false;
     this.scanning = false;
@@ -353,7 +355,16 @@ export class WorldScene extends Phaser.Scene {
       npcs = [];
     const bx = b.cell[0] * BW,
       by = b.cell[1] * BH;
+    const cleaned = this.app.state.world.cleaned;
+    let pidCounter = 0;
     const addProp = (x, y, key, scale, solid = false) => {
+      // Stable ids (same seed, same order) let cleared litter stay cleared across visits.
+      const pid = b.id * 1000 + pidCounter++;
+      if (cleaned.includes(pid)) {
+        r();
+        r();
+        return null;
+      }
       const hi = [
         "grass",
         "flower",
@@ -372,6 +383,8 @@ export class WorldScene extends Phaser.Scene {
       o.baseY = y;
       o.baseAngle = (r() - 0.5) * 9;
       o.kind = key;
+      o.pid = pid;
+      o.baseScale = scale;
       o.seed = r() * 7;
       const contactShadow=this.add.image(x,y-2,'shadow').setScale(Math.min(2.2,o.displayWidth/115),.33).setAlpha(solid ? .25 : .13).setDepth(1);
       o.groundShadow=contactShadow;objects.push(contactShadow);
@@ -849,6 +862,7 @@ export class WorldScene extends Phaser.Scene {
       });
       return;
     }
+    if (near.kind === "prop") return this.propAction(near.data);
     if (near.station !== undefined) return this.stationAction(near);
     if (near.dive) return this.app.enterUnderwater();
     if (near.colony) return this.app.enterColony();
@@ -918,6 +932,108 @@ export class WorldScene extends Phaser.Scene {
     if (st.text)
       this.app.dialog(QUESTS[this.app.state.quest].intro, st.text, act);
     else act();
+  }
+  // Touching the world: each verb has its own feedback, sound and (once) a short fact.
+  propAction(o) {
+    const a = PROP_ACTIONS[o.kind];
+    if (!a || !o.active) return;
+    const s = this.app.state,
+      w = s.world,
+      now = this.animTime,
+      base = o.baseScale || 1,
+      side = Math.sign(o.x - this.player.x) || 1;
+    let note = null;
+    switch (a.verb) {
+      case "bounce": {
+        if (this.traverse.airborne || this.traverse.climb) return;
+        this.squash(o, base * 1.25, base * 0.72, base, 420);
+        this.traverse.jump(520);
+        this.jumping = 1;
+        this.app.audio.cue?.("boing");
+        this.dust(this.player.x, this.player.y, 8, 0xd9e6c8);
+        o.readyAt = now + 900;
+        break;
+      }
+      case "search": {
+        o.spent = true;
+        this.app.audio.play("rustle");
+        this.squash(o, base * 1.08, base * 0.86, base, 320);
+        gsap.fromTo(o, { angle: o.baseAngle - 6 * side }, { angle: o.baseAngle, duration: 0.6, ease: "elastic.out(1,0.4)" });
+        const pool = a.reveal;
+        const found = Math.random() < 0.8 ? pool[Math.floor(Math.random() * pool.length)] : null;
+        if (found) this.revealCritter(found, o);
+        else note = this.app.l(WORLD_UI.empty);
+        break;
+      }
+      case "clean": {
+        o.spent = true;
+        this.app.audio.cue?.("pop");
+        gsap.to(o, { y: o.y - 26, alpha: 0, angle: o.angle + 25 * side, duration: 0.55, ease: "power2.in", onComplete: () => o.destroy() });
+        o.groundShadow?.destroy();
+        o.glow?.destroy();
+        o.block?.destroy();
+        w.cleaned.push(o.pid);
+        this.burst(o.x, o.y - 10, 0xe9e2c4);
+        note = `${this.app.l(WORLD_UI.cleaned)}: ${w.counts.clean + 1}`;
+        if ((w.counts.clean + 1) % 5 === 0) {
+          s.eco.safety = Math.min(100, s.eco.safety + 2);
+          note = this.app.l(WORLD_UI.cleaner);
+          this.app.audio.cue?.("chime");
+        }
+        break;
+      }
+      case "seeds": {
+        const r = this.tactility.reaction(o);
+        r.v += 80 * side;
+        this.app.audio.play("rustle");
+        for (let i = 0; i < 3; i++) this.burst(o.x + side * 6, o.y - o.displayHeight * 0.6, 0xc9ad74);
+        o.readyAt = now + 6000;
+        break;
+      }
+    }
+    this.worldVerb(a.verb, a.label, note);
+  }
+  // Count a verb for the journal; the first time, tell its fact.
+  worldVerb(verb, label, note = null) {
+    const w = this.app.state.world;
+    w.counts[verb]++;
+    if (!w.facts.includes(verb)) {
+      w.facts.push(verb);
+      this.app.dialog(label, WORLD_UI.facts[verb], () => this.app.save(false));
+    } else {
+      if (note) this.app.toast(note);
+      this.app.save(false);
+    }
+  }
+  // Drinking a dewdrop: a short burst of speed; the drop grows back after 45 s.
+  drinkDew(o, label) {
+    const now = this.animTime;
+    if (now < (o.readyAt || 0)) return false;
+    const base = o.baseScale || o.scaleX || 1;
+    this.boostUntil = now + 12000;
+    this.app.audio.cue?.("drink");
+    this.app.audio.cue?.("sparkle");
+    this.squash(o, base * 1.15, base * 0.7, base * 0.3, 500);
+    o.readyAt = now + 45000;
+    this.time.delayedCall(45000, () => o.active && this.squash(o, base * 0.3, base * 0.3, base, 1200));
+    this.burst(o.x, o.y - 20, 0xd8f6f2);
+    this.worldVerb("dew", label, this.app.l(WORLD_UI.fresh));
+    return true;
+  }
+  // A hidden creature scurries out from under a leaf, stone or bark.
+  revealCritter(id, from) {
+    const c = this.add.image(from.x, from.y - 4, id + "0").setScale(id === "ant" ? 0.65 : 0.85).setDepth(from.y + 3);
+    const a = Math.random() * Math.PI * 2,
+      to = { x: from.x + Math.cos(a) * 130, y: from.y + Math.sin(a) * 70 };
+    c.rotation = Math.atan2(to.y - c.y, to.x - c.x) + Math.PI / 2;
+    const anim = this.time.addEvent({ delay: 60, loop: true, callback: () => c.active && c.setTexture(id + (Math.floor(this.animTime / 90) % 4)) });
+    gsap
+      .timeline({ onComplete: () => (anim.remove(), c.destroy()) })
+      .from(c, { y: c.y + 8, alpha: 0, duration: 0.25 })
+      .to(c, { x: to.x, y: to.y, duration: 1.8, ease: "power1.in" }, 0.35)
+      .to(c, { alpha: 0, duration: 0.4 }, "-=0.4");
+    this.dust(from.x, from.y, 4, 0x9b8a6a);
+    this.discover(id);
   }
   // Squash-and-stretch through setScale, which compensates high-density atlas art.
   // (Tweening scaleX/scaleY directly would bypass that and blow sprites up ×4.)
@@ -1251,6 +1367,15 @@ export class WorldScene extends Phaser.Scene {
     }
     let speed = this.observing ? 90 : k.SHIFT.isDown ? 250 : 185;
     if (this.jumping && s.abilities.includes("glider")) speed = 270;
+    // Dew freshness: a short burst of speed with a glittering trail.
+    if (this.boostUntil > time) {
+      speed *= 1.35;
+      if (len > 0.05 && time - (this.lastSpark || 0) > 110 && !s.settings.low) {
+        this.lastSpark = time;
+        const p = this.add.rectangle(this.player.x + (Math.random() - 0.5) * 12, this.player.y - 6 - this.traverse.z - Math.random() * 30, 2, 2, 0xdffcff).setDepth(this.player.depth + 1);
+        gsap.to(p, { y: p.y - 14, alpha: 0, duration: 0.7, onComplete: () => p.destroy() });
+      }
+    }
     const height = this.traverse.tick({
       x: this.player.x,
       y: this.player.y,
@@ -1555,6 +1680,17 @@ export class WorldScene extends Phaser.Scene {
       ...this.tactility.markers().map(o=>({...o,d:dist(o,this.player)})),
       ...this.crossing.markers().map(o=>({...o,d:dist(o,this.player)})),
       ...this.markers.map((o) => ({ ...o, d: dist(o, this.player) })),
+      ...this.props
+        .filter((o) => o.active && o.visible && !o.spent && PROP_ACTIONS[o.kind] && this.animTime >= (o.readyAt || 0))
+        .map((o) => ({
+          kind: "prop",
+          data: o,
+          x: o.x,
+          y: o.y,
+          reach: PROP_ACTIONS[o.kind].radius * Math.min(1.6, Math.max(0.8, o.baseScale || 1)),
+          stage: { title: PROP_ACTIONS[o.kind].label },
+          d: dist(o, this.player),
+        })),
       ...this.npcs
         .filter((o) => o.visible)
         .map((o) => ({
@@ -1568,7 +1704,7 @@ export class WorldScene extends Phaser.Scene {
       (o) =>
         Math.abs((o.z || 0) - this.traverse.z) < 42 &&
         o.d <
-          (o.routeAction
+          (o.reach ? o.reach : o.routeAction
             ? 65
             : o.kind === "quest"
               ? 115
@@ -1578,9 +1714,9 @@ export class WorldScene extends Phaser.Scene {
     );
     candidates.sort(
       (a, b) =>
-        (a.objectAction==='drop' ? -100 : a.kind === "quest" ? -50 : a.crossingAction ? -35 : a.objectAction ? (a.d<40?-30:-8) : 0) +
+        (a.objectAction==='drop' ? -100 : a.kind === "quest" ? -50 : a.crossingAction ? -35 : a.objectAction || a.kind === "prop" ? (a.d<40?-30:-8) : 0) +
         a.d -
-        ((b.objectAction==='drop' ? -100 : b.kind === "quest" ? -50 : b.crossingAction ? -35 : b.objectAction ? (b.d<40?-30:-8) : 0) + b.d),
+        ((b.objectAction==='drop' ? -100 : b.kind === "quest" ? -50 : b.crossingAction ? -35 : b.objectAction || b.kind === "prop" ? (b.d<40?-30:-8) : 0) + b.d),
     );
     this.near = candidates[0] || null;
     if (this.near?.kind === "npc") this.discover(this.near.data.species);

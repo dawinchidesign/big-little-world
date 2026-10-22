@@ -8,6 +8,7 @@ import {checkEnvironment} from './runtime-environment.mjs';
 import {checkExpeditions} from './runtime-expedition.mjs';
 import assert from "node:assert/strict";
 import { migrateSave } from "../src/model.js";
+import { BIOMES as BIOMES_ALL } from "../src/content.js";
 const require = createRequire(import.meta.url);
 const { createCanvas, Image: NativeImage, loadImage } = require("@napi-rs/canvas");
 const errors = [];
@@ -755,6 +756,45 @@ const saved=migrateSave(JSON.parse(JSON.stringify(app.state)));
 assert.deepEqual(saved.travel.stations.slice().sort(),[0,1],'awakened stations survive a save round trip');
 app.state.x=beforeWind.x;app.state.y=beforeWind.y;app.scene.reset(app.state);
 console.log('DANDELION WIND: STATIONS, AWAKENING, WIND MAP, FLIGHT AND LANDING OK');
+}
+// Living world: mushroom bounce, look under a stone, clear litter, shake a pod,
+// drink dew; counters, first-time facts and the journal Finds tab.
+{
+const before={x:app.state.x,y:app.state.y};
+const visit=(kind)=>{
+  for(const b of [0,1,2,3,4,5,6,7,8])app.scene.spawnBiome(BIOMES_ALL[b]);
+  const o=app.scene.props.find(p=>p.active&&p.visible&&p.kind===kind&&!p.spent&&app.scene.animTime>=(p.readyAt||0));
+  assert(o,'a '+kind+' prop exists');
+  app.state.x=o.x;app.state.y=o.y+16;app.scene.reset(app.state);
+  for(const b of [0,1,2,3,4,5,6,7,8])app.scene.spawnBiome(BIOMES_ALL[b]);
+  const again=app.scene.props.find(p=>p.active&&p.pid===o.pid);
+  app.scene.updateNear();
+  assert.equal(app.scene.near?.kind,'prop','near a '+kind);
+  assert.equal(app.scene.near.data.pid,again.pid);
+  return again;
+};
+const w0=JSON.parse(JSON.stringify(app.state.world));
+const mush=visit('mushroom');app.scene.interact();dismiss();
+assert(app.scene.traverse.airborne&&app.scene.traverse.vz>400,'mushroom cap launches a high jump');
+assert.equal(app.state.world.counts.bounce,w0.counts.bounce+1);
+app.scene.traverse.airborne=false;app.scene.traverse.z=0;app.scene.traverse.vz=0;
+const stone=visit('rock');const seen=app.state.discovered.length;app.scene.interact();dismiss();
+assert(stone.spent,'a searched stone is spent');
+assert(app.state.world.facts.includes('search'));
+const litter=visit('plastic');app.scene.interact();dismiss();
+assert(app.state.world.cleaned.includes(litter.pid),'cleared litter is remembered');
+assert(migrateSave(JSON.parse(JSON.stringify(app.state))).world.cleaned.includes(litter.pid),'cleared litter survives a save');
+const pod=visit('seedpod');app.scene.interact();dismiss();
+assert.equal(app.state.world.counts.seeds,w0.counts.seeds+1);
+const dew=app.scene.props.find(p=>p.active&&p.kind==='dew')||null;
+if(dew){app.state.x=dew.x;app.state.y=dew.y+10;app.scene.reset(app.state);app.scene.updateNear();
+  if(app.scene.near?.objectAction==='dew'){app.scene.interact();dismiss();assert(app.scene.boostUntil>app.scene.animTime,'dew gives a burst of speed');}}
+app.openJournal('finds');
+assert(w.document.querySelector('.finds-grid'),'journal shows the Finds tab');
+assert(w.document.querySelectorAll('.find').length===6);
+app.closePanel();
+app.state.x=before.x;app.state.y=before.y;app.scene.reset(app.state);
+console.log('LIVING WORLD: BOUNCE, SEARCH, LITTER, SEEDS, DEW AND FINDS OK',JSON.stringify(app.state.world.counts));
 }
 await checkCrossings({app,w,step,tapE,dismiss,getCanvas});
 await checkEnvironment({app,w,step,tapE,dismiss,getCanvas});

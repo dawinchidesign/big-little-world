@@ -36,6 +36,11 @@ const CUES={
  // Dandelion flight: a long gust with a faint whistle, and a puff of dust on landing.
  wind:[4.2,(t,r,st)=>{const env=Math.min(1,t*1.5,(4.2-t)*1.2),k=.03+.02*Math.sin(t*2.1);st.l+=((r()-.5)-st.l)*k;st.b+=(st.l-st.b)*k;return st.b*9*env+Math.sin(t*(760+120*Math.sin(t*1.7))*6.283)*.012*env;}],
  dust:[.9,(t,r,st)=>{st.l+=((r()-.5)-st.l)*.3;st.b+=(st.l-st.b)*.3;return st.b*Math.exp(-t*5)*1.6;}],
+ // Living world: a dew sip, a mushroom bounce, a glint, and litter popping free.
+ drink:[.6,t=>Math.sin(t*(420+260*((t*9)%1))*6.283)*Math.exp(-t*4)*.1],
+ boing:[.7,t=>Math.sin(t*(180+90*Math.sin(t*28)*Math.exp(-t*4)+t*120)*6.283)*Math.exp(-t*4.5)*.2*Math.min(1,t*300)],
+ sparkle:[1.1,t=>[1174.66,1479.98,1760,2349.32].reduce((v,f,i)=>{const d=t-i*.06;return d<0?v:v+Math.sin(d*f*6.283)*Math.exp(-d*4)*.06;},0)],
+ pop:[.25,t=>Math.sin(t*(900-t*1600)*6.283)*Math.exp(-t*22)*.18],
  // Weight under the catastrophe title.
  low:[3,t=>(Math.sin(t*49*6.283)+.4*Math.sin(t*73.4*6.283))*Math.exp(-t*1.1)*(1-Math.exp(-t*25))*.55],
 };
