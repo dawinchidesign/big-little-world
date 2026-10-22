@@ -1,0 +1,7 @@
+{
+  "generator": "Built-in ImageGen",
+  "mode": "Edit",
+  "source": "parallax-bedroom.png",
+  "prompt": "Use case: lighting-weather. Edit target: the provided three-panel parallax bedroom sprite sheet. Change ONLY the TOP THIRD back-wall plane from rainy night to a fresh beautiful EARLY MORNING after rain. Preserve exactly the same wall, bookcase, window geometry, curtains, windowsill, plant and pixel style, position and dimensions. Outside the window: a pale dawn sky with warm soft golden sunlight, dewy garden flowers and the same distant buildings, no night city lights, few last rain streaks on glass. Soft warm light touches the right wall and curtain. Preserve the MIDDLE desk plane and BOTTOM bed plane completely unchanged, with their existing real alpha transparency. No people or text. Keep exact 1024x1536 sheet structure, three equal 1024x512 panels. This is a lighting variant for a game; it must align with existing planes.",
+  "output": "parallax-bedroom-dawn.png"
+}

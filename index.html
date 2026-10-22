@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#173c36" />
+    <meta
+      name="description"
+      content="Большой маленький мир — сюжетное приключение среди насекомых. Қазақша · Русский · English."
+    />
+    <title>Большой маленький мир</title>
+    <link rel="icon" href="./leaf.svg" type="image/svg+xml" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+  </head>
+  <body>
+    <div id="game" aria-label="Большой маленький мир"></div>
+    <div id="hud" hidden></div>
+    <main id="menu">
+      <p>Подготовка мира… · Әлем дайындалуда… · Preparing the world…</p>
+      <noscript>Для игры нужен JavaScript. · JavaScript is required.</noscript>
+    </main>
+    <div id="overlay" hidden></div>
+    <div id="dialog" role="dialog" aria-modal="true" hidden></div>
+    <div id="cinema" hidden></div>
+    <div id="perspective" hidden></div>
+    <div id="save-state" role="status" aria-live="polite" hidden></div>
+    <div id="toast" aria-live="polite"></div>
+    <div id="region" aria-live="polite"></div>
+    <div id="rotate" hidden></div>
+    <div id="touch" hidden>
+      <div id="stick"><div id="thumb"></div></div>
+      <div class="touch-actions">
+        <button id="touch-q">Q</button><button id="touch-jump">↟</button
+        ><button id="touch-e">E</button>
+      </div>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
