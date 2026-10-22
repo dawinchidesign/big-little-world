@@ -6,7 +6,6 @@ import { installVisuals, materialCanvas, visualEntry } from "./visuals.js";
 import { windAt } from "./atmosphere.js";
 import { ParallaxStage } from "./parallax.js";
 import { applyEffects } from "./model.js";
-import { Grade } from "./grade.js";
 export const uwSpecies = [
   "dragonflylarva",
   "daphnia",
@@ -103,8 +102,8 @@ export class UnderwaterScene extends Phaser.Scene {
     this.observing = false;
     this.scanning = false;
     const put = (key, w, h, fn) => {
-      if (visualEntry(key)) return;
       if (this.textures.exists(key)) return;
+      if (visualEntry(key)) return;
       const [c, g] = canvas(w, h);
       fn(g);
       this.textures.addCanvas(key, c);
@@ -197,6 +196,7 @@ export class UnderwaterScene extends Phaser.Scene {
       c.lineTo(43, 21);
       c.stroke();
     });
+    this.textures.get("uw-floor").setFilter(Phaser.Textures.FilterMode.LINEAR);
     this.add.image(0, 0, "uw-floor").setOrigin(0).setScale(4).setDepth(-100);
     this.obstacles = this.physics.add.staticGroup();
     const r = rng(900);
@@ -310,7 +310,6 @@ export class UnderwaterScene extends Phaser.Scene {
       .setBounds(0, 0, 1600, 1100)
       .setZoom(1.15)
       .startFollow(this.player, true, 0.07, 0.07);
-    this.grade = new Grade(this, "water");
     this.keys = this.input.keyboard.addKeys(
       "W,A,S,D,UP,DOWN,LEFT,RIGHT,E,Q,C,M,J,V,SPACE,SHIFT,ESC,F",
     );
@@ -340,11 +339,11 @@ export class UnderwaterScene extends Phaser.Scene {
       this.reset();
       this.refreshMarkers();
       this.app.refreshHud();
-      this.app.audio.enter(3, false, this.app.state.eco, "water");
+      this.app.audio.enter(3, false, this.app.state.eco);
     });
     this.refreshMarkers();
     this.app.refreshHud();
-    this.app.audio.enter(3, false, this.app.state.eco, "water");
+    this.app.audio.enter(3, false, this.app.state.eco);
     this.events.once("postupdate", () => {
       if (!this.app.state.seen.includes("underwater")) {
         this.app.state.seen.push("underwater");
@@ -391,7 +390,6 @@ export class UnderwaterScene extends Phaser.Scene {
   }
   update(time, delta) {
     this.ambienceLayers?.update(time);
-    this.grade?.update(Math.min(delta, 50) / 1000);
     if (!this.player || this.app.mode !== "play") {
       this.player?.setVelocity(0);
       return;
@@ -436,12 +434,13 @@ export class UnderwaterScene extends Phaser.Scene {
         o.y > this.player.y &&
         Math.abs(o.x - this.player.x) < o.displayWidth * 0.28 &&
         o.y - this.player.y < o.displayHeight * 0.8;
-      o.setAlpha(o.alpha + ((hidesHero ? 0.36 : 1) - o.alpha) * (1 - Math.exp(-dt * 15)));
+      o.setAlpha(hidesHero ? 0.36 : 1);
     }
     for (const o of this.fishes) {
       o.x = ((time * 0.024 + o.seed * 195) % 1850) - 100;
       o.y = o.homeY + Math.sin(time / 1300 + o.seed) * 28;
-      o.setTexture('fish'+(this.app.state.settings.low?0:Math.floor(time/145+o.seed)%4));
+      // Four illustrated tail-beat frames, each fish with its own phase.
+      o.setTexture("fish" + (this.app.state.settings.low ? 0 : Math.floor(time / 145 + o.seed) % 4));
       o.setFlipX(true);
     }
     for (const o of this.npcs) {

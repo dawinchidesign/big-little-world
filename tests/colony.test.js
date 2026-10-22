@@ -76,7 +76,7 @@ test("v3 saves gain a safe underground state and v4 preserves entry, notes and c
   old.version = 3;
   delete old.colony;
   const migrated = migrateSave(old);
-  assert.equal(migrated.version, 4);
+  assert.equal(migrated.version, 7);
   assert.equal(migrated.colony.active, false);
   const state = initialState();
   state.quest = 1;

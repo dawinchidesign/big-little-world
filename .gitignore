@@ -1,5 +1,7 @@
 node_modules/
 dist/
+release/
 .vercel/
 .DS_Store
-release/
+__pycache__/
+tmp/

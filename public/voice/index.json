@@ -1,0 +1,2197 @@
+{
+  "provider": "ElevenLabs",
+  "model": "eleven_v3",
+  "entries": [
+    {
+      "id": "cine-prologue-0",
+      "role": "hero",
+      "text": [
+        "Интересно… А как выглядит наш мир для тех, кто меньше нас в сотни раз?",
+        "Қызық… Бізден жүздеген есе кішкентай тіршілік иелеріне әлем қалай көрінеді екен?",
+        "I wonder… What does our world look like to those hundreds of times smaller than us?"
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/cine-prologue-0.mp3",
+          "duration": 4.258
+        },
+        "kk": {
+          "file": "kk/cine-prologue-0.mp3",
+          "duration": 6.4
+        },
+        "en": {
+          "file": "en/cine-prologue-0.mp3",
+          "duration": 6.087
+        }
+      }
+    },
+    {
+      "id": "cine-prologue-1",
+      "role": "narrator",
+      "text": [
+        "Учебник остался открытым. В шуме дождя слышится шелест травы. День постепенно превращается в сон.",
+        "Оқулық ашық қалды. Жаңбыр үнінен шөп сыбдыры естіледі. Күн біртіндеп түске айналады.",
+        "The textbook lies open. Beneath the rain is a rustle of grass. The day slips slowly into a dream."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/cine-prologue-1.mp3",
+          "duration": 9.273
+        },
+        "kk": {
+          "file": "kk/cine-prologue-1.mp3",
+          "duration": 6.557
+        },
+        "en": {
+          "file": "en/cine-prologue-1.mp3",
+          "duration": 8.568
+        }
+      }
+    },
+    {
+      "id": "cine-prologue-2",
+      "role": "narrator",
+      "text": [
+        "Капли — как стеклянные горы. Трава — выше деревьев. Это не лес. Это обычный газон.",
+        "Тамшылар — шыны таудай. Шөп — ағаштан биік. Бұл орман емес. Бұл кәдімгі көгал.",
+        "Droplets like glass mountains. Grass taller than trees. This is not a forest. It is an ordinary lawn."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/cine-prologue-2.mp3",
+          "duration": 7.576
+        },
+        "kk": {
+          "file": "kk/cine-prologue-2.mp3",
+          "duration": 6.322
+        },
+        "en": {
+          "file": "en/cine-prologue-2.mp3",
+          "duration": 8.516
+        }
+      }
+    },
+    {
+      "id": "cine-prologue-3",
+      "role": "lada",
+      "text": [
+        "Ты не из нашего мира… Но, возможно, именно ты сможешь помочь ему. Добро пожаловать в большой маленький мир.",
+        "Сен біздің әлемнен емессің… Бірақ оған сен көмектесе алатын шығарсың. Үлкен кішкентай әлемге қош келдің.",
+        "You are not from our world… But perhaps you can help it. Welcome to the great little world."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/cine-prologue-3.mp3",
+          "duration": 10.736
+        },
+        "kk": {
+          "file": "kk/cine-prologue-3.mp3",
+          "duration": 10.945
+        },
+        "en": {
+          "file": "en/cine-prologue-3.mp3",
+          "duration": 7.549
+        }
+      }
+    },
+    {
+      "id": "cine-awakening-0",
+      "role": "lada",
+      "text": [
+        "Не спеши. Сначала посмотри, кто живёт рядом. Иногда лучший способ помочь — понять.",
+        "Асықпа. Алдымен айналаңда кім тұратынын қара. Кейде көмектесудің ең жақсы жолы — түсіну.",
+        "Take your time. First, look at who lives beside you. Sometimes understanding is the best way to help."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/cine-awakening-0.mp3",
+          "duration": 7.68
+        },
+        "kk": {
+          "file": "kk/cine-awakening-0.mp3",
+          "duration": 9.326
+        },
+        "en": {
+          "file": "en/cine-awakening-0.mp3",
+          "duration": 7.941
+        }
+      }
+    },
+    {
+      "id": "cine-citadel-0",
+      "role": "narrator",
+      "text": [
+        "Один муравей видит крошку. Колония видит дорогу. Наш дом держится на тысячах маленьких взаимодействий.",
+        "Бір құмырсқа үгіндіні көреді. Колония жолды көреді. Үйіміз мыңдаған шағын өзара әрекетке сүйенеді.",
+        "One ant sees a crumb. The colony finds a path. Our home is held together by thousands of small interactions."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/cine-citadel-0.mp3",
+          "duration": 9.43
+        },
+        "kk": {
+          "file": "kk/cine-citadel-0.mp3",
+          "duration": 6.975
+        },
+        "en": {
+          "file": "en/cine-citadel-0.mp3",
+          "duration": 7.863
+        }
+      }
+    },
+    {
+      "id": "cine-citadel-1",
+      "role": "narrator",
+      "text": [
+        "У расплода своя забота: кормить личинок, переносить яйца и куколок туда, где условия лучше. После ливня один из путей оборвался.",
+        "Ұрпаққа күтім керек: дернәсілді қоректендіріп, жұмыртқа мен қуыршақты қолайлы жерге тасимыз. Нөсерден кейін бір жол үзілді.",
+        "The brood needs care: feeding larvae and moving eggs and pupae to suitable conditions. The storm broke one of our routes."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/cine-citadel-1.mp3",
+          "duration": 11.546
+        },
+        "kk": {
+          "file": "kk/cine-citadel-1.mp3",
+          "duration": 8.777
+        },
+        "en": {
+          "file": "en/cine-citadel-1.mp3",
+          "duration": 9.404
+        }
+      }
+    },
+    {
+      "id": "cine-citadel-2",
+      "role": "hero",
+      "text": [
+        "Матка не сидит на троне. Рабочие не ждут команды. Весь этот город — множество маленьких действий, связанных друг с другом.",
+        "Аналық тақта отырған жоқ. Жұмысшылар бұйрық күтпейді. Бұл қала — бір-бірімен байланысқан көптеген шағын әрекет.",
+        "The queen is not on a throne. The workers do not wait for orders. This whole city is made of small, connected actions."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/cine-citadel-2.mp3",
+          "duration": 6.818
+        },
+        "kk": {
+          "file": "kk/cine-citadel-2.mp3",
+          "duration": 5.956
+        },
+        "en": {
+          "file": "en/cine-citadel-2.mp3",
+          "duration": 9.43
+        }
+      }
+    },
+    {
+      "id": "cine-valley-0",
+      "role": "narrator",
+      "text": [
+        "Они видят аккуратный газон. Мы видим закрытую столовую. Цветы — это не только красота.",
+        "Олар ұқыпты көгалды көреді. Біз жабылған асхананы көреміз. Гүл тек әдемілік емес.",
+        "They see a tidy lawn. We see a closed dining room. Flowers are more than decoration."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/cine-valley-0.mp3",
+          "duration": 7.367
+        },
+        "kk": {
+          "file": "kk/cine-valley-0.mp3",
+          "duration": 6.139
+        },
+        "en": {
+          "file": "en/cine-valley-0.mp3",
+          "duration": 6.06
+        }
+      }
+    },
+    {
+      "id": "cine-catastrophe-0",
+      "role": "lada",
+      "text": [
+        "Никто не хотел строить эту стену. Кто-то просто отпустил упаковку. Но маленькие последствия становятся большими, когда ты мал.",
+        "Бұл қабырғаны ешкім салғысы келген жоқ. Біреу қаптаманы тастай салды. Бірақ кішкентай болсаң, ұсақ салдар үлкенге айналады.",
+        "Nobody meant to build this wall. Someone simply dropped a wrapper. Small consequences become enormous when you are small."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/cine-catastrophe-0.mp3",
+          "duration": 10.815
+        },
+        "kk": {
+          "file": "kk/cine-catastrophe-0.mp3",
+          "duration": 10.449
+        },
+        "en": {
+          "file": "en/cine-catastrophe-0.mp3",
+          "duration": 9.352
+        }
+      }
+    },
+    {
+      "id": "cine-night-0",
+      "role": "lada",
+      "text": [
+        "Прислушайся. Ночная жизнь продолжается, даже когда люди её не видят. Мы тоже нуждаемся в своём времени суток.",
+        "Тыңда. Адамдар көрмесе де, түнгі тіршілік жалғасады. Бізге де өз тәулік мезгіліміз қажет.",
+        "Listen. Night life continues even when people cannot see it. We need our own part of the day too."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/cine-night-0.mp3",
+          "duration": 10.162
+        },
+        "kk": {
+          "file": "kk/cine-night-0.mp3",
+          "duration": 7.758
+        },
+        "en": {
+          "file": "en/cine-night-0.mp3",
+          "duration": 7.419
+        }
+      }
+    },
+    {
+      "id": "cine-migration-0",
+      "role": "lada",
+      "text": [
+        "Сегодня мы открыли проход. Завтра людям придётся изменить то, что делает этот путь опасным. Спасение — начало заботы.",
+        "Бүгін өткел аштық. Ертең адамдар бұл жолды қауіпті ететін жағдайды өзгертуі керек. Құтқару — қамқорлықтың бастауы.",
+        "Today we opened a passage. Tomorrow people must change what makes it dangerous. Rescue is the beginning of care."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/cine-migration-0.mp3",
+          "duration": 10.162
+        },
+        "kk": {
+          "file": "kk/cine-migration-0.mp3",
+          "duration": 9.979
+        },
+        "en": {
+          "file": "en/cine-migration-0.mp3",
+          "duration": 9.247
+        }
+      }
+    },
+    {
+      "id": "cine-restoration-0",
+      "role": "hero",
+      "text": [
+        "Я думал, что должен всё исправить сам. Но живому миру нужны связи, время и место. И меньше наших преград.",
+        "Бәрін өзім түзетуім керек деп ойладым. Бірақ тірі әлемге байланыс, уақыт пен орын керек. Біздің кедергілеріміз аз болса екен.",
+        "I thought I had to fix everything myself. But life needs connections, time and space. And fewer obstacles from us."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/cine-restoration-0.mp3",
+          "duration": 7.158
+        },
+        "kk": {
+          "file": "kk/cine-restoration-0.mp3",
+          "duration": 7.915
+        },
+        "en": {
+          "file": "en/cine-restoration-0.mp3",
+          "duration": 8.411
+        }
+      }
+    },
+    {
+      "id": "cine-ending-0",
+      "role": "lada",
+      "text": [
+        "Теперь ты знаешь, насколько велик наш маленький мир. Но помни: его будущее зависит и от твоего мира.",
+        "Енді кішкентай әлеміміздің қаншалықты үлкен екенін білесің. Бірақ ұмытпа: оның болашағы сенің әлеміңе де байланысты.",
+        "Now you know how great our little world is. But remember: its future also depends on your world."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/cine-ending-0.mp3",
+          "duration": 8.516
+        },
+        "kk": {
+          "file": "kk/cine-ending-0.mp3",
+          "duration": 10.527
+        },
+        "en": {
+          "file": "en/cine-ending-0.mp3",
+          "duration": 9.117
+        }
+      }
+    },
+    {
+      "id": "cine-ending-1",
+      "role": "narrator",
+      "text": [
+        "Камера поднимается над цветами. Ты закрываешь глаза. На миг весь сад помещается в одной капле.",
+        "Камера гүлдерден жоғары көтеріледі. Көзіңді жұмасің. Бір сәтте бүкіл бақ бір тамшыға сыйып кетеді.",
+        "The view rises above the flowers. You close your eyes. For a moment, the whole garden fits inside one drop."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/cine-ending-1.mp3",
+          "duration": 7.367
+        },
+        "kk": {
+          "file": "kk/cine-ending-1.mp3",
+          "duration": 7.105
+        },
+        "en": {
+          "file": "en/cine-ending-1.mp3",
+          "duration": 7.993
+        }
+      }
+    },
+    {
+      "id": "cine-ending-2",
+      "role": "narrator",
+      "text": [
+        "Звук будильника. Знакомая комната. Учебник биологии. И маленький листочек на столе… которого вчера не было.",
+        "Оятқыш үні. Таныс бөлме. Биология оқулығы. Үстелде кішкентай жапырақ… кеше ол жоқ еді.",
+        "An alarm. Your familiar room. The biology textbook. And a little leaf on the desk… that was not there yesterday."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/cine-ending-2.mp3",
+          "duration": 8.96
+        },
+        "kk": {
+          "file": "kk/cine-ending-2.mp3",
+          "duration": 7.34
+        },
+        "en": {
+          "file": "en/cine-ending-2.mp3",
+          "duration": 8.098
+        }
+      }
+    },
+    {
+      "id": "cine-ending-3",
+      "role": "hero",
+      "text": [
+        "За окном — та самая божья коровка. Ты улыбаешься. Где-то за стеклом снова шелестит трава.",
+        "Терезе сыртында — сол қанқыз. Сен жымиясың. Әйнек сыртында шөп қайта сыбдырлайды.",
+        "At the window sits the same ladybird. You smile. Somewhere beyond the glass, the grass rustles again."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/cine-ending-3.mp3",
+          "duration": 5.747
+        },
+        "kk": {
+          "file": "kk/cine-ending-3.mp3",
+          "duration": 4.937
+        },
+        "en": {
+          "file": "en/cine-ending-3.mp3",
+          "duration": 7.131
+        }
+      }
+    },
+    {
+      "id": "cine-metamorphosis-0",
+      "role": "narrator",
+      "text": [
+        "Яйцо на кормовом растении. Внутри развивается новый организм. В природе этот процесс требует времени.",
+        "Қоректік өсімдіктегі жұмыртқа. Ішінде жаңа ағза дамиды. Табиғатта бұл үдеріс уақытты қажет етеді.",
+        "An egg on a host plant. A new organism develops inside. In nature, this process takes time."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/cine-metamorphosis-0.mp3",
+          "duration": 8.62
+        },
+        "kk": {
+          "file": "kk/cine-metamorphosis-0.mp3",
+          "duration": 7.027
+        },
+        "en": {
+          "file": "en/cine-metamorphosis-0.mp3",
+          "duration": 7.654
+        }
+      }
+    },
+    {
+      "id": "cine-metamorphosis-1",
+      "role": "narrator",
+      "text": [
+        "Гусеница ест и растёт, несколько раз линяет. Листья подходящего растения нужны ей так же, как взрослой бабочке — условия для жизни.",
+        "Жұлдызқұрт қоректеніп өседі, бірнеше рет түлейді. Сәйкес өсімдіктің жапырағы оған ересек көбелекке тіршілік жағдайы қажет болғандай маңызды.",
+        "The caterpillar feeds, grows and moults several times. Suitable host leaves matter as much as the adult’s habitat."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/cine-metamorphosis-1.mp3",
+          "duration": 10.553
+        },
+        "kk": {
+          "file": "kk/cine-metamorphosis-1.mp3",
+          "duration": 9.038
+        },
+        "en": {
+          "file": "en/cine-metamorphosis-1.mp3",
+          "duration": 7.993
+        }
+      }
+    },
+    {
+      "id": "cine-metamorphosis-2",
+      "role": "narrator",
+      "text": [
+        "Внутри куколки происходит глубокая перестройка. Это не сон гусеницы: формируются органы взрослой бабочки.",
+        "Қуыршақ ішінде терең өзгеріс жүреді. Бұл жұлдызқұрттың ұйқысы емес: ересек көбелектің мүшелері қалыптасады.",
+        "Major reorganisation happens inside the pupa. It is not simply a sleeping caterpillar: adult structures develop."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/cine-metamorphosis-2.mp3",
+          "duration": 8.255
+        },
+        "kk": {
+          "file": "kk/cine-metamorphosis-2.mp3",
+          "duration": 7.027
+        },
+        "en": {
+          "file": "en/cine-metamorphosis-2.mp3",
+          "duration": 7.706
+        }
+      }
+    },
+    {
+      "id": "cine-metamorphosis-3",
+      "role": "lada",
+      "text": [
+        "После выхода крылья расправляются и укрепляются — не мгновенно. Взрослая бабочка может искать партнёра и откладывать яйца: цикл продолжается.",
+        "Шыққаннан кейін қанаты жайылып, қатаяды — бұл бірден болмайды. Ересек көбелек жұбын іздеп, жұмыртқа салады: айналым жалғасады.",
+        "After emergence the wings expand and harden, which takes time. The adult can find a mate and lay eggs: the cycle continues."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/cine-metamorphosis-3.mp3",
+          "duration": 11.546
+        },
+        "kk": {
+          "file": "kk/cine-metamorphosis-3.mp3",
+          "duration": 11.494
+        },
+        "en": {
+          "file": "en/cine-metamorphosis-3.mp3",
+          "duration": 9.639
+        }
+      }
+    },
+    {
+      "id": "quest-scout-opening",
+      "role": "lada",
+      "text": [
+        "Ты не из нашего мира… Но, возможно, именно ты сможешь помочь ему. Муравей потерял тропу после дождя. Найди его у корня.",
+        "Сен біздің әлемнен емессің… Бірақ оған сен көмектесе алатын шығарсың. Жаңбырдан кейін құмырсқа жолын жоғалтты. Оны тамыр жанынан тап.",
+        "You are not from our world… But perhaps you can help it. An ant lost the trail after the rain. Find him by the root."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/quest-scout-opening.mp3",
+          "duration": 9.691
+        },
+        "kk": {
+          "file": "kk/quest-scout-opening.mp3",
+          "duration": 11.912
+        },
+        "en": {
+          "file": "en/quest-scout-opening.mp3",
+          "duration": 9.561
+        }
+      }
+    },
+    {
+      "id": "quest-scout-conclusion",
+      "role": "narrator",
+      "text": [
+        "Следы, запахи и ориентиры помогают общественным насекомым находить путь.",
+        "Іздер, иіс пен белгілер қоғамдық жәндіктерге жол табуға көмектеседі.",
+        "Scents, tracks and landmarks help social insects navigate."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/quest-scout-conclusion.mp3",
+          "duration": 5.747
+        },
+        "kk": {
+          "file": "kk/quest-scout-conclusion.mp3",
+          "duration": 5.094
+        },
+        "en": {
+          "file": "en/quest-scout-conclusion.mp3",
+          "duration": 4.31
+        }
+      }
+    },
+    {
+      "id": "quest-scout-stage-0",
+      "role": "narrator",
+      "text": [
+        "Вода смыла запах! Но я помню три ориентира: росу, согнутую травинку и камешек.",
+        "Су иісті шайып кетті! Бірақ үш белгіні білемін: шық, иілген шөп пен тас.",
+        "The water washed away our scent! I remember three landmarks: dew, a bent blade and a stone."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/quest-scout-stage-0.mp3",
+          "duration": 7.027
+        },
+        "kk": {
+          "file": "kk/quest-scout-stage-0.mp3",
+          "duration": 5.904
+        },
+        "en": {
+          "file": "en/quest-scout-stage-0.mp3",
+          "duration": 6.975
+        }
+      }
+    },
+    {
+      "id": "quest-scout-stage-1",
+      "role": "narrator",
+      "text": [
+        "Влажная земля хранит следы. Дождь может нарушить феромонную тропу, но ориентиры помогают вернуться.",
+        "Ылғал жерде іздер сақталады. Жаңбыр феромон ізін бұзуы мүмкін, ал белгілер жол табуға көмектеседі.",
+        "The damp soil holds traces. Rain can disrupt scent trails; landmarks help the scout return."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/quest-scout-stage-1.mp3",
+          "duration": 7.367
+        },
+        "kk": {
+          "file": "kk/quest-scout-stage-1.mp3",
+          "duration": 6.949
+        },
+        "en": {
+          "file": "en/quest-scout-stage-1.mp3",
+          "duration": 8.046
+        }
+      }
+    },
+    {
+      "id": "quest-scout-stage-2",
+      "role": "narrator",
+      "text": [
+        "Я узнаю вход! В колонии каждый трудится, а тропы связывают нас с миром.",
+        "Кіреберісті таныдым! Колонияда бәрі еңбек етеді, ал соқпақтар бізді әлеммен байланыстырады.",
+        "I recognise the entrance! Everyone works in the colony, and our trails connect us to the world."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/quest-scout-stage-2.mp3",
+          "duration": 5.956
+        },
+        "kk": {
+          "file": "kk/quest-scout-stage-2.mp3",
+          "duration": 7.314
+        },
+        "en": {
+          "file": "en/quest-scout-stage-2.mp3",
+          "duration": 6.06
+        }
+      }
+    },
+    {
+      "id": "quest-citadel-opening",
+      "role": "narrator",
+      "text": [
+        "Наша матка откладывает яйца, но не отдаёт приказы. Мы распределяем работу через сигналы. После ливня проход к расплоду завален.",
+        "Аналығымыз жұмыртқа салады, бірақ бұйрық бермейді. Жұмысты сигналдар арқылы бөлісеміз. Нөсерден кейін дернәсілдерге жол жабылды.",
+        "Our queen lays eggs; she does not issue orders. Signals coordinate our work. The storm blocked the route to the brood."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/quest-citadel-opening.mp3",
+          "duration": 10.057
+        },
+        "kk": {
+          "file": "kk/quest-citadel-opening.mp3",
+          "duration": 8.829
+        },
+        "en": {
+          "file": "en/quest-citadel-opening.mp3",
+          "duration": 8.803
+        }
+      }
+    },
+    {
+      "id": "quest-citadel-conclusion",
+      "role": "narrator",
+      "text": [
+        "Колония — система взаимосвязанных ролей. Матка не управляет ею как человеческий правитель.",
+        "Колония — өзара байланысты рөлдер жүйесі. Аналық оны адам билеушісіндей басқармайды.",
+        "A colony is a system of interdependent roles; its queen is not a human-style ruler."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/quest-citadel-conclusion.mp3",
+          "duration": 6.583
+        },
+        "kk": {
+          "file": "kk/quest-citadel-conclusion.mp3",
+          "duration": 5.59
+        },
+        "en": {
+          "file": "en/quest-citadel-conclusion.mp3",
+          "duration": 6.504
+        }
+      }
+    },
+    {
+      "id": "quest-citadel-stage-1",
+      "role": "narrator",
+      "text": [
+        "Ты строишь, а рабочие переносят личинок. Сотрудничество важнее силы одного.",
+        "Сен өткел саласың, жұмысшылар дернәсілдерді тасиды. Бірлескен еңбек жеке күштен маңызды.",
+        "You build while workers carry the larvae. Cooperation matters more than one individual’s strength."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/quest-citadel-stage-1.mp3",
+          "duration": 6.766
+        },
+        "kk": {
+          "file": "kk/quest-citadel-stage-1.mp3",
+          "duration": 6.792
+        },
+        "en": {
+          "file": "en/quest-citadel-stage-1.mp3",
+          "duration": 6.322
+        }
+      }
+    },
+    {
+      "id": "quest-citadel-stage-2",
+      "role": "narrator",
+      "text": [
+        "Рабочие ухаживают за яйцами, личинками и куколками. Посмотри: не все жители муравейника одинаковы.",
+        "Жұмысшылар жұмыртқаға, дернәсілге, қуыршаққа күтім жасайды. Қара: илеу тұрғындарының бәрі бірдей емес.",
+        "Workers tend eggs, larvae and pupae. Look closely: the colony has many stages of life."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/quest-citadel-stage-2.mp3",
+          "duration": 8.15
+        },
+        "kk": {
+          "file": "kk/quest-citadel-stage-2.mp3",
+          "duration": 7.34
+        },
+        "en": {
+          "file": "en/quest-citadel-stage-2.mp3",
+          "duration": 7.68
+        }
+      }
+    },
+    {
+      "id": "quest-flowers-opening",
+      "role": "narrator",
+      "text": [
+        "Здесь косили всё сразу. Нектара почти нет, а гусеницам негде расти. Росу можно направить к уцелевшим росткам.",
+        "Мұндағы шөптің бәрін бірден шапты. Шірне аз, жұлдызқұрт өсетін жер жоқ. Шықты қалған өскіндерге бағыттауға болады.",
+        "Everything here was mown at once. There is little nectar and nowhere for caterpillars. We can guide dew to the remaining seedlings."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/quest-flowers-opening.mp3",
+          "duration": 8.385
+        },
+        "kk": {
+          "file": "kk/quest-flowers-opening.mp3",
+          "duration": 8.098
+        },
+        "en": {
+          "file": "en/quest-flowers-opening.mp3",
+          "duration": 8.202
+        }
+      }
+    },
+    {
+      "id": "quest-flowers-conclusion",
+      "role": "narrator",
+      "text": [
+        "Разные цветы и кормовые растения поддерживают разные стадии жизни опылителей.",
+        "Әртүрлі гүлдер мен қоректік өсімдіктер тозаңдандырушылардың барлық сатысын қолдайды.",
+        "Diverse flowers and host plants support different stages of pollinator life."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/quest-flowers-conclusion.mp3",
+          "duration": 4.989
+        },
+        "kk": {
+          "file": "kk/quest-flowers-conclusion.mp3",
+          "duration": 5.146
+        },
+        "en": {
+          "file": "en/quest-flowers-conclusion.mp3",
+          "duration": 5.538
+        }
+      }
+    },
+    {
+      "id": "quest-flowers-stage-3",
+      "role": "narrator",
+      "text": [
+        "Теперь есть пища! Взрослой бабочке нужен нектар, но её гусенице — подходящее кормовое растение.",
+        "Енді қорек бар! Көбелекке шірне қажет, ал жұлдызқұртына сәйкес қоректік өсімдік керек.",
+        "There is food again! An adult butterfly needs nectar, but its caterpillar needs a suitable host plant."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/quest-flowers-stage-3.mp3",
+          "duration": 8.333
+        },
+        "kk": {
+          "file": "kk/quest-flowers-stage-3.mp3",
+          "duration": 5.904
+        },
+        "en": {
+          "file": "en/quest-flowers-stage-3.mp3",
+          "duration": 7.288
+        }
+      }
+    },
+    {
+      "id": "quest-water-opening",
+      "role": "lada",
+      "text": [
+        "Мы летаем, но наши дети живут в воде. После дождя с поля пришёл мутный поток. Проследи его до источника.",
+        "Біз ұшамыз, бірақ баламыз суда өседі. Жаңбырдан кейін алқаптан лай су келді. Оның көзін тап.",
+        "We fly, but our young live in water. After the rain a murky stream arrived from the field. Trace it to its source."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/quest-water-opening.mp3",
+          "duration": 7.837
+        },
+        "kk": {
+          "file": "kk/quest-water-opening.mp3",
+          "duration": 8.96
+        },
+        "en": {
+          "file": "en/quest-water-opening.mp3",
+          "duration": 10.423
+        }
+      }
+    },
+    {
+      "id": "quest-water-conclusion",
+      "role": "narrator",
+      "text": [
+        "Наземные и водные экосистемы связаны стоком. Остановить источник важнее, чем скрыть следы загрязнения.",
+        "Құрлық пен су экожүйелері ағын арқылы байланысады. Ластану көзін тоқтату маңызды.",
+        "Runoff connects land and water ecosystems. Addressing the source is essential."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/quest-water-conclusion.mp3",
+          "duration": 8.333
+        },
+        "kk": {
+          "file": "kk/quest-water-conclusion.mp3",
+          "duration": 6.374
+        },
+        "en": {
+          "file": "en/quest-water-conclusion.mp3",
+          "duration": 5.486
+        }
+      }
+    },
+    {
+      "id": "quest-water-stage-2",
+      "role": "narrator",
+      "text": [
+        "Новый сток ослаб. Но уже попавшие в воду вещества не исчезнут мгновенно: нужны время и контроль взрослых.",
+        "Жаңа ағын азайды. Бірақ судағы заттар бірден жоғалмайды: уақыт пен ересектердің бақылауы керек.",
+        "New runoff has slowed. Existing contaminants do not vanish instantly: time and adult monitoring are needed."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/quest-water-stage-2.mp3",
+          "duration": 8.255
+        },
+        "kk": {
+          "file": "kk/quest-water-stage-2.mp3",
+          "duration": 7.001
+        },
+        "en": {
+          "file": "en/quest-water-stage-2.mp3",
+          "duration": 7.288
+        }
+      }
+    },
+    {
+      "id": "quest-soil-opening",
+      "role": "narrator",
+      "text": [
+        "Люди убрали всю подстилку. Здесь пересохло. Грибы, мокрицы и почвенные обитатели перерабатывают остатки вместе.",
+        "Адамдар бүкіл төсенішті жинады. Мұнда құрғап кетті. Саңырауқұлақ, есекқұрт пен топырақ тұрғындары қалдықтарды бірге ыдыратады.",
+        "People removed all the leaf litter. It is drying out. Fungi, woodlice and soil creatures recycle remains together."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/quest-soil-opening.mp3",
+          "duration": 9.326
+        },
+        "kk": {
+          "file": "kk/quest-soil-opening.mp3",
+          "duration": 8.96
+        },
+        "en": {
+          "file": "en/quest-soil-opening.mp3",
+          "duration": 9.064
+        }
+      }
+    },
+    {
+      "id": "quest-soil-conclusion",
+      "role": "narrator",
+      "text": [
+        "Разложение возвращает вещества в круговорот; подстилка поддерживает влажность и разнообразие.",
+        "Ыдырау заттарды айналымға қайтарады; төсеніш ылғал мен алуантүрлілікті сақтайды.",
+        "Decomposition recycles nutrients; leaf litter supports moisture and biodiversity."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/quest-soil-conclusion.mp3",
+          "duration": 6.296
+        },
+        "kk": {
+          "file": "kk/quest-soil-conclusion.mp3",
+          "duration": 6.034
+        },
+        "en": {
+          "file": "en/quest-soil-conclusion.mp3",
+          "duration": 5.433
+        }
+      }
+    },
+    {
+      "id": "quest-soil-stage-2",
+      "role": "narrator",
+      "text": [
+        "Я не насекомое, а ракообразное! Без влаги я пересыхаю. Оставленная подстилка — чей-то дом.",
+        "Мен жәндік емес, шаянтәріздімін! Ылғалсыз кебемін. Қалған жапырақ біреудің үйі.",
+        "I am a crustacean, not an insect! Without moisture I dry out. A pile of leaves can be somebody’s home."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/quest-soil-stage-2.mp3",
+          "duration": 8.96
+        },
+        "kk": {
+          "file": "kk/quest-soil-stage-2.mp3",
+          "duration": 5.669
+        },
+        "en": {
+          "file": "en/quest-soil-stage-2.mp3",
+          "duration": 8.124
+        }
+      }
+    },
+    {
+      "id": "quest-plastic-opening",
+      "role": "narrator",
+      "text": [
+        "Упаковка перекрыла путь к влажному убежищу. Между нитями застряли жители. Освободи проход и проводи их.",
+        "Қаптама ылғалды панаға жолды жапты. Тұрғындар жіпке шырмалды. Өткелді ашып, оларды жеткіз.",
+        "A wrapper blocks the route to a damp refuge. Neighbours are caught in threads. Free the passage and guide them."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/quest-plastic-opening.mp3",
+          "duration": 9.221
+        },
+        "kk": {
+          "file": "kk/quest-plastic-opening.mp3",
+          "duration": 7.158
+        },
+        "en": {
+          "file": "en/quest-plastic-opening.mp3",
+          "duration": 7.367
+        }
+      }
+    },
+    {
+      "id": "quest-plastic-conclusion",
+      "role": "narrator",
+      "text": [
+        "Мусор может становиться барьером и ловушкой. Уборка не заменяет предотвращение загрязнения.",
+        "Қоқыс кедергі мен тұзаққа айналады. Тазалау ластануды болдырмауды алмастырмайды.",
+        "Litter can be a barrier and a trap. Prevention matters alongside cleanup."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/quest-plastic-conclusion.mp3",
+          "duration": 7.393
+        },
+        "kk": {
+          "file": "kk/quest-plastic-conclusion.mp3",
+          "duration": 5.747
+        },
+        "en": {
+          "file": "en/quest-plastic-conclusion.mp3",
+          "duration": 5.094
+        }
+      }
+    },
+    {
+      "id": "quest-plastic-stage-2",
+      "role": "narrator",
+      "text": [
+        "Мы прошли! Крупный мусор можно убрать, но мелкие частицы останутся. Людям надо предотвращать их появление.",
+        "Біз өттік! Ірі қоқысты жинауға болады, бірақ ұсақ бөлшектер қалады. Адамдар олардың пайда болуын болдырмауы керек.",
+        "We made it! Large litter can be removed, but tiny fragments remain. People must prevent new pollution."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/quest-plastic-stage-2.mp3",
+          "duration": 8.934
+        },
+        "kk": {
+          "file": "kk/quest-plastic-stage-2.mp3",
+          "duration": 8.359
+        },
+        "en": {
+          "file": "en/quest-plastic-stage-2.mp3",
+          "duration": 8.49
+        }
+      }
+    },
+    {
+      "id": "quest-pesticide-opening",
+      "role": "lada",
+      "text": [
+        "Там, где вчера гудели пчёлы, теперь тихо. Не трогай капли: сканер покажет опасные участки. Нужен безопасный коридор к саду.",
+        "Кеше ара гуілдеген жер бүгін тыныш. Тамшыны ұстама: сканер қауіпті жерді көрсетеді. Баққа қауіпсіз жол керек.",
+        "Where bees buzzed yesterday there is silence. Do not touch the droplets: scan for hazards. We need a safe corridor to the garden."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/quest-pesticide-opening.mp3",
+          "duration": 9.979
+        },
+        "kk": {
+          "file": "kk/quest-pesticide-opening.mp3",
+          "duration": 10.344
+        },
+        "en": {
+          "file": "en/quest-pesticide-opening.mp3",
+          "duration": 11.024
+        }
+      }
+    },
+    {
+      "id": "quest-pesticide-conclusion",
+      "role": "narrator",
+      "text": [
+        "Пестициды могут вредить нецелевым организмам. Жара и засуха усиливают нагрузку на местообитания.",
+        "Пестицидтер нысаналы емес ағзаларға зиян келтіруі мүмкін. Ыстық пен құрғақшылық ортаға қысымды күшейтеді.",
+        "Pesticides can harm non-target organisms. Heat and drought add stress to habitats."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/quest-pesticide-conclusion.mp3",
+          "duration": 7.706
+        },
+        "kk": {
+          "file": "kk/quest-pesticide-conclusion.mp3",
+          "duration": 7.967
+        },
+        "en": {
+          "file": "en/quest-pesticide-conclusion.mp3",
+          "duration": 6.139
+        }
+      }
+    },
+    {
+      "id": "quest-pesticide-stage-3",
+      "role": "narrator",
+      "text": [
+        "В жару укрытие и влага особенно важны. Мы спасли часть жителей, но людям ещё надо изменить обработку участка.",
+        "Ыстықта пана мен ылғал аса қажет. Бір бөлігін құтқардық, енді адамдар алқап өңдеуін өзгертуі керек.",
+        "Shelter and moisture matter even more in heat. Some inhabitants are safe, but people still need to change how this land is treated."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/quest-pesticide-stage-3.mp3",
+          "duration": 8.281
+        },
+        "kk": {
+          "file": "kk/quest-pesticide-stage-3.mp3",
+          "duration": 6.348
+        },
+        "en": {
+          "file": "en/quest-pesticide-stage-3.mp3",
+          "duration": 8.202
+        }
+      }
+    },
+    {
+      "id": "quest-night-opening",
+      "role": "lada",
+      "text": [
+        "Они не исчезли. Их сигналы затерялись в сиянии фонарей. Убери лишний свет, сохранив безопасный проход для людей.",
+        "Олар жоғалмады. Сигналдары шам жарығында көрінбей қалды. Адамдарға қауіпсіз жол қалдырып, артық жарықты азайт.",
+        "They have not vanished. Their signals are lost in the glare. Reduce excess light while keeping a safe path for people."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/quest-night-opening.mp3",
+          "duration": 8.02
+        },
+        "kk": {
+          "file": "kk/quest-night-opening.mp3",
+          "duration": 9.117
+        },
+        "en": {
+          "file": "en/quest-night-opening.mp3",
+          "duration": 9.3
+        }
+      }
+    },
+    {
+      "id": "quest-night-conclusion",
+      "role": "narrator",
+      "text": [
+        "Направленный, тёплый и необходимый по времени свет помогает уменьшать световое загрязнение.",
+        "Бағытталған, жылы және тек қажет уақытта жанатын жарық ластануды азайтады.",
+        "Shielded, warm lighting used only when needed can reduce light pollution."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/quest-night-conclusion.mp3",
+          "duration": 7.105
+        },
+        "kk": {
+          "file": "kk/quest-night-conclusion.mp3",
+          "duration": 6.034
+        },
+        "en": {
+          "file": "en/quest-night-conclusion.mp3",
+          "duration": 4.728
+        }
+      }
+    },
+    {
+      "id": "quest-night-stage-1",
+      "role": "lada",
+      "text": [
+        "Теперь мы снова видим друг друга. Свет — не украшение: для многих из нас это способ найти пару.",
+        "Енді бір-бірімізді қайта көреміз. Жарық сән емес: көбіміз үшін ол жұп табу тәсілі.",
+        "We can see each other again. Light is not decoration: for many of us it is a way to find a mate."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/quest-night-stage-1.mp3",
+          "duration": 8.542
+        },
+        "kk": {
+          "file": "kk/quest-night-stage-1.mp3",
+          "duration": 7.915
+        },
+        "en": {
+          "file": "en/quest-night-stage-1.mp3",
+          "duration": 7.419
+        }
+      }
+    },
+    {
+      "id": "quest-garden-opening",
+      "role": "lada",
+      "text": [
+        "Ты увидел, как связаны цветы, почва, вода и темнота. Не нужно управлять каждым жителем. Нужно оставить им место для жизни.",
+        "Гүл, топырақ, су мен қараңғылықтың байланысын көрдің. Әр тұрғынды басқарудың қажеті жоқ. Оларға өмір сүруге орын қалдыру керек.",
+        "You have seen the links between flowers, soil, water and darkness. You need not control every inhabitant. You need to leave room for life."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/quest-garden-opening.mp3",
+          "duration": 8.908
+        },
+        "kk": {
+          "file": "kk/quest-garden-opening.mp3",
+          "duration": 10.658
+        },
+        "en": {
+          "file": "en/quest-garden-opening.mp3",
+          "duration": 11.729
+        }
+      }
+    },
+    {
+      "id": "quest-garden-conclusion",
+      "role": "narrator",
+      "text": [
+        "Устойчивость сада поддерживается разнообразием и связностью местообитаний. Забота продолжается и в большом мире.",
+        "Бақ тұрақтылығын алуантүрлілік пен мекендердің байланысы қолдайды. Қамқорлық үлкен әлемде жалғасады.",
+        "Diversity and connected habitats support resilience. Care continues in the larger world."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/quest-garden-conclusion.mp3",
+          "duration": 8.777
+        },
+        "kk": {
+          "file": "kk/quest-garden-conclusion.mp3",
+          "duration": 6.478
+        },
+        "en": {
+          "file": "en/quest-garden-conclusion.mp3",
+          "duration": 6.217
+        }
+      }
+    },
+    {
+      "id": "secret-shell",
+      "role": "narrator",
+      "text": [
+        "Пустая раковина стала укрытием. Даже маленький предмет может быть частью местообитания.",
+        "Бос қабық панаға айналды. Шағын зат та мекеннің бөлігі бола алады.",
+        "An empty shell became a shelter. Even a tiny object can be part of a habitat."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/secret-shell.mp3",
+          "duration": 5.46
+        },
+        "kk": {
+          "file": "kk/secret-shell.mp3",
+          "duration": 5.904
+        },
+        "en": {
+          "file": "en/secret-shell.mp3",
+          "duration": 5.695
+        }
+      }
+    },
+    {
+      "id": "secret-egg",
+      "role": "narrator",
+      "text": [
+        "Яйца на обратной стороне листа. Кормовое растение важно не только взрослому насекомому.",
+        "Жапырақ астындағы жұмыртқалар. Қоректік өсімдік ересекке ғана қажет емес.",
+        "Eggs beneath a leaf. Host plants matter long before adulthood."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/secret-egg.mp3",
+          "duration": 5.956
+        },
+        "kk": {
+          "file": "kk/secret-egg.mp3",
+          "duration": 5.277
+        },
+        "en": {
+          "file": "en/secret-egg.mp3",
+          "duration": 4.415
+        }
+      }
+    },
+    {
+      "id": "secret-web",
+      "role": "narrator",
+      "text": [
+        "Паук чувствует колебания паутины. Он не злодей, а естественный хищник.",
+        "Өрмекші өрмек тербелісін сезеді. Ол зұлым емес, табиғи жыртқыш.",
+        "A spider senses vibrations in its web. It is a natural predator."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/secret-web.mp3",
+          "duration": 6.4
+        },
+        "kk": {
+          "file": "kk/secret-web.mp3",
+          "duration": 5.016
+        },
+        "en": {
+          "file": "en/secret-web.mp3",
+          "duration": 4.571
+        }
+      }
+    },
+    {
+      "id": "secret-leafprint",
+      "role": "narrator",
+      "text": [
+        "Прожилки листа похожи на карту рек. Этот листок хочется сохранить.",
+        "Жапырақ жүйкелері өзен картасына ұқсайды. Оны сақтағың келеді.",
+        "Leaf veins resemble a map of rivers. This leaf feels worth keeping."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/secret-leafprint.mp3",
+          "duration": 4.807
+        },
+        "kk": {
+          "file": "kk/secret-leafprint.mp3",
+          "duration": 4.153
+        },
+        "en": {
+          "file": "en/secret-leafprint.mp3",
+          "duration": 4.571
+        }
+      }
+    },
+    {
+      "id": "colony-entrance",
+      "role": "narrator",
+      "text": [
+        "Рабочие встречаются усиками и обмениваются химическими сигналами. Колония координирует работу без человеческих приказов.",
+        "Жұмысшылар мұртшаларын түйістіріп, химиялық сигнал алмасады. Колония адамша бұйрықсыз жұмысын үйлестіреді.",
+        "Workers touch antennae and exchange chemical signals. The colony coordinates tasks without human commands."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/colony-entrance.mp3",
+          "duration": 8.281
+        },
+        "kk": {
+          "file": "kk/colony-entrance.mp3",
+          "duration": 8.281
+        },
+        "en": {
+          "file": "en/colony-entrance.mp3",
+          "duration": 7.576
+        }
+      }
+    },
+    {
+      "id": "colony-stores",
+      "role": "narrator",
+      "text": [
+        "Пища поддерживает рабочих и растущий расплод. Что собирают муравьи и как делятся кормом, зависит от вида и потребностей колонии.",
+        "Қорек жұмысшылар мен өсіп жатқан ұрпақты қамтамасыз етеді. Құмырсқаның не жинап, қалай бөлісетіні түрі мен колония қажетіне байланысты.",
+        "Food supports the workers and growing brood. What ants collect and how they share it depends on the species and the colony’s needs."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/colony-stores.mp3",
+          "duration": 9.43
+        },
+        "kk": {
+          "file": "kk/colony-stores.mp3",
+          "duration": 8.986
+        },
+        "en": {
+          "file": "en/colony-stores.mp3",
+          "duration": 8.647
+        }
+      }
+    },
+    {
+      "id": "colony-brood",
+      "role": "narrator",
+      "text": [
+        "Яйца, личинки и куколки нуждаются в уходе. Рабочие кормят личинок и могут переносить расплод в более подходящие условия.",
+        "Жұмыртқа, дернәсіл мен қуыршақ күтімді қажет етеді. Жұмысшылар дернәсілді қоректендіріп, ұрпақты қолайлы жағдайға таси алады.",
+        "Eggs, larvae and pupae need care. Workers feed larvae and may move brood to more suitable conditions."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/colony-brood.mp3",
+          "duration": 8.568
+        },
+        "kk": {
+          "file": "kk/colony-brood.mp3",
+          "duration": 8.882
+        },
+        "en": {
+          "file": "en/colony-brood.mp3",
+          "duration": 8.411
+        }
+      }
+    },
+    {
+      "id": "colony-junction",
+      "role": "narrator",
+      "text": [
+        "Сеть ходов связывает камеры. Повреждение одного участка меняет доступные пути: восстановленный проход снова соединяет части колонии.",
+        "Жолдар желісі бөлмелерді байланыстырады. Бір бөлік бүлінсе, қолжетімді бағыт өзгереді: жөнделген өткел колонияны қайта байланыстырады.",
+        "Passages connect the chambers. A damaged section changes the available routes; restoring it reconnects parts of the colony."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/colony-junction.mp3",
+          "duration": 10.162
+        },
+        "kk": {
+          "file": "kk/colony-junction.mp3",
+          "duration": 10.057
+        },
+        "en": {
+          "file": "en/colony-junction.mp3",
+          "duration": 7.915
+        }
+      }
+    },
+    {
+      "id": "colony-shelter",
+      "role": "narrator",
+      "text": [
+        "Влага и температура внутри гнезда неодинаковы. Перемещение расплода — один из способов реагировать на меняющиеся условия.",
+        "Илеудің ішіндегі ылғал мен температура бірдей емес. Ұрпақты тасу — жағдай өзгерісіне жауап берудің бір жолы.",
+        "Moisture and temperature vary within a nest. Moving brood is one way a colony responds to changing conditions."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/colony-shelter.mp3",
+          "duration": 8.281
+        },
+        "kk": {
+          "file": "kk/colony-shelter.mp3",
+          "duration": 7.497
+        },
+        "en": {
+          "file": "en/colony-shelter.mp3",
+          "duration": 6.896
+        }
+      }
+    },
+    {
+      "id": "colony-queen",
+      "role": "narrator",
+      "text": [
+        "Матка — репродуктивная самка. Её основная роль — откладывать яйца. Рабочие ухаживают за ней; это не тронный зал человеческого правителя.",
+        "Аналық — көбеюге маманданған ұрғашы. Негізгі міндеті — жұмыртқа салу. Жұмысшылар оған күтім жасайды; бұл адам билеушісінің тақ залы емес.",
+        "The queen is a reproductive female whose main role is laying eggs. Workers tend her; this is not a human ruler’s throne room."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/colony-queen.mp3",
+          "duration": 10.344
+        },
+        "kk": {
+          "file": "kk/colony-queen.mp3",
+          "duration": 9.273
+        },
+        "en": {
+          "file": "en/colony-queen.mp3",
+          "duration": 8.856
+        }
+      }
+    },
+    {
+      "id": "colony-remains",
+      "role": "narrator",
+      "text": [
+        "Часть рабочих выносит ненужные остатки. Обращение с отходами различается у разных видов; чистота и расположение остатков важны для жизни колонии.",
+        "Кей жұмысшылар қажетсіз қалдықты сыртқа шығарады. Қалдықпен жұмыс әр түрге тән; тазалық пен қалдық орны колония тіршілігіне маңызды.",
+        "Some workers remove unwanted remains. Waste handling varies between species; cleanliness and where remains accumulate matter to colony life."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/colony-remains.mp3",
+          "duration": 11.18
+        },
+        "kk": {
+          "file": "kk/colony-remains.mp3",
+          "duration": 9.038
+        },
+        "en": {
+          "file": "en/colony-remains.mp3",
+          "duration": 10.162
+        }
+      }
+    },
+    {
+      "id": "colony-intro",
+      "role": "narrator",
+      "text": [
+        "Разрез гнезда, тёплое освещение и мостик — художественные приёмы. Устройство гнёзд различается у разных видов.",
+        "Илеу қимасы, жылы жарық пен көпір — көркемдік тәсілдер. Әртүрлі түрдің илеуі әрқалай құрылған.",
+        "The cutaway, warm lighting and bridge are artistic devices. Nest structure varies between species."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/colony-intro.mp3",
+          "duration": 8.438
+        },
+        "kk": {
+          "file": "kk/colony-intro.mp3",
+          "duration": 7.34
+        },
+        "en": {
+          "file": "en/colony-intro.mp3",
+          "duration": 7.706
+        }
+      }
+    },
+    {
+      "id": "crossing-intro",
+      "role": "narrator",
+      "text": [
+        "Ливень отрезал шестерых жителей от влажного убежища. Посмотри на три пути: лист у воды, корни слева и разрушенный мост справа. Помоги всем добраться до другого берега.",
+        "Нөсер алты мекендеушіні ылғалды панадан бөліп тастады. Үш жол бар: судағы жапырақ, сол жақтағы тамырлар және оң жақтағы бұзылған көпір. Бәрін арғы жағаға жеткіз.",
+        "The rain cut six neighbours off from a damp refuge. There are three ways: the leaf on the water, the roots to the left and the broken bridge to the right. Help everyone reach the far bank."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/crossing-intro.mp3",
+          "duration": 13.427
+        },
+        "kk": {
+          "file": "kk/crossing-intro.mp3",
+          "duration": 12.408
+        },
+        "en": {
+          "file": "en/crossing-intro.mp3",
+          "duration": 13.087
+        }
+      }
+    },
+    {
+      "id": "crossing-leafHelp",
+      "role": "narrator",
+      "text": [
+        "Лист выдержит героя и двух попутчиков. Управляй WASD или джойстиком и пристань у другого берега. Вернись за следующей парой. Паром останется регулярной переправой.",
+        "Жапырақ кейіпкер мен екі жолаушыны көтереді. WASD не джойстикпен басқар да, арғы жағаға тоқта. Келесі жұпқа қайтып кел. Паром тұрақты өткел болады.",
+        "The leaf carries you and two neighbours. Steer with WASD or the joystick and dock at the opposite bank. Return for the next pair. The ferry will remain a regular crossing."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/crossing-leafHelp.mp3",
+          "duration": 13.009
+        },
+        "kk": {
+          "file": "kk/crossing-leafHelp.mp3",
+          "duration": 12.278
+        },
+        "en": {
+          "file": "en/crossing-leafHelp.mp3",
+          "duration": 13.636
+        }
+      }
+    },
+    {
+      "id": "crossing-rootsHelp",
+      "role": "narrator",
+      "text": [
+        "Корни огибают воду слева. Пройди по их изгибам, собери два опавших листа и накрой отмеченные места: мокрицам нужна влажная тень. После подготовки жители пойдут этим длинным путём.",
+        "Тамырлар суды сол жақтан айналып өтеді. Иірімдерімен жүріп, екі түскен жапырақ жина да, белгіленген орындарды жап: есекқұртқа ылғалды көлеңке керек. Дайын болғанда мекендеушілер ұзақ жолмен жүреді.",
+        "The roots skirt the water on the left. Follow their bends, collect two fallen leaves and cover the marked spots: woodlice need damp shade. Once it is ready, neighbours will use this longer route."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/crossing-rootsHelp.mp3",
+          "duration": 14.158
+        },
+        "kk": {
+          "file": "kk/crossing-rootsHelp.mp3",
+          "duration": 13.688
+        },
+        "en": {
+          "file": "en/crossing-rootsHelp.mp3",
+          "duration": 13.401
+        }
+      }
+    },
+    {
+      "id": "crossing-bridgeHelp",
+      "role": "narrator",
+      "text": [
+        "Собери три сухие веточки на этом берегу. У опоры нажми E: рабочие укрепят настил. Перейди мост первым — затем по нему пойдут жители и начнут носить пищу в убежище.",
+        "Осы жағадан үш құрғақ бұтақ жина. Тірек жанында E бас: жұмысшылар төсемді бекітеді. Көпірден бірінші өт — кейін мекендеушілер жүріп, панаға қорек тасиды.",
+        "Gather three dry twigs on this bank. Press E at the support: workers will secure the deck. Cross first, then neighbours will follow and carry food to the refuge."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/crossing-bridgeHelp.mp3",
+          "duration": 12.565
+        },
+        "kk": {
+          "file": "kk/crossing-bridgeHelp.mp3",
+          "duration": 10.527
+        },
+        "en": {
+          "file": "en/crossing-bridgeHelp.mp3",
+          "duration": 12.121
+        }
+      }
+    },
+    {
+      "id": "crossing-leafEnd",
+      "role": "narrator",
+      "text": [
+        "Лист стал паромом. Пары жителей продолжают переправляться с пищей: этот путь требует регулярных рейсов.",
+        "Жапырақ паромға айналды. Жұптар қорекпен қатынайды: бұл жолға тұрақты рейстер қажет.",
+        "The leaf became a ferry. Pairs keep crossing with food: this route depends on regular trips."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/crossing-leafEnd.mp3",
+          "duration": 7.367
+        },
+        "kk": {
+          "file": "kk/crossing-leafEnd.mp3",
+          "duration": 8.072
+        },
+        "en": {
+          "file": "en/crossing-leafEnd.mp3",
+          "duration": 7.993
+        }
+      }
+    },
+    {
+      "id": "crossing-rootsEnd",
+      "role": "narrator",
+      "text": [
+        "Под укрытиями сохранилась влажная тень. Жители обходят воду по корням. Путь длиннее, зато поток остаётся свободным.",
+        "Паналар астында ылғалды көлеңке сақталды. Мекендеушілер суды тамырлармен айналып өтеді. Жол ұзақ, бірақ ағын ашық қалады.",
+        "The shelters keep a damp shade. Neighbours follow the roots around the water. It is longer, while the stream remains open."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/crossing-rootsEnd.mp3",
+          "duration": 8.594
+        },
+        "kk": {
+          "file": "kk/crossing-rootsEnd.mp3",
+          "duration": 10.658
+        },
+        "en": {
+          "file": "en/crossing-rootsEnd.mp3",
+          "duration": 7.915
+        }
+      }
+    },
+    {
+      "id": "crossing-bridgeEnd",
+      "role": "narrator",
+      "text": [
+        "Муравьи пользуются постоянным мостом и носят пищу в убежище. Настил потребует ухода после следующего сильного дождя.",
+        "Құмырсқалар тұрақты көпірмен панаға қорек тасиды. Келесі нөсерден кейін төсемге күтім қажет болады.",
+        "The ants use the permanent bridge to carry food to the refuge. The deck will need maintenance after another heavy rain."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/crossing-bridgeEnd.mp3",
+          "duration": 8.176
+        },
+        "kk": {
+          "file": "kk/crossing-bridgeEnd.mp3",
+          "duration": 7.811
+        },
+        "en": {
+          "file": "en/crossing-bridgeEnd.mp3",
+          "duration": 7.027
+        }
+      }
+    },
+    {
+      "id": "expedition-glass-intro",
+      "role": "narrator",
+      "text": [
+        "За стеклом пахнет сухой землёй. Черепок перекрыл исток, а два вентиля направляют воду не туда. Сдвиньте черепок, поверните верхний вентиль на восток (→), нижний — на юг (↓). Наполните цистерну и полейте три ростка. Здесь можно исследовать уголки в любом порядке.",
+        "Әйнек артында құрғақ топырақ иісі бар. Сынық су көзін жапқан, екі шүмек суды басқа жаққа бұрған. Сынықты жылжытып, жоғарғы шүмекті шығысқа (→), төменгісін оңтүстікке (↓) бұрыңыз. Ыдыстан су алып, үш өскінді суарыңыз. Бұрыштарды кез келген ретпен зерттеңіз.",
+        "Dry earth lies beneath the glass. A shard blocks the spring and two valves point the wrong way. Push the shard aside, turn the upper valve east (→) and the lower one south (↓). Fill up at the cistern and water three sprouts. Explore the corners in any order."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/expedition-glass-intro.mp3",
+          "duration": 21.551
+        },
+        "kk": {
+          "file": "kk/expedition-glass-intro.mp3",
+          "duration": 21.002
+        },
+        "en": {
+          "file": "en/expedition-glass-intro.mp3",
+          "duration": 17.946
+        }
+      }
+    },
+    {
+      "id": "expedition-glass-secret-0",
+      "role": "narrator",
+      "text": [
+        "Златоглазки помогают растениям: личинки многих видов питаются тлями. Взрослые особи могут питаться нектаром и пыльцой.",
+        "Алтынкөздер өсімдіктерге көмектеседі: көптеген түрлерінің дернәсілі бітемен қоректенеді. Ересектері шірне мен тозаң жеуі мүмкін.",
+        "Many lacewing larvae eat aphids. Adults of some species feed on nectar and pollen."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/expedition-glass-secret-0.mp3",
+          "duration": 8.385
+        },
+        "kk": {
+          "file": "kk/expedition-glass-secret-0.mp3",
+          "duration": 10.58
+        },
+        "en": {
+          "file": "en/expedition-glass-secret-0.mp3",
+          "duration": 5.695
+        }
+      }
+    },
+    {
+      "id": "expedition-glass-secret-1",
+      "role": "narrator",
+      "text": [
+        "Под горшком сохранилась влажная земля. Укрытия удерживают влагу и помогают мелким беспозвоночным пережить жару.",
+        "Құмыра астында ылғалды топырақ сақталған. Пана ылғалды ұстап, ұсақ омыртқасыздарға ыстықтан қорғануға көмектеседі.",
+        "Damp soil survives beneath the pot. Shelter retains moisture and helps small invertebrates withstand the heat."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/expedition-glass-secret-1.mp3",
+          "duration": 8.072
+        },
+        "kk": {
+          "file": "kk/expedition-glass-secret-1.mp3",
+          "duration": 9.352
+        },
+        "en": {
+          "file": "en/expedition-glass-secret-1.mp3",
+          "duration": 7.288
+        }
+      }
+    },
+    {
+      "id": "expedition-hollow-intro",
+      "role": "narrator",
+      "text": [
+        "Жук потерял три кладки в лабиринте корней. Прикатите жёлудь на круглый камень: его вес отодвинет кору. Переносите по одной кладке в безопасное гнездо. За дверью ждёт янтарная линза для обсерватории. E у таблички возвращает жёлудь, если он укатился.",
+        "Қоңыз тамырлар арасында үш жұмыртқа тобын жоғалтып алды. Емен жаңғағын дөңгелек тасқа домалатыңыз: салмағы қабықты ашады. Жұмыртқаларды бір-бірден қауіпсіз ұяға жеткізіңіз. Есіктің ар жағында обсерваторияға арналған кәріптас линза бар. Жаңғақ алыс кетсе, тақтайша жанында E басыңыз.",
+        "A beetle has lost three egg clusters among the roots. Roll the acorn onto the round stone: its weight slides the bark aside. Carry one cluster at a time to the safe nest. Beyond the gate is an amber lens for the observatory. Use E at the sign to reset a runaway acorn."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/expedition-hollow-intro.mp3",
+          "duration": 18.573
+        },
+        "kk": {
+          "file": "kk/expedition-hollow-intro.mp3",
+          "duration": 20.741
+        },
+        "en": {
+          "file": "en/expedition-hollow-intro.mp3",
+          "duration": 20.506
+        }
+      }
+    },
+    {
+      "id": "expedition-hollow-secret-0",
+      "role": "narrator",
+      "text": [
+        "Мёртвая древесина — живой дом. Грибы, мокрицы и другие обитатели участвуют в разложении органики.",
+        "Өлі сүрек — тіршілік мекені. Саңырауқұлақтар, есекқұрттар және басқа ағзалар органикалық заттардың ыдырауына қатысады.",
+        "Dead wood is a living habitat. Fungi, woodlice and other organisms help decompose organic matter."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/expedition-hollow-secret-0.mp3",
+          "duration": 7.34
+        },
+        "kk": {
+          "file": "kk/expedition-hollow-secret-0.mp3",
+          "duration": 9.195
+        },
+        "en": {
+          "file": "en/expedition-hollow-secret-0.mp3",
+          "duration": 7.262
+        }
+      }
+    },
+    {
+      "id": "expedition-hollow-secret-1",
+      "role": "narrator",
+      "text": [
+        "Жужелицы — разнообразная группа жуков. Многие виды охотятся на других беспозвоночных и прячутся под корой и камнями.",
+        "Барылдауық қоңыздар алуан түрлі. Көп түрі басқа омыртқасыздарды аулап, қабық пен тас астында тығылады.",
+        "Ground beetles are diverse. Many hunt other invertebrates and shelter beneath bark and stones."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/expedition-hollow-secret-1.mp3",
+          "duration": 8.229
+        },
+        "kk": {
+          "file": "kk/expedition-hollow-secret-1.mp3",
+          "duration": 6.426
+        },
+        "en": {
+          "file": "en/expedition-hollow-secret-1.mp3",
+          "duration": 6.113
+        }
+      }
+    },
+    {
+      "id": "expedition-creek-intro",
+      "role": "narrator",
+      "text": [
+        "Весенний поток унёс мост. Соберите три куска коры на западном берегу и уложите их у трёх опор. Затем почините водяное колесо, освободив его от веточки. Позовите ногохвостку на восточном берегу и проводите к влажному мху. Она ищет дорогу сама, но ждёт, если вы ушли далеко.",
+        "Көктемгі ағыс көпірді алып кетті. Батыс жағадан үш қабықты жинап, үш тірекке төсеңіз. Су дөңгелегін бұтақтан босатыңыз. Шығыс жағадан құйрықаяқты шақырып, ылғалды мүкке жеткізіңіз. Ол жолды өзі табады, бірақ алыстасаңыз күтеді.",
+        "The spring flood carried off the bridge. Collect three pieces of bark on the western bank and lay them at the three supports. Free the water wheel from a twig. Call the springtail on the eastern bank and guide it to the damp moss. It finds its own way but waits if you go too far."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/expedition-creek-intro.mp3",
+          "duration": 21.368
+        },
+        "kk": {
+          "file": "kk/expedition-creek-intro.mp3",
+          "duration": 17.11
+        },
+        "en": {
+          "file": "en/expedition-creek-intro.mp3",
+          "duration": 19.592
+        }
+      }
+    },
+    {
+      "id": "expedition-creek-secret-0",
+      "role": "narrator",
+      "text": [
+        "Ногохвостки — не насекомые, а отдельная группа шестиногих. Многие виды используют прыгательную вилку, чтобы спасаться от опасности.",
+        "Құйрықаяқтар жәндіктер емес, алтыаяқтылардың жеке тобы. Көп түрі қауіптен секіргіш айырдың көмегімен құтылады.",
+        "Springtails are hexapods but are not insects. Many use a forked appendage called a furcula to jump away from danger."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/expedition-creek-secret-0.mp3",
+          "duration": 9.221
+        },
+        "kk": {
+          "file": "kk/expedition-creek-secret-0.mp3",
+          "duration": 7.576
+        },
+        "en": {
+          "file": "en/expedition-creek-secret-0.mp3",
+          "duration": 8.49
+        }
+      }
+    },
+    {
+      "id": "expedition-creek-secret-1",
+      "role": "narrator",
+      "text": [
+        "У прибрежных растений есть важная роль: их корни удерживают грунт, а тень и опавшие листья создают укрытия.",
+        "Жағалық өсімдіктердің тамыры топырақты ұстайды, ал көлеңкесі мен түскен жапырақтары пана жасайды.",
+        "Bankside roots hold soil in place. Shade and fallen leaves provide shelter for small animals."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/expedition-creek-secret-1.mp3",
+          "duration": 7.837
+        },
+        "kk": {
+          "file": "kk/expedition-creek-secret-1.mp3",
+          "duration": 5.825
+        },
+        "en": {
+          "file": "en/expedition-creek-secret-1.mp3",
+          "duration": 7.262
+        }
+      }
+    },
+    {
+      "id": "expedition-canopy-intro",
+      "role": "narrator",
+      "text": [
+        "В кроне спрятана старая обсерватория. Три фонаря откликнутся только в порядке, записанном на камнях: 2 → 1 → 3. Соберите пыльцу у большого цветка и посетите три закрытых бутона. Когда все четыре места будут восстановлены, установите янтарную линзу в телескоп.",
+        "Ағаш басында ескі обсерватория бар. Үш шам тастардағы ретпен ғана жанады: 2 → 1 → 3. Үлкен гүлден тозаң жинап, үш жабық бүршікке жеткізіңіз. Төрт мекен қалпына келгенде кәріптас линзаны телескопқа орнатыңыз.",
+        "An old observatory hides in the crown. The lanterns respond in the order written on the stones: 2 → 1 → 3. Collect pollen at the great flower and visit three closed buds. Once all four habitats are restored, fit the amber lens into the telescope."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/expedition-canopy-intro.mp3",
+          "duration": 19.67
+        },
+        "kk": {
+          "file": "kk/expedition-canopy-intro.mp3",
+          "duration": 18.155
+        },
+        "en": {
+          "file": "en/expedition-canopy-intro.mp3",
+          "duration": 19.592
+        }
+      }
+    },
+    {
+      "id": "expedition-canopy-secret-0",
+      "role": "narrator",
+      "text": [
+        "Опыление — перенос пыльцы. Цветки привлекают посетителей цветом, запахом и пищей. Не каждый посетитель одинаково хорошо переносит пыльцу.",
+        "Тозаңдану — тозаңның тасымалдануы. Гүлдер түсі, иісі және қорегімен тартады. Әр келуші тозаңды бірдей жақсы тасымалдамайды.",
+        "Pollination transfers pollen. Flowers attract visitors with colour, scent and food. Visitors differ in how effectively they transfer pollen."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/expedition-canopy-secret-0.mp3",
+          "duration": 10.449
+        },
+        "kk": {
+          "file": "kk/expedition-canopy-secret-0.mp3",
+          "duration": 10.501
+        },
+        "en": {
+          "file": "en/expedition-canopy-secret-0.mp3",
+          "duration": 10.423
+        }
+      }
+    },
+    {
+      "id": "expedition-canopy-secret-1",
+      "role": "narrator",
+      "text": [
+        "Свет фонарей здесь — сказочная механика. Настоящие светлячки излучают свет благодаря химической реакции в специальных органах.",
+        "Мұндағы шам жарығы — ертегілік ойын механикасы. Нағыз жарқырауық қоңыздар арнайы мүшелеріндегі химиялық реакция арқылы жарық шығарады.",
+        "These lanterns are a story mechanic. Real fireflies produce light through a chemical reaction in specialised organs."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/expedition-canopy-secret-1.mp3",
+          "duration": 8.568
+        },
+        "kk": {
+          "file": "kk/expedition-canopy-secret-1.mp3",
+          "duration": 9.796
+        },
+        "en": {
+          "file": "en/expedition-canopy-secret-1.mp3",
+          "duration": 7.21
+        }
+      }
+    },
+    {
+      "id": "creature-snail",
+      "role": "narrator",
+      "text": [
+        "Моллюск; ищет влажные укрытия. Двигается с помощью мускулистой ноги.",
+        "Ылғалды пана іздейтін ұлу. Бұлшықетті аяқпен қозғалады.",
+        "A mollusc that seeks damp shelter and moves on a muscular foot."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/creature-snail.mp3",
+          "duration": 5.172
+        },
+        "kk": {
+          "file": "kk/creature-snail.mp3",
+          "duration": 4.493
+        },
+        "en": {
+          "file": "en/creature-snail.mp3",
+          "duration": 4.101
+        }
+      }
+    },
+    {
+      "id": "creature-beetle",
+      "role": "narrator",
+      "text": [
+        "Насекомое с шестью ногами и твёрдыми надкрыльями. Многие виды — хищники.",
+        "Алты аяқты, қатты үстіңгі қанатты жәндік. Көп түрі — жыртқыш.",
+        "An insect with six legs and hard wing cases. Many species are predators."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/creature-beetle.mp3",
+          "duration": 5.878
+        },
+        "kk": {
+          "file": "kk/creature-beetle.mp3",
+          "duration": 5.669
+        },
+        "en": {
+          "file": "en/creature-beetle.mp3",
+          "duration": 6.06
+        }
+      }
+    },
+    {
+      "id": "creature-lacewing",
+      "role": "narrator",
+      "text": [
+        "У взрослой особи прозрачные сетчатые крылья. Личинки многих видов охотятся на тлей.",
+        "Ересегінің қанаты мөлдір, торлы. Көп түрінің дернәсілі бітені аулайды.",
+        "Adults have transparent, net-veined wings. Many larvae prey on aphids."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/creature-lacewing.mp3",
+          "duration": 6.531
+        },
+        "kk": {
+          "file": "kk/creature-lacewing.mp3",
+          "duration": 6.374
+        },
+        "en": {
+          "file": "en/creature-lacewing.mp3",
+          "duration": 5.355
+        }
+      }
+    },
+    {
+      "id": "creature-springtail",
+      "role": "narrator",
+      "text": [
+        "Маленькое почвенное шестиногое. Многие виды питаются грибами и разлагающимся материалом.",
+        "Ұсақ топырақ алтыаяқтысы. Көп түрі саңырауқұлақтармен, шіріген заттармен қоректенеді.",
+        "A tiny soil hexapod. Many species eat fungi and decomposing material."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/creature-springtail.mp3",
+          "duration": 6.322
+        },
+        "kk": {
+          "file": "kk/creature-springtail.mp3",
+          "duration": 7.131
+        },
+        "en": {
+          "file": "en/creature-springtail.mp3",
+          "duration": 5.564
+        }
+      }
+    },
+    {
+      "id": "expedition-finale",
+      "role": "narrator",
+      "text": [
+        "Обсерватория снова видит звёзды. Вода, почва, укрытия и опылители связаны одной сетью жизни. Все четыре маршрута восстановлены!",
+        "Обсерватория жұлдыздарды қайта көреді. Су, топырақ, пана мен тозаңдандырушылар бір тіршілік желісімен байланысқан. Төрт бағыт та қалпына келді!",
+        "The observatory can see the stars again. Water, soil, shelter and pollinators form one web of life. All four trails are restored!"
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/expedition-finale.mp3",
+          "duration": 12.304
+        },
+        "kk": {
+          "file": "kk/expedition-finale.mp3",
+          "duration": 10.083
+        },
+        "en": {
+          "file": "en/expedition-finale.mp3",
+          "duration": 10.214
+        }
+      }
+    },
+    {
+      "id": "perspective-grass",
+      "role": "narrator",
+      "text": [
+        "Для человека — несколько шагов. Для муравья — путь через целый лес.",
+        "Адамға бірнеше қадам. Құмырсқаға тұтас тоғайдан өтетін жол.",
+        "A few steps for a person. An entire forest crossing for an ant."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/perspective-grass.mp3",
+          "duration": 5.695
+        },
+        "kk": {
+          "file": "kk/perspective-grass.mp3",
+          "duration": 4.937
+        },
+        "en": {
+          "file": "en/perspective-grass.mp3",
+          "duration": 4.232
+        }
+      }
+    },
+    {
+      "id": "perspective-puddle",
+      "role": "narrator",
+      "text": [
+        "Обойти её легко. Обойти загрязнение тем, кто живёт в воде, невозможно.",
+        "Оны айналып өту оңай. Ал судағы тіршілік иесі ластанудан айналып өте алмайды.",
+        "You can walk around it. Its aquatic inhabitants cannot walk around pollution."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/perspective-puddle.mp3",
+          "duration": 5.878
+        },
+        "kk": {
+          "file": "kk/perspective-puddle.mp3",
+          "duration": 5.747
+        },
+        "en": {
+          "file": "en/perspective-puddle.mp3",
+          "duration": 5.355
+        }
+      }
+    },
+    {
+      "id": "perspective-wrapper",
+      "role": "narrator",
+      "text": [
+        "То, что мы переступаем не глядя, может перекрыть чужую дорогу домой.",
+        "Біз байқамай аттап өтетін зат біреудің үйге жолын жабуы мүмкін.",
+        "What we step over without looking can block somebody else’s way home."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/perspective-wrapper.mp3",
+          "duration": 5.094
+        },
+        "kk": {
+          "file": "kk/perspective-wrapper.mp3",
+          "duration": 4.153
+        },
+        "en": {
+          "file": "en/perspective-wrapper.mp3",
+          "duration": 3.866
+        }
+      }
+    },
+    {
+      "id": "perspective-lamp",
+      "role": "narrator",
+      "text": [
+        "Наш свет может стать чужой потерянной ночью. Направление света меняет многое.",
+        "Біздің жарық өзгенің түнін жоғалтуы мүмкін. Жарық бағыты көп нәрсені өзгертеді.",
+        "Our light can take away another creature’s night. Where we direct it matters."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/perspective-lamp.mp3",
+          "duration": 7.053
+        },
+        "kk": {
+          "file": "kk/perspective-lamp.mp3",
+          "duration": 5.982
+        },
+        "en": {
+          "file": "en/perspective-lamp.mp3",
+          "duration": 4.859
+        }
+      }
+    },
+    {
+      "id": "underwater-intro",
+      "role": "narrator",
+      "text": [
+        "Под зеркальной поверхностью скрывается ещё один мир. Воздушный купол позволяет герою плавать — это условность сна. Освободи проходы, понаблюдай за водными обитателями и восстанови заросли.",
+        "Айнадай су астында тағы бір әлем бар. Ауа күмбезі кейіпкерге жүзуге мүмкіндік береді — бұл түс шарттылығы. Өткелді аш, су тұрғындарын бақыла, өсімдіктерді қалпына келтір.",
+        "Another world lies beneath the mirror. A dreamlike air dome lets the hero swim. Free the passages, observe aquatic neighbours and restore the plants."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/underwater-intro.mp3",
+          "duration": 14.263
+        },
+        "kk": {
+          "file": "kk/underwater-intro.mp3",
+          "duration": 12.696
+        },
+        "en": {
+          "file": "en/underwater-intro.mp3",
+          "duration": 10.423
+        }
+      }
+    },
+    {
+      "id": "underwater-conclusion",
+      "role": "narrator",
+      "text": [
+        "Личинка стрекозы живёт здесь задолго до первого полёта. Забота о водоёме — забота и о тех, кто летает над ним. Растения дают укрытия, но не удаляют все загрязняющие вещества.",
+        "Инелік дернәсілі алғашқы ұшуына дейін осында өседі. Суға қамқорлық — оның үстінде ұшатындарға да қамқорлық. Өсімдік пана береді, бірақ бүкіл ластаушыны жоймайды.",
+        "A dragonfly lives here long before its first flight. Caring for water also cares for those flying above it. Plants provide shelter, but cannot remove every pollutant."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/underwater-conclusion.mp3",
+          "duration": 13.244
+        },
+        "kk": {
+          "file": "kk/underwater-conclusion.mp3",
+          "duration": 11.546
+        },
+        "en": {
+          "file": "en/underwater-conclusion.mp3",
+          "duration": 11.337
+        }
+      }
+    },
+    {
+      "id": "trail-dew-canopy",
+      "role": "narrator",
+      "text": [
+        "Форма капли зависит от поверхностного натяжения и свойств листа. Восковой покров многих растений помогает воде собираться в капли.",
+        "Тамшы пішіні беттік керілу мен жапырақ қасиетіне байланысты. Көп өсімдіктің балауыз қабаты судың тамшы болып жиналуына көмектеседі.",
+        "A drop’s shape depends on surface tension and the leaf surface. Waxy coatings on many plants help water bead into droplets."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/trail-dew-canopy.mp3",
+          "duration": 9.509
+        },
+        "kk": {
+          "file": "kk/trail-dew-canopy.mp3",
+          "duration": 9.691
+        },
+        "en": {
+          "file": "en/trail-dew-canopy.mp3",
+          "duration": 8.464
+        }
+      }
+    },
+    {
+      "id": "trail-flower-canopy",
+      "role": "narrator",
+      "text": [
+        "Бабочке нужны условия не только для полёта: яйца и гусеницы связаны с подходящими кормовыми растениями. Здесь можно просмотреть превращение с ускоренным ходом времени.",
+        "Көбелекке ұшу жағдайы ғана жеткіліксіз: жұмыртқасы мен жұлдызқұрты сәйкес қоректік өсімдіктерге тәуелді. Мұнда түрленуді уақытын жылдамдатып көруге болады.",
+        "A butterfly needs more than flying space: eggs and caterpillars depend on suitable host plants. Here you can watch metamorphosis with time condensed."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/trail-flower-canopy.mp3",
+          "duration": 11.833
+        },
+        "kk": {
+          "file": "kk/trail-flower-canopy.mp3",
+          "duration": 10.841
+        },
+        "en": {
+          "file": "en/trail-flower-canopy.mp3",
+          "duration": 10.136
+        }
+      }
+    },
+    {
+      "id": "trail-night-canopy",
+      "role": "narrator",
+      "text": [
+        "У многих светлячков свечение служит для поиска партнёра. Видовые рисунки сигналов различаются; яркое внешнее освещение может мешать общению.",
+        "Көп жарқырауық жарықты жұбын іздеуге қолданады. Түрлердің сигнал ырғағы әртүрлі; сыртқы күшті жарық байланысқа кедергі болуы мүмкін.",
+        "Many fireflies use light to find a mate. Signal patterns differ between species; bright artificial lighting can interfere with communication."
+      ],
+      "files": {
+        "ru": {
+          "file": "ru/trail-night-canopy.mp3",
+          "duration": 9.979
+        },
+        "kk": {
+          "file": "kk/trail-night-canopy.mp3",
+          "duration": 8.934
+        },
+        "en": {
+          "file": "en/trail-night-canopy.mp3",
+          "duration": 9.927
+        }
+      }
+    }
+  ],
+  "coverage": {
+    "ru": 95,
+    "kk": 95,
+    "en": 95
+  },
+  "total_per_language": 95
+}

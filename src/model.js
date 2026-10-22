@@ -1,8 +1,9 @@
 import { BIOMES } from "./content.js";
 import { QUESTS } from "./quests.js";
 import { emptyTraversal, byPlatform, byTrail, TRAILS } from "./traversal.js";
-import { emptyTravel } from "./travel.js";
-import { emptyWorld } from "./interactions.js";
+import { emptyCrossing, validateCrossing } from './crossing-data.js';
+import {emptyObjects,validateObjects} from './environment-model.js';
+import {emptyHorizon,validateHorizon} from './expedition-data.js';
 import {
   emptyColony,
   CHAMBERS,
@@ -16,7 +17,7 @@ export const BW = 1600,
   BH = 1100,
   WW = BW * 3,
   WH = BH * 3,
-  SAVE_VERSION = 4;
+  SAVE_VERSION = 7;
 export const clamp = (v, a = 0, b = 100) => Math.max(a, Math.min(b, v));
 export function biomeAt(x, y) {
   const cx = clamp(Math.floor(x / BW), 0, 2),
@@ -48,15 +49,18 @@ export function initialState() {
       music: 0.3,
       ambience: 0.42,
       effects: 0.45,
+      voice: 0.88,
+      narration: true,
       low: false,
     },
     observations: {},
     inventory: { twigs: 0, dew: 0, leaves: 0 },
     changes: [],
     traversal: emptyTraversal(),
-    travel: emptyTravel(),
-    world: emptyWorld(),
     colony: emptyColony(),
+    crossing: emptyCrossing(),
+    objects: emptyObjects(),
+    horizon: emptyHorizon(),
     underwater: {
       active: false,
       x: 240,
@@ -88,30 +92,11 @@ export function migrateSave(input) {
     changes: Array.isArray(input.changes) ? input.changes : [],
     traversal: { ...base.traversal, ...input.traversal },
     colony: { ...base.colony, ...input.colony },
-    travel: { ...base.travel, ...input.travel },
-    world: {
-      ...base.world,
-      ...input.world,
-      counts: { ...base.world.counts, ...input.world?.counts },
-    },
+    crossing: validateCrossing(input.crossing),
+    objects: validateObjects(input.objects),
+    horizon: validateHorizon(input.horizon),
     version: SAVE_VERSION,
   };
-  const w = s.world;
-  if (
-    !Array.isArray(w.cleaned) ||
-    !Array.isArray(w.facts) ||
-    w.cleaned.some((id) => !Number.isInteger(id) || id < 0 || id > 9999) ||
-    w.facts.some((f) => typeof f !== "string") ||
-    Object.values(w.counts).some((n) => !Number.isFinite(n) || n < 0)
-  )
-    throw Error("Invalid world state");
-  w.cleaned = [...new Set(w.cleaned)];
-  if (
-    !Array.isArray(s.travel.stations) ||
-    s.travel.stations.some((id) => !Number.isInteger(id) || id < 0 || id > 8)
-  )
-    throw Error("Invalid travel state");
-  s.travel.stations = [...new Set(s.travel.stations)];
   for (const k of [
     "progress",
     "completed",
@@ -140,6 +125,7 @@ export function migrateSave(input) {
     throw Error("Invalid progress");
   s.x = clamp(s.x, 40, WW - 40);
   s.y = clamp(s.y, 40, WH - 40);
+  if(s.horizon.active&&(s.colony.active||s.underwater.active||s.crossing.boat.aboard))throw Error('Two active worlds');
   s.time = ((s.time % 24) + 24) % 24;
   const record = (value) =>
     value && typeof value === "object" && !Array.isArray(value);
@@ -182,7 +168,8 @@ export function migrateSave(input) {
     s.eco[k] = clamp(s.eco[k]);
   }
   if (!["ru", "kk", "en"].includes(s.settings.lang)) s.settings.lang = "ru";
-  for (const k of ["music", "ambience", "effects"])
+  s.settings.narration = s.settings.narration !== false;
+  for (const k of ["music", "ambience", "effects", "voice"])
     s.settings[k] = clamp(Number(s.settings[k]) || 0, 0, 1);
   if (
     !Array.isArray(s.underwater.progress) ||
@@ -214,6 +201,10 @@ export function migrateSave(input) {
     nearestFloor(makeColonyGrid(bridgeIsOpen(s)), colony.x, colony.y),
   );
   const t = s.traversal;
+  if(s.crossing.boat.aboard){
+    if(s.colony.active||s.underwater.active)throw Error('Ferry in inactive world');
+    s.x=s.crossing.boat.x;s.y=s.crossing.boat.y-8;
+  }
   if (
     !Number.isFinite(t.z) ||
     t.z < 0 ||

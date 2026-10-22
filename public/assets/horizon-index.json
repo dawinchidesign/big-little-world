@@ -1,0 +1,194 @@
+{
+  "greenhouse": {
+    "atlas": "horizon-props",
+    "frame": "greenhouse",
+    "width": 228,
+    "height": 238
+  },
+  "hollow": {
+    "atlas": "horizon-props",
+    "frame": "hollow",
+    "width": 232,
+    "height": 238
+  },
+  "arch": {
+    "atlas": "horizon-props",
+    "frame": "arch",
+    "width": 238,
+    "height": 215
+  },
+  "pod": {
+    "atlas": "horizon-props",
+    "frame": "pod",
+    "width": 224,
+    "height": 238
+  },
+  "valve": {
+    "atlas": "horizon-props",
+    "frame": "valve",
+    "width": 188,
+    "height": 238
+  },
+  "cistern": {
+    "atlas": "horizon-props",
+    "frame": "cistern",
+    "width": 214,
+    "height": 238
+  },
+  "sprout": {
+    "atlas": "horizon-props",
+    "frame": "sprout",
+    "width": 221,
+    "height": 238
+  },
+  "bloom": {
+    "atlas": "horizon-props",
+    "frame": "bloom",
+    "width": 229,
+    "height": 238
+  },
+  "shard": {
+    "atlas": "horizon-props",
+    "frame": "shard",
+    "width": 213,
+    "height": 238
+  },
+  "acorn": {
+    "atlas": "horizon-props",
+    "frame": "acorn",
+    "width": 238,
+    "height": 193
+  },
+  "plate": {
+    "atlas": "horizon-props",
+    "frame": "plate",
+    "width": 238,
+    "height": 227
+  },
+  "amber": {
+    "atlas": "horizon-props",
+    "frame": "amber",
+    "width": 194,
+    "height": 238
+  },
+  "wheel": {
+    "atlas": "horizon-props",
+    "frame": "wheel",
+    "width": 234,
+    "height": 238
+  },
+  "bridge": {
+    "atlas": "horizon-props",
+    "frame": "bridge",
+    "width": 238,
+    "height": 196
+  },
+  "lantern": {
+    "atlas": "horizon-props",
+    "frame": "lantern",
+    "width": 198,
+    "height": 238
+  },
+  "telescope": {
+    "atlas": "horizon-props",
+    "frame": "telescope",
+    "width": 224,
+    "height": 238
+  },
+  "new-snail0": {
+    "atlas": "horizon-creatures",
+    "frame": "new-snail0",
+    "width": 238,
+    "height": 146
+  },
+  "new-snail1": {
+    "atlas": "horizon-creatures",
+    "frame": "new-snail1",
+    "width": 238,
+    "height": 142
+  },
+  "new-snail2": {
+    "atlas": "horizon-creatures",
+    "frame": "new-snail2",
+    "width": 238,
+    "height": 144
+  },
+  "new-snail3": {
+    "atlas": "horizon-creatures",
+    "frame": "new-snail3",
+    "width": 238,
+    "height": 148
+  },
+  "new-beetle0": {
+    "atlas": "horizon-creatures",
+    "frame": "new-beetle0",
+    "width": 238,
+    "height": 165
+  },
+  "new-beetle1": {
+    "atlas": "horizon-creatures",
+    "frame": "new-beetle1",
+    "width": 238,
+    "height": 158
+  },
+  "new-beetle2": {
+    "atlas": "horizon-creatures",
+    "frame": "new-beetle2",
+    "width": 238,
+    "height": 162
+  },
+  "new-beetle3": {
+    "atlas": "horizon-creatures",
+    "frame": "new-beetle3",
+    "width": 238,
+    "height": 155
+  },
+  "new-lacewing0": {
+    "atlas": "horizon-creatures",
+    "frame": "new-lacewing0",
+    "width": 238,
+    "height": 201
+  },
+  "new-lacewing1": {
+    "atlas": "horizon-creatures",
+    "frame": "new-lacewing1",
+    "width": 238,
+    "height": 189
+  },
+  "new-lacewing2": {
+    "atlas": "horizon-creatures",
+    "frame": "new-lacewing2",
+    "width": 238,
+    "height": 171
+  },
+  "new-lacewing3": {
+    "atlas": "horizon-creatures",
+    "frame": "new-lacewing3",
+    "width": 238,
+    "height": 198
+  },
+  "new-springtail0": {
+    "atlas": "horizon-creatures",
+    "frame": "new-springtail0",
+    "width": 238,
+    "height": 138
+  },
+  "new-springtail1": {
+    "atlas": "horizon-creatures",
+    "frame": "new-springtail1",
+    "width": 238,
+    "height": 138
+  },
+  "new-springtail2": {
+    "atlas": "horizon-creatures",
+    "frame": "new-springtail2",
+    "width": 238,
+    "height": 133
+  },
+  "new-springtail3": {
+    "atlas": "horizon-creatures",
+    "frame": "new-springtail3",
+    "width": 238,
+    "height": 142
+  }
+}

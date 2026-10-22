@@ -11,11 +11,15 @@ export function rng(seed) {
     return n / 4294967296;
   };
 }
+// Generated textures are drawn once and then only uploaded to WebGL. A
+// GPU-accelerated 2D canvas can be evicted by the browser under video-memory
+// pressure and come back blank (the floor vanished mid-game); a CPU-backed
+// canvas keeps its pixels.
 export function canvas(w, h) {
   const c = document.createElement("canvas");
   c.width = w;
   c.height = h;
-  return [c, c.getContext("2d")];
+  return [c, c.getContext("2d", { willReadFrequently: true })];
 }
 const poly = (c, pts, col) => {
   c.fillStyle = col;
@@ -399,7 +403,13 @@ export function createTextures(scene) {
     const [c, g] = canvas(w, h);
     g.imageSmoothingEnabled = false;
     fn(g);
-    scene.textures.addCanvas(key, c);
+    const texture = scene.textures.addCanvas(key, c);
+    // If the browser still resets the canvas, repaint it and re-upload.
+    c.addEventListener?.("contextrestored", () => {
+      g.imageSmoothingEnabled = false;
+      fn(g);
+      texture?.refresh?.();
+    });
   };
   for (let d = 0; d < 4; d++)
     for (let f = 0; f < 8; f++)
@@ -1066,7 +1076,7 @@ export function createTextures(scene) {
     c.fillRect(0, 0, 128, 128);
   });
   for (const b of BIOMES)
-    put("ground" + b.id, 800, 550, (c) => drawTerrain(c, b, materialCanvas(scene, b.id === 3 ? 'material-silt' : [1,5,6].includes(b.id) ? 'material-clay' : b.id === 4 ? 'material-humus' : 'material-moss')));
+    put("ground" + b.id, 800, 550, (c) => drawTerrain(c,b,Object.fromEntries(['material-silt','material-clay','material-humus','material-moss'].map(key=>[key,materialCanvas(scene,key)]))));
   put("room", 480, 270, (c) => drawRoom(c));
 }
 export function drawGround(c, b) {

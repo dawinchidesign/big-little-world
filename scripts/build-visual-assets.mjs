@@ -123,6 +123,12 @@ const scenery=await isolatedProps('scenery-expansion',3,3);
 const scenerySpecs=[['tree',250,320],['reed',80,140],['blueflower',112,176],['web',130,130],['fungal-cluster',138,150],['lily',148,92],['moss-fan',110,142],['lichen-stone',108,78],['seedpod',82,142]];
 scenerySpecs.forEach(([key,w,h],i)=>add(key,scenery[Math.floor(i/3)][i%3],w*2,h*2,2,{foot:true,fit:.94}));
 
+const crossing=await isolatedProps('crossing-structures',3,2);
+const crossingSpecs=[['crossing-raft',130,80],['crossing-root',140,48],['crossing-fork',140,100],['crossing-bridge',68,340],['crossing-shelter',116,94],['crossing-dock',132,92]];
+crossingSpecs.forEach(([key,w,h],i)=>add(key,crossing[Math.floor(i/3)][i%3],w*2,h*2,2,{fit:.98,stretch:true}));
+const stream=await sheet('crossing-water',2,2);
+[['crossing-water',330,270],['crossing-ripple',85,55],['crossing-bank',160,90],['crossing-stone',70,60]].forEach(([key,w,h],i)=>add(key,stream[Math.floor(i/2)][i%2],w*2,h*2,2,{fit:.98,stretch:true}));
+
 // Camera planes keep their transparent composition canvas. Trimming them like
 // isolated props would move the empty centre and spoil parallax registration.
 async function panels(name,keys,cuts){
@@ -145,8 +151,9 @@ for(let f=0;f<4;f++){
 }
 
 // 1.3: illustrated replacements for the remaining visible procedural objects.
-// Isolate connected alpha islands: the generator's natural outlines can overhang
-// nominal rows. Keep all scene dimensions unchanged through the density wrapper.
+// Sheets were defringed (coloured matte haze removed) before slicing. Isolate
+// connected alpha islands: natural outlines can overhang nominal rows. Scene
+// dimensions stay unchanged through the density wrapper.
 const upgradeProps=await isolatedProps('upgrade-quest-props',3,3);
 const upgradeSpecs=[
   ['lamp',80,190],['pipe',160,100],['sample',50,60],
@@ -154,12 +161,6 @@ const upgradeSpecs=[
   ['shell',70,60],['mycelium',130,80],['canopy-stem',48,180],
 ];
 upgradeSpecs.forEach(([key,w,h],i)=>add(key,upgradeProps[Math.floor(i/3)][i%3],w*3,h*3,3,{fit:.92,foot:true,stretch:key==='canopy-stem'}));
-const dandelions=await sheet('upgrade-dandelions',3,1);
-// Shared full-height registration keeps the rosette planted during awakening.
-for(const [i,key] of ['dandelion-bud','dandelion','travel-seed'].entries()){
-  const [w,h]=i===2?[32,44]:[64,112];
-  add(key,dandelions[0][i],w*4,h*4,4,{fit:.92,foot:i!==2});
-}
 const fish=await sheet('upgrade-fish-swim',4,1);
 // One shared frame box and fixed body length avoid pumping between tail poses.
 const fishScale=232/Math.max(...fish[0].map(f=>f.width));

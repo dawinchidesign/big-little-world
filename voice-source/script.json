@@ -1,0 +1,2649 @@
+{
+  "languages": [
+    "ru",
+    "kk",
+    "en"
+  ],
+  "entries": [
+    {
+      "id": "cine-prologue-0",
+      "aliases": [],
+      "role": "hero",
+      "tag": "curious",
+      "text": [
+        "Интересно… А как выглядит наш мир для тех, кто меньше нас в сотни раз?",
+        "Қызық… Бізден жүздеген есе кішкентай тіршілік иелеріне әлем қалай көрінеді екен?",
+        "I wonder… What does our world look like to those hundreds of times smaller than us?"
+      ]
+    },
+    {
+      "id": "cine-prologue-1",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Учебник остался открытым. В шуме дождя слышится шелест травы. День постепенно превращается в сон.",
+        "Оқулық ашық қалды. Жаңбыр үнінен шөп сыбдыры естіледі. Күн біртіндеп түске айналады.",
+        "The textbook lies open. Beneath the rain is a rustle of grass. The day slips slowly into a dream."
+      ]
+    },
+    {
+      "id": "cine-prologue-2",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Капли — как стеклянные горы. Трава — выше деревьев. Это не лес. Это обычный газон.",
+        "Тамшылар — шыны таудай. Шөп — ағаштан биік. Бұл орман емес. Бұл кәдімгі көгал.",
+        "Droplets like glass mountains. Grass taller than trees. This is not a forest. It is an ordinary lawn."
+      ]
+    },
+    {
+      "id": "cine-prologue-3",
+      "aliases": [],
+      "role": "lada",
+      "tag": "warmly",
+      "text": [
+        "Ты не из нашего мира… Но, возможно, именно ты сможешь помочь ему. Добро пожаловать в большой маленький мир.",
+        "Сен біздің әлемнен емессің… Бірақ оған сен көмектесе алатын шығарсың. Үлкен кішкентай әлемге қош келдің.",
+        "You are not from our world… But perhaps you can help it. Welcome to the great little world."
+      ]
+    },
+    {
+      "id": "cine-awakening-0",
+      "aliases": [],
+      "role": "lada",
+      "tag": "warmly",
+      "text": [
+        "Не спеши. Сначала посмотри, кто живёт рядом. Иногда лучший способ помочь — понять.",
+        "Асықпа. Алдымен айналаңда кім тұратынын қара. Кейде көмектесудің ең жақсы жолы — түсіну.",
+        "Take your time. First, look at who lives beside you. Sometimes understanding is the best way to help."
+      ]
+    },
+    {
+      "id": "cine-citadel-0",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Один муравей видит крошку. Колония видит дорогу. Наш дом держится на тысячах маленьких взаимодействий.",
+        "Бір құмырсқа үгіндіні көреді. Колония жолды көреді. Үйіміз мыңдаған шағын өзара әрекетке сүйенеді.",
+        "One ant sees a crumb. The colony finds a path. Our home is held together by thousands of small interactions."
+      ]
+    },
+    {
+      "id": "cine-citadel-1",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "У расплода своя забота: кормить личинок, переносить яйца и куколок туда, где условия лучше. После ливня один из путей оборвался.",
+        "Ұрпаққа күтім керек: дернәсілді қоректендіріп, жұмыртқа мен қуыршақты қолайлы жерге тасимыз. Нөсерден кейін бір жол үзілді.",
+        "The brood needs care: feeding larvae and moving eggs and pupae to suitable conditions. The storm broke one of our routes."
+      ]
+    },
+    {
+      "id": "cine-citadel-2",
+      "aliases": [],
+      "role": "hero",
+      "tag": "curious",
+      "text": [
+        "Матка не сидит на троне. Рабочие не ждут команды. Весь этот город — множество маленьких действий, связанных друг с другом.",
+        "Аналық тақта отырған жоқ. Жұмысшылар бұйрық күтпейді. Бұл қала — бір-бірімен байланысқан көптеген шағын әрекет.",
+        "The queen is not on a throne. The workers do not wait for orders. This whole city is made of small, connected actions."
+      ]
+    },
+    {
+      "id": "cine-valley-0",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Они видят аккуратный газон. Мы видим закрытую столовую. Цветы — это не только красота.",
+        "Олар ұқыпты көгалды көреді. Біз жабылған асхананы көреміз. Гүл тек әдемілік емес.",
+        "They see a tidy lawn. We see a closed dining room. Flowers are more than decoration."
+      ]
+    },
+    {
+      "id": "cine-catastrophe-0",
+      "aliases": [],
+      "role": "lada",
+      "tag": "seriously",
+      "text": [
+        "Никто не хотел строить эту стену. Кто-то просто отпустил упаковку. Но маленькие последствия становятся большими, когда ты мал.",
+        "Бұл қабырғаны ешкім салғысы келген жоқ. Біреу қаптаманы тастай салды. Бірақ кішкентай болсаң, ұсақ салдар үлкенге айналады.",
+        "Nobody meant to build this wall. Someone simply dropped a wrapper. Small consequences become enormous when you are small."
+      ]
+    },
+    {
+      "id": "cine-night-0",
+      "aliases": [],
+      "role": "lada",
+      "tag": "warmly",
+      "text": [
+        "Прислушайся. Ночная жизнь продолжается, даже когда люди её не видят. Мы тоже нуждаемся в своём времени суток.",
+        "Тыңда. Адамдар көрмесе де, түнгі тіршілік жалғасады. Бізге де өз тәулік мезгіліміз қажет.",
+        "Listen. Night life continues even when people cannot see it. We need our own part of the day too."
+      ]
+    },
+    {
+      "id": "cine-migration-0",
+      "aliases": [],
+      "role": "lada",
+      "tag": "warmly",
+      "text": [
+        "Сегодня мы открыли проход. Завтра людям придётся изменить то, что делает этот путь опасным. Спасение — начало заботы.",
+        "Бүгін өткел аштық. Ертең адамдар бұл жолды қауіпті ететін жағдайды өзгертуі керек. Құтқару — қамқорлықтың бастауы.",
+        "Today we opened a passage. Tomorrow people must change what makes it dangerous. Rescue is the beginning of care."
+      ]
+    },
+    {
+      "id": "cine-restoration-0",
+      "aliases": [],
+      "role": "hero",
+      "tag": "curious",
+      "text": [
+        "Я думал, что должен всё исправить сам. Но живому миру нужны связи, время и место. И меньше наших преград.",
+        "Бәрін өзім түзетуім керек деп ойладым. Бірақ тірі әлемге байланыс, уақыт пен орын керек. Біздің кедергілеріміз аз болса екен.",
+        "I thought I had to fix everything myself. But life needs connections, time and space. And fewer obstacles from us."
+      ]
+    },
+    {
+      "id": "cine-ending-0",
+      "aliases": [],
+      "role": "lada",
+      "tag": "warmly",
+      "text": [
+        "Теперь ты знаешь, насколько велик наш маленький мир. Но помни: его будущее зависит и от твоего мира.",
+        "Енді кішкентай әлеміміздің қаншалықты үлкен екенін білесің. Бірақ ұмытпа: оның болашағы сенің әлеміңе де байланысты.",
+        "Now you know how great our little world is. But remember: its future also depends on your world."
+      ]
+    },
+    {
+      "id": "cine-ending-1",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Камера поднимается над цветами. Ты закрываешь глаза. На миг весь сад помещается в одной капле.",
+        "Камера гүлдерден жоғары көтеріледі. Көзіңді жұмасің. Бір сәтте бүкіл бақ бір тамшыға сыйып кетеді.",
+        "The view rises above the flowers. You close your eyes. For a moment, the whole garden fits inside one drop."
+      ]
+    },
+    {
+      "id": "cine-ending-2",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Звук будильника. Знакомая комната. Учебник биологии. И маленький листочек на столе… которого вчера не было.",
+        "Оятқыш үні. Таныс бөлме. Биология оқулығы. Үстелде кішкентай жапырақ… кеше ол жоқ еді.",
+        "An alarm. Your familiar room. The biology textbook. And a little leaf on the desk… that was not there yesterday."
+      ]
+    },
+    {
+      "id": "cine-ending-3",
+      "aliases": [],
+      "role": "hero",
+      "tag": "curious",
+      "text": [
+        "За окном — та самая божья коровка. Ты улыбаешься. Где-то за стеклом снова шелестит трава.",
+        "Терезе сыртында — сол қанқыз. Сен жымиясың. Әйнек сыртында шөп қайта сыбдырлайды.",
+        "At the window sits the same ladybird. You smile. Somewhere beyond the glass, the grass rustles again."
+      ]
+    },
+    {
+      "id": "cine-metamorphosis-0",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Яйцо на кормовом растении. Внутри развивается новый организм. В природе этот процесс требует времени.",
+        "Қоректік өсімдіктегі жұмыртқа. Ішінде жаңа ағза дамиды. Табиғатта бұл үдеріс уақытты қажет етеді.",
+        "An egg on a host plant. A new organism develops inside. In nature, this process takes time."
+      ]
+    },
+    {
+      "id": "cine-metamorphosis-1",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Гусеница ест и растёт, несколько раз линяет. Листья подходящего растения нужны ей так же, как взрослой бабочке — условия для жизни.",
+        "Жұлдызқұрт қоректеніп өседі, бірнеше рет түлейді. Сәйкес өсімдіктің жапырағы оған ересек көбелекке тіршілік жағдайы қажет болғандай маңызды.",
+        "The caterpillar feeds, grows and moults several times. Suitable host leaves matter as much as the adult’s habitat."
+      ]
+    },
+    {
+      "id": "cine-metamorphosis-2",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Внутри куколки происходит глубокая перестройка. Это не сон гусеницы: формируются органы взрослой бабочки.",
+        "Қуыршақ ішінде терең өзгеріс жүреді. Бұл жұлдызқұрттың ұйқысы емес: ересек көбелектің мүшелері қалыптасады.",
+        "Major reorganisation happens inside the pupa. It is not simply a sleeping caterpillar: adult structures develop."
+      ]
+    },
+    {
+      "id": "cine-metamorphosis-3",
+      "aliases": [],
+      "role": "lada",
+      "tag": "warmly",
+      "text": [
+        "После выхода крылья расправляются и укрепляются — не мгновенно. Взрослая бабочка может искать партнёра и откладывать яйца: цикл продолжается.",
+        "Шыққаннан кейін қанаты жайылып, қатаяды — бұл бірден болмайды. Ересек көбелек жұбын іздеп, жұмыртқа салады: айналым жалғасады.",
+        "After emergence the wings expand and harden, which takes time. The adult can find a mate and lay eggs: the cycle continues."
+      ]
+    },
+    {
+      "id": "quest-scout-opening",
+      "aliases": [],
+      "role": "lada",
+      "tag": "warmly",
+      "text": [
+        "Ты не из нашего мира… Но, возможно, именно ты сможешь помочь ему. Муравей потерял тропу после дождя. Найди его у корня.",
+        "Сен біздің әлемнен емессің… Бірақ оған сен көмектесе алатын шығарсың. Жаңбырдан кейін құмырсқа жолын жоғалтты. Оны тамыр жанынан тап.",
+        "You are not from our world… But perhaps you can help it. An ant lost the trail after the rain. Find him by the root."
+      ]
+    },
+    {
+      "id": "quest-scout-conclusion",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Следы, запахи и ориентиры помогают общественным насекомым находить путь.",
+        "Іздер, иіс пен белгілер қоғамдық жәндіктерге жол табуға көмектеседі.",
+        "Scents, tracks and landmarks help social insects navigate."
+      ]
+    },
+    {
+      "id": "quest-scout-stage-0",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Вода смыла запах! Но я помню три ориентира: росу, согнутую травинку и камешек.",
+        "Су иісті шайып кетті! Бірақ үш белгіні білемін: шық, иілген шөп пен тас.",
+        "The water washed away our scent! I remember three landmarks: dew, a bent blade and a stone."
+      ]
+    },
+    {
+      "id": "quest-scout-stage-1",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Влажная земля хранит следы. Дождь может нарушить феромонную тропу, но ориентиры помогают вернуться.",
+        "Ылғал жерде іздер сақталады. Жаңбыр феромон ізін бұзуы мүмкін, ал белгілер жол табуға көмектеседі.",
+        "The damp soil holds traces. Rain can disrupt scent trails; landmarks help the scout return."
+      ]
+    },
+    {
+      "id": "quest-scout-stage-2",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Я узнаю вход! В колонии каждый трудится, а тропы связывают нас с миром.",
+        "Кіреберісті таныдым! Колонияда бәрі еңбек етеді, ал соқпақтар бізді әлеммен байланыстырады.",
+        "I recognise the entrance! Everyone works in the colony, and our trails connect us to the world."
+      ]
+    },
+    {
+      "id": "quest-citadel-opening",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Наша матка откладывает яйца, но не отдаёт приказы. Мы распределяем работу через сигналы. После ливня проход к расплоду завален.",
+        "Аналығымыз жұмыртқа салады, бірақ бұйрық бермейді. Жұмысты сигналдар арқылы бөлісеміз. Нөсерден кейін дернәсілдерге жол жабылды.",
+        "Our queen lays eggs; she does not issue orders. Signals coordinate our work. The storm blocked the route to the brood."
+      ]
+    },
+    {
+      "id": "quest-citadel-conclusion",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Колония — система взаимосвязанных ролей. Матка не управляет ею как человеческий правитель.",
+        "Колония — өзара байланысты рөлдер жүйесі. Аналық оны адам билеушісіндей басқармайды.",
+        "A colony is a system of interdependent roles; its queen is not a human-style ruler."
+      ]
+    },
+    {
+      "id": "quest-citadel-stage-1",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Ты строишь, а рабочие переносят личинок. Сотрудничество важнее силы одного.",
+        "Сен өткел саласың, жұмысшылар дернәсілдерді тасиды. Бірлескен еңбек жеке күштен маңызды.",
+        "You build while workers carry the larvae. Cooperation matters more than one individual’s strength."
+      ]
+    },
+    {
+      "id": "quest-citadel-stage-2",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Рабочие ухаживают за яйцами, личинками и куколками. Посмотри: не все жители муравейника одинаковы.",
+        "Жұмысшылар жұмыртқаға, дернәсілге, қуыршаққа күтім жасайды. Қара: илеу тұрғындарының бәрі бірдей емес.",
+        "Workers tend eggs, larvae and pupae. Look closely: the colony has many stages of life."
+      ]
+    },
+    {
+      "id": "quest-flowers-opening",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Здесь косили всё сразу. Нектара почти нет, а гусеницам негде расти. Росу можно направить к уцелевшим росткам.",
+        "Мұндағы шөптің бәрін бірден шапты. Шірне аз, жұлдызқұрт өсетін жер жоқ. Шықты қалған өскіндерге бағыттауға болады.",
+        "Everything here was mown at once. There is little nectar and nowhere for caterpillars. We can guide dew to the remaining seedlings."
+      ]
+    },
+    {
+      "id": "quest-flowers-conclusion",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Разные цветы и кормовые растения поддерживают разные стадии жизни опылителей.",
+        "Әртүрлі гүлдер мен қоректік өсімдіктер тозаңдандырушылардың барлық сатысын қолдайды.",
+        "Diverse flowers and host plants support different stages of pollinator life."
+      ]
+    },
+    {
+      "id": "quest-flowers-stage-3",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Теперь есть пища! Взрослой бабочке нужен нектар, но её гусенице — подходящее кормовое растение.",
+        "Енді қорек бар! Көбелекке шірне қажет, ал жұлдызқұртына сәйкес қоректік өсімдік керек.",
+        "There is food again! An adult butterfly needs nectar, but its caterpillar needs a suitable host plant."
+      ]
+    },
+    {
+      "id": "quest-water-opening",
+      "aliases": [],
+      "role": "lada",
+      "tag": "warmly",
+      "text": [
+        "Мы летаем, но наши дети живут в воде. После дождя с поля пришёл мутный поток. Проследи его до источника.",
+        "Біз ұшамыз, бірақ баламыз суда өседі. Жаңбырдан кейін алқаптан лай су келді. Оның көзін тап.",
+        "We fly, but our young live in water. After the rain a murky stream arrived from the field. Trace it to its source."
+      ]
+    },
+    {
+      "id": "quest-water-conclusion",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Наземные и водные экосистемы связаны стоком. Остановить источник важнее, чем скрыть следы загрязнения.",
+        "Құрлық пен су экожүйелері ағын арқылы байланысады. Ластану көзін тоқтату маңызды.",
+        "Runoff connects land and water ecosystems. Addressing the source is essential."
+      ]
+    },
+    {
+      "id": "quest-water-stage-2",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Новый сток ослаб. Но уже попавшие в воду вещества не исчезнут мгновенно: нужны время и контроль взрослых.",
+        "Жаңа ағын азайды. Бірақ судағы заттар бірден жоғалмайды: уақыт пен ересектердің бақылауы керек.",
+        "New runoff has slowed. Existing contaminants do not vanish instantly: time and adult monitoring are needed."
+      ]
+    },
+    {
+      "id": "quest-soil-opening",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Люди убрали всю подстилку. Здесь пересохло. Грибы, мокрицы и почвенные обитатели перерабатывают остатки вместе.",
+        "Адамдар бүкіл төсенішті жинады. Мұнда құрғап кетті. Саңырауқұлақ, есекқұрт пен топырақ тұрғындары қалдықтарды бірге ыдыратады.",
+        "People removed all the leaf litter. It is drying out. Fungi, woodlice and soil creatures recycle remains together."
+      ]
+    },
+    {
+      "id": "quest-soil-conclusion",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Разложение возвращает вещества в круговорот; подстилка поддерживает влажность и разнообразие.",
+        "Ыдырау заттарды айналымға қайтарады; төсеніш ылғал мен алуантүрлілікті сақтайды.",
+        "Decomposition recycles nutrients; leaf litter supports moisture and biodiversity."
+      ]
+    },
+    {
+      "id": "quest-soil-stage-2",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Я не насекомое, а ракообразное! Без влаги я пересыхаю. Оставленная подстилка — чей-то дом.",
+        "Мен жәндік емес, шаянтәріздімін! Ылғалсыз кебемін. Қалған жапырақ біреудің үйі.",
+        "I am a crustacean, not an insect! Without moisture I dry out. A pile of leaves can be somebody’s home."
+      ]
+    },
+    {
+      "id": "quest-plastic-opening",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Упаковка перекрыла путь к влажному убежищу. Между нитями застряли жители. Освободи проход и проводи их.",
+        "Қаптама ылғалды панаға жолды жапты. Тұрғындар жіпке шырмалды. Өткелді ашып, оларды жеткіз.",
+        "A wrapper blocks the route to a damp refuge. Neighbours are caught in threads. Free the passage and guide them."
+      ]
+    },
+    {
+      "id": "quest-plastic-conclusion",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Мусор может становиться барьером и ловушкой. Уборка не заменяет предотвращение загрязнения.",
+        "Қоқыс кедергі мен тұзаққа айналады. Тазалау ластануды болдырмауды алмастырмайды.",
+        "Litter can be a barrier and a trap. Prevention matters alongside cleanup."
+      ]
+    },
+    {
+      "id": "quest-plastic-stage-2",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Мы прошли! Крупный мусор можно убрать, но мелкие частицы останутся. Людям надо предотвращать их появление.",
+        "Біз өттік! Ірі қоқысты жинауға болады, бірақ ұсақ бөлшектер қалады. Адамдар олардың пайда болуын болдырмауы керек.",
+        "We made it! Large litter can be removed, but tiny fragments remain. People must prevent new pollution."
+      ]
+    },
+    {
+      "id": "quest-pesticide-opening",
+      "aliases": [],
+      "role": "lada",
+      "tag": "warmly",
+      "text": [
+        "Там, где вчера гудели пчёлы, теперь тихо. Не трогай капли: сканер покажет опасные участки. Нужен безопасный коридор к саду.",
+        "Кеше ара гуілдеген жер бүгін тыныш. Тамшыны ұстама: сканер қауіпті жерді көрсетеді. Баққа қауіпсіз жол керек.",
+        "Where bees buzzed yesterday there is silence. Do not touch the droplets: scan for hazards. We need a safe corridor to the garden."
+      ]
+    },
+    {
+      "id": "quest-pesticide-conclusion",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Пестициды могут вредить нецелевым организмам. Жара и засуха усиливают нагрузку на местообитания.",
+        "Пестицидтер нысаналы емес ағзаларға зиян келтіруі мүмкін. Ыстық пен құрғақшылық ортаға қысымды күшейтеді.",
+        "Pesticides can harm non-target organisms. Heat and drought add stress to habitats."
+      ]
+    },
+    {
+      "id": "quest-pesticide-stage-3",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "В жару укрытие и влага особенно важны. Мы спасли часть жителей, но людям ещё надо изменить обработку участка.",
+        "Ыстықта пана мен ылғал аса қажет. Бір бөлігін құтқардық, енді адамдар алқап өңдеуін өзгертуі керек.",
+        "Shelter and moisture matter even more in heat. Some inhabitants are safe, but people still need to change how this land is treated."
+      ]
+    },
+    {
+      "id": "quest-night-opening",
+      "aliases": [],
+      "role": "lada",
+      "tag": "warmly",
+      "text": [
+        "Они не исчезли. Их сигналы затерялись в сиянии фонарей. Убери лишний свет, сохранив безопасный проход для людей.",
+        "Олар жоғалмады. Сигналдары шам жарығында көрінбей қалды. Адамдарға қауіпсіз жол қалдырып, артық жарықты азайт.",
+        "They have not vanished. Their signals are lost in the glare. Reduce excess light while keeping a safe path for people."
+      ]
+    },
+    {
+      "id": "quest-night-conclusion",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Направленный, тёплый и необходимый по времени свет помогает уменьшать световое загрязнение.",
+        "Бағытталған, жылы және тек қажет уақытта жанатын жарық ластануды азайтады.",
+        "Shielded, warm lighting used only when needed can reduce light pollution."
+      ]
+    },
+    {
+      "id": "quest-night-stage-1",
+      "aliases": [],
+      "role": "lada",
+      "tag": "warmly",
+      "text": [
+        "Теперь мы снова видим друг друга. Свет — не украшение: для многих из нас это способ найти пару.",
+        "Енді бір-бірімізді қайта көреміз. Жарық сән емес: көбіміз үшін ол жұп табу тәсілі.",
+        "We can see each other again. Light is not decoration: for many of us it is a way to find a mate."
+      ]
+    },
+    {
+      "id": "quest-garden-opening",
+      "aliases": [],
+      "role": "lada",
+      "tag": "warmly",
+      "text": [
+        "Ты увидел, как связаны цветы, почва, вода и темнота. Не нужно управлять каждым жителем. Нужно оставить им место для жизни.",
+        "Гүл, топырақ, су мен қараңғылықтың байланысын көрдің. Әр тұрғынды басқарудың қажеті жоқ. Оларға өмір сүруге орын қалдыру керек.",
+        "You have seen the links between flowers, soil, water and darkness. You need not control every inhabitant. You need to leave room for life."
+      ]
+    },
+    {
+      "id": "quest-garden-conclusion",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Устойчивость сада поддерживается разнообразием и связностью местообитаний. Забота продолжается и в большом мире.",
+        "Бақ тұрақтылығын алуантүрлілік пен мекендердің байланысы қолдайды. Қамқорлық үлкен әлемде жалғасады.",
+        "Diversity and connected habitats support resilience. Care continues in the larger world."
+      ]
+    },
+    {
+      "id": "secret-shell",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Пустая раковина стала укрытием. Даже маленький предмет может быть частью местообитания.",
+        "Бос қабық панаға айналды. Шағын зат та мекеннің бөлігі бола алады.",
+        "An empty shell became a shelter. Even a tiny object can be part of a habitat."
+      ]
+    },
+    {
+      "id": "secret-egg",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Яйца на обратной стороне листа. Кормовое растение важно не только взрослому насекомому.",
+        "Жапырақ астындағы жұмыртқалар. Қоректік өсімдік ересекке ғана қажет емес.",
+        "Eggs beneath a leaf. Host plants matter long before adulthood."
+      ]
+    },
+    {
+      "id": "secret-web",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Паук чувствует колебания паутины. Он не злодей, а естественный хищник.",
+        "Өрмекші өрмек тербелісін сезеді. Ол зұлым емес, табиғи жыртқыш.",
+        "A spider senses vibrations in its web. It is a natural predator."
+      ]
+    },
+    {
+      "id": "secret-leafprint",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Прожилки листа похожи на карту рек. Этот листок хочется сохранить.",
+        "Жапырақ жүйкелері өзен картасына ұқсайды. Оны сақтағың келеді.",
+        "Leaf veins resemble a map of rivers. This leaf feels worth keeping."
+      ]
+    },
+    {
+      "id": "colony-entrance",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Рабочие встречаются усиками и обмениваются химическими сигналами. Колония координирует работу без человеческих приказов.",
+        "Жұмысшылар мұртшаларын түйістіріп, химиялық сигнал алмасады. Колония адамша бұйрықсыз жұмысын үйлестіреді.",
+        "Workers touch antennae and exchange chemical signals. The colony coordinates tasks without human commands."
+      ]
+    },
+    {
+      "id": "colony-stores",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Пища поддерживает рабочих и растущий расплод. Что собирают муравьи и как делятся кормом, зависит от вида и потребностей колонии.",
+        "Қорек жұмысшылар мен өсіп жатқан ұрпақты қамтамасыз етеді. Құмырсқаның не жинап, қалай бөлісетіні түрі мен колония қажетіне байланысты.",
+        "Food supports the workers and growing brood. What ants collect and how they share it depends on the species and the colony’s needs."
+      ]
+    },
+    {
+      "id": "colony-brood",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Яйца, личинки и куколки нуждаются в уходе. Рабочие кормят личинок и могут переносить расплод в более подходящие условия.",
+        "Жұмыртқа, дернәсіл мен қуыршақ күтімді қажет етеді. Жұмысшылар дернәсілді қоректендіріп, ұрпақты қолайлы жағдайға таси алады.",
+        "Eggs, larvae and pupae need care. Workers feed larvae and may move brood to more suitable conditions."
+      ]
+    },
+    {
+      "id": "colony-junction",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Сеть ходов связывает камеры. Повреждение одного участка меняет доступные пути: восстановленный проход снова соединяет части колонии.",
+        "Жолдар желісі бөлмелерді байланыстырады. Бір бөлік бүлінсе, қолжетімді бағыт өзгереді: жөнделген өткел колонияны қайта байланыстырады.",
+        "Passages connect the chambers. A damaged section changes the available routes; restoring it reconnects parts of the colony."
+      ]
+    },
+    {
+      "id": "colony-shelter",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Влага и температура внутри гнезда неодинаковы. Перемещение расплода — один из способов реагировать на меняющиеся условия.",
+        "Илеудің ішіндегі ылғал мен температура бірдей емес. Ұрпақты тасу — жағдай өзгерісіне жауап берудің бір жолы.",
+        "Moisture and temperature vary within a nest. Moving brood is one way a colony responds to changing conditions."
+      ]
+    },
+    {
+      "id": "colony-queen",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Матка — репродуктивная самка. Её основная роль — откладывать яйца. Рабочие ухаживают за ней; это не тронный зал человеческого правителя.",
+        "Аналық — көбеюге маманданған ұрғашы. Негізгі міндеті — жұмыртқа салу. Жұмысшылар оған күтім жасайды; бұл адам билеушісінің тақ залы емес.",
+        "The queen is a reproductive female whose main role is laying eggs. Workers tend her; this is not a human ruler’s throne room."
+      ]
+    },
+    {
+      "id": "colony-remains",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Часть рабочих выносит ненужные остатки. Обращение с отходами различается у разных видов; чистота и расположение остатков важны для жизни колонии.",
+        "Кей жұмысшылар қажетсіз қалдықты сыртқа шығарады. Қалдықпен жұмыс әр түрге тән; тазалық пен қалдық орны колония тіршілігіне маңызды.",
+        "Some workers remove unwanted remains. Waste handling varies between species; cleanliness and where remains accumulate matter to colony life."
+      ]
+    },
+    {
+      "id": "colony-intro",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Разрез гнезда, тёплое освещение и мостик — художественные приёмы. Устройство гнёзд различается у разных видов.",
+        "Илеу қимасы, жылы жарық пен көпір — көркемдік тәсілдер. Әртүрлі түрдің илеуі әрқалай құрылған.",
+        "The cutaway, warm lighting and bridge are artistic devices. Nest structure varies between species."
+      ]
+    },
+    {
+      "id": "crossing-intro",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Ливень отрезал шестерых жителей от влажного убежища. Посмотри на три пути: лист у воды, корни слева и разрушенный мост справа. Помоги всем добраться до другого берега.",
+        "Нөсер алты мекендеушіні ылғалды панадан бөліп тастады. Үш жол бар: судағы жапырақ, сол жақтағы тамырлар және оң жақтағы бұзылған көпір. Бәрін арғы жағаға жеткіз.",
+        "The rain cut six neighbours off from a damp refuge. There are three ways: the leaf on the water, the roots to the left and the broken bridge to the right. Help everyone reach the far bank."
+      ]
+    },
+    {
+      "id": "crossing-leafHelp",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Лист выдержит героя и двух попутчиков. Управляй WASD или джойстиком и пристань у другого берега. Вернись за следующей парой. Паром останется регулярной переправой.",
+        "Жапырақ кейіпкер мен екі жолаушыны көтереді. WASD не джойстикпен басқар да, арғы жағаға тоқта. Келесі жұпқа қайтып кел. Паром тұрақты өткел болады.",
+        "The leaf carries you and two neighbours. Steer with WASD or the joystick and dock at the opposite bank. Return for the next pair. The ferry will remain a regular crossing."
+      ]
+    },
+    {
+      "id": "crossing-rootsHelp",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Корни огибают воду слева. Пройди по их изгибам, собери два опавших листа и накрой отмеченные места: мокрицам нужна влажная тень. После подготовки жители пойдут этим длинным путём.",
+        "Тамырлар суды сол жақтан айналып өтеді. Иірімдерімен жүріп, екі түскен жапырақ жина да, белгіленген орындарды жап: есекқұртқа ылғалды көлеңке керек. Дайын болғанда мекендеушілер ұзақ жолмен жүреді.",
+        "The roots skirt the water on the left. Follow their bends, collect two fallen leaves and cover the marked spots: woodlice need damp shade. Once it is ready, neighbours will use this longer route."
+      ]
+    },
+    {
+      "id": "crossing-bridgeHelp",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Собери три сухие веточки на этом берегу. У опоры нажми E: рабочие укрепят настил. Перейди мост первым — затем по нему пойдут жители и начнут носить пищу в убежище.",
+        "Осы жағадан үш құрғақ бұтақ жина. Тірек жанында E бас: жұмысшылар төсемді бекітеді. Көпірден бірінші өт — кейін мекендеушілер жүріп, панаға қорек тасиды.",
+        "Gather three dry twigs on this bank. Press E at the support: workers will secure the deck. Cross first, then neighbours will follow and carry food to the refuge."
+      ]
+    },
+    {
+      "id": "crossing-leafEnd",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Лист стал паромом. Пары жителей продолжают переправляться с пищей: этот путь требует регулярных рейсов.",
+        "Жапырақ паромға айналды. Жұптар қорекпен қатынайды: бұл жолға тұрақты рейстер қажет.",
+        "The leaf became a ferry. Pairs keep crossing with food: this route depends on regular trips."
+      ]
+    },
+    {
+      "id": "crossing-rootsEnd",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Под укрытиями сохранилась влажная тень. Жители обходят воду по корням. Путь длиннее, зато поток остаётся свободным.",
+        "Паналар астында ылғалды көлеңке сақталды. Мекендеушілер суды тамырлармен айналып өтеді. Жол ұзақ, бірақ ағын ашық қалады.",
+        "The shelters keep a damp shade. Neighbours follow the roots around the water. It is longer, while the stream remains open."
+      ]
+    },
+    {
+      "id": "crossing-bridgeEnd",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Муравьи пользуются постоянным мостом и носят пищу в убежище. Настил потребует ухода после следующего сильного дождя.",
+        "Құмырсқалар тұрақты көпірмен панаға қорек тасиды. Келесі нөсерден кейін төсемге күтім қажет болады.",
+        "The ants use the permanent bridge to carry food to the refuge. The deck will need maintenance after another heavy rain."
+      ]
+    },
+    {
+      "id": "expedition-glass-intro",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "За стеклом пахнет сухой землёй. Черепок перекрыл исток, а два вентиля направляют воду не туда. Сдвиньте черепок, поверните верхний вентиль на восток (→), нижний — на юг (↓). Наполните цистерну и полейте три ростка. Здесь можно исследовать уголки в любом порядке.",
+        "Әйнек артында құрғақ топырақ иісі бар. Сынық су көзін жапқан, екі шүмек суды басқа жаққа бұрған. Сынықты жылжытып, жоғарғы шүмекті шығысқа (→), төменгісін оңтүстікке (↓) бұрыңыз. Ыдыстан су алып, үш өскінді суарыңыз. Бұрыштарды кез келген ретпен зерттеңіз.",
+        "Dry earth lies beneath the glass. A shard blocks the spring and two valves point the wrong way. Push the shard aside, turn the upper valve east (→) and the lower one south (↓). Fill up at the cistern and water three sprouts. Explore the corners in any order."
+      ]
+    },
+    {
+      "id": "expedition-glass-secret-0",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Златоглазки помогают растениям: личинки многих видов питаются тлями. Взрослые особи могут питаться нектаром и пыльцой.",
+        "Алтынкөздер өсімдіктерге көмектеседі: көптеген түрлерінің дернәсілі бітемен қоректенеді. Ересектері шірне мен тозаң жеуі мүмкін.",
+        "Many lacewing larvae eat aphids. Adults of some species feed on nectar and pollen."
+      ]
+    },
+    {
+      "id": "expedition-glass-secret-1",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Под горшком сохранилась влажная земля. Укрытия удерживают влагу и помогают мелким беспозвоночным пережить жару.",
+        "Құмыра астында ылғалды топырақ сақталған. Пана ылғалды ұстап, ұсақ омыртқасыздарға ыстықтан қорғануға көмектеседі.",
+        "Damp soil survives beneath the pot. Shelter retains moisture and helps small invertebrates withstand the heat."
+      ]
+    },
+    {
+      "id": "expedition-hollow-intro",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Жук потерял три кладки в лабиринте корней. Прикатите жёлудь на круглый камень: его вес отодвинет кору. Переносите по одной кладке в безопасное гнездо. За дверью ждёт янтарная линза для обсерватории. E у таблички возвращает жёлудь, если он укатился.",
+        "Қоңыз тамырлар арасында үш жұмыртқа тобын жоғалтып алды. Емен жаңғағын дөңгелек тасқа домалатыңыз: салмағы қабықты ашады. Жұмыртқаларды бір-бірден қауіпсіз ұяға жеткізіңіз. Есіктің ар жағында обсерваторияға арналған кәріптас линза бар. Жаңғақ алыс кетсе, тақтайша жанында E басыңыз.",
+        "A beetle has lost three egg clusters among the roots. Roll the acorn onto the round stone: its weight slides the bark aside. Carry one cluster at a time to the safe nest. Beyond the gate is an amber lens for the observatory. Use E at the sign to reset a runaway acorn."
+      ]
+    },
+    {
+      "id": "expedition-hollow-secret-0",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Мёртвая древесина — живой дом. Грибы, мокрицы и другие обитатели участвуют в разложении органики.",
+        "Өлі сүрек — тіршілік мекені. Саңырауқұлақтар, есекқұрттар және басқа ағзалар органикалық заттардың ыдырауына қатысады.",
+        "Dead wood is a living habitat. Fungi, woodlice and other organisms help decompose organic matter."
+      ]
+    },
+    {
+      "id": "expedition-hollow-secret-1",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Жужелицы — разнообразная группа жуков. Многие виды охотятся на других беспозвоночных и прячутся под корой и камнями.",
+        "Барылдауық қоңыздар алуан түрлі. Көп түрі басқа омыртқасыздарды аулап, қабық пен тас астында тығылады.",
+        "Ground beetles are diverse. Many hunt other invertebrates and shelter beneath bark and stones."
+      ]
+    },
+    {
+      "id": "expedition-creek-intro",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Весенний поток унёс мост. Соберите три куска коры на западном берегу и уложите их у трёх опор. Затем почините водяное колесо, освободив его от веточки. Позовите ногохвостку на восточном берегу и проводите к влажному мху. Она ищет дорогу сама, но ждёт, если вы ушли далеко.",
+        "Көктемгі ағыс көпірді алып кетті. Батыс жағадан үш қабықты жинап, үш тірекке төсеңіз. Су дөңгелегін бұтақтан босатыңыз. Шығыс жағадан құйрықаяқты шақырып, ылғалды мүкке жеткізіңіз. Ол жолды өзі табады, бірақ алыстасаңыз күтеді.",
+        "The spring flood carried off the bridge. Collect three pieces of bark on the western bank and lay them at the three supports. Free the water wheel from a twig. Call the springtail on the eastern bank and guide it to the damp moss. It finds its own way but waits if you go too far."
+      ]
+    },
+    {
+      "id": "expedition-creek-secret-0",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Ногохвостки — не насекомые, а отдельная группа шестиногих. Многие виды используют прыгательную вилку, чтобы спасаться от опасности.",
+        "Құйрықаяқтар жәндіктер емес, алтыаяқтылардың жеке тобы. Көп түрі қауіптен секіргіш айырдың көмегімен құтылады.",
+        "Springtails are hexapods but are not insects. Many use a forked appendage called a furcula to jump away from danger."
+      ]
+    },
+    {
+      "id": "expedition-creek-secret-1",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "У прибрежных растений есть важная роль: их корни удерживают грунт, а тень и опавшие листья создают укрытия.",
+        "Жағалық өсімдіктердің тамыры топырақты ұстайды, ал көлеңкесі мен түскен жапырақтары пана жасайды.",
+        "Bankside roots hold soil in place. Shade and fallen leaves provide shelter for small animals."
+      ]
+    },
+    {
+      "id": "expedition-canopy-intro",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "В кроне спрятана старая обсерватория. Три фонаря откликнутся только в порядке, записанном на камнях: 2 → 1 → 3. Соберите пыльцу у большого цветка и посетите три закрытых бутона. Когда все четыре места будут восстановлены, установите янтарную линзу в телескоп.",
+        "Ағаш басында ескі обсерватория бар. Үш шам тастардағы ретпен ғана жанады: 2 → 1 → 3. Үлкен гүлден тозаң жинап, үш жабық бүршікке жеткізіңіз. Төрт мекен қалпына келгенде кәріптас линзаны телескопқа орнатыңыз.",
+        "An old observatory hides in the crown. The lanterns respond in the order written on the stones: 2 → 1 → 3. Collect pollen at the great flower and visit three closed buds. Once all four habitats are restored, fit the amber lens into the telescope."
+      ]
+    },
+    {
+      "id": "expedition-canopy-secret-0",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Опыление — перенос пыльцы. Цветки привлекают посетителей цветом, запахом и пищей. Не каждый посетитель одинаково хорошо переносит пыльцу.",
+        "Тозаңдану — тозаңның тасымалдануы. Гүлдер түсі, иісі және қорегімен тартады. Әр келуші тозаңды бірдей жақсы тасымалдамайды.",
+        "Pollination transfers pollen. Flowers attract visitors with colour, scent and food. Visitors differ in how effectively they transfer pollen."
+      ]
+    },
+    {
+      "id": "expedition-canopy-secret-1",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Свет фонарей здесь — сказочная механика. Настоящие светлячки излучают свет благодаря химической реакции в специальных органах.",
+        "Мұндағы шам жарығы — ертегілік ойын механикасы. Нағыз жарқырауық қоңыздар арнайы мүшелеріндегі химиялық реакция арқылы жарық шығарады.",
+        "These lanterns are a story mechanic. Real fireflies produce light through a chemical reaction in specialised organs."
+      ]
+    },
+    {
+      "id": "creature-snail",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Моллюск; ищет влажные укрытия. Двигается с помощью мускулистой ноги.",
+        "Ылғалды пана іздейтін ұлу. Бұлшықетті аяқпен қозғалады.",
+        "A mollusc that seeks damp shelter and moves on a muscular foot."
+      ]
+    },
+    {
+      "id": "creature-beetle",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Насекомое с шестью ногами и твёрдыми надкрыльями. Многие виды — хищники.",
+        "Алты аяқты, қатты үстіңгі қанатты жәндік. Көп түрі — жыртқыш.",
+        "An insect with six legs and hard wing cases. Many species are predators."
+      ]
+    },
+    {
+      "id": "creature-lacewing",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "У взрослой особи прозрачные сетчатые крылья. Личинки многих видов охотятся на тлей.",
+        "Ересегінің қанаты мөлдір, торлы. Көп түрінің дернәсілі бітені аулайды.",
+        "Adults have transparent, net-veined wings. Many larvae prey on aphids."
+      ]
+    },
+    {
+      "id": "creature-springtail",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Маленькое почвенное шестиногое. Многие виды питаются грибами и разлагающимся материалом.",
+        "Ұсақ топырақ алтыаяқтысы. Көп түрі саңырауқұлақтармен, шіріген заттармен қоректенеді.",
+        "A tiny soil hexapod. Many species eat fungi and decomposing material."
+      ]
+    },
+    {
+      "id": "expedition-finale",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Обсерватория снова видит звёзды. Вода, почва, укрытия и опылители связаны одной сетью жизни. Все четыре маршрута восстановлены!",
+        "Обсерватория жұлдыздарды қайта көреді. Су, топырақ, пана мен тозаңдандырушылар бір тіршілік желісімен байланысқан. Төрт бағыт та қалпына келді!",
+        "The observatory can see the stars again. Water, soil, shelter and pollinators form one web of life. All four trails are restored!"
+      ]
+    },
+    {
+      "id": "perspective-grass",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Для человека — несколько шагов. Для муравья — путь через целый лес.",
+        "Адамға бірнеше қадам. Құмырсқаға тұтас тоғайдан өтетін жол.",
+        "A few steps for a person. An entire forest crossing for an ant."
+      ]
+    },
+    {
+      "id": "perspective-puddle",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Обойти её легко. Обойти загрязнение тем, кто живёт в воде, невозможно.",
+        "Оны айналып өту оңай. Ал судағы тіршілік иесі ластанудан айналып өте алмайды.",
+        "You can walk around it. Its aquatic inhabitants cannot walk around pollution."
+      ]
+    },
+    {
+      "id": "perspective-wrapper",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "То, что мы переступаем не глядя, может перекрыть чужую дорогу домой.",
+        "Біз байқамай аттап өтетін зат біреудің үйге жолын жабуы мүмкін.",
+        "What we step over without looking can block somebody else’s way home."
+      ]
+    },
+    {
+      "id": "perspective-lamp",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Наш свет может стать чужой потерянной ночью. Направление света меняет многое.",
+        "Біздің жарық өзгенің түнін жоғалтуы мүмкін. Жарық бағыты көп нәрсені өзгертеді.",
+        "Our light can take away another creature’s night. Where we direct it matters."
+      ]
+    },
+    {
+      "id": "underwater-intro",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Под зеркальной поверхностью скрывается ещё один мир. Воздушный купол позволяет герою плавать — это условность сна. Освободи проходы, понаблюдай за водными обитателями и восстанови заросли.",
+        "Айнадай су астында тағы бір әлем бар. Ауа күмбезі кейіпкерге жүзуге мүмкіндік береді — бұл түс шарттылығы. Өткелді аш, су тұрғындарын бақыла, өсімдіктерді қалпына келтір.",
+        "Another world lies beneath the mirror. A dreamlike air dome lets the hero swim. Free the passages, observe aquatic neighbours and restore the plants."
+      ]
+    },
+    {
+      "id": "underwater-conclusion",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Личинка стрекозы живёт здесь задолго до первого полёта. Забота о водоёме — забота и о тех, кто летает над ним. Растения дают укрытия, но не удаляют все загрязняющие вещества.",
+        "Инелік дернәсілі алғашқы ұшуына дейін осында өседі. Суға қамқорлық — оның үстінде ұшатындарға да қамқорлық. Өсімдік пана береді, бірақ бүкіл ластаушыны жоймайды.",
+        "A dragonfly lives here long before its first flight. Caring for water also cares for those flying above it. Plants provide shelter, but cannot remove every pollutant."
+      ]
+    },
+    {
+      "id": "trail-dew-canopy",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Форма капли зависит от поверхностного натяжения и свойств листа. Восковой покров многих растений помогает воде собираться в капли.",
+        "Тамшы пішіні беттік керілу мен жапырақ қасиетіне байланысты. Көп өсімдіктің балауыз қабаты судың тамшы болып жиналуына көмектеседі.",
+        "A drop’s shape depends on surface tension and the leaf surface. Waxy coatings on many plants help water bead into droplets."
+      ]
+    },
+    {
+      "id": "trail-flower-canopy",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "Бабочке нужны условия не только для полёта: яйца и гусеницы связаны с подходящими кормовыми растениями. Здесь можно просмотреть превращение с ускоренным ходом времени.",
+        "Көбелекке ұшу жағдайы ғана жеткіліксіз: жұмыртқасы мен жұлдызқұрты сәйкес қоректік өсімдіктерге тәуелді. Мұнда түрленуді уақытын жылдамдатып көруге болады.",
+        "A butterfly needs more than flying space: eggs and caterpillars depend on suitable host plants. Here you can watch metamorphosis with time condensed."
+      ]
+    },
+    {
+      "id": "trail-night-canopy",
+      "aliases": [],
+      "role": "narrator",
+      "tag": "warmly",
+      "text": [
+        "У многих светлячков свечение служит для поиска партнёра. Видовые рисунки сигналов различаются; яркое внешнее освещение может мешать общению.",
+        "Көп жарқырауық жарықты жұбын іздеуге қолданады. Түрлердің сигнал ырғағы әртүрлі; сыртқы күшті жарық байланысқа кедергі болуы мүмкін.",
+        "Many fireflies use light to find a mate. Signal patterns differ between species; bright artificial lighting can interfere with communication."
+      ]
+    }
+  ],
+  "packs": [
+    {
+      "id": "ru-narrator-0",
+      "lang": "ru",
+      "role": "narrator",
+      "entries": [
+        {
+          "id": "cine-prologue-1",
+          "spoken": "Учебник остался открытым. В шуме дождя слышится шелест травы. День постепенно превращается в сон.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-prologue-2",
+          "spoken": "Капли — как стеклянные горы. Трава — выше деревьев. Это не лес. Это обычный газон.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-citadel-0",
+          "spoken": "Один муравей видит крошку. Колония видит дорогу. Наш дом держится на тысячах маленьких взаимодействий.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-citadel-1",
+          "spoken": "У расплода своя забота: кормить личинок, переносить яйца и куколок туда, где условия лучше. После ливня один из путей оборвался.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-valley-0",
+          "spoken": "Они видят аккуратный газон. Мы видим закрытую столовую. Цветы — это не только красота.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-ending-1",
+          "spoken": "Камера поднимается над цветами. Ты закрываешь глаза. На миг весь сад помещается в одной капле.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-ending-2",
+          "spoken": "Звук будильника. Знакомая комната. Учебник биологии. И маленький листочек на столе… которого вчера не было.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-metamorphosis-0",
+          "spoken": "Яйцо на кормовом растении. Внутри развивается новый организм. В природе этот процесс требует времени.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-metamorphosis-1",
+          "spoken": "Гусеница ест и растёт, несколько раз линяет. Листья подходящего растения нужны ей так же, как взрослой бабочке — условия для жизни.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-metamorphosis-2",
+          "spoken": "Внутри куколки происходит глубокая перестройка. Это не сон гусеницы: формируются органы взрослой бабочки.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-scout-conclusion",
+          "spoken": "Следы, запахи и ориентиры помогают общественным насекомым находить путь.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-scout-stage-0",
+          "spoken": "Вода смыла запах! Но я помню три ориентира: росу, согнутую травинку и камешек.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-scout-stage-1",
+          "spoken": "Влажная земля хранит следы. Дождь может нарушить феромонную тропу, но ориентиры помогают вернуться.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-scout-stage-2",
+          "spoken": "Я узнаю вход! В колонии каждый трудится, а тропы связывают нас с миром.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-citadel-opening",
+          "spoken": "Наша матка откладывает яйца, но не отдаёт приказы. Мы распределяем работу через сигналы. После ливня проход к расплоду завален.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-citadel-conclusion",
+          "spoken": "Колония — система взаимосвязанных ролей. Матка не управляет ею как человеческий правитель.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-citadel-stage-1",
+          "spoken": "Ты строишь, а рабочие переносят личинок. Сотрудничество важнее силы одного.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-citadel-stage-2",
+          "spoken": "Рабочие ухаживают за яйцами, личинками и куколками. Посмотри: не все жители муравейника одинаковы.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-flowers-opening",
+          "spoken": "Здесь косили всё сразу. Нектара почти нет, а гусеницам негде расти. Росу можно направить к уцелевшим росткам.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-flowers-conclusion",
+          "spoken": "Разные цветы и кормовые растения поддерживают разные стадии жизни опылителей.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-flowers-stage-3",
+          "spoken": "Теперь есть пища! Взрослой бабочке нужен нектар, но её гусенице — подходящее кормовое растение.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-water-conclusion",
+          "spoken": "Наземные и водные экосистемы связаны стоком. Остановить источник важнее, чем скрыть следы загрязнения.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-water-stage-2",
+          "spoken": "Новый сток ослаб. Но уже попавшие в воду вещества не исчезнут мгновенно: нужны время и контроль взрослых.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-soil-opening",
+          "spoken": "Люди убрали всю подстилку. Здесь пересохло. Грибы, мокрицы и почвенные обитатели перерабатывают остатки вместе.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-soil-conclusion",
+          "spoken": "Разложение возвращает вещества в круговорот; подстилка поддерживает влажность и разнообразие.",
+          "tag": "warmly"
+        }
+      ],
+      "prompt": "[warmly] Учебник остался открытым. В шуме дождя слышится шелест травы. День постепенно превращается в сон.\n\n[long pause]\n\n[warmly] Капли — как стеклянные горы. Трава — выше деревьев. Это не лес. Это обычный газон.\n\n[long pause]\n\n[warmly] Один муравей видит крошку. Колония видит дорогу. Наш дом держится на тысячах маленьких взаимодействий.\n\n[long pause]\n\n[warmly] У расплода своя забота: кормить личинок, переносить яйца и куколок туда, где условия лучше. После ливня один из путей оборвался.\n\n[long pause]\n\n[warmly] Они видят аккуратный газон. Мы видим закрытую столовую. Цветы — это не только красота.\n\n[long pause]\n\n[warmly] Камера поднимается над цветами. Ты закрываешь глаза. На миг весь сад помещается в одной капле.\n\n[long pause]\n\n[warmly] Звук будильника. Знакомая комната. Учебник биологии. И маленький листочек на столе… которого вчера не было.\n\n[long pause]\n\n[warmly] Яйцо на кормовом растении. Внутри развивается новый организм. В природе этот процесс требует времени.\n\n[long pause]\n\n[warmly] Гусеница ест и растёт, несколько раз линяет. Листья подходящего растения нужны ей так же, как взрослой бабочке — условия для жизни.\n\n[long pause]\n\n[warmly] Внутри куколки происходит глубокая перестройка. Это не сон гусеницы: формируются органы взрослой бабочки.\n\n[long pause]\n\n[warmly] Следы, запахи и ориентиры помогают общественным насекомым находить путь.\n\n[long pause]\n\n[warmly] Вода смыла запах! Но я помню три ориентира: росу, согнутую травинку и камешек.\n\n[long pause]\n\n[warmly] Влажная земля хранит следы. Дождь может нарушить феромонную тропу, но ориентиры помогают вернуться.\n\n[long pause]\n\n[warmly] Я узнаю вход! В колонии каждый трудится, а тропы связывают нас с миром.\n\n[long pause]\n\n[warmly] Наша матка откладывает яйца, но не отдаёт приказы. Мы распределяем работу через сигналы. После ливня проход к расплоду завален.\n\n[long pause]\n\n[warmly] Колония — система взаимосвязанных ролей. Матка не управляет ею как человеческий правитель.\n\n[long pause]\n\n[warmly] Ты строишь, а рабочие переносят личинок. Сотрудничество важнее силы одного.\n\n[long pause]\n\n[warmly] Рабочие ухаживают за яйцами, личинками и куколками. Посмотри: не все жители муравейника одинаковы.\n\n[long pause]\n\n[warmly] Здесь косили всё сразу. Нектара почти нет, а гусеницам негде расти. Росу можно направить к уцелевшим росткам.\n\n[long pause]\n\n[warmly] Разные цветы и кормовые растения поддерживают разные стадии жизни опылителей.\n\n[long pause]\n\n[warmly] Теперь есть пища! Взрослой бабочке нужен нектар, но её гусенице — подходящее кормовое растение.\n\n[long pause]\n\n[warmly] Наземные и водные экосистемы связаны стоком. Остановить источник важнее, чем скрыть следы загрязнения.\n\n[long pause]\n\n[warmly] Новый сток ослаб. Но уже попавшие в воду вещества не исчезнут мгновенно: нужны время и контроль взрослых.\n\n[long pause]\n\n[warmly] Люди убрали всю подстилку. Здесь пересохло. Грибы, мокрицы и почвенные обитатели перерабатывают остатки вместе.\n\n[long pause]\n\n[warmly] Разложение возвращает вещества в круговорот; подстилка поддерживает влажность и разнообразие."
+    },
+    {
+      "id": "ru-narrator-1",
+      "lang": "ru",
+      "role": "narrator",
+      "entries": [
+        {
+          "id": "quest-soil-stage-2",
+          "spoken": "Я не насекомое, а ракообразное! Без влаги я пересыхаю. Оставленная подстилка — чей-то дом.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-plastic-opening",
+          "spoken": "Упаковка перекрыла путь к влажному убежищу. Между нитями застряли жители. Освободи проход и проводи их.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-plastic-conclusion",
+          "spoken": "Мусор может становиться барьером и ловушкой. Уборка не заменяет предотвращение загрязнения.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-plastic-stage-2",
+          "spoken": "Мы прошли! Крупный мусор можно убрать, но мелкие частицы останутся. Людям надо предотвращать их появление.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-pesticide-conclusion",
+          "spoken": "Пестициды могут вредить нецелевым организмам. Жара и засуха усиливают нагрузку на местообитания.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-pesticide-stage-3",
+          "spoken": "В жару укрытие и влага особенно важны. Мы спасли часть жителей, но людям ещё надо изменить обработку участка.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-night-conclusion",
+          "spoken": "Направленный, тёплый и необходимый по времени свет помогает уменьшать световое загрязнение.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-garden-conclusion",
+          "spoken": "Устойчивость сада поддерживается разнообразием и связностью местообитаний. Забота продолжается и в большом мире.",
+          "tag": "warmly"
+        },
+        {
+          "id": "secret-shell",
+          "spoken": "Пустая раковина стала укрытием. Даже маленький предмет может быть частью местообитания.",
+          "tag": "warmly"
+        },
+        {
+          "id": "secret-egg",
+          "spoken": "Яйца на обратной стороне листа. Кормовое растение важно не только взрослому насекомому.",
+          "tag": "warmly"
+        },
+        {
+          "id": "secret-web",
+          "spoken": "Паук чувствует колебания паутины. Он не злодей, а естественный хищник.",
+          "tag": "warmly"
+        },
+        {
+          "id": "secret-leafprint",
+          "spoken": "Прожилки листа похожи на карту рек. Этот листок хочется сохранить.",
+          "tag": "warmly"
+        },
+        {
+          "id": "colony-entrance",
+          "spoken": "Рабочие встречаются усиками и обмениваются химическими сигналами. Колония координирует работу без человеческих приказов.",
+          "tag": "warmly"
+        },
+        {
+          "id": "colony-stores",
+          "spoken": "Пища поддерживает рабочих и растущий расплод. Что собирают муравьи и как делятся кормом, зависит от вида и потребностей колонии.",
+          "tag": "warmly"
+        },
+        {
+          "id": "colony-brood",
+          "spoken": "Яйца, личинки и куколки нуждаются в уходе. Рабочие кормят личинок и могут переносить расплод в более подходящие условия.",
+          "tag": "warmly"
+        },
+        {
+          "id": "colony-junction",
+          "spoken": "Сеть ходов связывает камеры. Повреждение одного участка меняет доступные пути: восстановленный проход снова соединяет части колонии.",
+          "tag": "warmly"
+        },
+        {
+          "id": "colony-shelter",
+          "spoken": "Влага и температура внутри гнезда неодинаковы. Перемещение расплода — один из способов реагировать на меняющиеся условия.",
+          "tag": "warmly"
+        },
+        {
+          "id": "colony-queen",
+          "spoken": "Матка — репродуктивная самка. Её основная роль — откладывать яйца. Рабочие ухаживают за ней; это не тронный зал человеческого правителя.",
+          "tag": "warmly"
+        },
+        {
+          "id": "colony-remains",
+          "spoken": "Часть рабочих выносит ненужные остатки. Обращение с отходами различается у разных видов; чистота и расположение остатков важны для жизни колонии.",
+          "tag": "warmly"
+        },
+        {
+          "id": "colony-intro",
+          "spoken": "Разрез гнезда, тёплое освещение и мостик — художественные приёмы. Устройство гнёзд различается у разных видов.",
+          "tag": "warmly"
+        },
+        {
+          "id": "crossing-intro",
+          "spoken": "Ливень отрезал шестерых жителей от влажного убежища. Посмотри на три пути: лист у воды, корни слева и разрушенный мост справа. Помоги всем добраться до другого берега.",
+          "tag": "warmly"
+        },
+        {
+          "id": "crossing-leafHelp",
+          "spoken": "Лист выдержит героя и двух попутчиков. Управляй WASD или джойстиком и пристань у другого берега. Вернись за следующей парой. Паром останется регулярной переправой.",
+          "tag": "warmly"
+        }
+      ],
+      "prompt": "[warmly] Я не насекомое, а ракообразное! Без влаги я пересыхаю. Оставленная подстилка — чей-то дом.\n\n[long pause]\n\n[warmly] Упаковка перекрыла путь к влажному убежищу. Между нитями застряли жители. Освободи проход и проводи их.\n\n[long pause]\n\n[warmly] Мусор может становиться барьером и ловушкой. Уборка не заменяет предотвращение загрязнения.\n\n[long pause]\n\n[warmly] Мы прошли! Крупный мусор можно убрать, но мелкие частицы останутся. Людям надо предотвращать их появление.\n\n[long pause]\n\n[warmly] Пестициды могут вредить нецелевым организмам. Жара и засуха усиливают нагрузку на местообитания.\n\n[long pause]\n\n[warmly] В жару укрытие и влага особенно важны. Мы спасли часть жителей, но людям ещё надо изменить обработку участка.\n\n[long pause]\n\n[warmly] Направленный, тёплый и необходимый по времени свет помогает уменьшать световое загрязнение.\n\n[long pause]\n\n[warmly] Устойчивость сада поддерживается разнообразием и связностью местообитаний. Забота продолжается и в большом мире.\n\n[long pause]\n\n[warmly] Пустая раковина стала укрытием. Даже маленький предмет может быть частью местообитания.\n\n[long pause]\n\n[warmly] Яйца на обратной стороне листа. Кормовое растение важно не только взрослому насекомому.\n\n[long pause]\n\n[warmly] Паук чувствует колебания паутины. Он не злодей, а естественный хищник.\n\n[long pause]\n\n[warmly] Прожилки листа похожи на карту рек. Этот листок хочется сохранить.\n\n[long pause]\n\n[warmly] Рабочие встречаются усиками и обмениваются химическими сигналами. Колония координирует работу без человеческих приказов.\n\n[long pause]\n\n[warmly] Пища поддерживает рабочих и растущий расплод. Что собирают муравьи и как делятся кормом, зависит от вида и потребностей колонии.\n\n[long pause]\n\n[warmly] Яйца, личинки и куколки нуждаются в уходе. Рабочие кормят личинок и могут переносить расплод в более подходящие условия.\n\n[long pause]\n\n[warmly] Сеть ходов связывает камеры. Повреждение одного участка меняет доступные пути: восстановленный проход снова соединяет части колонии.\n\n[long pause]\n\n[warmly] Влага и температура внутри гнезда неодинаковы. Перемещение расплода — один из способов реагировать на меняющиеся условия.\n\n[long pause]\n\n[warmly] Матка — репродуктивная самка. Её основная роль — откладывать яйца. Рабочие ухаживают за ней; это не тронный зал человеческого правителя.\n\n[long pause]\n\n[warmly] Часть рабочих выносит ненужные остатки. Обращение с отходами различается у разных видов; чистота и расположение остатков важны для жизни колонии.\n\n[long pause]\n\n[warmly] Разрез гнезда, тёплое освещение и мостик — художественные приёмы. Устройство гнёзд различается у разных видов.\n\n[long pause]\n\n[warmly] Ливень отрезал шестерых жителей от влажного убежища. Посмотри на три пути: лист у воды, корни слева и разрушенный мост справа. Помоги всем добраться до другого берега.\n\n[long pause]\n\n[warmly] Лист выдержит героя и двух попутчиков. Управляй WASD или джойстиком и пристань у другого берега. Вернись за следующей парой. Паром останется регулярной переправой."
+    },
+    {
+      "id": "ru-narrator-2",
+      "lang": "ru",
+      "role": "narrator",
+      "entries": [
+        {
+          "id": "crossing-rootsHelp",
+          "spoken": "Корни огибают воду слева. Пройди по их изгибам, собери два опавших листа и накрой отмеченные места: мокрицам нужна влажная тень. После подготовки жители пойдут этим длинным путём.",
+          "tag": "warmly"
+        },
+        {
+          "id": "crossing-bridgeHelp",
+          "spoken": "Собери три сухие веточки на этом берегу. У опоры нажми E: рабочие укрепят настил. Перейди мост первым — затем по нему пойдут жители и начнут носить пищу в убежище.",
+          "tag": "warmly"
+        },
+        {
+          "id": "crossing-leafEnd",
+          "spoken": "Лист стал паромом. Пары жителей продолжают переправляться с пищей: этот путь требует регулярных рейсов.",
+          "tag": "warmly"
+        },
+        {
+          "id": "crossing-rootsEnd",
+          "spoken": "Под укрытиями сохранилась влажная тень. Жители обходят воду по корням. Путь длиннее, зато поток остаётся свободным.",
+          "tag": "warmly"
+        },
+        {
+          "id": "crossing-bridgeEnd",
+          "spoken": "Муравьи пользуются постоянным мостом и носят пищу в убежище. Настил потребует ухода после следующего сильного дождя.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-glass-intro",
+          "spoken": "За стеклом пахнет сухой землёй. Черепок перекрыл исток, а два вентиля направляют воду не туда. Сдвиньте черепок, поверните верхний вентиль на восток (на восток), нижний — на юг (на юг). Наполните цистерну и полейте три ростка. Здесь можно исследовать уголки в любом порядке.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-glass-secret-0",
+          "spoken": "Златоглазки помогают растениям: личинки многих видов питаются тлями. Взрослые особи могут питаться нектаром и пыльцой.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-glass-secret-1",
+          "spoken": "Под горшком сохранилась влажная земля. Укрытия удерживают влагу и помогают мелким беспозвоночным пережить жару.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-hollow-intro",
+          "spoken": "Жук потерял три кладки в лабиринте корней. Прикатите жёлудь на круглый камень: его вес отодвинет кору. Переносите по одной кладке в безопасное гнездо. За дверью ждёт янтарная линза для обсерватории. E у таблички возвращает жёлудь, если он укатился.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-hollow-secret-0",
+          "spoken": "Мёртвая древесина — живой дом. Грибы, мокрицы и другие обитатели участвуют в разложении органики.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-hollow-secret-1",
+          "spoken": "Жужелицы — разнообразная группа жуков. Многие виды охотятся на других беспозвоночных и прячутся под корой и камнями.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-creek-intro",
+          "spoken": "Весенний поток унёс мост. Соберите три куска коры на западном берегу и уложите их у трёх опор. Затем почините водяное колесо, освободив его от веточки. Позовите ногохвостку на восточном берегу и проводите к влажному мху. Она ищет дорогу сама, но ждёт, если вы ушли далеко.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-creek-secret-0",
+          "spoken": "Ногохвостки — не насекомые, а отдельная группа шестиногих. Многие виды используют прыгательную вилку, чтобы спасаться от опасности.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-creek-secret-1",
+          "spoken": "У прибрежных растений есть важная роль: их корни удерживают грунт, а тень и опавшие листья создают укрытия.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-canopy-intro",
+          "spoken": "В кроне спрятана старая обсерватория. Три фонаря откликнутся только в порядке, записанном на камнях: два, затем один, затем три. Соберите пыльцу у большого цветка и посетите три закрытых бутона. Когда все четыре места будут восстановлены, установите янтарную линзу в телескоп.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-canopy-secret-0",
+          "spoken": "Опыление — перенос пыльцы. Цветки привлекают посетителей цветом, запахом и пищей. Не каждый посетитель одинаково хорошо переносит пыльцу.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-canopy-secret-1",
+          "spoken": "Свет фонарей здесь — сказочная механика. Настоящие светлячки излучают свет благодаря химической реакции в специальных органах.",
+          "tag": "warmly"
+        },
+        {
+          "id": "creature-snail",
+          "spoken": "Моллюск; ищет влажные укрытия. Двигается с помощью мускулистой ноги.",
+          "tag": "warmly"
+        }
+      ],
+      "prompt": "[warmly] Корни огибают воду слева. Пройди по их изгибам, собери два опавших листа и накрой отмеченные места: мокрицам нужна влажная тень. После подготовки жители пойдут этим длинным путём.\n\n[long pause]\n\n[warmly] Собери три сухие веточки на этом берегу. У опоры нажми E: рабочие укрепят настил. Перейди мост первым — затем по нему пойдут жители и начнут носить пищу в убежище.\n\n[long pause]\n\n[warmly] Лист стал паромом. Пары жителей продолжают переправляться с пищей: этот путь требует регулярных рейсов.\n\n[long pause]\n\n[warmly] Под укрытиями сохранилась влажная тень. Жители обходят воду по корням. Путь длиннее, зато поток остаётся свободным.\n\n[long pause]\n\n[warmly] Муравьи пользуются постоянным мостом и носят пищу в убежище. Настил потребует ухода после следующего сильного дождя.\n\n[long pause]\n\n[warmly] За стеклом пахнет сухой землёй. Черепок перекрыл исток, а два вентиля направляют воду не туда. Сдвиньте черепок, поверните верхний вентиль на восток (на восток), нижний — на юг (на юг). Наполните цистерну и полейте три ростка. Здесь можно исследовать уголки в любом порядке.\n\n[long pause]\n\n[warmly] Златоглазки помогают растениям: личинки многих видов питаются тлями. Взрослые особи могут питаться нектаром и пыльцой.\n\n[long pause]\n\n[warmly] Под горшком сохранилась влажная земля. Укрытия удерживают влагу и помогают мелким беспозвоночным пережить жару.\n\n[long pause]\n\n[warmly] Жук потерял три кладки в лабиринте корней. Прикатите жёлудь на круглый камень: его вес отодвинет кору. Переносите по одной кладке в безопасное гнездо. За дверью ждёт янтарная линза для обсерватории. E у таблички возвращает жёлудь, если он укатился.\n\n[long pause]\n\n[warmly] Мёртвая древесина — живой дом. Грибы, мокрицы и другие обитатели участвуют в разложении органики.\n\n[long pause]\n\n[warmly] Жужелицы — разнообразная группа жуков. Многие виды охотятся на других беспозвоночных и прячутся под корой и камнями.\n\n[long pause]\n\n[warmly] Весенний поток унёс мост. Соберите три куска коры на западном берегу и уложите их у трёх опор. Затем почините водяное колесо, освободив его от веточки. Позовите ногохвостку на восточном берегу и проводите к влажному мху. Она ищет дорогу сама, но ждёт, если вы ушли далеко.\n\n[long pause]\n\n[warmly] Ногохвостки — не насекомые, а отдельная группа шестиногих. Многие виды используют прыгательную вилку, чтобы спасаться от опасности.\n\n[long pause]\n\n[warmly] У прибрежных растений есть важная роль: их корни удерживают грунт, а тень и опавшие листья создают укрытия.\n\n[long pause]\n\n[warmly] В кроне спрятана старая обсерватория. Три фонаря откликнутся только в порядке, записанном на камнях: два, затем один, затем три. Соберите пыльцу у большого цветка и посетите три закрытых бутона. Когда все четыре места будут восстановлены, установите янтарную линзу в телескоп.\n\n[long pause]\n\n[warmly] Опыление — перенос пыльцы. Цветки привлекают посетителей цветом, запахом и пищей. Не каждый посетитель одинаково хорошо переносит пыльцу.\n\n[long pause]\n\n[warmly] Свет фонарей здесь — сказочная механика. Настоящие светлячки излучают свет благодаря химической реакции в специальных органах.\n\n[long pause]\n\n[warmly] Моллюск; ищет влажные укрытия. Двигается с помощью мускулистой ноги."
+    },
+    {
+      "id": "ru-narrator-3",
+      "lang": "ru",
+      "role": "narrator",
+      "entries": [
+        {
+          "id": "creature-beetle",
+          "spoken": "Насекомое с шестью ногами и твёрдыми надкрыльями. Многие виды — хищники.",
+          "tag": "warmly"
+        },
+        {
+          "id": "creature-lacewing",
+          "spoken": "У взрослой особи прозрачные сетчатые крылья. Личинки многих видов охотятся на тлей.",
+          "tag": "warmly"
+        },
+        {
+          "id": "creature-springtail",
+          "spoken": "Маленькое почвенное шестиногое. Многие виды питаются грибами и разлагающимся материалом.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-finale",
+          "spoken": "Обсерватория снова видит звёзды. Вода, почва, укрытия и опылители связаны одной сетью жизни. Все четыре маршрута восстановлены!",
+          "tag": "warmly"
+        },
+        {
+          "id": "perspective-grass",
+          "spoken": "Для человека — несколько шагов. Для муравья — путь через целый лес.",
+          "tag": "warmly"
+        },
+        {
+          "id": "perspective-puddle",
+          "spoken": "Обойти её легко. Обойти загрязнение тем, кто живёт в воде, невозможно.",
+          "tag": "warmly"
+        },
+        {
+          "id": "perspective-wrapper",
+          "spoken": "То, что мы переступаем не глядя, может перекрыть чужую дорогу домой.",
+          "tag": "warmly"
+        },
+        {
+          "id": "perspective-lamp",
+          "spoken": "Наш свет может стать чужой потерянной ночью. Направление света меняет многое.",
+          "tag": "warmly"
+        },
+        {
+          "id": "underwater-intro",
+          "spoken": "Под зеркальной поверхностью скрывается ещё один мир. Воздушный купол позволяет герою плавать — это условность сна. Освободи проходы, понаблюдай за водными обитателями и восстанови заросли.",
+          "tag": "warmly"
+        },
+        {
+          "id": "underwater-conclusion",
+          "spoken": "Личинка стрекозы живёт здесь задолго до первого полёта. Забота о водоёме — забота и о тех, кто летает над ним. Растения дают укрытия, но не удаляют все загрязняющие вещества.",
+          "tag": "warmly"
+        }
+      ],
+      "prompt": "[warmly] Насекомое с шестью ногами и твёрдыми надкрыльями. Многие виды — хищники.\n\n[long pause]\n\n[warmly] У взрослой особи прозрачные сетчатые крылья. Личинки многих видов охотятся на тлей.\n\n[long pause]\n\n[warmly] Маленькое почвенное шестиногое. Многие виды питаются грибами и разлагающимся материалом.\n\n[long pause]\n\n[warmly] Обсерватория снова видит звёзды. Вода, почва, укрытия и опылители связаны одной сетью жизни. Все четыре маршрута восстановлены!\n\n[long pause]\n\n[warmly] Для человека — несколько шагов. Для муравья — путь через целый лес.\n\n[long pause]\n\n[warmly] Обойти её легко. Обойти загрязнение тем, кто живёт в воде, невозможно.\n\n[long pause]\n\n[warmly] То, что мы переступаем не глядя, может перекрыть чужую дорогу домой.\n\n[long pause]\n\n[warmly] Наш свет может стать чужой потерянной ночью. Направление света меняет многое.\n\n[long pause]\n\n[warmly] Под зеркальной поверхностью скрывается ещё один мир. Воздушный купол позволяет герою плавать — это условность сна. Освободи проходы, понаблюдай за водными обитателями и восстанови заросли.\n\n[long pause]\n\n[warmly] Личинка стрекозы живёт здесь задолго до первого полёта. Забота о водоёме — забота и о тех, кто летает над ним. Растения дают укрытия, но не удаляют все загрязняющие вещества."
+    },
+    {
+      "id": "ru-lada-0",
+      "lang": "ru",
+      "role": "lada",
+      "entries": [
+        {
+          "id": "cine-prologue-3",
+          "spoken": "Ты не из нашего мира… Но, возможно, именно ты сможешь помочь ему. Добро пожаловать в большой маленький мир.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-awakening-0",
+          "spoken": "Не спеши. Сначала посмотри, кто живёт рядом. Иногда лучший способ помочь — понять.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-catastrophe-0",
+          "spoken": "Никто не хотел строить эту стену. Кто-то просто отпустил упаковку. Но маленькие последствия становятся большими, когда ты мал.",
+          "tag": "seriously"
+        },
+        {
+          "id": "cine-night-0",
+          "spoken": "Прислушайся. Ночная жизнь продолжается, даже когда люди её не видят. Мы тоже нуждаемся в своём времени суток.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-migration-0",
+          "spoken": "Сегодня мы открыли проход. Завтра людям придётся изменить то, что делает этот путь опасным. Спасение — начало заботы.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-ending-0",
+          "spoken": "Теперь ты знаешь, насколько велик наш маленький мир. Но помни: его будущее зависит и от твоего мира.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-metamorphosis-3",
+          "spoken": "После выхода крылья расправляются и укрепляются — не мгновенно. Взрослая бабочка может искать партнёра и откладывать яйца: цикл продолжается.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-scout-opening",
+          "spoken": "Ты не из нашего мира… Но, возможно, именно ты сможешь помочь ему. Муравей потерял тропу после дождя. Найди его у корня.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-water-opening",
+          "spoken": "Мы летаем, но наши дети живут в воде. После дождя с поля пришёл мутный поток. Проследи его до источника.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-pesticide-opening",
+          "spoken": "Там, где вчера гудели пчёлы, теперь тихо. Не трогай капли: сканер покажет опасные участки. Нужен безопасный коридор к саду.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-night-opening",
+          "spoken": "Они не исчезли. Их сигналы затерялись в сиянии фонарей. Убери лишний свет, сохранив безопасный проход для людей.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-night-stage-1",
+          "spoken": "Теперь мы снова видим друг друга. Свет — не украшение: для многих из нас это способ найти пару.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-garden-opening",
+          "spoken": "Ты увидел, как связаны цветы, почва, вода и темнота. Не нужно управлять каждым жителем. Нужно оставить им место для жизни.",
+          "tag": "warmly"
+        }
+      ],
+      "prompt": "[warmly] Ты не из нашего мира… Но, возможно, именно ты сможешь помочь ему. Добро пожаловать в большой маленький мир.\n\n[long pause]\n\n[warmly] Не спеши. Сначала посмотри, кто живёт рядом. Иногда лучший способ помочь — понять.\n\n[long pause]\n\n[seriously] Никто не хотел строить эту стену. Кто-то просто отпустил упаковку. Но маленькие последствия становятся большими, когда ты мал.\n\n[long pause]\n\n[warmly] Прислушайся. Ночная жизнь продолжается, даже когда люди её не видят. Мы тоже нуждаемся в своём времени суток.\n\n[long pause]\n\n[warmly] Сегодня мы открыли проход. Завтра людям придётся изменить то, что делает этот путь опасным. Спасение — начало заботы.\n\n[long pause]\n\n[warmly] Теперь ты знаешь, насколько велик наш маленький мир. Но помни: его будущее зависит и от твоего мира.\n\n[long pause]\n\n[warmly] После выхода крылья расправляются и укрепляются — не мгновенно. Взрослая бабочка может искать партнёра и откладывать яйца: цикл продолжается.\n\n[long pause]\n\n[warmly] Ты не из нашего мира… Но, возможно, именно ты сможешь помочь ему. Муравей потерял тропу после дождя. Найди его у корня.\n\n[long pause]\n\n[warmly] Мы летаем, но наши дети живут в воде. После дождя с поля пришёл мутный поток. Проследи его до источника.\n\n[long pause]\n\n[warmly] Там, где вчера гудели пчёлы, теперь тихо. Не трогай капли: сканер покажет опасные участки. Нужен безопасный коридор к саду.\n\n[long pause]\n\n[warmly] Они не исчезли. Их сигналы затерялись в сиянии фонарей. Убери лишний свет, сохранив безопасный проход для людей.\n\n[long pause]\n\n[warmly] Теперь мы снова видим друг друга. Свет — не украшение: для многих из нас это способ найти пару.\n\n[long pause]\n\n[warmly] Ты увидел, как связаны цветы, почва, вода и темнота. Не нужно управлять каждым жителем. Нужно оставить им место для жизни."
+    },
+    {
+      "id": "ru-hero-0",
+      "lang": "ru",
+      "role": "hero",
+      "entries": [
+        {
+          "id": "cine-prologue-0",
+          "spoken": "Интересно… А как выглядит наш мир для тех, кто меньше нас в сотни раз?",
+          "tag": "curious"
+        },
+        {
+          "id": "cine-citadel-2",
+          "spoken": "Матка не сидит на троне. Рабочие не ждут команды. Весь этот город — множество маленьких действий, связанных друг с другом.",
+          "tag": "curious"
+        },
+        {
+          "id": "cine-restoration-0",
+          "spoken": "Я думал, что должен всё исправить сам. Но живому миру нужны связи, время и место. И меньше наших преград.",
+          "tag": "curious"
+        },
+        {
+          "id": "cine-ending-3",
+          "spoken": "За окном — та самая божья коровка. Ты улыбаешься. Где-то за стеклом снова шелестит трава.",
+          "tag": "curious"
+        }
+      ],
+      "prompt": "[curious] Интересно… А как выглядит наш мир для тех, кто меньше нас в сотни раз?\n\n[long pause]\n\n[curious] Матка не сидит на троне. Рабочие не ждут команды. Весь этот город — множество маленьких действий, связанных друг с другом.\n\n[long pause]\n\n[curious] Я думал, что должен всё исправить сам. Но живому миру нужны связи, время и место. И меньше наших преград.\n\n[long pause]\n\n[curious] За окном — та самая божья коровка. Ты улыбаешься. Где-то за стеклом снова шелестит трава."
+    },
+    {
+      "id": "kk-narrator-0",
+      "lang": "kk",
+      "role": "narrator",
+      "entries": [
+        {
+          "id": "cine-prologue-1",
+          "spoken": "Оқулық ашық қалды. Жаңбыр үнінен шөп сыбдыры естіледі. Күн біртіндеп түске айналады.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-prologue-2",
+          "spoken": "Тамшылар — шыны таудай. Шөп — ағаштан биік. Бұл орман емес. Бұл кәдімгі көгал.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-citadel-0",
+          "spoken": "Бір құмырсқа үгіндіні көреді. Колония жолды көреді. Үйіміз мыңдаған шағын өзара әрекетке сүйенеді.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-citadel-1",
+          "spoken": "Ұрпаққа күтім керек: дернәсілді қоректендіріп, жұмыртқа мен қуыршақты қолайлы жерге тасимыз. Нөсерден кейін бір жол үзілді.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-valley-0",
+          "spoken": "Олар ұқыпты көгалды көреді. Біз жабылған асхананы көреміз. Гүл тек әдемілік емес.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-ending-1",
+          "spoken": "Камера гүлдерден жоғары көтеріледі. Көзіңді жұмасің. Бір сәтте бүкіл бақ бір тамшыға сыйып кетеді.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-ending-2",
+          "spoken": "Оятқыш үні. Таныс бөлме. Биология оқулығы. Үстелде кішкентай жапырақ… кеше ол жоқ еді.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-metamorphosis-0",
+          "spoken": "Қоректік өсімдіктегі жұмыртқа. Ішінде жаңа ағза дамиды. Табиғатта бұл үдеріс уақытты қажет етеді.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-metamorphosis-1",
+          "spoken": "Жұлдызқұрт қоректеніп өседі, бірнеше рет түлейді. Сәйкес өсімдіктің жапырағы оған ересек көбелекке тіршілік жағдайы қажет болғандай маңызды.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-metamorphosis-2",
+          "spoken": "Қуыршақ ішінде терең өзгеріс жүреді. Бұл жұлдызқұрттың ұйқысы емес: ересек көбелектің мүшелері қалыптасады.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-scout-conclusion",
+          "spoken": "Іздер, иіс пен белгілер қоғамдық жәндіктерге жол табуға көмектеседі.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-scout-stage-0",
+          "spoken": "Су иісті шайып кетті! Бірақ үш белгіні білемін: шық, иілген шөп пен тас.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-scout-stage-1",
+          "spoken": "Ылғал жерде іздер сақталады. Жаңбыр феромон ізін бұзуы мүмкін, ал белгілер жол табуға көмектеседі.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-scout-stage-2",
+          "spoken": "Кіреберісті таныдым! Колонияда бәрі еңбек етеді, ал соқпақтар бізді әлеммен байланыстырады.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-citadel-opening",
+          "spoken": "Аналығымыз жұмыртқа салады, бірақ бұйрық бермейді. Жұмысты сигналдар арқылы бөлісеміз. Нөсерден кейін дернәсілдерге жол жабылды.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-citadel-conclusion",
+          "spoken": "Колония — өзара байланысты рөлдер жүйесі. Аналық оны адам билеушісіндей басқармайды.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-citadel-stage-1",
+          "spoken": "Сен өткел саласың, жұмысшылар дернәсілдерді тасиды. Бірлескен еңбек жеке күштен маңызды.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-citadel-stage-2",
+          "spoken": "Жұмысшылар жұмыртқаға, дернәсілге, қуыршаққа күтім жасайды. Қара: илеу тұрғындарының бәрі бірдей емес.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-flowers-opening",
+          "spoken": "Мұндағы шөптің бәрін бірден шапты. Шірне аз, жұлдызқұрт өсетін жер жоқ. Шықты қалған өскіндерге бағыттауға болады.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-flowers-conclusion",
+          "spoken": "Әртүрлі гүлдер мен қоректік өсімдіктер тозаңдандырушылардың барлық сатысын қолдайды.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-flowers-stage-3",
+          "spoken": "Енді қорек бар! Көбелекке шірне қажет, ал жұлдызқұртына сәйкес қоректік өсімдік керек.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-water-conclusion",
+          "spoken": "Құрлық пен су экожүйелері ағын арқылы байланысады. Ластану көзін тоқтату маңызды.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-water-stage-2",
+          "spoken": "Жаңа ағын азайды. Бірақ судағы заттар бірден жоғалмайды: уақыт пен ересектердің бақылауы керек.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-soil-opening",
+          "spoken": "Адамдар бүкіл төсенішті жинады. Мұнда құрғап кетті. Саңырауқұлақ, есекқұрт пен топырақ тұрғындары қалдықтарды бірге ыдыратады.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-soil-conclusion",
+          "spoken": "Ыдырау заттарды айналымға қайтарады; төсеніш ылғал мен алуантүрлілікті сақтайды.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-soil-stage-2",
+          "spoken": "Мен жәндік емес, шаянтәріздімін! Ылғалсыз кебемін. Қалған жапырақ біреудің үйі.",
+          "tag": "warmly"
+        }
+      ],
+      "prompt": "[warmly] Оқулық ашық қалды. Жаңбыр үнінен шөп сыбдыры естіледі. Күн біртіндеп түске айналады.\n\n[long pause]\n\n[warmly] Тамшылар — шыны таудай. Шөп — ағаштан биік. Бұл орман емес. Бұл кәдімгі көгал.\n\n[long pause]\n\n[warmly] Бір құмырсқа үгіндіні көреді. Колония жолды көреді. Үйіміз мыңдаған шағын өзара әрекетке сүйенеді.\n\n[long pause]\n\n[warmly] Ұрпаққа күтім керек: дернәсілді қоректендіріп, жұмыртқа мен қуыршақты қолайлы жерге тасимыз. Нөсерден кейін бір жол үзілді.\n\n[long pause]\n\n[warmly] Олар ұқыпты көгалды көреді. Біз жабылған асхананы көреміз. Гүл тек әдемілік емес.\n\n[long pause]\n\n[warmly] Камера гүлдерден жоғары көтеріледі. Көзіңді жұмасің. Бір сәтте бүкіл бақ бір тамшыға сыйып кетеді.\n\n[long pause]\n\n[warmly] Оятқыш үні. Таныс бөлме. Биология оқулығы. Үстелде кішкентай жапырақ… кеше ол жоқ еді.\n\n[long pause]\n\n[warmly] Қоректік өсімдіктегі жұмыртқа. Ішінде жаңа ағза дамиды. Табиғатта бұл үдеріс уақытты қажет етеді.\n\n[long pause]\n\n[warmly] Жұлдызқұрт қоректеніп өседі, бірнеше рет түлейді. Сәйкес өсімдіктің жапырағы оған ересек көбелекке тіршілік жағдайы қажет болғандай маңызды.\n\n[long pause]\n\n[warmly] Қуыршақ ішінде терең өзгеріс жүреді. Бұл жұлдызқұрттың ұйқысы емес: ересек көбелектің мүшелері қалыптасады.\n\n[long pause]\n\n[warmly] Іздер, иіс пен белгілер қоғамдық жәндіктерге жол табуға көмектеседі.\n\n[long pause]\n\n[warmly] Су иісті шайып кетті! Бірақ үш белгіні білемін: шық, иілген шөп пен тас.\n\n[long pause]\n\n[warmly] Ылғал жерде іздер сақталады. Жаңбыр феромон ізін бұзуы мүмкін, ал белгілер жол табуға көмектеседі.\n\n[long pause]\n\n[warmly] Кіреберісті таныдым! Колонияда бәрі еңбек етеді, ал соқпақтар бізді әлеммен байланыстырады.\n\n[long pause]\n\n[warmly] Аналығымыз жұмыртқа салады, бірақ бұйрық бермейді. Жұмысты сигналдар арқылы бөлісеміз. Нөсерден кейін дернәсілдерге жол жабылды.\n\n[long pause]\n\n[warmly] Колония — өзара байланысты рөлдер жүйесі. Аналық оны адам билеушісіндей басқармайды.\n\n[long pause]\n\n[warmly] Сен өткел саласың, жұмысшылар дернәсілдерді тасиды. Бірлескен еңбек жеке күштен маңызды.\n\n[long pause]\n\n[warmly] Жұмысшылар жұмыртқаға, дернәсілге, қуыршаққа күтім жасайды. Қара: илеу тұрғындарының бәрі бірдей емес.\n\n[long pause]\n\n[warmly] Мұндағы шөптің бәрін бірден шапты. Шірне аз, жұлдызқұрт өсетін жер жоқ. Шықты қалған өскіндерге бағыттауға болады.\n\n[long pause]\n\n[warmly] Әртүрлі гүлдер мен қоректік өсімдіктер тозаңдандырушылардың барлық сатысын қолдайды.\n\n[long pause]\n\n[warmly] Енді қорек бар! Көбелекке шірне қажет, ал жұлдызқұртына сәйкес қоректік өсімдік керек.\n\n[long pause]\n\n[warmly] Құрлық пен су экожүйелері ағын арқылы байланысады. Ластану көзін тоқтату маңызды.\n\n[long pause]\n\n[warmly] Жаңа ағын азайды. Бірақ судағы заттар бірден жоғалмайды: уақыт пен ересектердің бақылауы керек.\n\n[long pause]\n\n[warmly] Адамдар бүкіл төсенішті жинады. Мұнда құрғап кетті. Саңырауқұлақ, есекқұрт пен топырақ тұрғындары қалдықтарды бірге ыдыратады.\n\n[long pause]\n\n[warmly] Ыдырау заттарды айналымға қайтарады; төсеніш ылғал мен алуантүрлілікті сақтайды.\n\n[long pause]\n\n[warmly] Мен жәндік емес, шаянтәріздімін! Ылғалсыз кебемін. Қалған жапырақ біреудің үйі."
+    },
+    {
+      "id": "kk-narrator-1",
+      "lang": "kk",
+      "role": "narrator",
+      "entries": [
+        {
+          "id": "quest-plastic-opening",
+          "spoken": "Қаптама ылғалды панаға жолды жапты. Тұрғындар жіпке шырмалды. Өткелді ашып, оларды жеткіз.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-plastic-conclusion",
+          "spoken": "Қоқыс кедергі мен тұзаққа айналады. Тазалау ластануды болдырмауды алмастырмайды.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-plastic-stage-2",
+          "spoken": "Біз өттік! Ірі қоқысты жинауға болады, бірақ ұсақ бөлшектер қалады. Адамдар олардың пайда болуын болдырмауы керек.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-pesticide-conclusion",
+          "spoken": "Пестицидтер нысаналы емес ағзаларға зиян келтіруі мүмкін. Ыстық пен құрғақшылық ортаға қысымды күшейтеді.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-pesticide-stage-3",
+          "spoken": "Ыстықта пана мен ылғал аса қажет. Бір бөлігін құтқардық, енді адамдар алқап өңдеуін өзгертуі керек.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-night-conclusion",
+          "spoken": "Бағытталған, жылы және тек қажет уақытта жанатын жарық ластануды азайтады.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-garden-conclusion",
+          "spoken": "Бақ тұрақтылығын алуантүрлілік пен мекендердің байланысы қолдайды. Қамқорлық үлкен әлемде жалғасады.",
+          "tag": "warmly"
+        },
+        {
+          "id": "secret-shell",
+          "spoken": "Бос қабық панаға айналды. Шағын зат та мекеннің бөлігі бола алады.",
+          "tag": "warmly"
+        },
+        {
+          "id": "secret-egg",
+          "spoken": "Жапырақ астындағы жұмыртқалар. Қоректік өсімдік ересекке ғана қажет емес.",
+          "tag": "warmly"
+        },
+        {
+          "id": "secret-web",
+          "spoken": "Өрмекші өрмек тербелісін сезеді. Ол зұлым емес, табиғи жыртқыш.",
+          "tag": "warmly"
+        },
+        {
+          "id": "secret-leafprint",
+          "spoken": "Жапырақ жүйкелері өзен картасына ұқсайды. Оны сақтағың келеді.",
+          "tag": "warmly"
+        },
+        {
+          "id": "colony-entrance",
+          "spoken": "Жұмысшылар мұртшаларын түйістіріп, химиялық сигнал алмасады. Колония адамша бұйрықсыз жұмысын үйлестіреді.",
+          "tag": "warmly"
+        },
+        {
+          "id": "colony-stores",
+          "spoken": "Қорек жұмысшылар мен өсіп жатқан ұрпақты қамтамасыз етеді. Құмырсқаның не жинап, қалай бөлісетіні түрі мен колония қажетіне байланысты.",
+          "tag": "warmly"
+        },
+        {
+          "id": "colony-brood",
+          "spoken": "Жұмыртқа, дернәсіл мен қуыршақ күтімді қажет етеді. Жұмысшылар дернәсілді қоректендіріп, ұрпақты қолайлы жағдайға таси алады.",
+          "tag": "warmly"
+        },
+        {
+          "id": "colony-junction",
+          "spoken": "Жолдар желісі бөлмелерді байланыстырады. Бір бөлік бүлінсе, қолжетімді бағыт өзгереді: жөнделген өткел колонияны қайта байланыстырады.",
+          "tag": "warmly"
+        },
+        {
+          "id": "colony-shelter",
+          "spoken": "Илеудің ішіндегі ылғал мен температура бірдей емес. Ұрпақты тасу — жағдай өзгерісіне жауап берудің бір жолы.",
+          "tag": "warmly"
+        },
+        {
+          "id": "colony-queen",
+          "spoken": "Аналық — көбеюге маманданған ұрғашы. Негізгі міндеті — жұмыртқа салу. Жұмысшылар оған күтім жасайды; бұл адам билеушісінің тақ залы емес.",
+          "tag": "warmly"
+        },
+        {
+          "id": "colony-remains",
+          "spoken": "Кей жұмысшылар қажетсіз қалдықты сыртқа шығарады. Қалдықпен жұмыс әр түрге тән; тазалық пен қалдық орны колония тіршілігіне маңызды.",
+          "tag": "warmly"
+        },
+        {
+          "id": "colony-intro",
+          "spoken": "Илеу қимасы, жылы жарық пен көпір — көркемдік тәсілдер. Әртүрлі түрдің илеуі әрқалай құрылған.",
+          "tag": "warmly"
+        },
+        {
+          "id": "crossing-intro",
+          "spoken": "Нөсер алты мекендеушіні ылғалды панадан бөліп тастады. Үш жол бар: судағы жапырақ, сол жақтағы тамырлар және оң жақтағы бұзылған көпір. Бәрін арғы жағаға жеткіз.",
+          "tag": "warmly"
+        },
+        {
+          "id": "crossing-leafHelp",
+          "spoken": "Жапырақ кейіпкер мен екі жолаушыны көтереді. WASD не джойстикпен басқар да, арғы жағаға тоқта. Келесі жұпқа қайтып кел. Паром тұрақты өткел болады.",
+          "tag": "warmly"
+        },
+        {
+          "id": "crossing-rootsHelp",
+          "spoken": "Тамырлар суды сол жақтан айналып өтеді. Иірімдерімен жүріп, екі түскен жапырақ жина да, белгіленген орындарды жап: есекқұртқа ылғалды көлеңке керек. Дайын болғанда мекендеушілер ұзақ жолмен жүреді.",
+          "tag": "warmly"
+        },
+        {
+          "id": "crossing-bridgeHelp",
+          "spoken": "Осы жағадан үш құрғақ бұтақ жина. Тірек жанында E бас: жұмысшылар төсемді бекітеді. Көпірден бірінші өт — кейін мекендеушілер жүріп, панаға қорек тасиды.",
+          "tag": "warmly"
+        }
+      ],
+      "prompt": "[warmly] Қаптама ылғалды панаға жолды жапты. Тұрғындар жіпке шырмалды. Өткелді ашып, оларды жеткіз.\n\n[long pause]\n\n[warmly] Қоқыс кедергі мен тұзаққа айналады. Тазалау ластануды болдырмауды алмастырмайды.\n\n[long pause]\n\n[warmly] Біз өттік! Ірі қоқысты жинауға болады, бірақ ұсақ бөлшектер қалады. Адамдар олардың пайда болуын болдырмауы керек.\n\n[long pause]\n\n[warmly] Пестицидтер нысаналы емес ағзаларға зиян келтіруі мүмкін. Ыстық пен құрғақшылық ортаға қысымды күшейтеді.\n\n[long pause]\n\n[warmly] Ыстықта пана мен ылғал аса қажет. Бір бөлігін құтқардық, енді адамдар алқап өңдеуін өзгертуі керек.\n\n[long pause]\n\n[warmly] Бағытталған, жылы және тек қажет уақытта жанатын жарық ластануды азайтады.\n\n[long pause]\n\n[warmly] Бақ тұрақтылығын алуантүрлілік пен мекендердің байланысы қолдайды. Қамқорлық үлкен әлемде жалғасады.\n\n[long pause]\n\n[warmly] Бос қабық панаға айналды. Шағын зат та мекеннің бөлігі бола алады.\n\n[long pause]\n\n[warmly] Жапырақ астындағы жұмыртқалар. Қоректік өсімдік ересекке ғана қажет емес.\n\n[long pause]\n\n[warmly] Өрмекші өрмек тербелісін сезеді. Ол зұлым емес, табиғи жыртқыш.\n\n[long pause]\n\n[warmly] Жапырақ жүйкелері өзен картасына ұқсайды. Оны сақтағың келеді.\n\n[long pause]\n\n[warmly] Жұмысшылар мұртшаларын түйістіріп, химиялық сигнал алмасады. Колония адамша бұйрықсыз жұмысын үйлестіреді.\n\n[long pause]\n\n[warmly] Қорек жұмысшылар мен өсіп жатқан ұрпақты қамтамасыз етеді. Құмырсқаның не жинап, қалай бөлісетіні түрі мен колония қажетіне байланысты.\n\n[long pause]\n\n[warmly] Жұмыртқа, дернәсіл мен қуыршақ күтімді қажет етеді. Жұмысшылар дернәсілді қоректендіріп, ұрпақты қолайлы жағдайға таси алады.\n\n[long pause]\n\n[warmly] Жолдар желісі бөлмелерді байланыстырады. Бір бөлік бүлінсе, қолжетімді бағыт өзгереді: жөнделген өткел колонияны қайта байланыстырады.\n\n[long pause]\n\n[warmly] Илеудің ішіндегі ылғал мен температура бірдей емес. Ұрпақты тасу — жағдай өзгерісіне жауап берудің бір жолы.\n\n[long pause]\n\n[warmly] Аналық — көбеюге маманданған ұрғашы. Негізгі міндеті — жұмыртқа салу. Жұмысшылар оған күтім жасайды; бұл адам билеушісінің тақ залы емес.\n\n[long pause]\n\n[warmly] Кей жұмысшылар қажетсіз қалдықты сыртқа шығарады. Қалдықпен жұмыс әр түрге тән; тазалық пен қалдық орны колония тіршілігіне маңызды.\n\n[long pause]\n\n[warmly] Илеу қимасы, жылы жарық пен көпір — көркемдік тәсілдер. Әртүрлі түрдің илеуі әрқалай құрылған.\n\n[long pause]\n\n[warmly] Нөсер алты мекендеушіні ылғалды панадан бөліп тастады. Үш жол бар: судағы жапырақ, сол жақтағы тамырлар және оң жақтағы бұзылған көпір. Бәрін арғы жағаға жеткіз.\n\n[long pause]\n\n[warmly] Жапырақ кейіпкер мен екі жолаушыны көтереді. WASD не джойстикпен басқар да, арғы жағаға тоқта. Келесі жұпқа қайтып кел. Паром тұрақты өткел болады.\n\n[long pause]\n\n[warmly] Тамырлар суды сол жақтан айналып өтеді. Иірімдерімен жүріп, екі түскен жапырақ жина да, белгіленген орындарды жап: есекқұртқа ылғалды көлеңке керек. Дайын болғанда мекендеушілер ұзақ жолмен жүреді.\n\n[long pause]\n\n[warmly] Осы жағадан үш құрғақ бұтақ жина. Тірек жанында E бас: жұмысшылар төсемді бекітеді. Көпірден бірінші өт — кейін мекендеушілер жүріп, панаға қорек тасиды."
+    },
+    {
+      "id": "kk-narrator-2",
+      "lang": "kk",
+      "role": "narrator",
+      "entries": [
+        {
+          "id": "crossing-leafEnd",
+          "spoken": "Жапырақ паромға айналды. Жұптар қорекпен қатынайды: бұл жолға тұрақты рейстер қажет.",
+          "tag": "warmly"
+        },
+        {
+          "id": "crossing-rootsEnd",
+          "spoken": "Паналар астында ылғалды көлеңке сақталды. Мекендеушілер суды тамырлармен айналып өтеді. Жол ұзақ, бірақ ағын ашық қалады.",
+          "tag": "warmly"
+        },
+        {
+          "id": "crossing-bridgeEnd",
+          "spoken": "Құмырсқалар тұрақты көпірмен панаға қорек тасиды. Келесі нөсерден кейін төсемге күтім қажет болады.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-glass-intro",
+          "spoken": "Әйнек артында құрғақ топырақ иісі бар. Сынық су көзін жапқан, екі шүмек суды басқа жаққа бұрған. Сынықты жылжытып, жоғарғы шүмекті шығысқа (шығысқа), төменгісін оңтүстікке (оңтүстікке) бұрыңыз. Ыдыстан су алып, үш өскінді суарыңыз. Бұрыштарды кез келген ретпен зерттеңіз.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-glass-secret-0",
+          "spoken": "Алтынкөздер өсімдіктерге көмектеседі: көптеген түрлерінің дернәсілі бітемен қоректенеді. Ересектері шірне мен тозаң жеуі мүмкін.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-glass-secret-1",
+          "spoken": "Құмыра астында ылғалды топырақ сақталған. Пана ылғалды ұстап, ұсақ омыртқасыздарға ыстықтан қорғануға көмектеседі.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-hollow-intro",
+          "spoken": "Қоңыз тамырлар арасында үш жұмыртқа тобын жоғалтып алды. Емен жаңғағын дөңгелек тасқа домалатыңыз: салмағы қабықты ашады. Жұмыртқаларды бір-бірден қауіпсіз ұяға жеткізіңіз. Есіктің ар жағында обсерваторияға арналған кәріптас линза бар. Жаңғақ алыс кетсе, тақтайша жанында E басыңыз.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-hollow-secret-0",
+          "spoken": "Өлі сүрек — тіршілік мекені. Саңырауқұлақтар, есекқұрттар және басқа ағзалар органикалық заттардың ыдырауына қатысады.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-hollow-secret-1",
+          "spoken": "Барылдауық қоңыздар алуан түрлі. Көп түрі басқа омыртқасыздарды аулап, қабық пен тас астында тығылады.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-creek-intro",
+          "spoken": "Көктемгі ағыс көпірді алып кетті. Батыс жағадан үш қабықты жинап, үш тірекке төсеңіз. Су дөңгелегін бұтақтан босатыңыз. Шығыс жағадан құйрықаяқты шақырып, ылғалды мүкке жеткізіңіз. Ол жолды өзі табады, бірақ алыстасаңыз күтеді.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-creek-secret-0",
+          "spoken": "Құйрықаяқтар жәндіктер емес, алтыаяқтылардың жеке тобы. Көп түрі қауіптен секіргіш айырдың көмегімен құтылады.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-creek-secret-1",
+          "spoken": "Жағалық өсімдіктердің тамыры топырақты ұстайды, ал көлеңкесі мен түскен жапырақтары пана жасайды.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-canopy-intro",
+          "spoken": "Ағаш басында ескі обсерватория бар. Үш шам тастардағы ретпен ғана жанады: екі, одан кейін бір, одан кейін үш. Үлкен гүлден тозаң жинап, үш жабық бүршікке жеткізіңіз. Төрт мекен қалпына келгенде кәріптас линзаны телескопқа орнатыңыз.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-canopy-secret-0",
+          "spoken": "Тозаңдану — тозаңның тасымалдануы. Гүлдер түсі, иісі және қорегімен тартады. Әр келуші тозаңды бірдей жақсы тасымалдамайды.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-canopy-secret-1",
+          "spoken": "Мұндағы шам жарығы — ертегілік ойын механикасы. Нағыз жарқырауық қоңыздар арнайы мүшелеріндегі химиялық реакция арқылы жарық шығарады.",
+          "tag": "warmly"
+        },
+        {
+          "id": "creature-snail",
+          "spoken": "Ылғалды пана іздейтін ұлу. Бұлшықетті аяқпен қозғалады.",
+          "tag": "warmly"
+        },
+        {
+          "id": "creature-beetle",
+          "spoken": "Алты аяқты, қатты үстіңгі қанатты жәндік. Көп түрі — жыртқыш.",
+          "tag": "warmly"
+        },
+        {
+          "id": "creature-lacewing",
+          "spoken": "Ересегінің қанаты мөлдір, торлы. Көп түрінің дернәсілі бітені аулайды.",
+          "tag": "warmly"
+        },
+        {
+          "id": "creature-springtail",
+          "spoken": "Ұсақ топырақ алтыаяқтысы. Көп түрі саңырауқұлақтармен, шіріген заттармен қоректенеді.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-finale",
+          "spoken": "Обсерватория жұлдыздарды қайта көреді. Су, топырақ, пана мен тозаңдандырушылар бір тіршілік желісімен байланысқан. Төрт бағыт та қалпына келді!",
+          "tag": "warmly"
+        }
+      ],
+      "prompt": "[warmly] Жапырақ паромға айналды. Жұптар қорекпен қатынайды: бұл жолға тұрақты рейстер қажет.\n\n[long pause]\n\n[warmly] Паналар астында ылғалды көлеңке сақталды. Мекендеушілер суды тамырлармен айналып өтеді. Жол ұзақ, бірақ ағын ашық қалады.\n\n[long pause]\n\n[warmly] Құмырсқалар тұрақты көпірмен панаға қорек тасиды. Келесі нөсерден кейін төсемге күтім қажет болады.\n\n[long pause]\n\n[warmly] Әйнек артында құрғақ топырақ иісі бар. Сынық су көзін жапқан, екі шүмек суды басқа жаққа бұрған. Сынықты жылжытып, жоғарғы шүмекті шығысқа (шығысқа), төменгісін оңтүстікке (оңтүстікке) бұрыңыз. Ыдыстан су алып, үш өскінді суарыңыз. Бұрыштарды кез келген ретпен зерттеңіз.\n\n[long pause]\n\n[warmly] Алтынкөздер өсімдіктерге көмектеседі: көптеген түрлерінің дернәсілі бітемен қоректенеді. Ересектері шірне мен тозаң жеуі мүмкін.\n\n[long pause]\n\n[warmly] Құмыра астында ылғалды топырақ сақталған. Пана ылғалды ұстап, ұсақ омыртқасыздарға ыстықтан қорғануға көмектеседі.\n\n[long pause]\n\n[warmly] Қоңыз тамырлар арасында үш жұмыртқа тобын жоғалтып алды. Емен жаңғағын дөңгелек тасқа домалатыңыз: салмағы қабықты ашады. Жұмыртқаларды бір-бірден қауіпсіз ұяға жеткізіңіз. Есіктің ар жағында обсерваторияға арналған кәріптас линза бар. Жаңғақ алыс кетсе, тақтайша жанында E басыңыз.\n\n[long pause]\n\n[warmly] Өлі сүрек — тіршілік мекені. Саңырауқұлақтар, есекқұрттар және басқа ағзалар органикалық заттардың ыдырауына қатысады.\n\n[long pause]\n\n[warmly] Барылдауық қоңыздар алуан түрлі. Көп түрі басқа омыртқасыздарды аулап, қабық пен тас астында тығылады.\n\n[long pause]\n\n[warmly] Көктемгі ағыс көпірді алып кетті. Батыс жағадан үш қабықты жинап, үш тірекке төсеңіз. Су дөңгелегін бұтақтан босатыңыз. Шығыс жағадан құйрықаяқты шақырып, ылғалды мүкке жеткізіңіз. Ол жолды өзі табады, бірақ алыстасаңыз күтеді.\n\n[long pause]\n\n[warmly] Құйрықаяқтар жәндіктер емес, алтыаяқтылардың жеке тобы. Көп түрі қауіптен секіргіш айырдың көмегімен құтылады.\n\n[long pause]\n\n[warmly] Жағалық өсімдіктердің тамыры топырақты ұстайды, ал көлеңкесі мен түскен жапырақтары пана жасайды.\n\n[long pause]\n\n[warmly] Ағаш басында ескі обсерватория бар. Үш шам тастардағы ретпен ғана жанады: екі, одан кейін бір, одан кейін үш. Үлкен гүлден тозаң жинап, үш жабық бүршікке жеткізіңіз. Төрт мекен қалпына келгенде кәріптас линзаны телескопқа орнатыңыз.\n\n[long pause]\n\n[warmly] Тозаңдану — тозаңның тасымалдануы. Гүлдер түсі, иісі және қорегімен тартады. Әр келуші тозаңды бірдей жақсы тасымалдамайды.\n\n[long pause]\n\n[warmly] Мұндағы шам жарығы — ертегілік ойын механикасы. Нағыз жарқырауық қоңыздар арнайы мүшелеріндегі химиялық реакция арқылы жарық шығарады.\n\n[long pause]\n\n[warmly] Ылғалды пана іздейтін ұлу. Бұлшықетті аяқпен қозғалады.\n\n[long pause]\n\n[warmly] Алты аяқты, қатты үстіңгі қанатты жәндік. Көп түрі — жыртқыш.\n\n[long pause]\n\n[warmly] Ересегінің қанаты мөлдір, торлы. Көп түрінің дернәсілі бітені аулайды.\n\n[long pause]\n\n[warmly] Ұсақ топырақ алтыаяқтысы. Көп түрі саңырауқұлақтармен, шіріген заттармен қоректенеді.\n\n[long pause]\n\n[warmly] Обсерватория жұлдыздарды қайта көреді. Су, топырақ, пана мен тозаңдандырушылар бір тіршілік желісімен байланысқан. Төрт бағыт та қалпына келді!"
+    },
+    {
+      "id": "kk-narrator-3",
+      "lang": "kk",
+      "role": "narrator",
+      "entries": [
+        {
+          "id": "perspective-grass",
+          "spoken": "Адамға бірнеше қадам. Құмырсқаға тұтас тоғайдан өтетін жол.",
+          "tag": "warmly"
+        },
+        {
+          "id": "perspective-puddle",
+          "spoken": "Оны айналып өту оңай. Ал судағы тіршілік иесі ластанудан айналып өте алмайды.",
+          "tag": "warmly"
+        },
+        {
+          "id": "perspective-wrapper",
+          "spoken": "Біз байқамай аттап өтетін зат біреудің үйге жолын жабуы мүмкін.",
+          "tag": "warmly"
+        },
+        {
+          "id": "perspective-lamp",
+          "spoken": "Біздің жарық өзгенің түнін жоғалтуы мүмкін. Жарық бағыты көп нәрсені өзгертеді.",
+          "tag": "warmly"
+        },
+        {
+          "id": "underwater-intro",
+          "spoken": "Айнадай су астында тағы бір әлем бар. Ауа күмбезі кейіпкерге жүзуге мүмкіндік береді — бұл түс шарттылығы. Өткелді аш, су тұрғындарын бақыла, өсімдіктерді қалпына келтір.",
+          "tag": "warmly"
+        },
+        {
+          "id": "underwater-conclusion",
+          "spoken": "Инелік дернәсілі алғашқы ұшуына дейін осында өседі. Суға қамқорлық — оның үстінде ұшатындарға да қамқорлық. Өсімдік пана береді, бірақ бүкіл ластаушыны жоймайды.",
+          "tag": "warmly"
+        }
+      ],
+      "prompt": "[warmly] Адамға бірнеше қадам. Құмырсқаға тұтас тоғайдан өтетін жол.\n\n[long pause]\n\n[warmly] Оны айналып өту оңай. Ал судағы тіршілік иесі ластанудан айналып өте алмайды.\n\n[long pause]\n\n[warmly] Біз байқамай аттап өтетін зат біреудің үйге жолын жабуы мүмкін.\n\n[long pause]\n\n[warmly] Біздің жарық өзгенің түнін жоғалтуы мүмкін. Жарық бағыты көп нәрсені өзгертеді.\n\n[long pause]\n\n[warmly] Айнадай су астында тағы бір әлем бар. Ауа күмбезі кейіпкерге жүзуге мүмкіндік береді — бұл түс шарттылығы. Өткелді аш, су тұрғындарын бақыла, өсімдіктерді қалпына келтір.\n\n[long pause]\n\n[warmly] Инелік дернәсілі алғашқы ұшуына дейін осында өседі. Суға қамқорлық — оның үстінде ұшатындарға да қамқорлық. Өсімдік пана береді, бірақ бүкіл ластаушыны жоймайды."
+    },
+    {
+      "id": "kk-lada-0",
+      "lang": "kk",
+      "role": "lada",
+      "entries": [
+        {
+          "id": "cine-prologue-3",
+          "spoken": "Сен біздің әлемнен емессің… Бірақ оған сен көмектесе алатын шығарсың. Үлкен кішкентай әлемге қош келдің.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-awakening-0",
+          "spoken": "Асықпа. Алдымен айналаңда кім тұратынын қара. Кейде көмектесудің ең жақсы жолы — түсіну.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-catastrophe-0",
+          "spoken": "Бұл қабырғаны ешкім салғысы келген жоқ. Біреу қаптаманы тастай салды. Бірақ кішкентай болсаң, ұсақ салдар үлкенге айналады.",
+          "tag": "seriously"
+        },
+        {
+          "id": "cine-night-0",
+          "spoken": "Тыңда. Адамдар көрмесе де, түнгі тіршілік жалғасады. Бізге де өз тәулік мезгіліміз қажет.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-migration-0",
+          "spoken": "Бүгін өткел аштық. Ертең адамдар бұл жолды қауіпті ететін жағдайды өзгертуі керек. Құтқару — қамқорлықтың бастауы.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-ending-0",
+          "spoken": "Енді кішкентай әлеміміздің қаншалықты үлкен екенін білесің. Бірақ ұмытпа: оның болашағы сенің әлеміңе де байланысты.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-metamorphosis-3",
+          "spoken": "Шыққаннан кейін қанаты жайылып, қатаяды — бұл бірден болмайды. Ересек көбелек жұбын іздеп, жұмыртқа салады: айналым жалғасады.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-scout-opening",
+          "spoken": "Сен біздің әлемнен емессің… Бірақ оған сен көмектесе алатын шығарсың. Жаңбырдан кейін құмырсқа жолын жоғалтты. Оны тамыр жанынан тап.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-water-opening",
+          "spoken": "Біз ұшамыз, бірақ баламыз суда өседі. Жаңбырдан кейін алқаптан лай су келді. Оның көзін тап.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-pesticide-opening",
+          "spoken": "Кеше ара гуілдеген жер бүгін тыныш. Тамшыны ұстама: сканер қауіпті жерді көрсетеді. Баққа қауіпсіз жол керек.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-night-opening",
+          "spoken": "Олар жоғалмады. Сигналдары шам жарығында көрінбей қалды. Адамдарға қауіпсіз жол қалдырып, артық жарықты азайт.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-night-stage-1",
+          "spoken": "Енді бір-бірімізді қайта көреміз. Жарық сән емес: көбіміз үшін ол жұп табу тәсілі.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-garden-opening",
+          "spoken": "Гүл, топырақ, су мен қараңғылықтың байланысын көрдің. Әр тұрғынды басқарудың қажеті жоқ. Оларға өмір сүруге орын қалдыру керек.",
+          "tag": "warmly"
+        }
+      ],
+      "prompt": "[warmly] Сен біздің әлемнен емессің… Бірақ оған сен көмектесе алатын шығарсың. Үлкен кішкентай әлемге қош келдің.\n\n[long pause]\n\n[warmly] Асықпа. Алдымен айналаңда кім тұратынын қара. Кейде көмектесудің ең жақсы жолы — түсіну.\n\n[long pause]\n\n[seriously] Бұл қабырғаны ешкім салғысы келген жоқ. Біреу қаптаманы тастай салды. Бірақ кішкентай болсаң, ұсақ салдар үлкенге айналады.\n\n[long pause]\n\n[warmly] Тыңда. Адамдар көрмесе де, түнгі тіршілік жалғасады. Бізге де өз тәулік мезгіліміз қажет.\n\n[long pause]\n\n[warmly] Бүгін өткел аштық. Ертең адамдар бұл жолды қауіпті ететін жағдайды өзгертуі керек. Құтқару — қамқорлықтың бастауы.\n\n[long pause]\n\n[warmly] Енді кішкентай әлеміміздің қаншалықты үлкен екенін білесің. Бірақ ұмытпа: оның болашағы сенің әлеміңе де байланысты.\n\n[long pause]\n\n[warmly] Шыққаннан кейін қанаты жайылып, қатаяды — бұл бірден болмайды. Ересек көбелек жұбын іздеп, жұмыртқа салады: айналым жалғасады.\n\n[long pause]\n\n[warmly] Сен біздің әлемнен емессің… Бірақ оған сен көмектесе алатын шығарсың. Жаңбырдан кейін құмырсқа жолын жоғалтты. Оны тамыр жанынан тап.\n\n[long pause]\n\n[warmly] Біз ұшамыз, бірақ баламыз суда өседі. Жаңбырдан кейін алқаптан лай су келді. Оның көзін тап.\n\n[long pause]\n\n[warmly] Кеше ара гуілдеген жер бүгін тыныш. Тамшыны ұстама: сканер қауіпті жерді көрсетеді. Баққа қауіпсіз жол керек.\n\n[long pause]\n\n[warmly] Олар жоғалмады. Сигналдары шам жарығында көрінбей қалды. Адамдарға қауіпсіз жол қалдырып, артық жарықты азайт.\n\n[long pause]\n\n[warmly] Енді бір-бірімізді қайта көреміз. Жарық сән емес: көбіміз үшін ол жұп табу тәсілі.\n\n[long pause]\n\n[warmly] Гүл, топырақ, су мен қараңғылықтың байланысын көрдің. Әр тұрғынды басқарудың қажеті жоқ. Оларға өмір сүруге орын қалдыру керек."
+    },
+    {
+      "id": "kk-hero-0",
+      "lang": "kk",
+      "role": "hero",
+      "entries": [
+        {
+          "id": "cine-prologue-0",
+          "spoken": "Қызық… Бізден жүздеген есе кішкентай тіршілік иелеріне әлем қалай көрінеді екен?",
+          "tag": "curious"
+        },
+        {
+          "id": "cine-citadel-2",
+          "spoken": "Аналық тақта отырған жоқ. Жұмысшылар бұйрық күтпейді. Бұл қала — бір-бірімен байланысқан көптеген шағын әрекет.",
+          "tag": "curious"
+        },
+        {
+          "id": "cine-restoration-0",
+          "spoken": "Бәрін өзім түзетуім керек деп ойладым. Бірақ тірі әлемге байланыс, уақыт пен орын керек. Біздің кедергілеріміз аз болса екен.",
+          "tag": "curious"
+        },
+        {
+          "id": "cine-ending-3",
+          "spoken": "Терезе сыртында — сол қанқыз. Сен жымиясың. Әйнек сыртында шөп қайта сыбдырлайды.",
+          "tag": "curious"
+        }
+      ],
+      "prompt": "[curious] Қызық… Бізден жүздеген есе кішкентай тіршілік иелеріне әлем қалай көрінеді екен?\n\n[long pause]\n\n[curious] Аналық тақта отырған жоқ. Жұмысшылар бұйрық күтпейді. Бұл қала — бір-бірімен байланысқан көптеген шағын әрекет.\n\n[long pause]\n\n[curious] Бәрін өзім түзетуім керек деп ойладым. Бірақ тірі әлемге байланыс, уақыт пен орын керек. Біздің кедергілеріміз аз болса екен.\n\n[long pause]\n\n[curious] Терезе сыртында — сол қанқыз. Сен жымиясың. Әйнек сыртында шөп қайта сыбдырлайды."
+    },
+    {
+      "id": "en-narrator-0",
+      "lang": "en",
+      "role": "narrator",
+      "entries": [
+        {
+          "id": "cine-prologue-1",
+          "spoken": "The textbook lies open. Beneath the rain is a rustle of grass. The day slips slowly into a dream.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-prologue-2",
+          "spoken": "Droplets like glass mountains. Grass taller than trees. This is not a forest. It is an ordinary lawn.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-citadel-0",
+          "spoken": "One ant sees a crumb. The colony finds a path. Our home is held together by thousands of small interactions.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-citadel-1",
+          "spoken": "The brood needs care: feeding larvae and moving eggs and pupae to suitable conditions. The storm broke one of our routes.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-valley-0",
+          "spoken": "They see a tidy lawn. We see a closed dining room. Flowers are more than decoration.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-ending-1",
+          "spoken": "The view rises above the flowers. You close your eyes. For a moment, the whole garden fits inside one drop.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-ending-2",
+          "spoken": "An alarm. Your familiar room. The biology textbook. And a little leaf on the desk… that was not there yesterday.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-metamorphosis-0",
+          "spoken": "An egg on a host plant. A new organism develops inside. In nature, this process takes time.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-metamorphosis-1",
+          "spoken": "The caterpillar feeds, grows and moults several times. Suitable host leaves matter as much as the adult’s habitat.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-metamorphosis-2",
+          "spoken": "Major reorganisation happens inside the pupa. It is not simply a sleeping caterpillar: adult structures develop.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-scout-conclusion",
+          "spoken": "Scents, tracks and landmarks help social insects navigate.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-scout-stage-0",
+          "spoken": "The water washed away our scent! I remember three landmarks: dew, a bent blade and a stone.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-scout-stage-1",
+          "spoken": "The damp soil holds traces. Rain can disrupt scent trails; landmarks help the scout return.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-scout-stage-2",
+          "spoken": "I recognise the entrance! Everyone works in the colony, and our trails connect us to the world.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-citadel-opening",
+          "spoken": "Our queen lays eggs; she does not issue orders. Signals coordinate our work. The storm blocked the route to the brood.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-citadel-conclusion",
+          "spoken": "A colony is a system of interdependent roles; its queen is not a human-style ruler.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-citadel-stage-1",
+          "spoken": "You build while workers carry the larvae. Cooperation matters more than one individual’s strength.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-citadel-stage-2",
+          "spoken": "Workers tend eggs, larvae and pupae. Look closely: the colony has many stages of life.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-flowers-opening",
+          "spoken": "Everything here was mown at once. There is little nectar and nowhere for caterpillars. We can guide dew to the remaining seedlings.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-flowers-conclusion",
+          "spoken": "Diverse flowers and host plants support different stages of pollinator life.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-flowers-stage-3",
+          "spoken": "There is food again! An adult butterfly needs nectar, but its caterpillar needs a suitable host plant.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-water-conclusion",
+          "spoken": "Runoff connects land and water ecosystems. Addressing the source is essential.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-water-stage-2",
+          "spoken": "New runoff has slowed. Existing contaminants do not vanish instantly: time and adult monitoring are needed.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-soil-opening",
+          "spoken": "People removed all the leaf litter. It is drying out. Fungi, woodlice and soil creatures recycle remains together.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-soil-conclusion",
+          "spoken": "Decomposition recycles nutrients; leaf litter supports moisture and biodiversity.",
+          "tag": "warmly"
+        }
+      ],
+      "prompt": "[warmly] The textbook lies open. Beneath the rain is a rustle of grass. The day slips slowly into a dream.\n\n[long pause]\n\n[warmly] Droplets like glass mountains. Grass taller than trees. This is not a forest. It is an ordinary lawn.\n\n[long pause]\n\n[warmly] One ant sees a crumb. The colony finds a path. Our home is held together by thousands of small interactions.\n\n[long pause]\n\n[warmly] The brood needs care: feeding larvae and moving eggs and pupae to suitable conditions. The storm broke one of our routes.\n\n[long pause]\n\n[warmly] They see a tidy lawn. We see a closed dining room. Flowers are more than decoration.\n\n[long pause]\n\n[warmly] The view rises above the flowers. You close your eyes. For a moment, the whole garden fits inside one drop.\n\n[long pause]\n\n[warmly] An alarm. Your familiar room. The biology textbook. And a little leaf on the desk… that was not there yesterday.\n\n[long pause]\n\n[warmly] An egg on a host plant. A new organism develops inside. In nature, this process takes time.\n\n[long pause]\n\n[warmly] The caterpillar feeds, grows and moults several times. Suitable host leaves matter as much as the adult’s habitat.\n\n[long pause]\n\n[warmly] Major reorganisation happens inside the pupa. It is not simply a sleeping caterpillar: adult structures develop.\n\n[long pause]\n\n[warmly] Scents, tracks and landmarks help social insects navigate.\n\n[long pause]\n\n[warmly] The water washed away our scent! I remember three landmarks: dew, a bent blade and a stone.\n\n[long pause]\n\n[warmly] The damp soil holds traces. Rain can disrupt scent trails; landmarks help the scout return.\n\n[long pause]\n\n[warmly] I recognise the entrance! Everyone works in the colony, and our trails connect us to the world.\n\n[long pause]\n\n[warmly] Our queen lays eggs; she does not issue orders. Signals coordinate our work. The storm blocked the route to the brood.\n\n[long pause]\n\n[warmly] A colony is a system of interdependent roles; its queen is not a human-style ruler.\n\n[long pause]\n\n[warmly] You build while workers carry the larvae. Cooperation matters more than one individual’s strength.\n\n[long pause]\n\n[warmly] Workers tend eggs, larvae and pupae. Look closely: the colony has many stages of life.\n\n[long pause]\n\n[warmly] Everything here was mown at once. There is little nectar and nowhere for caterpillars. We can guide dew to the remaining seedlings.\n\n[long pause]\n\n[warmly] Diverse flowers and host plants support different stages of pollinator life.\n\n[long pause]\n\n[warmly] There is food again! An adult butterfly needs nectar, but its caterpillar needs a suitable host plant.\n\n[long pause]\n\n[warmly] Runoff connects land and water ecosystems. Addressing the source is essential.\n\n[long pause]\n\n[warmly] New runoff has slowed. Existing contaminants do not vanish instantly: time and adult monitoring are needed.\n\n[long pause]\n\n[warmly] People removed all the leaf litter. It is drying out. Fungi, woodlice and soil creatures recycle remains together.\n\n[long pause]\n\n[warmly] Decomposition recycles nutrients; leaf litter supports moisture and biodiversity."
+    },
+    {
+      "id": "en-narrator-1",
+      "lang": "en",
+      "role": "narrator",
+      "entries": [
+        {
+          "id": "quest-soil-stage-2",
+          "spoken": "I am a crustacean, not an insect! Without moisture I dry out. A pile of leaves can be somebody’s home.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-plastic-opening",
+          "spoken": "A wrapper blocks the route to a damp refuge. Neighbours are caught in threads. Free the passage and guide them.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-plastic-conclusion",
+          "spoken": "Litter can be a barrier and a trap. Prevention matters alongside cleanup.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-plastic-stage-2",
+          "spoken": "We made it! Large litter can be removed, but tiny fragments remain. People must prevent new pollution.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-pesticide-conclusion",
+          "spoken": "Pesticides can harm non-target organisms. Heat and drought add stress to habitats.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-pesticide-stage-3",
+          "spoken": "Shelter and moisture matter even more in heat. Some inhabitants are safe, but people still need to change how this land is treated.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-night-conclusion",
+          "spoken": "Shielded, warm lighting used only when needed can reduce light pollution.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-garden-conclusion",
+          "spoken": "Diversity and connected habitats support resilience. Care continues in the larger world.",
+          "tag": "warmly"
+        },
+        {
+          "id": "secret-shell",
+          "spoken": "An empty shell became a shelter. Even a tiny object can be part of a habitat.",
+          "tag": "warmly"
+        },
+        {
+          "id": "secret-egg",
+          "spoken": "Eggs beneath a leaf. Host plants matter long before adulthood.",
+          "tag": "warmly"
+        },
+        {
+          "id": "secret-web",
+          "spoken": "A spider senses vibrations in its web. It is a natural predator.",
+          "tag": "warmly"
+        },
+        {
+          "id": "secret-leafprint",
+          "spoken": "Leaf veins resemble a map of rivers. This leaf feels worth keeping.",
+          "tag": "warmly"
+        },
+        {
+          "id": "colony-entrance",
+          "spoken": "Workers touch antennae and exchange chemical signals. The colony coordinates tasks without human commands.",
+          "tag": "warmly"
+        },
+        {
+          "id": "colony-stores",
+          "spoken": "Food supports the workers and growing brood. What ants collect and how they share it depends on the species and the colony’s needs.",
+          "tag": "warmly"
+        },
+        {
+          "id": "colony-brood",
+          "spoken": "Eggs, larvae and pupae need care. Workers feed larvae and may move brood to more suitable conditions.",
+          "tag": "warmly"
+        },
+        {
+          "id": "colony-junction",
+          "spoken": "Passages connect the chambers. A damaged section changes the available routes; restoring it reconnects parts of the colony.",
+          "tag": "warmly"
+        },
+        {
+          "id": "colony-shelter",
+          "spoken": "Moisture and temperature vary within a nest. Moving brood is one way a colony responds to changing conditions.",
+          "tag": "warmly"
+        },
+        {
+          "id": "colony-queen",
+          "spoken": "The queen is a reproductive female whose main role is laying eggs. Workers tend her; this is not a human ruler’s throne room.",
+          "tag": "warmly"
+        },
+        {
+          "id": "colony-remains",
+          "spoken": "Some workers remove unwanted remains. Waste handling varies between species; cleanliness and where remains accumulate matter to colony life.",
+          "tag": "warmly"
+        },
+        {
+          "id": "colony-intro",
+          "spoken": "The cutaway, warm lighting and bridge are artistic devices. Nest structure varies between species.",
+          "tag": "warmly"
+        },
+        {
+          "id": "crossing-intro",
+          "spoken": "The rain cut six neighbours off from a damp refuge. There are three ways: the leaf on the water, the roots to the left and the broken bridge to the right. Help everyone reach the far bank.",
+          "tag": "warmly"
+        },
+        {
+          "id": "crossing-leafHelp",
+          "spoken": "The leaf carries you and two neighbours. Steer with WASD or the joystick and dock at the opposite bank. Return for the next pair. The ferry will remain a regular crossing.",
+          "tag": "warmly"
+        },
+        {
+          "id": "crossing-rootsHelp",
+          "spoken": "The roots skirt the water on the left. Follow their bends, collect two fallen leaves and cover the marked spots: woodlice need damp shade. Once it is ready, neighbours will use this longer route.",
+          "tag": "warmly"
+        }
+      ],
+      "prompt": "[warmly] I am a crustacean, not an insect! Without moisture I dry out. A pile of leaves can be somebody’s home.\n\n[long pause]\n\n[warmly] A wrapper blocks the route to a damp refuge. Neighbours are caught in threads. Free the passage and guide them.\n\n[long pause]\n\n[warmly] Litter can be a barrier and a trap. Prevention matters alongside cleanup.\n\n[long pause]\n\n[warmly] We made it! Large litter can be removed, but tiny fragments remain. People must prevent new pollution.\n\n[long pause]\n\n[warmly] Pesticides can harm non-target organisms. Heat and drought add stress to habitats.\n\n[long pause]\n\n[warmly] Shelter and moisture matter even more in heat. Some inhabitants are safe, but people still need to change how this land is treated.\n\n[long pause]\n\n[warmly] Shielded, warm lighting used only when needed can reduce light pollution.\n\n[long pause]\n\n[warmly] Diversity and connected habitats support resilience. Care continues in the larger world.\n\n[long pause]\n\n[warmly] An empty shell became a shelter. Even a tiny object can be part of a habitat.\n\n[long pause]\n\n[warmly] Eggs beneath a leaf. Host plants matter long before adulthood.\n\n[long pause]\n\n[warmly] A spider senses vibrations in its web. It is a natural predator.\n\n[long pause]\n\n[warmly] Leaf veins resemble a map of rivers. This leaf feels worth keeping.\n\n[long pause]\n\n[warmly] Workers touch antennae and exchange chemical signals. The colony coordinates tasks without human commands.\n\n[long pause]\n\n[warmly] Food supports the workers and growing brood. What ants collect and how they share it depends on the species and the colony’s needs.\n\n[long pause]\n\n[warmly] Eggs, larvae and pupae need care. Workers feed larvae and may move brood to more suitable conditions.\n\n[long pause]\n\n[warmly] Passages connect the chambers. A damaged section changes the available routes; restoring it reconnects parts of the colony.\n\n[long pause]\n\n[warmly] Moisture and temperature vary within a nest. Moving brood is one way a colony responds to changing conditions.\n\n[long pause]\n\n[warmly] The queen is a reproductive female whose main role is laying eggs. Workers tend her; this is not a human ruler’s throne room.\n\n[long pause]\n\n[warmly] Some workers remove unwanted remains. Waste handling varies between species; cleanliness and where remains accumulate matter to colony life.\n\n[long pause]\n\n[warmly] The cutaway, warm lighting and bridge are artistic devices. Nest structure varies between species.\n\n[long pause]\n\n[warmly] The rain cut six neighbours off from a damp refuge. There are three ways: the leaf on the water, the roots to the left and the broken bridge to the right. Help everyone reach the far bank.\n\n[long pause]\n\n[warmly] The leaf carries you and two neighbours. Steer with WASD or the joystick and dock at the opposite bank. Return for the next pair. The ferry will remain a regular crossing.\n\n[long pause]\n\n[warmly] The roots skirt the water on the left. Follow their bends, collect two fallen leaves and cover the marked spots: woodlice need damp shade. Once it is ready, neighbours will use this longer route."
+    },
+    {
+      "id": "en-narrator-2",
+      "lang": "en",
+      "role": "narrator",
+      "entries": [
+        {
+          "id": "crossing-bridgeHelp",
+          "spoken": "Gather three dry twigs on this bank. Press E at the support: workers will secure the deck. Cross first, then neighbours will follow and carry food to the refuge.",
+          "tag": "warmly"
+        },
+        {
+          "id": "crossing-leafEnd",
+          "spoken": "The leaf became a ferry. Pairs keep crossing with food: this route depends on regular trips.",
+          "tag": "warmly"
+        },
+        {
+          "id": "crossing-rootsEnd",
+          "spoken": "The shelters keep a damp shade. Neighbours follow the roots around the water. It is longer, while the stream remains open.",
+          "tag": "warmly"
+        },
+        {
+          "id": "crossing-bridgeEnd",
+          "spoken": "The ants use the permanent bridge to carry food to the refuge. The deck will need maintenance after another heavy rain.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-glass-intro",
+          "spoken": "Dry earth lies beneath the glass. A shard blocks the spring and two valves point the wrong way. Push the shard aside, turn the upper valve east (east) and the lower one south (south). Fill up at the cistern and water three sprouts. Explore the corners in any order.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-glass-secret-0",
+          "spoken": "Many lacewing larvae eat aphids. Adults of some species feed on nectar and pollen.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-glass-secret-1",
+          "spoken": "Damp soil survives beneath the pot. Shelter retains moisture and helps small invertebrates withstand the heat.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-hollow-intro",
+          "spoken": "A beetle has lost three egg clusters among the roots. Roll the acorn onto the round stone: its weight slides the bark aside. Carry one cluster at a time to the safe nest. Beyond the gate is an amber lens for the observatory. Use E at the sign to reset a runaway acorn.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-hollow-secret-0",
+          "spoken": "Dead wood is a living habitat. Fungi, woodlice and other organisms help decompose organic matter.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-hollow-secret-1",
+          "spoken": "Ground beetles are diverse. Many hunt other invertebrates and shelter beneath bark and stones.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-creek-intro",
+          "spoken": "The spring flood carried off the bridge. Collect three pieces of bark on the western bank and lay them at the three supports. Free the water wheel from a twig. Call the springtail on the eastern bank and guide it to the damp moss. It finds its own way but waits if you go too far.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-creek-secret-0",
+          "spoken": "Springtails are hexapods but are not insects. Many use a forked appendage called a furcula to jump away from danger.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-creek-secret-1",
+          "spoken": "Bankside roots hold soil in place. Shade and fallen leaves provide shelter for small animals.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-canopy-intro",
+          "spoken": "An old observatory hides in the crown. The lanterns respond in the order written on the stones: two, then one, then three. Collect pollen at the great flower and visit three closed buds. Once all four habitats are restored, fit the amber lens into the telescope.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-canopy-secret-0",
+          "spoken": "Pollination transfers pollen. Flowers attract visitors with colour, scent and food. Visitors differ in how effectively they transfer pollen.",
+          "tag": "warmly"
+        },
+        {
+          "id": "expedition-canopy-secret-1",
+          "spoken": "These lanterns are a story mechanic. Real fireflies produce light through a chemical reaction in specialised organs.",
+          "tag": "warmly"
+        },
+        {
+          "id": "creature-snail",
+          "spoken": "A mollusc that seeks damp shelter and moves on a muscular foot.",
+          "tag": "warmly"
+        },
+        {
+          "id": "creature-beetle",
+          "spoken": "An insect with six legs and hard wing cases. Many species are predators.",
+          "tag": "warmly"
+        },
+        {
+          "id": "creature-lacewing",
+          "spoken": "Adults have transparent, net-veined wings. Many larvae prey on aphids.",
+          "tag": "warmly"
+        },
+        {
+          "id": "creature-springtail",
+          "spoken": "A tiny soil hexapod. Many species eat fungi and decomposing material.",
+          "tag": "warmly"
+        }
+      ],
+      "prompt": "[warmly] Gather three dry twigs on this bank. Press E at the support: workers will secure the deck. Cross first, then neighbours will follow and carry food to the refuge.\n\n[long pause]\n\n[warmly] The leaf became a ferry. Pairs keep crossing with food: this route depends on regular trips.\n\n[long pause]\n\n[warmly] The shelters keep a damp shade. Neighbours follow the roots around the water. It is longer, while the stream remains open.\n\n[long pause]\n\n[warmly] The ants use the permanent bridge to carry food to the refuge. The deck will need maintenance after another heavy rain.\n\n[long pause]\n\n[warmly] Dry earth lies beneath the glass. A shard blocks the spring and two valves point the wrong way. Push the shard aside, turn the upper valve east (east) and the lower one south (south). Fill up at the cistern and water three sprouts. Explore the corners in any order.\n\n[long pause]\n\n[warmly] Many lacewing larvae eat aphids. Adults of some species feed on nectar and pollen.\n\n[long pause]\n\n[warmly] Damp soil survives beneath the pot. Shelter retains moisture and helps small invertebrates withstand the heat.\n\n[long pause]\n\n[warmly] A beetle has lost three egg clusters among the roots. Roll the acorn onto the round stone: its weight slides the bark aside. Carry one cluster at a time to the safe nest. Beyond the gate is an amber lens for the observatory. Use E at the sign to reset a runaway acorn.\n\n[long pause]\n\n[warmly] Dead wood is a living habitat. Fungi, woodlice and other organisms help decompose organic matter.\n\n[long pause]\n\n[warmly] Ground beetles are diverse. Many hunt other invertebrates and shelter beneath bark and stones.\n\n[long pause]\n\n[warmly] The spring flood carried off the bridge. Collect three pieces of bark on the western bank and lay them at the three supports. Free the water wheel from a twig. Call the springtail on the eastern bank and guide it to the damp moss. It finds its own way but waits if you go too far.\n\n[long pause]\n\n[warmly] Springtails are hexapods but are not insects. Many use a forked appendage called a furcula to jump away from danger.\n\n[long pause]\n\n[warmly] Bankside roots hold soil in place. Shade and fallen leaves provide shelter for small animals.\n\n[long pause]\n\n[warmly] An old observatory hides in the crown. The lanterns respond in the order written on the stones: two, then one, then three. Collect pollen at the great flower and visit three closed buds. Once all four habitats are restored, fit the amber lens into the telescope.\n\n[long pause]\n\n[warmly] Pollination transfers pollen. Flowers attract visitors with colour, scent and food. Visitors differ in how effectively they transfer pollen.\n\n[long pause]\n\n[warmly] These lanterns are a story mechanic. Real fireflies produce light through a chemical reaction in specialised organs.\n\n[long pause]\n\n[warmly] A mollusc that seeks damp shelter and moves on a muscular foot.\n\n[long pause]\n\n[warmly] An insect with six legs and hard wing cases. Many species are predators.\n\n[long pause]\n\n[warmly] Adults have transparent, net-veined wings. Many larvae prey on aphids.\n\n[long pause]\n\n[warmly] A tiny soil hexapod. Many species eat fungi and decomposing material."
+    },
+    {
+      "id": "en-narrator-3",
+      "lang": "en",
+      "role": "narrator",
+      "entries": [
+        {
+          "id": "expedition-finale",
+          "spoken": "The observatory can see the stars again. Water, soil, shelter and pollinators form one web of life. All four trails are restored!",
+          "tag": "warmly"
+        },
+        {
+          "id": "perspective-grass",
+          "spoken": "A few steps for a person. An entire forest crossing for an ant.",
+          "tag": "warmly"
+        },
+        {
+          "id": "perspective-puddle",
+          "spoken": "You can walk around it. Its aquatic inhabitants cannot walk around pollution.",
+          "tag": "warmly"
+        },
+        {
+          "id": "perspective-wrapper",
+          "spoken": "What we step over without looking can block somebody else’s way home.",
+          "tag": "warmly"
+        },
+        {
+          "id": "perspective-lamp",
+          "spoken": "Our light can take away another creature’s night. Where we direct it matters.",
+          "tag": "warmly"
+        },
+        {
+          "id": "underwater-intro",
+          "spoken": "Another world lies beneath the mirror. A dreamlike air dome lets the hero swim. Free the passages, observe aquatic neighbours and restore the plants.",
+          "tag": "warmly"
+        },
+        {
+          "id": "underwater-conclusion",
+          "spoken": "A dragonfly lives here long before its first flight. Caring for water also cares for those flying above it. Plants provide shelter, but cannot remove every pollutant.",
+          "tag": "warmly"
+        }
+      ],
+      "prompt": "[warmly] The observatory can see the stars again. Water, soil, shelter and pollinators form one web of life. All four trails are restored!\n\n[long pause]\n\n[warmly] A few steps for a person. An entire forest crossing for an ant.\n\n[long pause]\n\n[warmly] You can walk around it. Its aquatic inhabitants cannot walk around pollution.\n\n[long pause]\n\n[warmly] What we step over without looking can block somebody else’s way home.\n\n[long pause]\n\n[warmly] Our light can take away another creature’s night. Where we direct it matters.\n\n[long pause]\n\n[warmly] Another world lies beneath the mirror. A dreamlike air dome lets the hero swim. Free the passages, observe aquatic neighbours and restore the plants.\n\n[long pause]\n\n[warmly] A dragonfly lives here long before its first flight. Caring for water also cares for those flying above it. Plants provide shelter, but cannot remove every pollutant."
+    },
+    {
+      "id": "en-lada-0",
+      "lang": "en",
+      "role": "lada",
+      "entries": [
+        {
+          "id": "cine-prologue-3",
+          "spoken": "You are not from our world… But perhaps you can help it. Welcome to the great little world.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-awakening-0",
+          "spoken": "Take your time. First, look at who lives beside you. Sometimes understanding is the best way to help.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-catastrophe-0",
+          "spoken": "Nobody meant to build this wall. Someone simply dropped a wrapper. Small consequences become enormous when you are small.",
+          "tag": "seriously"
+        },
+        {
+          "id": "cine-night-0",
+          "spoken": "Listen. Night life continues even when people cannot see it. We need our own part of the day too.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-migration-0",
+          "spoken": "Today we opened a passage. Tomorrow people must change what makes it dangerous. Rescue is the beginning of care.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-ending-0",
+          "spoken": "Now you know how great our little world is. But remember: its future also depends on your world.",
+          "tag": "warmly"
+        },
+        {
+          "id": "cine-metamorphosis-3",
+          "spoken": "After emergence the wings expand and harden, which takes time. The adult can find a mate and lay eggs: the cycle continues.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-scout-opening",
+          "spoken": "You are not from our world… But perhaps you can help it. An ant lost the trail after the rain. Find him by the root.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-water-opening",
+          "spoken": "We fly, but our young live in water. After the rain a murky stream arrived from the field. Trace it to its source.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-pesticide-opening",
+          "spoken": "Where bees buzzed yesterday there is silence. Do not touch the droplets: scan for hazards. We need a safe corridor to the garden.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-night-opening",
+          "spoken": "They have not vanished. Their signals are lost in the glare. Reduce excess light while keeping a safe path for people.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-night-stage-1",
+          "spoken": "We can see each other again. Light is not decoration: for many of us it is a way to find a mate.",
+          "tag": "warmly"
+        },
+        {
+          "id": "quest-garden-opening",
+          "spoken": "You have seen the links between flowers, soil, water and darkness. You need not control every inhabitant. You need to leave room for life.",
+          "tag": "warmly"
+        }
+      ],
+      "prompt": "[warmly] You are not from our world… But perhaps you can help it. Welcome to the great little world.\n\n[long pause]\n\n[warmly] Take your time. First, look at who lives beside you. Sometimes understanding is the best way to help.\n\n[long pause]\n\n[seriously] Nobody meant to build this wall. Someone simply dropped a wrapper. Small consequences become enormous when you are small.\n\n[long pause]\n\n[warmly] Listen. Night life continues even when people cannot see it. We need our own part of the day too.\n\n[long pause]\n\n[warmly] Today we opened a passage. Tomorrow people must change what makes it dangerous. Rescue is the beginning of care.\n\n[long pause]\n\n[warmly] Now you know how great our little world is. But remember: its future also depends on your world.\n\n[long pause]\n\n[warmly] After emergence the wings expand and harden, which takes time. The adult can find a mate and lay eggs: the cycle continues.\n\n[long pause]\n\n[warmly] You are not from our world… But perhaps you can help it. An ant lost the trail after the rain. Find him by the root.\n\n[long pause]\n\n[warmly] We fly, but our young live in water. After the rain a murky stream arrived from the field. Trace it to its source.\n\n[long pause]\n\n[warmly] Where bees buzzed yesterday there is silence. Do not touch the droplets: scan for hazards. We need a safe corridor to the garden.\n\n[long pause]\n\n[warmly] They have not vanished. Their signals are lost in the glare. Reduce excess light while keeping a safe path for people.\n\n[long pause]\n\n[warmly] We can see each other again. Light is not decoration: for many of us it is a way to find a mate.\n\n[long pause]\n\n[warmly] You have seen the links between flowers, soil, water and darkness. You need not control every inhabitant. You need to leave room for life."
+    },
+    {
+      "id": "en-hero-0",
+      "lang": "en",
+      "role": "hero",
+      "entries": [
+        {
+          "id": "cine-prologue-0",
+          "spoken": "I wonder… What does our world look like to those hundreds of times smaller than us?",
+          "tag": "curious"
+        },
+        {
+          "id": "cine-citadel-2",
+          "spoken": "The queen is not on a throne. The workers do not wait for orders. This whole city is made of small, connected actions.",
+          "tag": "curious"
+        },
+        {
+          "id": "cine-restoration-0",
+          "spoken": "I thought I had to fix everything myself. But life needs connections, time and space. And fewer obstacles from us.",
+          "tag": "curious"
+        },
+        {
+          "id": "cine-ending-3",
+          "spoken": "At the window sits the same ladybird. You smile. Somewhere beyond the glass, the grass rustles again.",
+          "tag": "curious"
+        }
+      ],
+      "prompt": "[curious] I wonder… What does our world look like to those hundreds of times smaller than us?\n\n[long pause]\n\n[curious] The queen is not on a throne. The workers do not wait for orders. This whole city is made of small, connected actions.\n\n[long pause]\n\n[curious] I thought I had to fix everything myself. But life needs connections, time and space. And fewer obstacles from us.\n\n[long pause]\n\n[curious] At the window sits the same ladybird. You smile. Somewhere beyond the glass, the grass rustles again."
+    },
+    {
+      "id": "ru-narrator-trails",
+      "lang": "ru",
+      "role": "narrator",
+      "entries": [
+        {
+          "id": "trail-dew-canopy",
+          "spoken": "Форма капли зависит от поверхностного натяжения и свойств листа. Восковой покров многих растений помогает воде собираться в капли.",
+          "tag": "warmly"
+        },
+        {
+          "id": "trail-flower-canopy",
+          "spoken": "Бабочке нужны условия не только для полёта: яйца и гусеницы связаны с подходящими кормовыми растениями. Здесь можно просмотреть превращение с ускоренным ходом времени.",
+          "tag": "warmly"
+        },
+        {
+          "id": "trail-night-canopy",
+          "spoken": "У многих светлячков свечение служит для поиска партнёра. Видовые рисунки сигналов различаются; яркое внешнее освещение может мешать общению.",
+          "tag": "warmly"
+        }
+      ],
+      "prompt": "[warmly] Форма капли зависит от поверхностного натяжения и свойств листа. Восковой покров многих растений помогает воде собираться в капли.\n\n[long pause]\n\n[warmly] Бабочке нужны условия не только для полёта: яйца и гусеницы связаны с подходящими кормовыми растениями. Здесь можно просмотреть превращение с ускоренным ходом времени.\n\n[long pause]\n\n[warmly] У многих светлячков свечение служит для поиска партнёра. Видовые рисунки сигналов различаются; яркое внешнее освещение может мешать общению."
+    },
+    {
+      "id": "kk-narrator-trails",
+      "lang": "kk",
+      "role": "narrator",
+      "entries": [
+        {
+          "id": "trail-dew-canopy",
+          "spoken": "Тамшы пішіні беттік керілу мен жапырақ қасиетіне байланысты. Көп өсімдіктің балауыз қабаты судың тамшы болып жиналуына көмектеседі.",
+          "tag": "warmly"
+        },
+        {
+          "id": "trail-flower-canopy",
+          "spoken": "Көбелекке ұшу жағдайы ғана жеткіліксіз: жұмыртқасы мен жұлдызқұрты сәйкес қоректік өсімдіктерге тәуелді. Мұнда түрленуді уақытын жылдамдатып көруге болады.",
+          "tag": "warmly"
+        },
+        {
+          "id": "trail-night-canopy",
+          "spoken": "Көп жарқырауық жарықты жұбын іздеуге қолданады. Түрлердің сигнал ырғағы әртүрлі; сыртқы күшті жарық байланысқа кедергі болуы мүмкін.",
+          "tag": "warmly"
+        }
+      ],
+      "prompt": "[warmly] Тамшы пішіні беттік керілу мен жапырақ қасиетіне байланысты. Көп өсімдіктің балауыз қабаты судың тамшы болып жиналуына көмектеседі.\n\n[long pause]\n\n[warmly] Көбелекке ұшу жағдайы ғана жеткіліксіз: жұмыртқасы мен жұлдызқұрты сәйкес қоректік өсімдіктерге тәуелді. Мұнда түрленуді уақытын жылдамдатып көруге болады.\n\n[long pause]\n\n[warmly] Көп жарқырауық жарықты жұбын іздеуге қолданады. Түрлердің сигнал ырғағы әртүрлі; сыртқы күшті жарық байланысқа кедергі болуы мүмкін."
+    },
+    {
+      "id": "en-narrator-trails",
+      "lang": "en",
+      "role": "narrator",
+      "entries": [
+        {
+          "id": "trail-dew-canopy",
+          "spoken": "A drop’s shape depends on surface tension and the leaf surface. Waxy coatings on many plants help water bead into droplets.",
+          "tag": "warmly"
+        },
+        {
+          "id": "trail-flower-canopy",
+          "spoken": "A butterfly needs more than flying space: eggs and caterpillars depend on suitable host plants. Here you can watch metamorphosis with time condensed.",
+          "tag": "warmly"
+        },
+        {
+          "id": "trail-night-canopy",
+          "spoken": "Many fireflies use light to find a mate. Signal patterns differ between species; bright artificial lighting can interfere with communication.",
+          "tag": "warmly"
+        }
+      ],
+      "prompt": "[warmly] A drop’s shape depends on surface tension and the leaf surface. Waxy coatings on many plants help water bead into droplets.\n\n[long pause]\n\n[warmly] A butterfly needs more than flying space: eggs and caterpillars depend on suitable host plants. Here you can watch metamorphosis with time condensed.\n\n[long pause]\n\n[warmly] Many fireflies use light to find a mate. Signal patterns differ between species; bright artificial lighting can interfere with communication."
+    }
+  ]
+}

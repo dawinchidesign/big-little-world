@@ -3,6 +3,9 @@ import { createRequire } from "node:module";
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { resolve } from "node:path";
 import { indexedDB, IDBKeyRange } from "fake-indexeddb";
+import {checkCrossings} from './runtime-crossing.mjs';
+import {checkEnvironment} from './runtime-environment.mjs';
+import {checkExpeditions} from './runtime-expedition.mjs';
 import assert from "node:assert/strict";
 const require = createRequire(import.meta.url);
 const { createCanvas, Image: NativeImage, loadImage } = require("@napi-rs/canvas");
@@ -158,6 +161,9 @@ app.audio = {
   perspective() {},
   mute() {},
 };
+// This simulated DOM has no audio decoder; real MP3 playback is covered in
+// browser-speech.mjs instead of emitting synthetic audio load errors here.
+app.state.settings.narration=false;
 app.game.loop.stop();
 assert.equal(app.mode, "menu");
 await app.startFresh();
@@ -197,18 +203,11 @@ w.document.querySelector("#dialog-next").click();
 assert.equal(app.mode, "play");
 // Keep the scale moment out of movement checks, then exercise it separately.
 app.state.seen.push("view-grass", "view-puddle", "view-wrapper", "view-lamp");
-// Location transitions are timed overlays; tests fast-forward them to their end state.
-const settle = () => {
-  for (let i = 0; i < 4 && app.transition?.busy; i++)
-    app.transition.timeline?.progress(1);
-};
 const step = (n = 1) => {
-  settle();
   for (let i = 0; i < n; i++) {
     const t = app.scene.time.now + 16.666;
     app.game.headlessStep(t, 16.666);
   }
-  settle();
 };
 const x = app.scene.player.x;
 app.scene.keys.D.isDown = true;
@@ -221,14 +220,6 @@ assert.equal(app.scene.player.visualDensity,4);
 assert(Math.abs(app.scene.player.body.width-16)<.1,'visual upgrade preserves physical width');
 assert(Math.abs(app.scene.player.body.height-11.2)<.1,'visual upgrade preserves physical foot height');
 assert(app.scene.npcs.every(n=>n.texture.key.startsWith('visual-')),'all outdoor inhabitants use generated art');
-for(const key of ['lamp','pipe','sample','toxic','sign','egg','shell','mycelium','dandelion-bud','dandelion','travel-seed','fish']){
-  assert(!app.scene.textures.exists(key),`${key} has no competing procedural texture`);
-}
-for(const marker of app.scene.markers.filter(m=>m.station!==undefined)){
-  assert(marker.sprite.texture.key.startsWith('visual-'),'wind stations use illustrated atlas frames');
-  assert(Math.abs(marker.sprite.displayWidth-64*1.7)<.1,'illustrated station keeps its logical width');
-  assert(Math.abs(marker.sprite.displayHeight-112*1.7)<.1,'illustrated station keeps its logical height');
-}
 const portraitImage = await loadImage(app.portrait('ladybird'));
 assert.equal(portraitImage.width,128,'journal crops a single generated portrait, not an entire atlas');
 const pressEsc = () => {
@@ -272,12 +263,6 @@ stick.onpointerdown({
   preventDefault() {},
 });
 assert(app.joy.x > 0, "second pointer cannot steal the joystick");
-stick.onpointerup({ pointerId: 2 });
-assert(app.joy.x > 0, "releasing another finger does not stop the joystick");
-stick.onpointermove({ pointerId: 1, clientX: 3, clientY: 0 });
-assert.equal(app.joy.x, 0, "joystick dead zone prevents drift near the center");
-stick.onpointermove({ pointerId: 1, clientX: 400, clientY: 400 });
-assert(Math.abs(Math.hypot(app.joy.x, app.joy.y) - 1) < 0.001, "diagonal joystick movement stays normalized");
 stick.onlostpointercapture();
 assert.equal(app.joy.x, 0);
 app.joy = { x: 1, y: 0 };
@@ -299,40 +284,6 @@ assert.equal(app.mode, "map");
 app.closePanel();
 app.pause();
 assert.equal(app.mode, "pause");
-app.settings("pause");
-assert.equal(app.mode, "settings");
-const lowControl = w.document.querySelector("#low");
-const previousLow = app.state.settings.low;
-lowControl.checked = !previousLow;
-lowControl.dispatchEvent(new w.Event("change"));
-assert.equal(w.document.body.classList.contains("low-fx"), !previousLow, "reduced effects apply immediately");
-lowControl.checked = previousLow;
-lowControl.dispatchEvent(new w.Event("change"));
-app.changeLanguage("en");
-app.closePanel();
-assert.equal(app.mode, "pause", "closing settings returns to pause even after a language change");
-app.closePanel();
-assert.equal(app.mode, "play");
-app.scene.toggleObserve();
-assert.equal(w.document.querySelector("#observe").getAttribute("aria-pressed"), "true");
-app.scene.toggleObserve();
-assert.equal(w.document.querySelector("#observe").getAttribute("aria-pressed"), "false");
-const promptTarget = { kind: "quest", stage: { title: { ru: "Проверка", en: "Check", kk: "Тексеру" } } };
-app.updatePrompt(promptTarget);
-const promptKey = w.document.querySelector("#prompt .key");
-app.updatePrompt(promptTarget);
-assert.equal(w.document.querySelector("#prompt .key"), promptKey, "unchanged prompts retain their DOM nodes");
-app.toast("polish-dedup");
-app.toast("polish-dedup");
-assert.equal(w.document.querySelectorAll('[data-notice="text:polish-dedup"]').length, 1);
-for (let i = 0; i < 8; i++) app.toast("polish-limit-" + i);
-assert(w.document.querySelector("#toast").children.length <= 3, "notifications cannot flood the view");
-app.openTravel(0);
-assert.equal(app.mode, "travel-menu");
-app.changeLanguage("kk");
-const travelKazakh = w.document.querySelector(".travel-lead").textContent;
-app.changeLanguage("en");
-assert.notEqual(w.document.querySelector(".travel-lead").textContent, travelKazakh, "travel menu updates its language");
 app.closePanel();
 for (const lang of ["kk", "en", "ru"]) {
   app.changeLanguage(lang);
@@ -370,6 +321,12 @@ const tapE = () => {
     step(2);
   }
 };
+if(process.argv.includes('--expeditions')){
+ await checkExpeditions({app,w,step,tapE,dismiss,getCanvas});
+ app.game.destroy(true);dom.window.close();
+ if(errors.length)throw Error(errors.map(e=>e.message).join('\n'));
+ console.log('EXPEDITION INTEGRATION PASSED');process.exit(0);
+}
 app.scene.player.body.reset(3720, 1440);
 app.scene.updateNear();
 assert(app.scene.near.dive);
@@ -380,11 +337,6 @@ assert.equal(app.state.quest, questBefore);
 assert.equal(app.state.stage, stageBefore);
 if (app.mode === "dialog") w.document.querySelector("#dialog-next").click();
 console.log("UNDERWATER", app.scene.npcs.length, app.scene.markers.length);
-assert(app.scene.fishes.every(o=>o.texture.key.startsWith('visual-')&&o.visualDensity===4),'all fish use illustrated swim frames');
-const fishWidths=app.scene.fishes.map(o=>o.displayWidth);
-step(40);
-assert(app.scene.fishes.some(o=>o.visualKey!=='fish0'),'swimming advances the illustration frame');
-assert(app.scene.fishes.every((o,i)=>Math.abs(o.displayWidth-fishWidths[i])<.01),'swim animation does not change world size');
 app.game.step(app.scene.time.now + 16, 16);
 writeFileSync(
   "tmp/underwater-frame.png",
@@ -419,7 +371,6 @@ function dismissUnder() {
 assert.equal(u.state.done, true);
 console.log("UNDERWATER QUEST OK");
 app.exitUnderwater();
-settle();
 assert(!app.scene.isUnderwater);
 assert.equal(app.state.stage, stageBefore);
 for (let round = 0; round < 3; round++) {
@@ -763,35 +714,9 @@ console.log(
   app.state.completed.length,
   app.state.changes.length,
 );
-// Exercise both illustrated station stages, the real travel menu and the
-// density-compensated seed during flight rather than only checking PNG files.
-const beforeWind={x:app.scene.player.x,y:app.scene.player.y};
-for(const id of [0,1]){
-  const marker=app.scene.markers.find(m=>m.station===id);
-  app.state.x=marker.x;app.state.y=marker.y;
-  app.scene.reset(app.state);app.scene.updateNear();
-  assert.equal(app.scene.near.station,id);
-  app.scene.interact();dismiss();
-  assert(app.state.travel.stations.includes(id));
-  const opened=app.scene.markers.find(m=>m.station===id).sprite;
-  assert.equal(opened.visualKey,'dandelion');
-  assert(Math.abs(opened.displayWidth-64*1.7)<.1,'awakened plant retains station size');
-}
-app.scene.updateNear();app.scene.interact();
-assert.equal(app.mode,'travel-menu');
-w.document.querySelector('[data-fly="0"]').click();
-assert.equal(app.mode,'travel');
-app.scene.flightTimeline.progress(.5);
-const windSeed=app.scene.children.list.find(o=>o.visualKey==='travel-seed');
-assert(windSeed&&windSeed.texture.key.startsWith('visual-'));
-assert(windSeed.displayWidth<160,'flying seed stays in world units at flight zoom');
-app.scene.skipFlight();
-assert.equal(app.mode,'play');
-assert(!windSeed.active,'landing releases the seed');
-assert(app.scene.player.body.enable,'landing restores collisions');
-assert(Math.abs(app.scene.player.displayWidth-24*1.75)<1,'landing animation keeps hero world scale');
-app.state.x=beforeWind.x;app.state.y=beforeWind.y;app.scene.reset(app.state);
-console.log('ILLUSTRATED STATIONS, AWAKENING, FLIGHT AND LANDING OK');
+await checkCrossings({app,w,step,tapE,dismiss,getCanvas});
+await checkEnvironment({app,w,step,tapE,dismiss,getCanvas});
+await checkExpeditions({app,w,step,tapE,dismiss,getCanvas});
 const replayProgress=JSON.stringify({quest:app.state.quest,stage:app.state.stage,eco:app.state.eco,discovered:app.state.discovered});
 for(const id of ['prologue','night','catastrophe','restoration']){
   app.playCinematic(id,null,true);

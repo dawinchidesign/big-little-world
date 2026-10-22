@@ -1,0 +1,2024 @@
+{
+  "completed_packs": [
+    "ru-narrator-0",
+    "ru-narrator-1",
+    "ru-narrator-2",
+    "ru-narrator-3",
+    "ru-lada-0",
+    "ru-hero-0",
+    "kk-narrator-0",
+    "kk-narrator-1",
+    "kk-narrator-2",
+    "kk-narrator-3",
+    "kk-lada-0",
+    "kk-hero-0",
+    "en-narrator-0",
+    "en-narrator-1",
+    "en-narrator-2",
+    "en-narrator-3",
+    "en-lada-0",
+    "en-hero-0",
+    "ru-narrator-trails",
+    "kk-narrator-trails",
+    "en-narrator-trails"
+  ],
+  "missing_packs": [],
+  "clips": [
+    {
+      "pack": "ru-narrator-0",
+      "id": "cine-prologue-1",
+      "start": 0.136,
+      "end": 9.38,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-0",
+      "id": "cine-prologue-2",
+      "start": 10.953,
+      "end": 18.5,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-0",
+      "id": "cine-citadel-0",
+      "start": 20.065,
+      "end": 29.462,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-0",
+      "id": "cine-citadel-1",
+      "start": 30.874,
+      "end": 42.382,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-0",
+      "id": "cine-valley-0",
+      "start": 43.256,
+      "end": 50.582,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-0",
+      "id": "cine-ending-1",
+      "start": 51.896,
+      "end": 59.222,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-0",
+      "id": "cine-ending-2",
+      "start": 60.694,
+      "end": 69.624,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-0",
+      "id": "cine-metamorphosis-0",
+      "start": 71.174,
+      "end": 79.744,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-0",
+      "id": "cine-metamorphosis-1",
+      "start": 80.477,
+      "end": 90.984,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-0",
+      "id": "cine-metamorphosis-2",
+      "start": 92.385,
+      "end": 100.595,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-0",
+      "id": "quest-scout-conclusion",
+      "start": 102.013,
+      "end": 107.723,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-0",
+      "id": "quest-scout-stage-0",
+      "start": 109.128,
+      "end": 116.123,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-0",
+      "id": "quest-scout-stage-1",
+      "start": 117.52,
+      "end": 124.843,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-0",
+      "id": "quest-scout-stage-2",
+      "start": 126.221,
+      "end": 132.141,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-0",
+      "id": "quest-citadel-opening",
+      "start": 133.633,
+      "end": 143.661,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-0",
+      "id": "quest-citadel-conclusion",
+      "start": 145.13,
+      "end": 151.665,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-0",
+      "id": "quest-citadel-stage-1",
+      "start": 152.668,
+      "end": 159.392,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-0",
+      "id": "quest-citadel-stage-2",
+      "start": 160.122,
+      "end": 168.242,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-0",
+      "id": "quest-flowers-opening",
+      "start": 169.557,
+      "end": 177.902,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-0",
+      "id": "quest-flowers-conclusion",
+      "start": 178.524,
+      "end": 183.474,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-0",
+      "id": "quest-flowers-stage-3",
+      "start": 184.754,
+      "end": 193.054,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-0",
+      "id": "quest-water-conclusion",
+      "start": 193.704,
+      "end": 201.994,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-0",
+      "id": "quest-water-stage-2",
+      "start": 202.829,
+      "end": 211.044,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-0",
+      "id": "quest-soil-opening",
+      "start": 212.096,
+      "end": 221.383,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-0",
+      "id": "quest-soil-conclusion",
+      "start": 222.625,
+      "end": 228.911,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-1",
+      "id": "quest-soil-stage-2",
+      "start": 0.14,
+      "end": 9.06,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-1",
+      "id": "quest-plastic-opening",
+      "start": 9.992,
+      "end": 19.18,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-1",
+      "id": "quest-plastic-conclusion",
+      "start": 20.152,
+      "end": 27.5,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-1",
+      "id": "quest-plastic-stage-2",
+      "start": 28.526,
+      "end": 37.42,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-1",
+      "id": "quest-pesticide-conclusion",
+      "start": 38.568,
+      "end": 46.228,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-1",
+      "id": "quest-pesticide-stage-3",
+      "start": 47.386,
+      "end": 55.628,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-1",
+      "id": "quest-night-conclusion",
+      "start": 57.576,
+      "end": 64.646,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-1",
+      "id": "quest-garden-conclusion",
+      "start": 65.761,
+      "end": 74.501,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-1",
+      "id": "secret-shell",
+      "start": 75.349,
+      "end": 80.769,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-1",
+      "id": "secret-egg",
+      "start": 82.83,
+      "end": 88.735,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-1",
+      "id": "secret-web",
+      "start": 90.525,
+      "end": 96.88,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-1",
+      "id": "secret-leafprint",
+      "start": 97.812,
+      "end": 102.575,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-1",
+      "id": "colony-entrance",
+      "start": 104.547,
+      "end": 112.794,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-1",
+      "id": "colony-stores",
+      "start": 114.554,
+      "end": 123.946,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-1",
+      "id": "colony-brood",
+      "start": 125.671,
+      "end": 134.195,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-1",
+      "id": "colony-junction",
+      "start": 136.0,
+      "end": 146.124,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-1",
+      "id": "colony-shelter",
+      "start": 147.209,
+      "end": 155.464,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-1",
+      "id": "colony-queen",
+      "start": 157.346,
+      "end": 167.656,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-1",
+      "id": "colony-remains",
+      "start": 168.508,
+      "end": 179.656,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-1",
+      "id": "colony-intro",
+      "start": 180.404,
+      "end": 188.794,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-1",
+      "id": "crossing-intro",
+      "start": 190.526,
+      "end": 203.914,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-1",
+      "id": "crossing-leafHelp",
+      "start": 204.593,
+      "end": 217.612,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-2",
+      "id": "crossing-rootsHelp",
+      "start": 0.198,
+      "end": 14.32,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-2",
+      "id": "crossing-bridgeHelp",
+      "start": 14.703,
+      "end": 27.24,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-2",
+      "id": "crossing-leafEnd",
+      "start": 27.745,
+      "end": 35.06,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-2",
+      "id": "crossing-rootsEnd",
+      "start": 35.825,
+      "end": 44.368,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-2",
+      "id": "crossing-bridgeEnd",
+      "start": 44.858,
+      "end": 53.003,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-2",
+      "id": "expedition-glass-intro",
+      "start": 53.903,
+      "end": 75.403,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-2",
+      "id": "expedition-glass-secret-0",
+      "start": 76.416,
+      "end": 84.763,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-2",
+      "id": "expedition-glass-secret-1",
+      "start": 85.764,
+      "end": 93.792,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-2",
+      "id": "expedition-hollow-intro",
+      "start": 94.417,
+      "end": 112.962,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-2",
+      "id": "expedition-hollow-secret-0",
+      "start": 113.549,
+      "end": 120.861,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-2",
+      "id": "expedition-hollow-secret-1",
+      "start": 121.874,
+      "end": 130.061,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-2",
+      "id": "expedition-creek-intro",
+      "start": 131.216,
+      "end": 152.536,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-2",
+      "id": "expedition-creek-secret-0",
+      "start": 153.089,
+      "end": 162.276,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-2",
+      "id": "expedition-creek-secret-1",
+      "start": 162.768,
+      "end": 170.566,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-2",
+      "id": "expedition-canopy-intro",
+      "start": 171.089,
+      "end": 190.716,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-2",
+      "id": "expedition-canopy-secret-0",
+      "start": 191.808,
+      "end": 202.208,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-2",
+      "id": "expedition-canopy-secret-1",
+      "start": 202.683,
+      "end": 211.2,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-2",
+      "id": "creature-snail",
+      "start": 212.285,
+      "end": 217.469,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-3",
+      "id": "creature-beetle",
+      "start": 0.348,
+      "end": 6.18,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-3",
+      "id": "creature-lacewing",
+      "start": 7.771,
+      "end": 14.264,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-3",
+      "id": "creature-springtail",
+      "start": 16.298,
+      "end": 22.584,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-3",
+      "id": "expedition-finale",
+      "start": 23.828,
+      "end": 36.104,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-3",
+      "id": "perspective-grass",
+      "start": 37.329,
+      "end": 42.984,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-3",
+      "id": "perspective-puddle",
+      "start": 44.627,
+      "end": 50.476,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-3",
+      "id": "perspective-wrapper",
+      "start": 50.877,
+      "end": 55.926,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-3",
+      "id": "perspective-lamp",
+      "start": 56.612,
+      "end": 63.621,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-3",
+      "id": "underwater-intro",
+      "start": 64.76,
+      "end": 78.987,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-3",
+      "id": "underwater-conclusion",
+      "start": 80.405,
+      "end": 93.649,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-lada-0",
+      "id": "cine-prologue-3",
+      "start": 0.134,
+      "end": 10.82,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-lada-0",
+      "id": "cine-awakening-0",
+      "start": 12.155,
+      "end": 19.789,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-lada-0",
+      "id": "cine-catastrophe-0",
+      "start": 21.583,
+      "end": 32.349,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-lada-0",
+      "id": "cine-night-0",
+      "start": 33.361,
+      "end": 43.484,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-lada-0",
+      "id": "cine-migration-0",
+      "start": 44.822,
+      "end": 54.947,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-lada-0",
+      "id": "cine-ending-0",
+      "start": 56.062,
+      "end": 64.532,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-lada-0",
+      "id": "cine-metamorphosis-3",
+      "start": 66.156,
+      "end": 77.652,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-lada-0",
+      "id": "quest-scout-opening",
+      "start": 78.725,
+      "end": 88.372,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-lada-0",
+      "id": "quest-water-opening",
+      "start": 91.464,
+      "end": 99.252,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-lada-0",
+      "id": "quest-pesticide-opening",
+      "start": 101.208,
+      "end": 111.143,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-lada-0",
+      "id": "quest-night-opening",
+      "start": 112.163,
+      "end": 120.145,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-lada-0",
+      "id": "quest-night-stage-1",
+      "start": 122.221,
+      "end": 130.711,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-lada-0",
+      "id": "quest-garden-opening",
+      "start": 131.882,
+      "end": 140.826,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-hero-0",
+      "id": "cine-prologue-0",
+      "start": 0.127,
+      "end": 4.34,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-hero-0",
+      "id": "cine-citadel-2",
+      "start": 5.15,
+      "end": 11.919,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-hero-0",
+      "id": "cine-restoration-0",
+      "start": 12.555,
+      "end": 19.675,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-hero-0",
+      "id": "cine-ending-3",
+      "start": 20.142,
+      "end": 25.887,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-0",
+      "id": "cine-prologue-1",
+      "start": 0.21,
+      "end": 6.74,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-0",
+      "id": "cine-prologue-2",
+      "start": 7.254,
+      "end": 13.541,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-0",
+      "id": "cine-citadel-0",
+      "start": 14.305,
+      "end": 21.24,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-0",
+      "id": "cine-citadel-1",
+      "start": 22.315,
+      "end": 31.06,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-0",
+      "id": "cine-valley-0",
+      "start": 31.677,
+      "end": 37.789,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-0",
+      "id": "cine-ending-1",
+      "start": 38.231,
+      "end": 45.309,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-0",
+      "id": "cine-ending-2",
+      "start": 46.162,
+      "end": 53.469,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-0",
+      "id": "cine-metamorphosis-0",
+      "start": 54.164,
+      "end": 61.149,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-0",
+      "id": "cine-metamorphosis-1",
+      "start": 61.921,
+      "end": 70.909,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-0",
+      "id": "cine-metamorphosis-2",
+      "start": 71.989,
+      "end": 78.989,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-0",
+      "id": "quest-scout-conclusion",
+      "start": 80.001,
+      "end": 85.059,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-0",
+      "id": "quest-scout-stage-0",
+      "start": 85.594,
+      "end": 91.469,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-0",
+      "id": "quest-scout-stage-1",
+      "start": 92.484,
+      "end": 99.389,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-0",
+      "id": "quest-scout-stage-2",
+      "start": 100.474,
+      "end": 107.75,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-0",
+      "id": "quest-citadel-opening",
+      "start": 108.43,
+      "end": 117.23,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-0",
+      "id": "quest-citadel-conclusion",
+      "start": 118.312,
+      "end": 123.87,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-0",
+      "id": "quest-citadel-stage-1",
+      "start": 124.882,
+      "end": 131.63,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-0",
+      "id": "quest-citadel-stage-2",
+      "start": 132.722,
+      "end": 140.03,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-0",
+      "id": "quest-flowers-opening",
+      "start": 140.954,
+      "end": 149.002,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-0",
+      "id": "quest-flowers-conclusion",
+      "start": 149.986,
+      "end": 155.086,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-0",
+      "id": "quest-flowers-stage-3",
+      "start": 156.171,
+      "end": 162.046,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-0",
+      "id": "quest-water-conclusion",
+      "start": 163.049,
+      "end": 169.394,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-0",
+      "id": "quest-water-stage-2",
+      "start": 169.947,
+      "end": 176.915,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-0",
+      "id": "quest-soil-opening",
+      "start": 177.466,
+      "end": 186.375,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-0",
+      "id": "quest-soil-conclusion",
+      "start": 187.23,
+      "end": 193.235,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-0",
+      "id": "quest-soil-stage-2",
+      "start": 193.79,
+      "end": 199.471,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-1",
+      "id": "quest-plastic-opening",
+      "start": 0.103,
+      "end": 7.22,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-1",
+      "id": "quest-plastic-conclusion",
+      "start": 8.3,
+      "end": 14.02,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-1",
+      "id": "quest-plastic-stage-2",
+      "start": 14.208,
+      "end": 22.518,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-1",
+      "id": "quest-pesticide-conclusion",
+      "start": 23.226,
+      "end": 31.148,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-1",
+      "id": "quest-pesticide-stage-3",
+      "start": 31.328,
+      "end": 37.628,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-1",
+      "id": "quest-night-conclusion",
+      "start": 38.757,
+      "end": 44.745,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-1",
+      "id": "quest-garden-conclusion",
+      "start": 44.825,
+      "end": 51.257,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-1",
+      "id": "secret-shell",
+      "start": 52.27,
+      "end": 58.137,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-1",
+      "id": "secret-egg",
+      "start": 58.27,
+      "end": 63.497,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-1",
+      "id": "secret-web",
+      "start": 63.623,
+      "end": 68.597,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-1",
+      "id": "secret-leafprint",
+      "start": 69.477,
+      "end": 73.587,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-1",
+      "id": "colony-entrance",
+      "start": 74.076,
+      "end": 82.315,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-1",
+      "id": "colony-stores",
+      "start": 82.487,
+      "end": 91.424,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-1",
+      "id": "colony-brood",
+      "start": 91.981,
+      "end": 100.813,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-1",
+      "id": "colony-junction",
+      "start": 101.458,
+      "end": 111.468,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-1",
+      "id": "colony-shelter",
+      "start": 111.6,
+      "end": 119.048,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-1",
+      "id": "colony-queen",
+      "start": 119.6,
+      "end": 128.828,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-1",
+      "id": "colony-remains",
+      "start": 130.056,
+      "end": 139.068,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-1",
+      "id": "colony-intro",
+      "start": 139.868,
+      "end": 147.158,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-1",
+      "id": "crossing-intro",
+      "start": 147.686,
+      "end": 160.046,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-1",
+      "id": "crossing-leafHelp",
+      "start": 160.573,
+      "end": 172.815,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-1",
+      "id": "crossing-rootsHelp",
+      "start": 173.287,
+      "end": 186.945,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-1",
+      "id": "crossing-bridgeHelp",
+      "start": 187.377,
+      "end": 197.956,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-2",
+      "id": "crossing-leafEnd",
+      "start": 0.136,
+      "end": 8.181,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-2",
+      "id": "crossing-rootsEnd",
+      "start": 9.489,
+      "end": 20.101,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-2",
+      "id": "crossing-bridgeEnd",
+      "start": 20.941,
+      "end": 28.701,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-2",
+      "id": "expedition-glass-intro",
+      "start": 29.668,
+      "end": 50.621,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-2",
+      "id": "expedition-glass-secret-0",
+      "start": 51.566,
+      "end": 62.119,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-2",
+      "id": "expedition-glass-secret-1",
+      "start": 62.814,
+      "end": 72.119,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-2",
+      "id": "expedition-hollow-intro",
+      "start": 73.826,
+      "end": 94.519,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-2",
+      "id": "expedition-hollow-secret-0",
+      "start": 96.729,
+      "end": 105.88,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-2",
+      "id": "expedition-hollow-secret-1",
+      "start": 106.865,
+      "end": 113.24,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-2",
+      "id": "expedition-creek-intro",
+      "start": 115.053,
+      "end": 132.12,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-2",
+      "id": "expedition-creek-secret-0",
+      "start": 134.094,
+      "end": 141.64,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-2",
+      "id": "expedition-creek-secret-1",
+      "start": 143.613,
+      "end": 149.4,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-2",
+      "id": "expedition-canopy-intro",
+      "start": 151.056,
+      "end": 169.171,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-2",
+      "id": "expedition-canopy-secret-0",
+      "start": 171.224,
+      "end": 181.691,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-2",
+      "id": "expedition-canopy-secret-1",
+      "start": 182.335,
+      "end": 192.091,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-2",
+      "id": "creature-snail",
+      "start": 193.066,
+      "end": 197.511,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-2",
+      "id": "creature-beetle",
+      "start": 197.935,
+      "end": 203.571,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-2",
+      "id": "creature-lacewing",
+      "start": 204.263,
+      "end": 210.611,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-2",
+      "id": "creature-springtail",
+      "start": 211.608,
+      "end": 218.695,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-2",
+      "id": "expedition-finale",
+      "start": 219.825,
+      "end": 229.956,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-3",
+      "id": "perspective-grass",
+      "start": 0.134,
+      "end": 5.042,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-3",
+      "id": "perspective-puddle",
+      "start": 5.114,
+      "end": 10.82,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-3",
+      "id": "perspective-wrapper",
+      "start": 11.889,
+      "end": 16.002,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-3",
+      "id": "perspective-lamp",
+      "start": 16.074,
+      "end": 22.02,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-3",
+      "id": "underwater-intro",
+      "start": 22.145,
+      "end": 34.804,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-3",
+      "id": "underwater-conclusion",
+      "start": 34.945,
+      "end": 46.524,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-lada-0",
+      "id": "cine-prologue-3",
+      "start": 0.068,
+      "end": 10.965,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-lada-0",
+      "id": "cine-awakening-0",
+      "start": 11.107,
+      "end": 20.4,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-lada-0",
+      "id": "cine-catastrophe-0",
+      "start": 21.303,
+      "end": 31.703,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-lada-0",
+      "id": "cine-night-0",
+      "start": 33.355,
+      "end": 41.063,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-lada-0",
+      "id": "cine-migration-0",
+      "start": 42.48,
+      "end": 52.432,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-lada-0",
+      "id": "cine-ending-0",
+      "start": 54.129,
+      "end": 64.609,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-lada-0",
+      "id": "cine-metamorphosis-3",
+      "start": 66.102,
+      "end": 77.569,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-lada-0",
+      "id": "quest-scout-opening",
+      "start": 79.064,
+      "end": 90.944,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-lada-0",
+      "id": "quest-water-opening",
+      "start": 92.351,
+      "end": 101.281,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-lada-0",
+      "id": "quest-pesticide-opening",
+      "start": 103.135,
+      "end": 113.441,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-lada-0",
+      "id": "quest-night-opening",
+      "start": 114.934,
+      "end": 124.001,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-lada-0",
+      "id": "quest-night-stage-1",
+      "start": 125.974,
+      "end": 133.841,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-lada-0",
+      "id": "quest-garden-opening",
+      "start": 135.254,
+      "end": 145.946,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-hero-0",
+      "id": "cine-prologue-0",
+      "start": 0.07,
+      "end": 6.42,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-hero-0",
+      "id": "cine-citadel-2",
+      "start": 8.584,
+      "end": 14.5,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-hero-0",
+      "id": "cine-restoration-0",
+      "start": 17.812,
+      "end": 25.7,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-hero-0",
+      "id": "cine-ending-3",
+      "start": 27.388,
+      "end": 32.366,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-0",
+      "id": "cine-prologue-1",
+      "start": 0.143,
+      "end": 8.66,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-0",
+      "id": "cine-prologue-2",
+      "start": 9.875,
+      "end": 18.345,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-0",
+      "id": "cine-citadel-0",
+      "start": 20.379,
+      "end": 28.194,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-0",
+      "id": "cine-citadel-1",
+      "start": 30.123,
+      "end": 39.492,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-0",
+      "id": "cine-valley-0",
+      "start": 40.343,
+      "end": 46.372,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-0",
+      "id": "cine-ending-1",
+      "start": 48.103,
+      "end": 56.052,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-0",
+      "id": "cine-ending-2",
+      "start": 58.227,
+      "end": 66.292,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-0",
+      "id": "cine-metamorphosis-0",
+      "start": 67.904,
+      "end": 75.51,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-0",
+      "id": "cine-metamorphosis-1",
+      "start": 77.162,
+      "end": 85.125,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-0",
+      "id": "cine-metamorphosis-2",
+      "start": 87.287,
+      "end": 94.965,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-0",
+      "id": "quest-scout-conclusion",
+      "start": 96.059,
+      "end": 100.341,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-0",
+      "id": "quest-scout-stage-0",
+      "start": 101.995,
+      "end": 108.942,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-0",
+      "id": "quest-scout-stage-1",
+      "start": 110.142,
+      "end": 118.16,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-0",
+      "id": "quest-scout-stage-2",
+      "start": 118.898,
+      "end": 124.93,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-0",
+      "id": "quest-citadel-opening",
+      "start": 126.415,
+      "end": 135.178,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-0",
+      "id": "quest-citadel-conclusion",
+      "start": 136.754,
+      "end": 143.219,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-0",
+      "id": "quest-citadel-stage-1",
+      "start": 143.865,
+      "end": 150.16,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-0",
+      "id": "quest-citadel-stage-2",
+      "start": 151.594,
+      "end": 159.244,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-0",
+      "id": "quest-flowers-opening",
+      "start": 160.166,
+      "end": 168.324,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-0",
+      "id": "quest-flowers-conclusion",
+      "start": 169.879,
+      "end": 175.379,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-0",
+      "id": "quest-flowers-stage-3",
+      "start": 176.06,
+      "end": 183.309,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-0",
+      "id": "quest-water-conclusion",
+      "start": 184.013,
+      "end": 189.463,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-0",
+      "id": "quest-water-stage-2",
+      "start": 191.097,
+      "end": 198.343,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-0",
+      "id": "quest-soil-opening",
+      "start": 199.895,
+      "end": 208.933,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-0",
+      "id": "quest-soil-conclusion",
+      "start": 209.7,
+      "end": 215.171,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-1",
+      "id": "quest-soil-stage-2",
+      "start": 0.18,
+      "end": 8.26,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-1",
+      "id": "quest-plastic-opening",
+      "start": 9.756,
+      "end": 17.071,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-1",
+      "id": "quest-plastic-conclusion",
+      "start": 18.337,
+      "end": 23.398,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-1",
+      "id": "quest-plastic-stage-2",
+      "start": 24.8,
+      "end": 33.247,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-1",
+      "id": "quest-pesticide-conclusion",
+      "start": 34.1,
+      "end": 40.209,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-1",
+      "id": "quest-pesticide-stage-3",
+      "start": 41.643,
+      "end": 49.818,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-1",
+      "id": "quest-night-conclusion",
+      "start": 51.234,
+      "end": 55.913,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-1",
+      "id": "quest-garden-conclusion",
+      "start": 57.885,
+      "end": 64.076,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-1",
+      "id": "secret-shell",
+      "start": 65.239,
+      "end": 70.893,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-1",
+      "id": "secret-egg",
+      "start": 71.964,
+      "end": 76.351,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-1",
+      "id": "secret-web",
+      "start": 77.686,
+      "end": 82.206,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-1",
+      "id": "secret-leafprint",
+      "start": 83.438,
+      "end": 87.968,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-1",
+      "id": "colony-entrance",
+      "start": 89.5,
+      "end": 97.025,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-1",
+      "id": "colony-stores",
+      "start": 98.089,
+      "end": 106.705,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-1",
+      "id": "colony-brood",
+      "start": 108.013,
+      "end": 116.385,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-1",
+      "id": "colony-junction",
+      "start": 117.074,
+      "end": 124.962,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-1",
+      "id": "colony-shelter",
+      "start": 126.422,
+      "end": 133.29,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-1",
+      "id": "colony-queen",
+      "start": 134.48,
+      "end": 143.29,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-1",
+      "id": "colony-remains",
+      "start": 144.763,
+      "end": 154.89,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-1",
+      "id": "colony-intro",
+      "start": 156.292,
+      "end": 163.947,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-1",
+      "id": "crossing-intro",
+      "start": 164.675,
+      "end": 177.725,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-1",
+      "id": "crossing-leafHelp",
+      "start": 179.061,
+      "end": 192.653,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-1",
+      "id": "crossing-rootsHelp",
+      "start": 193.304,
+      "end": 206.759,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-2",
+      "id": "crossing-bridgeHelp",
+      "start": 0.326,
+      "end": 12.42,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-2",
+      "id": "crossing-leafEnd",
+      "start": 13.979,
+      "end": 21.942,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-2",
+      "id": "crossing-rootsEnd",
+      "start": 23.665,
+      "end": 31.542,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-2",
+      "id": "crossing-bridgeEnd",
+      "start": 33.824,
+      "end": 40.819,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-2",
+      "id": "expedition-glass-intro",
+      "start": 43.097,
+      "end": 61.013,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-2",
+      "id": "expedition-glass-secret-0",
+      "start": 63.267,
+      "end": 68.935,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-2",
+      "id": "expedition-glass-secret-1",
+      "start": 70.812,
+      "end": 78.057,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-2",
+      "id": "expedition-hollow-intro",
+      "start": 79.705,
+      "end": 100.177,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-2",
+      "id": "expedition-hollow-secret-0",
+      "start": 101.18,
+      "end": 108.392,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-2",
+      "id": "expedition-hollow-secret-1",
+      "start": 110.161,
+      "end": 116.241,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-2",
+      "id": "expedition-creek-intro",
+      "start": 118.053,
+      "end": 137.61,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-2",
+      "id": "expedition-creek-secret-0",
+      "start": 138.774,
+      "end": 147.213,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-2",
+      "id": "expedition-creek-secret-1",
+      "start": 148.253,
+      "end": 155.465,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-2",
+      "id": "expedition-canopy-intro",
+      "start": 156.317,
+      "end": 175.88,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-2",
+      "id": "expedition-canopy-secret-0",
+      "start": 176.864,
+      "end": 187.24,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-2",
+      "id": "expedition-canopy-secret-1",
+      "start": 188.71,
+      "end": 195.88,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-2",
+      "id": "creature-snail",
+      "start": 197.687,
+      "end": 201.737,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-2",
+      "id": "creature-beetle",
+      "start": 202.994,
+      "end": 209.005,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-2",
+      "id": "creature-lacewing",
+      "start": 209.716,
+      "end": 215.042,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-2",
+      "id": "creature-springtail",
+      "start": 216.535,
+      "end": 222.119,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-3",
+      "id": "expedition-finale",
+      "start": 0.066,
+      "end": 10.239,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-3",
+      "id": "perspective-grass",
+      "start": 12.31,
+      "end": 16.505,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-3",
+      "id": "perspective-puddle",
+      "start": 17.837,
+      "end": 23.16,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-3",
+      "id": "perspective-wrapper",
+      "start": 23.924,
+      "end": 27.752,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-3",
+      "id": "perspective-lamp",
+      "start": 29.079,
+      "end": 33.889,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-3",
+      "id": "underwater-intro",
+      "start": 35.431,
+      "end": 45.809,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-3",
+      "id": "underwater-conclusion",
+      "start": 47.221,
+      "end": 58.593,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-lada-0",
+      "id": "cine-prologue-3",
+      "start": 0.348,
+      "end": 7.86,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-lada-0",
+      "id": "cine-awakening-0",
+      "start": 9.799,
+      "end": 17.702,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-lada-0",
+      "id": "cine-catastrophe-0",
+      "start": 19.719,
+      "end": 29.025,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-lada-0",
+      "id": "cine-night-0",
+      "start": 31.221,
+      "end": 38.59,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-lada-0",
+      "id": "cine-migration-0",
+      "start": 40.418,
+      "end": 49.632,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-lada-0",
+      "id": "cine-ending-0",
+      "start": 51.249,
+      "end": 60.319,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-lada-0",
+      "id": "cine-metamorphosis-3",
+      "start": 61.272,
+      "end": 70.869,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-lada-0",
+      "id": "quest-scout-opening",
+      "start": 72.69,
+      "end": 82.208,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-lada-0",
+      "id": "quest-water-opening",
+      "start": 83.999,
+      "end": 94.383,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-lada-0",
+      "id": "quest-pesticide-opening",
+      "start": 95.186,
+      "end": 106.16,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-lada-0",
+      "id": "quest-night-opening",
+      "start": 107.878,
+      "end": 117.142,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-lada-0",
+      "id": "quest-night-stage-1",
+      "start": 118.835,
+      "end": 126.221,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-lada-0",
+      "id": "quest-garden-opening",
+      "start": 127.793,
+      "end": 139.546,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-hero-0",
+      "id": "cine-prologue-0",
+      "start": 0.12,
+      "end": 6.18,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-hero-0",
+      "id": "cine-citadel-2",
+      "start": 8.151,
+      "end": 17.554,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-hero-0",
+      "id": "cine-restoration-0",
+      "start": 19.042,
+      "end": 27.412,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-hero-0",
+      "id": "cine-ending-3",
+      "start": 29.145,
+      "end": 36.284,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-trails",
+      "id": "trail-dew-canopy",
+      "start": 0.068,
+      "end": 9.54,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-trails",
+      "id": "trail-flower-canopy",
+      "start": 10.585,
+      "end": 22.381,
+      "coverage": 1.0
+    },
+    {
+      "pack": "ru-narrator-trails",
+      "id": "trail-night-canopy",
+      "start": 23.757,
+      "end": 33.802,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-trails",
+      "id": "trail-dew-canopy",
+      "start": 0.198,
+      "end": 9.842,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-trails",
+      "id": "trail-flower-canopy",
+      "start": 9.906,
+      "end": 20.72,
+      "coverage": 1.0
+    },
+    {
+      "pack": "kk-narrator-trails",
+      "id": "trail-night-canopy",
+      "start": 21.273,
+      "end": 30.198,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-trails",
+      "id": "trail-dew-canopy",
+      "start": 0.145,
+      "end": 8.58,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-trails",
+      "id": "trail-flower-canopy",
+      "start": 10.548,
+      "end": 20.642,
+      "coverage": 1.0
+    },
+    {
+      "pack": "en-narrator-trails",
+      "id": "trail-night-canopy",
+      "start": 22.032,
+      "end": 31.948,
+      "coverage": 1.0
+    }
+  ],
+  "rejected": []
+}

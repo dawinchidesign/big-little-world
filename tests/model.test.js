@@ -68,7 +68,7 @@ test("migration retains older saves; malformed or future saves are rejected", ()
   old.version = 1;
   delete old.underwater;
   delete old.changes;
-  assert.equal(migrateSave(old).version, 4);
+  assert.equal(migrateSave(old).version, 7);
   assert.equal(migrateSave(old).underwater.active, false);
   for (const change of [
     { version: 99 },

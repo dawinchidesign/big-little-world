@@ -21,18 +21,20 @@ export const PARALLAX_PROFILES = {
   ],
 };
 const clamp=(n,a,b)=>Math.max(a,Math.min(b,n));
-export function parallaxLayout(plane,camera,anchor,elapsed,reduced=false,ambient=false) {
+// scale: dolly factor for cinematics — when the camera pushes in, nearer planes
+// grow faster than distant ones, so the frame itself gains depth.
+export function parallaxLayout(plane,camera,anchor,elapsed,reduced=false,ambient=false,scale=1) {
   const z=camera.zoom, width=camera.width,height=camera.height;
   const progress=clamp(elapsed/8500,0,1),ease=progress*progress*(3-2*progress);
   const pan=reduced?0:(ambient?Math.sin(elapsed/9000)*9:ease*30);
   const dx=reduced?0:clamp((camera.scrollX-anchor.scrollX)*z,-100,100)+pan;
   const dy=reduced?0:clamp((camera.scrollY-anchor.scrollY)*z,-70,70)-pan*.28;
   const sway=reduced?0:Math.sin(elapsed/3200)*plane.rate*3;
-  const screenX=plane.x*width-dx*plane.rate+sway;
-  const screenY=plane.y*height-dy*plane.rate;
+  const screenX=width/2+(plane.x*width-dx*plane.rate+sway-width/2)*scale;
+  const screenY=height/2+(plane.y*height-dy*plane.rate-height/2)*scale;
   return {
     x:camera.scrollX+width/2+(screenX-width/2)/z,
     y:camera.scrollY+height/2+(screenY-height/2)/z,
-    width:plane.w*width/z,height:plane.h*height/z,screenX,screenY,
+    width:plane.w*width*scale/z,height:plane.h*height*scale/z,screenX,screenY,
   };
 }

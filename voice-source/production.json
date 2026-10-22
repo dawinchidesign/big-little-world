@@ -1,0 +1,335 @@
+{
+  "provider": "ElevenLabs",
+  "model": "eleven_v3",
+  "flow_id": "EMohSu3ZuOcHGhmCzY2o",
+  "flow_url": "https://elevenlabs.io/app/flows/EMohSu3ZuOcHGhmCzY2o",
+  "cast": {
+    "ru": {
+      "narrator": {
+        "voice_id": "TpZlRcB7rTBboAYWa2DC",
+        "name": "Anton - deep and warm"
+      },
+      "lada": {
+        "voice_id": "RxivyypsDodFBfmDDOZF",
+        "name": "Mila Svetlova - Russian Fairy Voice"
+      },
+      "hero": {
+        "voice_id": "oKxkBkm5a8Bmrd1Whf2c",
+        "name": "Prince Nuri the Second"
+      }
+    },
+    "kk": {
+      "narrator": {
+        "voice_id": "dQO3cohklRk58SrkwMjq",
+        "name": "Nurlan - Calm, Confident Narrator"
+      },
+      "lada": {
+        "voice_id": "L9IT3CnBaFSG99pi86dr",
+        "name": "Aizhan - Calm, Kind Friend"
+      },
+      "hero": {
+        "voice_id": "Vp3gaOLjssOTvqcooFwg",
+        "name": "Aidos - Cheerful Social Creator"
+      }
+    },
+    "en": {
+      "narrator": {
+        "voice_id": "JBFqnCBsd6RMkjVDRZzb",
+        "name": "George - Warm, Captivating Storyteller"
+      },
+      "lada": {
+        "voice_id": "MvrlfwepYkv8XXyPbWNW",
+        "name": "Maria - Calm & Tender"
+      },
+      "hero": {
+        "voice_id": "TX3LPaxmHKxFdv7VOQHJ",
+        "name": "Liam - Energetic, Social Media Creator"
+      }
+    }
+  },
+  "nodes": [
+    {
+      "pack": "ru-hero-0",
+      "node_id": "zy3DpkWlb2TPNDUMs8R0"
+    },
+    {
+      "pack": "ru-narrator-0",
+      "node_id": "lFJzMUk0Bo1J12RHX650"
+    },
+    {
+      "pack": "ru-narrator-1",
+      "node_id": "DTkUIT93klMvpVBxV6Ee"
+    },
+    {
+      "pack": "ru-narrator-2",
+      "node_id": "u6ArICfYnXgePAjZSdRp"
+    },
+    {
+      "pack": "ru-narrator-3",
+      "node_id": "x39adevmgcl55TSlqi3i"
+    },
+    {
+      "pack": "ru-lada-0",
+      "node_id": "JrffRHZnMxZ3qCQQKvPV"
+    },
+    {
+      "pack": "kk-narrator-0",
+      "node_id": "ZDe9lRPUezlfqhTwv9z9"
+    },
+    {
+      "pack": "kk-narrator-1",
+      "node_id": "cUbmtHKEco5urqOEl9sb"
+    },
+    {
+      "pack": "kk-narrator-2",
+      "node_id": "pAh3ENgNTxdoyWdQ2M8s"
+    },
+    {
+      "pack": "kk-narrator-3",
+      "node_id": "I3FGoePP08jncM6y2wgM"
+    },
+    {
+      "pack": "kk-lada-0",
+      "node_id": "rP3w4JWqjiTgpwn8b5AU"
+    },
+    {
+      "pack": "kk-hero-0",
+      "node_id": "dlA9FTrN6NZRRQbDv8JY"
+    },
+    {
+      "pack": "en-narrator-0",
+      "node_id": "J6f7CdgyZjDjWQJiCtE5"
+    },
+    {
+      "pack": "en-narrator-1",
+      "node_id": "LaxUilpTCofhFMU8Pxbb"
+    },
+    {
+      "pack": "en-narrator-2",
+      "node_id": "RXoZlVsCCRCoKui6waiN"
+    },
+    {
+      "pack": "en-narrator-3",
+      "node_id": "PH7rmRj7HyXyylq1tHtn"
+    },
+    {
+      "pack": "en-lada-0",
+      "node_id": "pt3MepWIoWUHpJH1Wx5U"
+    },
+    {
+      "pack": "en-hero-0",
+      "node_id": "aI2gg6gIBuXzfwOvWLsq"
+    },
+    {
+      "pack": "ru-narrator-trails",
+      "node_id": "nlf6h0Tupxa4jIi6UcXI"
+    },
+    {
+      "pack": "kk-narrator-trails",
+      "node_id": "8JNZ5cqvPvY73WtTOOzP"
+    },
+    {
+      "pack": "en-narrator-trails",
+      "node_id": "iMRpD01p5fH9fyUi3DoA"
+    }
+  ],
+  "recordings": [
+    {
+      "pack": "ru-hero-0",
+      "tts_session_id": "BB2cHLatxdbIA1VqciK1",
+      "tts_generation_id": "GybtmE3GbMe2gHLZG25I",
+      "transcript_generation_id": "OoTwcpIY9GDkorQszSjp",
+      "transcript_session_ids": [
+        "AJzz6cVbowugrdKQI4KW"
+      ]
+    },
+    {
+      "pack": "ru-narrator-0",
+      "tts_session_id": "KXd7Dzrz8u9BUef6Dmwl",
+      "tts_generation_id": "5MzpwHYDri3Rm1qjSyR9",
+      "transcript_generation_id": "z0211Dh1tXiOtJE0mzTN",
+      "transcript_session_ids": [
+        "kSOc7f4v55j9rkEdUam8"
+      ]
+    },
+    {
+      "pack": "ru-narrator-1",
+      "tts_session_id": "NW54DHiju4BCTMvdO3tA",
+      "tts_generation_id": "nCM689Fn0H0MPSzh81Ra",
+      "transcript_generation_id": "U19fNTfr55dFl0FixnbJ",
+      "transcript_session_ids": [
+        "Kno3ZPCzD9tYrMRu4Z3K"
+      ]
+    },
+    {
+      "pack": "ru-narrator-2",
+      "tts_session_id": "ImfuQP42pLPfqh4IzETd",
+      "tts_generation_id": "wUvzc2Kkf5NS75uHRyWU",
+      "transcript_generation_id": "u7KKj6dr8ZXrctVxu9q5",
+      "transcript_session_ids": [
+        "kADsMjdUz3KkPpS3Xt2O"
+      ]
+    },
+    {
+      "pack": "kk-narrator-1",
+      "tts_session_id": "mR67Zo7ZSH3iyU7voHXZ",
+      "tts_generation_id": "Za8hMljnkHq12zdlRYju",
+      "transcript_generation_id": "d4MPYuJ141PbmbgTVT7E",
+      "transcript_session_ids": [
+        "EsAhE6H2vzhSt41dytuR"
+      ]
+    },
+    {
+      "pack": "kk-narrator-2",
+      "tts_session_id": "TdkjeFpdalZf4rKQL0S5",
+      "tts_generation_id": "zKc4UzWIXdbf5AYUyHUs",
+      "transcript_generation_id": "uL4S5S10U1UYavSkZjF7",
+      "transcript_session_ids": [
+        "VG94guWXxua07cN23uoN"
+      ]
+    },
+    {
+      "pack": "kk-lada-0",
+      "tts_session_id": "p2m2vLo2bleOaEBtKXEi",
+      "tts_generation_id": "YCs79qLy9ekg1Hu2jrhj",
+      "transcript_generation_id": "PfNzhaS1uwXzVtR5pIBW",
+      "transcript_session_ids": [
+        "89C4lpQ77zmjes2FPnks"
+      ]
+    },
+    {
+      "pack": "en-narrator-0",
+      "tts_session_id": "GMOZclfUpvAPQ4LeBstY",
+      "tts_generation_id": "npe4tlNQ3bq2hK3JMEha",
+      "transcript_generation_id": "48OPX2sWZ2BT8TXV9nHQ",
+      "transcript_session_ids": [
+        "pi61ReDOct9E3dkv8K3u"
+      ]
+    },
+    {
+      "pack": "en-hero-0",
+      "tts_session_id": "boFAVNFZ0Jm73TQLAqmY",
+      "tts_generation_id": "xkTOaWERIClGl2Ya8Eh5",
+      "transcript_generation_id": "d6ngmuVfX0c5wOpBHF3A",
+      "transcript_session_ids": [
+        "CAfMwGPjziFmmQwBA2aN"
+      ]
+    },
+    {
+      "pack": "ru-narrator-3",
+      "tts_session_id": "iovmg2Qh5oMeEnzLQ9os",
+      "tts_generation_id": "6Jj48LTliDfiULky17Q6",
+      "transcript_generation_id": "mFpQw8y4HIyzh8pZCLbO",
+      "transcript_session_ids": [
+        "ptZuluiL5rZHKDP0RlYL"
+      ]
+    },
+    {
+      "pack": "ru-lada-0",
+      "tts_session_id": "t9EMjDc6IGOqydmoDgJV",
+      "tts_generation_id": "ojdVKyDmEqMncESAjNpO",
+      "transcript_generation_id": "QRWMdFrPAlD2GAPxUYpm",
+      "transcript_session_ids": [
+        "6rWTo84soQDhM0fIUF3F"
+      ]
+    },
+    {
+      "pack": "kk-narrator-0",
+      "tts_session_id": "DffiLd8DEoLhiQ41gXzm",
+      "tts_generation_id": "NlNHRCGoPZyhOLdV4pJp",
+      "transcript_generation_id": "1oqvCl1MdVLnJlP0lYlr",
+      "transcript_session_ids": [
+        "gZ9odnYepXsehql4S914"
+      ]
+    },
+    {
+      "pack": "kk-hero-0",
+      "tts_session_id": "TZQyCu2MEl1Wc2xm4UqZ",
+      "tts_generation_id": "cdgtDZ0lWtC5QdrbXFvr",
+      "transcript_generation_id": "XFShALqEqwpcpoVg2zl1",
+      "transcript_session_ids": [
+        "9CIKC3wCDcS69aSBouih"
+      ]
+    },
+    {
+      "pack": "en-lada-0",
+      "tts_session_id": "7cftDLUmv3cQAbo8P7zn",
+      "tts_generation_id": "zVW17XUa5YxwTjENxZUK",
+      "transcript_generation_id": "8w8ZTPf9w2InsFTJ62KD",
+      "transcript_session_ids": [
+        "ROv97oM80oDFvMCNcAp2"
+      ]
+    },
+    {
+      "pack": "en-narrator-1",
+      "tts_session_id": "fACbYDOTPv6HrLn2Cvwo",
+      "tts_generation_id": "Ui7Z8U2jk17YukljMdiu",
+      "transcript_generation_id": "0FTcd5LplJ3ls2fDQGIs",
+      "transcript_session_ids": [
+        "kivekrbguy8wdiZhTtrW"
+      ]
+    },
+    {
+      "pack": "en-narrator-2",
+      "tts_session_id": "iyWHO6VbuVueCqdMPLTM",
+      "tts_generation_id": "5Ny3tb9rpCmxnuHEZBcA",
+      "transcript_generation_id": "70vb97Z6wn1zRXNYLSBn",
+      "transcript_session_ids": [
+        "cn7eWOpgeuNiyCQJ9geR"
+      ]
+    },
+    {
+      "pack": "kk-narrator-3",
+      "tts_session_id": "cKAGHj5q0qk9DnIgbYzM",
+      "tts_generation_id": "bqUIkEkFgFcTDwEYJ1er",
+      "transcript_generation_id": "bn8fLD8PKBbUwBJKuuHQ",
+      "transcript_session_ids": [
+        "2clkm1fYC39kD5A5aBFM"
+      ]
+    },
+    {
+      "pack": "en-narrator-3",
+      "tts_session_id": "IPzVlXCGREuMBAur5OXE",
+      "tts_generation_id": "rmXjJoIUyZUdE1qm6dgj",
+      "transcript_generation_id": "i9H5WhnMB49GR5BmrFJN",
+      "transcript_session_ids": [
+        "l6ZrK4VYttUdCh9Y7uwd"
+      ]
+    },
+    {
+      "pack": "ru-narrator-trails",
+      "tts_session_id": "f7IWOj4Fr8AIFsim4RKD",
+      "tts_generation_id": "TG0OioPOSxaK8G1EvuP3",
+      "transcript_generation_id": "mKrGJujYw7SFaHu0AbGf",
+      "transcript_session_ids": [
+        "v1nXjOjj5nEjiHfQSjDh"
+      ]
+    },
+    {
+      "pack": "kk-narrator-trails",
+      "tts_session_id": "sIX2DPCYSFezGNbW7OMg",
+      "tts_generation_id": "0fwu31qxHUsaYLRkhrDL",
+      "transcript_generation_id": "MmHrusv5jVDpicWEBB15",
+      "transcript_session_ids": [
+        "xZbkU9HP3aHYBdJY3d7s"
+      ]
+    },
+    {
+      "pack": "en-narrator-trails",
+      "tts_session_id": "9lnZAmAL7oCwQrQ1lHVa",
+      "tts_generation_id": "kMYRIbRk58407gB6fJfl",
+      "transcript_generation_id": "dsTKV9mmUu1XbAtPUH99",
+      "transcript_session_ids": [
+        "A3z6yW9XfTsNFRmH00HN"
+      ]
+    }
+  ],
+  "audio_format": {
+    "codec": "MP3",
+    "sample_rate": 44100,
+    "channels": 1,
+    "bitrate_kbps": 64,
+    "target_lufs": -18,
+    "true_peak_db": -1.5
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "mode": "built-in image_gen",
+  "useCase": "stylized-concept",
+  "assets": [
+    {
+      "file": "crossing-structures.png",
+      "prompt": "Use case: stylized-concept. Asset type: production transparent sprite sheet for premium 2.5D pixel art insect-scale adventure The Great Little World. Exact layout: 3 columns by 2 rows, six isolated objects, equally sized spacious cells, generous transparent gutters, NO contact between objects. Oblique overhead game view, coherent handcrafted pixel clusters, crisp stepped silhouettes, emerald moss, warm ochre wood, cool teal shadows, sunlight upper left. Row1 left: broad curled green leaf ferry, oval horizontal leaf with midrib and two tied twig runners, no passengers. Row1 middle: horizontal gnarled root walkway segment with moss, rounded ends, climbable flat upper surface. Row1 right: forked curved root walkway segment with moss. Row2 left: repaired narrow bridge made of small parallel twigs with cross braces, seen overhead, LONG VERTICAL north-south orientation, no water beneath it. Row2 middle: moist leaf shelter lean-to on short twigs with dark damp leaf litter beneath, suitable for woodlice. Row2 right: flat mossy stone shore landing with scattered leaf litter and a twig marker, no lettering. These are real isolated game props, not a scenic illustration. Transparent background alpha. No text, labels, grid, characters, insects, border, watermark, UI, photographic gradients, blur. Entire objects contained inside their own cells."
+    },
+    {
+      "file": "crossing-water.png",
+      "prompt": "Use case: stylized-concept. Asset type: transparent environment sprite sheet for premium 2.5D pixel art microscopic nature adventure. EXACT 2 columns 2 rows, four clearly separated objects with generous transparent gutters. Same coherent emerald/teal/ochre palette, crisp deliberately stepped pixel clusters, overhead-oblique game view, sunlight upper left. Top left: one shallow freshwater stream patch, jade turquoise transparent water, irregular oval rectangle shape, visible pebble bottom and small flowing streaks, very thin muddy moss banks only at edges, isolated water patch, no surrounding landscape. Top right: isolated small crescent of pale turquoise water ripples and white foam, no ground or pool. Bottom left: curved muddy shoreline strip with moss, small root tips, wet leaf detritus; an isolated bank edge module with open transparent center. Bottom right: a single small wet lichen covered boulder with a few bright dew drops and moss at base. For use as actual layered game objects with dynamic overlays. True transparent alpha background. No checkerboard, no grid lines, no text, no characters, no insects, no UI, no border, no watermark, no photo blur. All four objects wholly inside their own quadrant."
+    }
+  ]
+}

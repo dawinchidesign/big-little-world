@@ -21,6 +21,7 @@ const entries = [
   "src",
   "public",
   "art-source",
+  "voice-source",
   "scripts",
   "tests",
   "LICENSES",
@@ -30,7 +31,6 @@ const entries = [
   "index.html",
   "vite.config.js",
   "netlify.toml",
-  "vercel.json",
   "README.md",
 ];
 for (const name of entries)
@@ -41,6 +41,7 @@ copyFileSync(
   join(stage, "PLAY_OFFLINE.html"),
 );
 copyFileSync(join(root, "docs/START_HERE.md"), join(stage, "START_HERE.md"));
+cpSync(join(root, "docs/screenshots"), join(stage, "Screenshots"), { recursive: true });
 copyFileSync(
   join(root, "docs/RELEASE_NOTES.md"),
   join(stage, "RELEASE_NOTES.md"),
@@ -72,7 +73,12 @@ const result = spawnSync(
 if (result.status !== 0) throw Error(result.stderr || "Archive failed");
 const check = spawnSync("unzip", ["-t", zipPath], { encoding: "utf8" });
 if (check.status !== 0) throw Error("Archive integrity failed");
-const output = resolve(root, "..", `BIG_LITTLE_WORLD_${JSON.parse(readFileSync(join(root,'package.json'),'utf8')).version.replaceAll('.','_')}.zip`);
+const version = JSON.parse(readFileSync(join(root, "package.json"), "utf8")).version;
+const output = resolve(
+  root,
+  "..",
+  `BIG_LITTLE_WORLD_${version.toUpperCase().replace(/[.-]/g, "_")}.zip`,
+);
 copyFileSync(zipPath, output);
 console.log(
   JSON.stringify({

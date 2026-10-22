@@ -1,0 +1,21 @@
+{
+  "tool": "Built-in ImageGen",
+  "purpose": "Production game sprites and terrain plates for BIG LITTLE WORLD 1.1.0",
+  "assets": [
+    {
+      "file": "horizon-props.png",
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Production transparent sprite atlas for a premium 2D macro insect adventure. Detailed hand-painted pixel art, tactile natural materials, warm upper-left light, slight top-down three-quarter orthographic view. Exactly 4 columns x 4 rows, equal cells with transparent padding, no overlap, labels, UI, frames, text or landscape. Row 1: overgrown Victorian greenhouse, old tree hollow arched doorway, moss-covered stone arch over a tiny stream, open seed-pod gateway. Row 2: mossy brass water-valve wheel, blue dew cistern in a nutshell, dry closed flower sprout, open golden flower. Row 3: red clay shard, golden acorn on its side, round moss-rimmed stone pressure plate, amber crystal with a golden lens-like centre. Row 4: rustic twig water wheel, bark footbridge segment, firefly lantern in a seed husk, brass telescope on a wooden tripod with a leaf roof. All objects fully visible in their own cells, genuine alpha transparency."
+    },
+    {
+      "file": "horizon-creatures.png",
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. A square transparent sprite animation atlas for a beautiful macro-world insect adventure. Exactly 4 columns x 4 rows of isolated creatures, generous padding in equal square cells, no overlap, labels, text, frames or grid. Detailed hand-painted pixel art, golden-green miniature forest palette, warm top-left lighting, slight top-down orthographic camera. Each row is four frames of one consistent right-facing creature, same size and anchor, with legs or wings animating. Row 1: golden-brown garden snail with spiral shell and extended eyestalks, four crawling poses. Row 2: blue-violet jewel ground beetle with iridescent elytra and six jointed legs, four walking poses. Row 3: emerald lacewing with translucent veined wings, six legs, two antennae, four gentle flight poses. Row 4: pale-cyan springtail with round body, antennae and jointed legs, four walking and hopping poses. Natural organisms, no cartoon faces, clothing or accessories. Genuine alpha background, no landscape."
+    },
+    {
+      "file": "horizon-floors.png",
+      "transparent_background": false,
+      "prompt": "Use case: stylized-concept. A 2 x 2 contact sheet of four complete ground plates for a richly painted pixel-art macro-world adventure, edge-to-edge panels, no borders or margins, text, labels, characters or UI. Same slight top-down orthographic projection; a large open walkable centre covers about 75 percent of each panel with subtle textures and winding lighter paths, lush decorated edges. Top-left: abandoned Victorian greenhouse floor, mossy terracotta paving, blue irrigation channels along edges, golden-green sunlight and delicate glass shadows, ferns and vines at the edges. Top-right: enormous hollow tree interior, reddish-brown weathered woodgrain, amber specks, curling roots and blue-green mushrooms at edges, cozy teal and amber light. Bottom-left: blue woodland creek floor with a narrow vertical winding blue stream down the centre, mossy stones, reeds and open earthy paths on both banks, dappled cyan morning light. Bottom-right: enormous green leaf surface high in a forest canopy, golden veins as paths, teal shadows and honey-gold rays, curled edges revealing distant bokeh foliage. Tiny-human scale, detailed professional environmental game art."
+    }
+  ]
+}

@@ -36,9 +36,11 @@ function decorate(object, logicalKey, physical) {
   return object;
 }
 export function installVisuals(scene) {
-  if (scene.visualsInstalled) return;
   scene.visualsInstalled = true;
   for (const [factory, method, physical] of [[scene.add,'image',false],[scene.add,'sprite',false],[scene.physics.add,'sprite',true]]) {
+    // Phaser recreates factories when a scene is restarted. Track the wrapper
+    // on the factory method, rather than retaining a stale scene-level guard.
+    if(factory[method].littleWorldVisualFactory)continue;
     const original = factory[method].bind(factory);
     factory[method] = (x,y,key,frame) => {
       const entry = visualEntry(key);
@@ -46,6 +48,7 @@ export function installVisuals(scene) {
       // All images may change texture later (e.g. the butterfly life cycle).
       return decorate(object,key,physical);
     };
+    factory[method].littleWorldVisualFactory=true;
   }
 }
 const portraits = new Map();
@@ -55,7 +58,7 @@ export function materialCanvas(scene,key) {
   const entry=visualEntry(key);if(!entry)return null;
   const texture=scene.textures.get(entry.atlas),frame=texture.get(entry.frame);
   const canvas=document.createElement('canvas');canvas.width=frame.cutWidth;canvas.height=frame.cutHeight;
-  const g=canvas.getContext('2d');g.imageSmoothingEnabled=false;
+  const g=canvas.getContext('2d',{willReadFrequently:true});g.imageSmoothingEnabled=false;
   g.drawImage(texture.getSourceImage(),frame.cutX,frame.cutY,frame.cutWidth,frame.cutHeight,0,0,canvas.width,canvas.height);
   materials.set(key,canvas);return canvas;
 }

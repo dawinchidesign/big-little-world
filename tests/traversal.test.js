@@ -123,7 +123,7 @@ test("v2 saves migrate without losing progress; leaf and stem positions restore"
   s.completed = ["scout"];
   const migrated = migrateSave(s);
   assert.deepEqual(migrated.completed, ["scout"]);
-  assert.equal(migrated.version, 4);
+  assert.equal(migrated.version, 7);
   const p = TRAILS[0].platforms[0],
     top = climb(TRAILS[0]);
   const restored = new Traversal(top.snapshot(), p.x, p.y);

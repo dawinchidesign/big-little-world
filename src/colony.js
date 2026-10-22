@@ -3,10 +3,10 @@ import { gsap } from "gsap";
 import { canvas, rng } from "./art.js";
 import { installVisuals, visualEntry, materialCanvas } from "./visuals.js";
 import { ParallaxStage } from "./parallax.js";
+import { ShotDirector } from "./direction.js";
 import { T } from "./content.js";
 import { QUESTS } from "./quests.js";
 import { activeStage } from "./model.js";
-import { Grade } from "./grade.js";
 import {
   TILE,
   COLS,
@@ -43,6 +43,7 @@ export class ColonyScene extends Phaser.Scene {
     this.markers = [];
     this.roomLabels = [];
     this.escort = [];
+    this.director = new ShotDirector(this);
   }
   create() {
     installVisuals(this);
@@ -95,7 +96,6 @@ export class ColonyScene extends Phaser.Scene {
       .setBounds(0, 0, COLONY_WIDTH, COLONY_HEIGHT)
       .setZoom(1.05)
       .startFollow(this.player, true, 0.08, 0.08);
-    this.grade = new Grade(this, "colony");
     this.keys = this.input.keyboard.addKeys(
       "W,A,S,D,UP,DOWN,LEFT,RIGHT,E,Q,C,M,J,V,SPACE,SHIFT,ESC,F",
     );
@@ -129,7 +129,7 @@ export class ColonyScene extends Phaser.Scene {
       this.reset();
       this.refreshMarkers();
       this.app.refreshHud();
-      this.app.audio.enter(1, false, this.app.state.eco, "colony");
+      this.app.audio.enter(1, false, this.app.state.eco);
     });
     this.time.addEvent({
       delay: 30000,
@@ -140,8 +140,10 @@ export class ColonyScene extends Phaser.Scene {
     });
     this.refreshMarkers();
     this.app.refreshHud();
-    this.app.audio.enter(1, false, this.app.state.eco, "colony");
+    this.app.audio.enter(1, false, this.app.state.eco);
     this.events.once("postupdate", () => {
+      // A journal replay may start this scene underneath its own cinematic.
+      if (this.app.cineData || this.app.mode === "cinematic") return;
       if (!this.app.state.seen.includes("citadel"))
         this.app.playCinematic("citadel");
       else if (!this.app.state.seen.includes("colony-instructions"))
@@ -533,8 +535,8 @@ export class ColonyScene extends Phaser.Scene {
   }
   update(time, delta) {
     if (!this.player) return;
+    this.director.update(time);
     this.cineLayers?.update(time);
-    this.grade?.update(Math.min(delta, 50) / 1000);
     const dt = Math.min(delta, 50) / 1000;
     if (this.app.mode !== "play") {
       this.player.setVelocity(0);
@@ -560,9 +562,14 @@ export class ColonyScene extends Phaser.Scene {
     this.player.setVelocity(x * speed, y * speed);
     if (len > 0.05)
       this.dir = Math.abs(x) > Math.abs(y) ? (x > 0 ? 1 : 2) : y > 0 ? 0 : 3;
+    // Same rule as on the surface: the cycle follows distance, not the clock.
+    const last = this.lastWalk || { x: this.player.x, y: this.player.y },
+      covered = Math.hypot(this.player.x - last.x, this.player.y - last.y);
+    this.lastWalk = { x: this.player.x, y: this.player.y };
+    if (covered < 40) this.walkPhase = ((this.walkPhase || 0) + covered / 8) % 8;
     this.player.setTexture(
       len > 0.05
-        ? `hero${this.dir || 0}-${Math.floor(time / 105) % 8}`
+        ? `hero${this.dir || 0}-${Math.floor(this.walkPhase || 0)}`
         : `hero-idle${this.dir || 0}-${Math.floor(time / 700) % 4}`,
     );
     const jump = Math.max(0, (this.jumpUntil || 0) - time) / 540,
@@ -864,21 +871,13 @@ export class ColonyScene extends Phaser.Scene {
     const targets = [cellPoint(14, 11), cellPoint(23, 7), cellPoint(24, 17)],
       target = targets[index % targets.length],
       cam = this.cameras.main;
-    cam
-      .stopFollow()
-      .setZoom(index === 0 ? 0.69 : 1.1)
-      .centerOn(target.x, target.y);
+    cam.stopFollow();
+    this.director.run(id, index, [target.x, target.y], this.cineLayers);
     this.guide?.setVisible(false);
     this.rings?.clear();
-    gsap.to(cam, {
-      scrollX: cam.scrollX + 60,
-      scrollY: cam.scrollY - 35,
-      zoom: index === 0 ? 0.82 : 1.26,
-      duration: 8.5,
-      ease: "sine.inOut",
-    });
   }
   clearCinematic() {
+    this.director?.stop();
     this.cineLayers?.destroy();this.cineLayers=null;
     gsap.killTweensOf(this.cameras?.main);
     this.cinematic = false;

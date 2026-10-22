@@ -4,7 +4,7 @@ import { visualEntry } from './visuals.js';
 export class ParallaxStage {
   constructor(scene,{theme='meadow',ambient=false,morning=false}={}) {
     this.scene=scene;this.theme=theme;this.ambient=ambient;this.morning=morning;
-    this.started=scene.time.now;this.anchor=null;this.destroyed=false;this.actors=[];
+    this.started=scene.time.now;this.anchor=null;this.destroyed=false;this.actors=[];this.dolly=null;
     this.layers=PARALLAX_PROFILES[theme].map(original=>{
       const spec=morning&&original.key==='room-wall'?{...original,key:'room-wall-morning'}:original;
       const sprite=scene.add.image(0,0,spec.key).setDepth(spec.depth).setAlpha(spec.alpha);
@@ -24,8 +24,11 @@ export class ParallaxStage {
     const cam=this.scene.cameras.main;
     this.anchor??={scrollX:cam.scrollX,scrollY:cam.scrollY};
     const elapsed=Math.max(0,time-this.started),reduced=!!this.scene.app.state.settings.low;
+    const dolly=this.dolly;
     const place=({spec,sprite})=>{
-      const p=parallaxLayout(spec,cam,this.anchor,elapsed,reduced,this.ambient);
+      // Planes only ever grow from their authored size, so no edge is revealed.
+      const scale=dolly?Math.min(1.45,Math.pow(Math.max(1,cam.zoom/dolly.base),dolly.k*spec.rate)):1;
+      const p=parallaxLayout(spec,cam,this.anchor,elapsed,reduced,this.ambient,scale);
       const entry=visualEntry(sprite.visualKey);
       sprite.setPosition(p.x,p.y).setScale(p.width/(entry.width/entry.density),p.height/(entry.height/entry.density));
       return p;
