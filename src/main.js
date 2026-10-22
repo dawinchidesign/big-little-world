@@ -1589,9 +1589,25 @@ class App {
     stick.onpointerup = stop;
     stick.onpointercancel = stop;
     stick.onlostpointercapture = stop;
-    window.addEventListener("orientationchange", () =>
-      this.resetInput(this.mode === "play"),
-    );
+    // Orientation events may arrive before layout: refresh parent bounds
+    // before fitting, otherwise Phaser can keep the previous display size.
+    const resize = () => {
+      this.resetInput(this.mode === "play");
+      cancelAnimationFrame(this.resizeFrame);
+      this.resizeFrame = requestAnimationFrame(() => {
+        const scale = this.game.scale;
+        scale.getParentBounds();
+        if (scale.parentSize.width > 0 && scale.parentSize.height > 0)
+          scale.refresh();
+      });
+    };
+    window.addEventListener("resize", resize);
+    window.addEventListener("orientationchange", resize);
+    this.game.events.once("destroy", () => {
+      cancelAnimationFrame(this.resizeFrame);
+      window.removeEventListener("resize", resize);
+      window.removeEventListener("orientationchange", resize);
+    });
     $("#touch-e").onpointerdown = (e) => {
       e.preventDefault();
       if (this.mode !== "play") return;

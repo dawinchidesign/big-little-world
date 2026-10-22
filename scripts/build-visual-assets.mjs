@@ -3,6 +3,7 @@
 import { createCanvas, loadImage } from '@napi-rs/canvas';
 import { MaxRectsPacker } from 'maxrects-packer';
 import { mkdirSync, writeFileSync, readdirSync, unlinkSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 
 const frames = [];
 // Some prop sheets have natural overhangs across nominal grid gutters. Split
@@ -167,19 +168,23 @@ const fishScale=232/Math.max(...fish[0].map(f=>f.width));
 for(let f=0;f<4;f++)add('fish'+f,fish[0][f],256,128,4,{scale:fishScale});
 
 mkdirSync('public/assets', {recursive:true});
-for (const f of readdirSync('public/assets')) if (/^visual-\d+\.png$/.test(f)) unlinkSync('public/assets/' + f);
+for (const f of readdirSync('public/assets')) if (/^visual-\d+(-[0-9a-f]{10})?\.png$/.test(f)) unlinkSync('public/assets/' + f);
 const packer = new MaxRectsPacker(1024,1024,4,{smart:true,pot:true,square:false,allowRotation:false,border:2});
 packer.addArray(frames.map(f => ({width:f.width,height:f.height,data:f})));
 const index = {version:1,pages:[],entries:{}};
 for (const [i, bin] of packer.bins.entries()) {
   const page = createCanvas(bin.width,bin.height), g = page.getContext('2d');
-  const key = 'visual-' + i, file = key + '.png', data = {frames:{},meta:{size:{w:bin.width,h:bin.height},scale:'1'}};
+  const key = 'visual-' + i, data = {frames:{},meta:{size:{w:bin.width,h:bin.height},scale:'1'}};
   for (const rect of bin.rects) {
     const f = rect.data; g.drawImage(f.canvas, rect.x,rect.y);
     data.frames[f.key] = {frame:{x:rect.x,y:rect.y,w:f.width,h:f.height},rotated:false,trimmed:false,spriteSourceSize:{x:0,y:0,w:f.width,h:f.height},sourceSize:{w:f.width,h:f.height}};
     index.entries[f.key] = {atlas:key,frame:f.key,density:f.density,width:f.width,height:f.height};
   }
-  writeFileSync('public/assets/' + file,page.toBuffer('image/png'));
+  // Content-hashed file name: a browser or service worker that cached an older
+  // atlas under the same index can never pair it with new frame coordinates.
+  const png = page.toBuffer('image/png');
+  const file = key + '-' + createHash('sha256').update(png).digest('hex').slice(0,10) + '.png';
+  writeFileSync('public/assets/' + file,png);
   index.pages.push({key,file,data});
 }
 for (const key of ['colony-larva','colony-pupa','colony-eggs']) index.entries[key] = index.entries[key + '0'];

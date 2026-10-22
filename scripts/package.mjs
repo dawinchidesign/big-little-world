@@ -24,7 +24,7 @@ const voiceFiles=recursiveFiles(join(dist,"voice"));
 const voices=Object.fromEntries(voiceFiles.filter(n=>n.endsWith(".mp3")).map(n=>[n,data(join(dist,"voice",n))]));
 const assets = Object.fromEntries(
   readdirSync(join(dist, "assets"))
-    .filter((n) => n.endsWith("-hi.png") || /^visual-\d+\.png$/.test(n) || /^horizon-.*\.png$/.test(n))
+    .filter((n) => n.endsWith("-hi.png") || /^visual-\d+(-[0-9a-f]{10})?\.png$/.test(n) || /^horizon-.*\.png$/.test(n))
     .map((n) => [n, data(join(dist, "assets", n))]),
 );
 css = css.replace(/url\(([^)]+)\)/g, (m, p) => {
@@ -72,7 +72,7 @@ const id = createHash("sha256")
 const sw = `const CACHE = 'little-world-${id}';
 const FILES = ${JSON.stringify(files)};
 self.addEventListener('install', (event) => {
-  event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(FILES)).then(() => self.skipWaiting()));
+  event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(FILES.map((f) => new Request(f, { cache: 'reload' })))).then(() => self.skipWaiting()));
 });
 self.addEventListener('activate', (event) => {
   event.waitUntil(
@@ -98,7 +98,7 @@ self.addEventListener('fetch', (event) => {
     );
     return;
   }
-  event.respondWith(caches.match(request).then((hit) => hit || fetch(request)));
+  event.respondWith(caches.open(CACHE).then((cache) => cache.match(request)).then((hit) => hit || fetch(request)));
 });
 `;
 // Fail the build instead of shipping a worker that cannot be parsed.

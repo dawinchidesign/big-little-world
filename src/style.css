@@ -45,12 +45,13 @@ button:disabled {
 #game {
   position: absolute;
   inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* Phaser Scale.CENTER_BOTH owns canvas positioning. Flex centering
+     would apply the letterbox offset a second time. */
+  display: block;
   background: #142d2b;
 }
 #game canvas {
+  display: block;
   image-rendering: pixelated;
   object-fit: contain;
   max-width: 100%;
