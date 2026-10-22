@@ -434,7 +434,7 @@ export class UnderwaterScene extends Phaser.Scene {
         o.y > this.player.y &&
         Math.abs(o.x - this.player.x) < o.displayWidth * 0.28 &&
         o.y - this.player.y < o.displayHeight * 0.8;
-      o.setAlpha(hidesHero ? 0.36 : 1);
+      o.setAlpha(o.alpha + ((hidesHero ? 0.36 : 1) - o.alpha) * (1 - Math.exp(-dt * 15)));
     }
     for (const o of this.fishes) {
       o.x = ((time * 0.024 + o.seed * 195) % 1850) - 100;

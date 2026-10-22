@@ -796,6 +796,25 @@ app.closePanel();
 app.state.x=before.x;app.state.y=before.y;app.scene.reset(app.state);
 console.log('LIVING WORLD: BOUNCE, SEARCH, LITTER, SEEDS, DEW AND FINDS OK',JSON.stringify(app.state.world.counts));
 }
+// 1.4 polish: deduplicated, limited notices; settings return to the pause;
+// prompt text only rebuilt on change; save indicator.
+{
+app.toast("polish-dedup");app.toast("polish-dedup");
+assert.equal(w.document.querySelectorAll('[data-notice="text:polish-dedup"]').length,1,'a repeated notice replaces its twin');
+for(let i=0;i<8;i++)app.toast("polish-limit-"+i);
+assert(w.document.querySelector("#toast").children.length<=3,'notifications cannot flood the view');
+app.pause();assert.equal(app.mode,'pause');
+w.document.querySelector('#pause-settings').click();assert.equal(app.mode,'settings');
+app.closePanel();assert.equal(app.mode,'pause','settings opened from the pause return to it');
+app.closePanel();assert.equal(app.mode,'play');
+app.updatePrompt({kind:'quest',stage:{title:['А','Б','C']}});
+const prompt=w.document.querySelector('#prompt'),node=prompt.firstChild;
+app.updatePrompt({kind:'quest',stage:{title:['А','Б','C']}});
+assert.equal(prompt.firstChild,node,'unchanged prompt is not rebuilt');
+await app.save(false);
+assert.equal(w.document.querySelector('#save-state').hidden,false,'a successful save shows the quiet tick');
+console.log('POLISH: NOTICES, PAUSE SETTINGS, PROMPT AND SAVE TICK OK');
+}
 await checkCrossings({app,w,step,tapE,dismiss,getCanvas});
 await checkEnvironment({app,w,step,tapE,dismiss,getCanvas});
 await checkExpeditions({app,w,step,tapE,dismiss,getCanvas});

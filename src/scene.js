@@ -967,6 +967,7 @@ export class WorldScene extends Phaser.Scene {
       }
       case "clean": {
         o.spent = true;
+        o.vanishing = true;
         this.app.audio.cue?.("pop");
         gsap.to(o, { y: o.y - 26, alpha: 0, angle: o.angle + 25 * side, duration: 0.55, ease: "power2.in", onComplete: () => o.destroy() });
         o.groundShadow?.destroy();
@@ -1521,7 +1522,7 @@ export class WorldScene extends Phaser.Scene {
       focus = cine ? {x:this.cameras.main.scrollX+this.cameras.main.width/2,y:this.cameras.main.scrollY+this.cameras.main.height/2} : this.player;
     let active = 0;
     for (const o of this.props) {
-      if (!o.active) continue;
+      if (!o.active || o.vanishing) continue;
       const d = Math.abs(o.x - focus.x) + Math.abs(o.y - focus.y);
       const visible =
         this.humanView ||
@@ -1536,13 +1537,14 @@ export class WorldScene extends Phaser.Scene {
         !s.settings.low
       )
         o.angle = o.baseAngle + windAt(o.x, o.y, time) * 2.8;
-      if (
-        o.y > this.player.y &&
+      // Plants in front of the hero fade smoothly (counting the hero's height
+      // above ground) instead of blinking between two alphas.
+      const heroY = this.player.y - this.traverse.z;
+      const hidesHero = o.y > this.player.y &&
         Math.abs(o.x - this.player.x) < o.displayWidth * 0.25 &&
-        Math.abs(o.y - this.player.y) < o.displayHeight * 0.6
-      )
-        o.setAlpha(0.4);
-      else o.setAlpha(1);
+        o.y - heroY < o.displayHeight * 0.6;
+      const targetAlpha = hidesHero ? 0.4 : 1;
+      o.setAlpha(o.alpha + (targetAlpha - o.alpha) * (1 - Math.exp(-dt * 15)));
     }
     for (const o of this.npcs) {
       if (!o.active) continue;

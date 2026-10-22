@@ -515,6 +515,7 @@ class App {
   }
   refreshHud() {
     if (!this.scene) return;
+    document.body.classList.toggle("low-fx", !!this.state.settings.low);
     this.flushToasts();
     const play = ["play", "dialog", "perspective", "cinematic"].includes(
       this.mode,
@@ -535,7 +536,7 @@ class App {
             ? { title: COLONY_UI.enter, points: [] }
             : activeStage(this.state);
     $("#hud").innerHTML =
-      `<div class="hud-top"><div class="location"><small>${this.scene.isExpedition?this.l(HORIZON_UI.notes)+" "+this.scene.site.number+" / 4":this.t("chapter")+" "+Math.min(this.state.quest + 1, 9)+" / 9"}</small><strong>${esc(this.l(this.scene.isExpedition?this.scene.site.title:this.scene.isUnderwater ? UW.title : this.scene.isCitadel ? COLONY_UI.title : b.name))}</strong><small id="live-weather"></small></div><div class="hud-buttons">${this.languageButtons()}<button class="icon-button" id="observe" title="${this.t("observe")} · Q" aria-label="${this.t("observe")}">${icon("eye")}</button><button class="icon-button" id="scan" title="${this.t("scanner")} · C" aria-label="${this.t("scanner")}">${icon("scan")}</button><button class="icon-button" id="view" title="${this.l(VIEW_UI.title)} · V" aria-label="${this.l(VIEW_UI.title)}">${icon("view")}</button><button class="icon-button" id="map-open" title="${this.t("map")} · M" aria-label="${this.t("map")}">${icon("map")}</button><button class="icon-button" id="diary-open" title="${this.t("journal")} · J" aria-label="${this.t("journal")}">${icon("journal")}</button><button class="icon-button" id="voice-toggle" data-voice-toggle title="${this.l(VOICE_UI.toggle)}" aria-label="${this.l(VOICE_UI.toggle)}">${icon("voice")}</button><button class="icon-button" id="pause-open" title="${this.t("paused")}" aria-label="${this.t("paused")}">${icon("pause")}</button></div></div><div class="hud-bottom"><div class="quest-box"><div class="eyebrow">${this.t("quest")}</div><div class="quest-title">${esc(this.l(q?.title || UI.title)).replace("\n", " ")}</div><div class="quest-objective">${esc(st ? this.l(st.title) : this.t("after"))}</div>${st ? '<div class="progress-dots">' + st.points.map((_, i) => `<i class="${(this.scene.isExpedition?this.scene.progress():this.scene.isUnderwater ? this.state.underwater.progress : this.state.progress).includes(i) ? "done" : ""}"></i>`).join("") + "</div>" : ""}${
+      `<div class="hud-top"><div class="location"><small>${this.scene.isExpedition?this.l(HORIZON_UI.notes)+" "+this.scene.site.number+" / 4":this.t("chapter")+" "+Math.min(this.state.quest + 1, 9)+" / 9"}</small><strong>${esc(this.l(this.scene.isExpedition?this.scene.site.title:this.scene.isUnderwater ? UW.title : this.scene.isCitadel ? COLONY_UI.title : b.name))}</strong><small id="live-weather"></small></div><div class="hud-buttons">${this.languageButtons()}<button class="icon-button" id="observe" aria-pressed="${!!this.scene.observing}" title="${this.t("observe")} · Q" aria-label="${this.t("observe")}">${icon("eye")}</button><button class="icon-button" id="scan" aria-pressed="${!!this.scene.scanning}" data-locked="${!this.state.abilities.includes("scanner")}" title="${this.t("scanner")} · C" aria-label="${this.t("scanner")}">${icon("scan")}</button><button class="icon-button" id="view" title="${this.l(VIEW_UI.title)} · V" aria-label="${this.l(VIEW_UI.title)}">${icon("view")}</button><button class="icon-button" id="map-open" title="${this.t("map")} · M" aria-label="${this.t("map")}">${icon("map")}</button><button class="icon-button" id="diary-open" title="${this.t("journal")} · J" aria-label="${this.t("journal")}">${icon("journal")}</button><button class="icon-button" id="voice-toggle" data-voice-toggle title="${this.l(VOICE_UI.toggle)}" aria-label="${this.l(VOICE_UI.toggle)}">${icon("voice")}</button><button class="icon-button" id="pause-open" title="${this.t("paused")}" aria-label="${this.t("paused")}">${icon("pause")}</button></div></div><div class="hud-bottom"><div class="quest-box"><div class="eyebrow">${this.t("quest")}</div><div class="quest-title">${esc(this.l(q?.title || UI.title)).replace("\n", " ")}</div><div class="quest-objective">${esc(st ? this.l(st.title) : this.t("after"))}</div>${st ? '<div class="progress-dots">' + st.points.map((_, i) => `<i class="${(this.scene.isExpedition?this.scene.progress():this.scene.isUnderwater ? this.state.underwater.progress : this.state.progress).includes(i) ? "done" : ""}"></i>`).join("") + "</div>" : ""}${
         this.scene.scanning
           ? '<div class="eco-inline">' +
             Object.entries(this.state.eco)
@@ -543,7 +544,7 @@ class App {
               .join("") +
             "</div>"
           : ""
-      }${expeditionResources(this)}</div><div class="ability-row">${this.state.abilities.map((k) => `<span class="ability">${this.t(k)}</span>`).join("")}</div><div class="hud-hint">${esc(this.l(T("WASD — идти · E — действие · Пробел — прыжок", "WASD — жүру · E — әрекет · Бос орын — секіру", "WASD — move · E — interact · Space — jump")))}</div></div><div class="mini-wrap"><canvas id="mini" width="192" height="132"></canvas><div class="mini-caption">M · ${this.t("map")} <span id="time"></span></div></div><button id="prompt" class="prompt" hidden></button><div class="status" id="status" ${this.scene.observing || this.scene.scanning ? "" : "hidden"}>${this.scene.observing ? this.t("observeOn") : this.scene.scanning ? this.t("scanOn") : ""}</div>${this.scene.scanning ? '<div class="scan-grid"></div>' : ""}`;
+      }${expeditionResources(this)}</div><div class="ability-row">${this.state.abilities.map((k) => `<span class="ability">${this.t(k)}</span>`).join("")}</div><div class="hud-hint">${esc(this.l(T("WASD — идти · E — действие · Пробел — прыжок", "WASD — жүру · E — әрекет · Бос орын — секіру", "WASD — move · E — interact · Space — jump")))}</div></div><div class="mini-wrap"><canvas id="mini" width="192" height="132" role="button" tabindex="0" aria-label="${this.t("map")}"></canvas><div class="mini-caption">M · ${this.t("map")} <span id="time"></span></div></div><button id="prompt" class="prompt" hidden></button><div class="status" id="status" ${this.scene.observing || this.scene.scanning ? "" : "hidden"}>${this.scene.observing ? this.t("observeOn") : this.scene.scanning ? this.t("scanOn") : ""}</div>${this.scene.scanning ? '<div class="scan-grid"></div>' : ""}`;
     this.bindLang($("#hud"));
     $("#observe").onclick = () => this.scene.toggleObserve();
     $("#scan").onclick = () => this.scene.toggleScan();
@@ -561,6 +562,14 @@ class App {
     $("#rotate").textContent = this.l(RELEASE_UI.rotate);
     $("#rotate").hidden = this.mode !== "play";
     $("#mini").onclick = () => this.openMap();
+    $("#mini").onkeydown = (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        this.openMap();
+      }
+    };
+    // Notices wait out dialogs and panels instead of piling up over them.
+    if (this.mode !== "cinematic" && this.mode !== "perspective") $("#toast").hidden = this.mode !== "play";
     this.updateLiveHud();
     this.scene.refreshLabels?.();
   }
@@ -582,19 +591,25 @@ class App {
   updatePrompt(near) {
     const e = $("#prompt");
     if (!e) return;
-    e.hidden = !near;
-    if (!near) return;
+    e.hidden = !near || this.mode !== "play";
+    if (e.hidden) return;
     const text =
       near.crossingAction||near.objectAction?this.l(near.stage.title):near.kind === "npc"
         ? this.l(speciesById[near.data.species].name)
         : near.kind === "secret"
           ? this.l(near.data.title)
           : this.l(near.stage.title);
-    e.innerHTML = '<span class="key">E</span>' + esc(text);
+    // A touch screen has no E key: show a short word instead. Rebuild the
+    // prompt only when its content changes, not every frame.
+    const key = matchMedia("(pointer:coarse)").matches ? this.l(T("Действие", "Әрекет", "Interact")) : "E";
+    const content = key + "\n" + text;
+    if (e.dataset.content === content) return;
+    e.dataset.content = content;
+    e.innerHTML = '<span class="key">' + esc(key) + '</span>' + esc(text);
   }
   setStatus(s) {
     if ($("#status") && this.mode === "play") {
-      $("#status").textContent = s;
+      if ($("#status").textContent !== s) $("#status").textContent = s;
       $("#status").hidden = false;
     }
   }
@@ -612,10 +627,23 @@ class App {
     const queue = this.toastQueue.splice(0);
     queue.forEach((show, i) => setTimeout(() => show(), 350 + i * 450));
   }
-  stackToast(e) {
+  // A repeated notice replaces its twin; at most three cards on a computer,
+  // two on a phone and one on a short touch screen.
+  stackToast(e, key = null, duration = 4500) {
     const box = $("#toast");
+    const remove = (node) => {
+      clearTimeout(node.dismissTimer);
+      gsap.killTweensOf(node);
+      node.remove();
+    };
+    if (key) for (const old of [...box.children]) if (old.dataset.notice === key) remove(old);
+    const limit = matchMedia("(pointer:coarse)").matches ? (innerHeight <= 500 ? 1 : 2) : 3;
+    while (box.children.length >= limit) remove(box.firstElementChild);
+    if (key) e.dataset.notice = key;
     box.append(e);
-    while (box.children.length > 3) box.firstElementChild.remove();
+    e.dismissTimer = setTimeout(() => {
+      gsap.to(e, { opacity: 0, duration: this.state.settings.low ? 0 : 0.3, onComplete: () => remove(e) });
+    }, duration);
   }
   toast(text, urgent = false) {
     // Save failures are shown immediately, even over a cinematic.
@@ -624,10 +652,7 @@ class App {
     const e = document.createElement("div");
     e.className = "toast-card";
     e.textContent = text;
-    this.stackToast(e);
-    setTimeout(() => {
-      gsap.to(e, { opacity: 0, duration: 0.5, onComplete: () => e.remove() });
-    }, 4500);
+    this.stackToast(e, "text:" + text, 4500);
   }
   portrait(id) {
     return visualPortrait(this.scene, id + "0");
@@ -639,11 +664,12 @@ class App {
     e.className = "toast-card";
     e.innerHTML = `<img src="${this.portrait(id)}" alt=""><span class="eyebrow">${this.t("discover")}</span><strong>${esc(this.l(s.name))}</strong><button>${this.t("read")} →</button>`;
     e.querySelector("button").onclick = () => {
+      if (this.mode !== "play") return;
+      clearTimeout(e.dismissTimer);
       e.remove();
       this.speciesDialog(id);
     };
-    this.stackToast(e);
-    setTimeout(() => e.remove(), 6500);
+    this.stackToast(e, "species:" + id, 6500);
   }
   regionToast(b) {
     const e = $("#region");
@@ -702,9 +728,14 @@ class App {
   }
   closePanel() {
     if (this.mode === "dialog") return;
+    // Settings opened from the pause leaf return there, and are saved on close.
+    const wasSettings = this.mode === "settings";
+    const returnToPause = wasSettings && this.backMode === "pause";
+    if (wasSettings && this.state.started) this.save(false);
     $("#overlay").hidden = true;
     this.modalOpen = false;
     this.mode = this.backMode === "menu" ? "menu" : "play";
+    if (returnToPause) return this.pause();
     this.resetInput(this.mode === "play");
     if (this.mode === "menu") this.menu();
     else this.refreshHud();
@@ -720,7 +751,7 @@ class App {
     this.mode = "pause";
     $("#resume").onclick = () => this.closePanel();
     $("#manual-save").onclick = () => this.save();
-    $("#pause-settings").onclick = () => this.settings("play");
+    $("#pause-settings").onclick = () => this.settings("pause");
     $("#rest").onclick = () => {
       this.state.time = 8;
       this.closePanel();
@@ -757,7 +788,10 @@ class App {
         }),
     );
     $("#narration-enabled").onchange=e=>{this.state.settings.narration=e.target.checked;this.voice.applySettings();this.save(false);};
-    $("#low").onchange = (e) => (this.state.settings.low = e.target.checked);
+    $("#low").onchange = (e) => {
+      this.state.settings.low = e.target.checked;
+      document.body.classList.toggle("low-fx", e.target.checked);
+    };
     $("#full").onclick = () => this.fullscreen();
     $("#export").onclick = () => {
       const a = document.createElement("a");
@@ -803,9 +837,19 @@ class App {
     try {
       await writeSave(this.state, slot);
       this.hasSave = true;
+      this.reportedStorage = false;
+      // A quiet tick confirms every successful write; a failure clears it.
+      const indicator = $("#save-state");
+      if (indicator) {
+        clearTimeout(this.saveIndicatorTimer);
+        indicator.textContent = "✓ " + this.t("saved");
+        indicator.hidden = false;
+        this.saveIndicatorTimer = setTimeout(() => { indicator.hidden = true; }, 2400);
+      }
       if (show) this.toast(this.t("saved"));
       return true;
     } catch {
+      if ($("#save-state")) $("#save-state").hidden = true;
       if (show || !this.reportedStorage) {
         this.toast(this.t("saveFail"), true);
         this.reportedStorage = true;
@@ -1634,7 +1678,11 @@ class App {
         x = (x / d) * 40;
         y = (y / d) * 40;
       }
-      this.joy = { x: x / 40, y: y / 40 };
+      // Radial dead zone (14 %) and a smooth ramp to full speed: resting a
+      // thumb near the centre no longer creeps the hero.
+      const radius = Math.min(1, d / 40);
+      const strength = radius <= 0.14 ? 0 : (radius - 0.14) / 0.86;
+      this.joy = d ? { x: (x / Math.min(d, 40)) * strength, y: (y / Math.min(d, 40)) * strength } : { x: 0, y: 0 };
       thumb.style.transform = `translate(${x}px,${y}px)`;
     };
     stick.onpointerdown = (e) => {
@@ -1645,7 +1693,10 @@ class App {
       move(e);
     };
     stick.onpointermove = move;
-    const stop = () => {
+    // Only the finger that owns the stick may release it: lifting a second
+    // finger (action buttons) no longer stops the walk.
+    const stop = (e) => {
+      if (e && e.pointerId !== undefined && e.pointerId !== pointer) return;
       const previous = pointer;
       pointer = null;
       this.joy = { x: 0, y: 0 };
