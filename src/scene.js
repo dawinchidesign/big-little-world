@@ -27,6 +27,40 @@ import {
   byTrail,
 } from "./traversal.js";
 const dist = (a, b) => Math.hypot(a.x - b.x, a.y - b.y);
+// Painted props are sized by role against the hero (about 54 units tall) and
+// the 800 x 450 view: ground litter one to two hero heights, plants up to three,
+// landmarks larger but never more than about half the screen. [factor applied
+// to the placement scale, largest displayed height, largest displayed width].
+const PROP_SIZE = {
+  grass: [0.55, 205, 190],
+  flower: [0.62, 215, 160],
+  pinkflower: [0.62, 215, 170],
+  fern: [0.58, 195, 190],
+  mushroom: [0.5, 165, 160],
+  log: [0.78, 230, 300],
+  rock: [0.95, 95, 130],
+  "lichen-stone": [0.95, 105, 140],
+  leaf: [0.85, 95, 135],
+  plastic: [0.6, 150, 185],
+  cap: [0.6, 100, 140],
+  bottle: [0.58, 255, 230],
+  blueflower: [0.8, 180, 150],
+  "fungal-cluster": [0.62, 165, 150],
+  "moss-fan": [0.8, 150, 150],
+  seedpod: [0.8, 165, 140],
+  tree: [0.72, 470, 420],
+  reed: [0.9, 230, 160],
+};
+function propScale(o, key, scale) {
+  const spec = PROP_SIZE[key];
+  if (!spec) return scale;
+  const [k, maxH, maxW] = spec;
+  // Logical (unscaled) size: atlas art is stored at a higher pixel density.
+  const d = o.visualDensity || 1,
+    w = (o.width || 1) / d,
+    h = (o.height || 1) / d;
+  return Math.min(scale * k, maxH / h, maxW / w);
+}
 const flying = [
   "bee",
   "bumblebee",
@@ -377,8 +411,9 @@ export class WorldScene extends Phaser.Scene {
       const o = this.add
         .image(x, y, tex)
         .setOrigin(0.5, 0.94)
-        .setScale(scale)
         .setDepth(y);
+      scale = propScale(o, key, scale);
+      o.setScale(scale);
       o.baseX = x;
       o.baseY = y;
       o.baseAngle = (r() - 0.5) * 9;

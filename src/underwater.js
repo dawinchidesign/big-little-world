@@ -218,7 +218,7 @@ export class UnderwaterScene extends Phaser.Scene {
       const o = this.add
         .image(x, y, key)
         .setOrigin(0.5, 1)
-        .setScale(key === "rock" ? 0.7 + r() : 0.65 + r() * 0.65)
+        .setScale(key === "rock" ? 0.7 + r() : 0.4 + r() * 0.36)
         .setDepth(y);
       o.baseAngle = (r() - 0.5) * 8;
       o.seed = r() * 5;
@@ -232,8 +232,8 @@ export class UnderwaterScene extends Phaser.Scene {
       this.add
         .image(100 + i * 235, 5, "waterroot-hi")
         .setOrigin(0.5, 0)
-        .setScale(1.6)
-        .setAlpha(0.7)
+        .setScale(0.95)
+        .setAlpha(0.55)
         .setDepth(1800);
     for (let i = 0; i < 30; i++) {
       const id = uwSpecies[i % uwSpecies.length],
@@ -254,7 +254,7 @@ export class UnderwaterScene extends Phaser.Scene {
     this.add
       .image(1070, 890, "waterarch-hi")
       .setOrigin(0.5, 0.95)
-      .setScale(2.3)
+      .setScale(1.5)
       .setDepth(890);
     for (let i = 0; i < 3; i++) {
       if (
@@ -265,7 +265,7 @@ export class UnderwaterScene extends Phaser.Scene {
           o = this.add
             .image(x, y, "waterweed-hi")
             .setOrigin(0.5, 0.95)
-            .setScale(0.9)
+            .setScale(0.62)
             .setDepth(y);
         o.baseAngle = 0;
         o.seed = i;

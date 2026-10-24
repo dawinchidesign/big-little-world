@@ -12,7 +12,7 @@ export const PARALLAX_PROFILES = {
     {key:'cine-night',x:.5,y:.5,w:1.17,h:1.13,depth:9000,rate:.62,alpha:.92},
   ],
   roots:[{key:'cine-roots',x:.5,y:.44,w:1.14,h:1.1,depth:9000,rate:.55,alpha:.85}],
-  water:[{key:'cine-water',x:.5,y:.5,w:1.17,h:1.12,depth:1900,rate:.26,alpha:.58}],
+  water:[{key:'cine-water',x:.5,y:.5,w:1.17,h:1.12,depth:1900,rate:.26,alpha:.36}],
   damaged:meadow.map(p=>({...p,tint:0x9d9c78,alpha:p.alpha*.65})),
   room:[
     {key:'room-wall',x:.5,y:.5,w:1.14,h:1.14,depth:8000,rate:.06,alpha:1},
