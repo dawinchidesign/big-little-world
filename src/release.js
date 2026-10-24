@@ -1,5 +1,5 @@
 import { T } from "./content.js";
-export const VERSION = "1.6.0";
+export const VERSION = "1.7.0";
 export const RELEASE_UI = {
   bootFail: T(
     "Не удалось подготовить мир. Проверьте, что архив распакован целиком. Сохранения не удалены.",

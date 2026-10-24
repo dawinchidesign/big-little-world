@@ -441,7 +441,7 @@ export class UnderwaterScene extends Phaser.Scene {
       o.y = o.homeY + Math.sin(time / 1300 + o.seed) * 28;
       // Four illustrated tail-beat frames, each fish with its own phase.
       o.setTexture("fish" + (this.app.state.settings.low ? 0 : Math.floor(time / 145 + o.seed) % 4));
-      o.setFlipX(true);
+      o.setFlipX(false);
     }
     for (const o of this.npcs) {
       const d = Math.hypot(o.x - this.player.x, o.y - this.player.y);
